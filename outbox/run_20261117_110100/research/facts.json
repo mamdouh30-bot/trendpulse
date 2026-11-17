@@ -1,0 +1,77 @@
+{
+  "topic": {
+    "title": "Robots in War: Ukraine’s Digital Battlefield",
+    "angle": "The film will follow Ukraine’s journey from conventional skirmish to a high-tech frontline, highlighting how a small army harnessed swarms of unmanned drones and autonomous robots to halt a much larger adversary’s advance—an unlikely David‑versus‑Goliath story that showcases the future of conflict.",
+    "why_viral": "It blends cutting‑edge tech, human drama, and international intrigue, sparking curiosity about how war is changing without the glamor of celebrity.",
+    "visual_world": "War-torn Ukrainian cities and villages, battlefields packed with field drones, command‑center command decks, data‑stream interfaces, UAV manufacturing sites, and the gritty everyday life of soldiers and civilians."
+  },
+  "facts": {
+    "summary": "Ukraine adopted autonomous robots to counter a larger Russian force, evolving from basic support to lethal frontline assets. Since early 2024, ground and airborne drones, some armed with grenade launchers, have offset manpower shortages and wounded soldiers. The deployment has faced technical challenges in winter, but has begun sinking enemy UAVs, redefining asymmetrical warfare.",
+    "timeline": [
+      {
+        "date": "2024-01",
+        "event": "Ukraine begins fielding autonomous ground robots"
+      },
+      {
+        "date": "2024-04",
+        "event": "Robots equipped with grenade launchers deployed"
+      },
+      {
+        "date": "2024-07",
+        "event": "First airborne robotic artillery drops behind enemy lines"
+      },
+      {
+        "date": "2024-10",
+        "event": "Robot fleets used to destroy Russian drones"
+      },
+      {
+        "date": "2025-03",
+        "event": "Humanoid robot demonstrates limit: cannot operate in rain"
+      },
+      {
+        "date": "2026-06",
+        "event": "Thousands of new robots enter service ahead of harsher weather"
+      }
+    ],
+    "key_facts": [
+      "Army uses unmanned ground vehicles to take high‑risk tasks.",
+      "Robots are fitted with grenade launchers for stand‑off fire.",
+      "Airborne assaults include heavy bomber drones dropping armed robots.",
+      "Russian soldiers report no knowledge of robot–initiated kills.",
+      "Ground robot fleet now in the thousands.",
+      "Winter testing shows reduced mobility in mud and snow.",
+      "Humanoid robots operate for six months before rain degrades performance.",
+      "NATO troops receive training on robot capabilities and limitations.",
+      "Ukraine claims robots have begun downing Russian UAVs.",
+      "Former Defense Minister Mykhailo Fedorov predicts AI‑robot dominance."
+    ],
+    "dramatic_beats": [
+      "From mortars to machines: Ukraine’s rapid tech pivot.",
+      "Grenade‑armed bots risk enemy advance while soldiers stay safe.",
+      "Bird‑dropped drones replace human paratroopers behind lines.",
+      "Rain‑storms test the limits of man‑made warriors."
+    ],
+    "open_questions": [
+      "What are the long‑term operational reliability rates under combat conditions?",
+      "How will Russian forces adapt to pervasive robotic opposition?"
+    ],
+    "sources": [
+      {
+        "host": "msn.com",
+        "url": "https://www.msn.com/en-us/technology/robotics/ukraine-s-war-robots-keep-soldiers-out-of-danger-but-humans-still-risk-their-lives-to-keep-them-running/ar-AA2gtqQ0?ocid=BingNewsVerp"
+      },
+      {
+        "host": "businessinsider.com",
+        "url": "https://www.businessinsider.com/ukraine-war-robots-are-surging-into-the-kill-zone-2026-6"
+      },
+      {
+        "host": "techtimes.com",
+        "url": "https://www.techtimes.com/articles/328202/20260929/ukraine-sets-six-month-humanoid-kill-benchmark-robot-that-cannot-work-rain.htm"
+      },
+      {
+        "host": "msn.com",
+        "url": "https://www.msn.com/en-us/technology/artificial-intelligence/ai-powered-robots-are-next-in-war-tech-ukraine-s-former-defense-minister-says/ar-AA2dJnWV?ocid=BingNewsVerp"
+      }
+    ]
+  }
+}

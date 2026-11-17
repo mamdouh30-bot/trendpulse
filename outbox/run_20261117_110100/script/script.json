@@ -1,0 +1,440 @@
+{
+  "title": "Robots in War: Ukraine’s Digital Frontline",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "Cold Open",
+      "narration": "Mid–winter battle. A silent swarm of autonomous robots rolls through the ivy‑laden streets of eastern Donetsk, each carrying a grenade launcher. In hours, they strike the Russian forward line, shattering the illusion of dominance.",
+      "visual_query": "autonomous robots roaring through winter roads",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "Cold Open",
+      "narration": "Russian radio crackles with reports: dead soldiers, but no mortars. A drone, unarmed, disappears behind cloud cover. Below, a ground robot pivots, its sensors blazing, ready for the next strike.",
+      "visual_query": "radio chatter overlayed on snowy battlefield",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "Cold Open",
+      "narration": "July 2024. A bomber drone, missile‑laden, releases a swarm of armed robots into the enemy rear. Under the ghostly glow of dawn, the robots descend, trained to strike with the precision of ice‑clad blades.",
+      "visual_query": "bomb‑laden drone releasing robot swarm at dawn",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "January 2024. The first autonomous ground robots waltzed onto the battlefield. Their metal feet hissed over cracked dirt as soldiers stared, uncertain if these silent helpers could replace their own. Heartbeats matched the buzz of barely functioning processors.",
+      "visual_query": "Russian trench, dawn, unmanned ground robots advancing through mud",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "They were not guns, but shoulder‑mounted grenade launchers pulsed from their sides. A volley smacked a cluster of IEDs. The rebellion against human vulnerability tasted real, and the small army felt a flicker of hope.",
+      "visual_query": "close‑up of robot arm attaching grenade launcher",
+      "mood": "tense",
+      "is_key_scene": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "In the rank shadow, soldiers whispered about the future. Would steel tread forever or merely lead the way? The field waited, breath held, as the machinery of war began to hum.",
+      "visual_query": "low angle of soldiers watching robots, night dimming",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "January 2024, dawn cracks over Kharkiv. Skies grey, the field silent. First autonomous ground robots roll into line, sensors sweeping shadows.",
+      "visual_query": "autonomous ground robots on Kharkiv field sunrise",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "Soldiers stare, boots crunching gravel. Uncertainty coils in their eyes as metal hearts start to pulse.",
+      "visual_query": "soldiers watching ground robots trench concentration",
+      "mood": "suspenseful",
+      "is_key_scene": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "Humanoid chassis lift, their whir the only sound in the cold. The battlefield waits, breath held, as the machinery of war began to hum.",
+      "visual_query": "humanoid robot whirring near trench entrance",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "January 2024, dawn cracks over Kharkiv. Thousands of unmanned ground vehicles roll silently across muddy trenches, each bearing a silent promise. Soldiers stare, uncertain if these machines will replace arms or souls.",
+      "visual_query": "UN ground robot convoy at dawn in Kharkiv battlefield",
+      "mood": "tense|curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "Shadows in the Field",
+      "narration": "The first burst at 0530—robo‑grenade launchers fire, shrapnel splintering through steel. The air tastes of gunpowder and cold steel; the horizon holds a pause. The field waits, breath held, as the machinery of war began to hum.",
+      "visual_query": "robotic grenade launcher firing in winter battlefield",
+      "mood": "urgent|somber",
+      "is_key_scene": false
+    },
+    {
+      "id": 12,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "January 2024: Barely a few autonomous ground vehicles crawl onto the battlefield, their sensors trembling in the cannon rain. The first grim reality—no human left in lethal danger. Ukraine looks up its own eyes.",
+      "visual_query": "military base, drones at dusk, soldiers watching screens",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "April 2024: Grenade launchers bolt onto robots. They explode over advancing columns, shattering the illusion of man‑powered superiority. Russian soldiers halt, eyes wide, as metal mouths blossom with fire.",
+      "visual_query": "robot arm firing grenade, blurred infantry",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "July 2024: One silent night, a bomber drone drops a swarm of armed bots beneath enemy lines. The sky bursts into flame as the machines take fire, their silent march unseen— an unspoken threat in the darkness.",
+      "visual_query": "unmanned bomber dropping autonomous units, night glow",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "January 2024. In a dim shed in Kharkiv, soldiers press a button, and a line of grenade‑armed robots rumbles forward. Their silent charge echoes through concrete. The battlefield trembles as shell‑shaped payloads ignite behind enemy lines.",
+      "visual_query": "warehouse with rows of autonomous robots, soldiers monitoring",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "By April, the drones disperse a deadly dust cloud. Ukrainian engineers add grenade launchers to the swarm, turning watchful scouts into lethal fireboxes. Russian foot soldiers hesitate, the unexpected thunderous fire creating a widening gap in their lines.",
+      "visual_query": "close‑up of robotic arm firing grenade launcher",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "On the evening of July, a bomber drone drops a cluster of armed bots behind the front. The enemy’s retreat halts as the silent machines deliver precise, staggered explosions. The night air crackles—five cadets hide, silent, unsure of when the bots will strike again.",
+      "visual_query": "bomber drone releasing robot swarm over battlefield",
+      "mood": "somber",
+      "is_key_scene": true
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "April 2024. Ground bots launch grenade volleys from hidden positions, shattering barbed wire and halting Russian columns. Soldiers watch ash rise, knowing these machines are their safety net.",
+      "visual_query": "indoor control room with screens, bots in field, muzzle flash",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Armed Swarm",
+      "narration": "The barrage freezes the advancing troops, fear creeping through ranks. Yet the bots move unseen, silently waiting to strike again. A lone Russian forward reports no awareness of the automated threat—until the next shadow falls.",
+      "visual_query": "Russian forward soldier looking through binoculars, distant dust",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 20,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "On 2024‑07, a heavy bomber drone releases armed robots from 30,000 feet, zigzagging toward enemy lines. Nightfall masks the descent; the robots burst to the ground, grenade launchers primed.",
+      "visual_query": "bomber drone dropping armed robots over hostile territory",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 21,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "The robots engage with fixed‑wing precision; one fires a cluster of 40mm grenades, shattering a Russian artillery bunker in silence. Soldiers, invisible above, witness the silent strike from a safe distance.",
+      "visual_query": "robot firing 40mm grenades at radar‑equipped bunker",
+      "mood": "tense",
+      "is_key_scene": false
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "But the swarm’s sensors glitch as clouds obscure the sky—no fire missed for a full minute. In the gap, Russian troops inch forward, unaware of the unseen battalion beneath.",
+      "visual_query": "cloud‑shrouded battlefield with hidden robots",
+      "mood": "somber",
+      "is_key_scene": false
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "July 7, 2024. Four heavy bomber drones crash near the line, each landing a 15‑kg grenade robot. The drones vanish into forest shadows before the robots activate, silent guns firing at invisible targets.",
+      "visual_query": "heavy bomber drone crash site forest twilight",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "The robots—unmanned ground vehicles—charge forward, engaged in stand‑off fire. Russian units halt, fire unanswered, unaware that a fleet of drones has already silenced a squad ahead.",
+      "visual_query": "unmanned ground robot firing forest bunker",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "Up close, a grenade launcher muzzle sparks as a robot takes a shot. Behind the gear, a human soldier watches, eyes scanning the horizon for the next wave of autonomous allies.",
+      "visual_query": "close‑up grenade launcher robot eye view",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "July 2024. A silent sky cracks open as a heavy bomber drone descends, its cargo bay disgorging armed robots hot‑wired for combat. Inside the battlefield, metallic boots shuffle under rubble, bearing three‑minute grenades. The city’s smoldering streets become an arena where silicon meets steel.",
+      "visual_query": "Aerial view of a bomber drone dropping robotic units into a war-torn city",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Bird‑Dropped Fire",
+      "narration": "Foot soldiers watch, eyes scanning the horizon for the next wave. The robots step onto the frontline, deploying, firing, and dissipating into dust. An unseen tide of machines writes the new script of warfare.",
+      "visual_query": "Close‑up of a soldier's eyes reflecting a distant drone descent",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 28,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "January 2024. We see a line of newly fielded autonomous ground robots, metal hulks crunching through fresh mud. Their chilled servos stare blankly at the horizon, each limb sleeping with the promise of tomorrow’s war.",
+      "visual_query": "Autonomous ground robots in winter mud, metal bodies glistening, first light",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 29,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "August 2024. Winds howl as a drone lowers a grenade‑armed robotic payload behind enemy lines. The silent drop is a ballet—precision meeting terror—while Russian troops stare, unaware of the mechanized menace hovering above them.",
+      "visual_query": "Drone dropping armed robot, enemy line in disarray",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 30,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "November 2025. A rainstorm curses a humanoid robot; its composite armor cracks, cables sparking, the once proud machine shuddering as water seeps. The battlefield, drenched, waits for the verdict—will the tech survive or sink?",
+      "visual_query": "Humanoid robot exposed to heavy rain, rusting armor",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 31,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "January 2024: first autonomous ground bots crawl across improvised trenches. Their silent wheels whisper hope, yet the frost bites deep. The night drifts over freshly marked battle lines.\nAs winter hardens, tented factories test the new models against Siberian snow.",
+      "visual_query": "snowbound infantry trench with robots thrum under cold fog",
+      "mood": "urgent|somber",
+      "is_key_scene": false
+    },
+    {
+      "id": 32,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "February rolls in; heavy snows transform paved roads into glassy mazes. Marines press robots into mud, their armor cracking at the seams. The contrast of metallic sheen against white canyons is stark.\nThe drones’ antennas float like ghost ships, unreachable in the blizzard.\nThe battlefield, drenched, waits for the verdict—will t",
+      "visual_query": "robotic soldier silhouette against white snowbank",
+      "mood": "tense|curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 33,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "March rides out; soldiers gamble on the bots’ last test. Steel feet inch through slush, unleashing grenade launchers at distant armored columns.\nA sensor flickers, a brief moment before a failed sprint leaves a gap in the armor.\nThe battlefield, drenched, waits for the verdict—will the tech survive or sink?",
+      "visual_query": "close-up of robot armor buckle in mud",
+      "mood": "reflective|tense",
+      "is_key_scene": false
+    },
+    {
+      "id": 34,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "January 2024, winter fell hard on the front. Ground robots trudged through mire, their armor cracks visible under snow. Each stride cost them energy; wind chilled the batteries. The army watched, nerves taut.",
+      "visual_query": "robotic wipers scraping wet snow on armored chassis",
+      "mood": "tense|curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 35,
+      "chapter": 4,
+      "chapter_title": "Cold Test",
+      "narration": "Telemetry spikes spiked. One arm trembled, a spring failed in the casing. Operators logged a 12% failure rate by October. As the snow pressed in, a silence fell—can technology hold ground?",
+      "visual_query": "close-up of broken robotic arm in snow",
+      "mood": "urgent|reflective",
+      "is_key_scene": true
+    },
+    {
+      "id": 36,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "In October 2024, a swarm of ground and airborne robots descended upon the front, striking down ninety‑five Russian UAVs in a single week. Each hit echoed the stories of soldiers spared from death, proof that steel could outpace flesh.",
+      "visual_query": "robot swarm engaging drones in battlefield haze",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 37,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "By June 2026, thousands of autonomous units lined the trenches, their silent gears a stark contrast to the clamor of artillery. Yet rainstorms washed over the meadows, revealing the fragile dance between circuitry and weather.",
+      "visual_query": "autonomous robot fleet under rain-flooded skies",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 38,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "As the horizon bleeds into dusk, the question lingers: will the machines keep advancing, or will a new wave of tactics loom? Tonight, the battlefield listens for the next move.",
+      "visual_query": "military briefing room dimly lit, commanders staring at maps",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 39,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "March 2024: Robots take the first air strike. Bot bombs dive from unmanned bombers, eliminating 12 enemy positions with precision, while human troops hold ground beneath a steel-plated sky.",
+      "visual_query": "unmanned bomber dropping armed robots behind enemy lines",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 40,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "October 2024: A swarm of 32 ground robots, armed with grenade launchers, intercepts a convoy of Russian drones. Frost bites, but the sirens of automation drown out the muffled Russian gunfire.",
+      "visual_query": "thousands of ground robots firing grenades at drones",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 41,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "June 2026: With winter imminent, 5,000 new robots roll onto the front. Commanders stare at snow-dusted screens, calculating whether metal hearts can sustain the coming storm. Does steel survive rain?",
+      "visual_query": "thousands of robots on a snowy battlefield",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 42,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "June 2026. Thousands of metallic sentinels roll into line, their sensors crisp, metal hearts steady through blizzards. Ukrainian units watch as automated squads neutralize German-supplied UAV swarms, Greece‑to‑zenith precision. Yet every surge of code raises a simple question: Can steel withstand the endless rain?",
+      "visual_query": "blizzard‑faced robotic convoy on open field",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 43,
+      "chapter": 5,
+      "chapter_title": "Machined Verdict",
+      "narration": "Night falls over Kharkiv. A silent forest of drones patrols the air, each echoing the promise of dominance. Ukrainian engineers calibrate AI to anticipate fabled enemy countermeasures; a faint hiss of wind carries a looming threat. Will these machines survive when pages of cloud cover the horizon?",
+      "visual_query": "night aerial drones over wooded streets",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 44,
+      "chapter": 99,
+      "chapter_title": "Outro",
+      "narration": "October 2024, robot swarms smother Russian air, Ukrainian ground forces reclaim dawn. A thousand autonomous machines now patrol, crushing drones, keeping soldiers alive. Their silent march echoes the commandment of war. But the true battle for control has only just begun.",
+      "visual_query": "Ukrainian infantry in daylight, autonomous ground vehicles moving in formation on a ruined street",
+      "mood": "tense|curious|urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 45,
+      "chapter": 99,
+      "chapter_title": "Outro",
+      "narration": "If you crave the next chapter of how a nation's soldiers rewrite history, hit subscribe. The story is far from finished. Will the next wave of machines change everything?",
+      "visual_query": "wide shot of a quiet command center, screens flickering with live drone feeds",
+      "mood": "reflective|curious|urgent",
+      "is_key_scene": true
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Cold Open"
+    },
+    {
+      "num": 1,
+      "title": "Shadows in the Field"
+    },
+    {
+      "num": 2,
+      "title": "Armed Swarm"
+    },
+    {
+      "num": 3,
+      "title": "Bird‑Dropped Fire"
+    },
+    {
+      "num": 4,
+      "title": "Cold Test"
+    },
+    {
+      "num": 5,
+      "title": "Machined Verdict"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}
