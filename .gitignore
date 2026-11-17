@@ -1,0 +1,26 @@
+# NEVER commit real credentials
+.env
+*.session
+token.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Heavy run media — state JSON / scripts / summaries ARE committed,
+# videos & audio & images are NOT (they upload straight to YouTube)
+outbox/**/voice/
+outbox/**/visuals/
+outbox/**/motion/
+outbox/**/render/
+outbox/**/*.wav
+outbox/**/*.mp3
+outbox/**/*.mp4
+outbox/**/*.tmp
+*.ai.tmp
+
+# local noise
+state/quota_probe.log
+state/full_loop.log
+*.log

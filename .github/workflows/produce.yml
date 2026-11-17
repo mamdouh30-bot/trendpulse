@@ -1,0 +1,82 @@
+# ============================================================
+#  TrendPulse — GitHub Actions autonomous producer (free hosting)
+#  Runs the full pipeline twice a day: 09:00 & 21:00 Asia/Dubai.
+#  Video uploads straight to YouTube; only small state JSON is
+#  committed back so the next run can resume where it stopped.
+# ============================================================
+
+name: TrendPulse Production
+
+on:
+  schedule:
+    - cron: "0 5,17 * * *"     # 05:00 & 17:00 UTC = 09:00 & 21:00 Dubai
+  workflow_dispatch: {}        # manual "Run workflow" button
+
+permissions:
+  contents: write              # needed to commit checkpoints back
+
+concurrency:
+  group: trendpulse
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system + python dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+          pip install -r requirements.txt
+
+      - name: Write .env from repository secrets
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          TRENDPULSE_EDGE_VOICE: ${{ secrets.TRENDPULSE_EDGE_VOICE }}
+        run: |
+          set -e
+          : > .env
+          for var in YT_CLIENT_ID YT_CLIENT_SECRET YT_REFRESH_TOKEN YT_API_KEY \
+                     LLM_API_KEY LLM_BASE_URL LLM_MODEL TAVILY_API_KEY \
+                     SERPER_API_KEY BRAVE_API_KEY PEXELS_API_KEY \
+                     PIXABAY_API_KEY ELEVENLABS_API_KEY TRENDPULSE_EDGE_VOICE; do
+            val="${!var}"
+            if [ -n "$val" ]; then echo "$var=$val" >> .env; fi
+          done
+          echo "TRENDPULSE_FAST_RENDER=1" >> .env
+          chmod 600 .env
+          echo ".env written with $(grep -c '=' .env || true) entries"
+
+      - name: Run production cycle
+        continue-on-error: true
+        run: python3 run_cycle.py
+
+      - name: Commit checkpoints back to the repo
+        run: |
+          git config user.name "trendpulse-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "TrendPulse auto-run $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]" \
+            || echo "nothing to commit"
+          git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
+          git push

@@ -1,0 +1,67 @@
+# ============================================================
+#  TrendPulse — Autonomous YouTube Documentary Agency
+#  Portable configuration (free hosting: GitHub Actions / Docker / VPS)
+# ============================================================
+
+channel:
+  name: TrendPulse
+  tagline: "The world's biggest stories, decoded."
+  badge_text: TRENDPULSE          # shown on thumbnails + intro cards
+
+content:
+  niche: general_global_trends     # what the trend analyst scans
+  language: en                     # videos are produced in English
+  target_minutes: 13.5             # final video target duration
+  word_budget: 1650                # narration words (~120 wpm narration)
+  chapters: 5                      # number of story chapters
+  min_scenes: 36
+  max_scenes: 48
+  scene_pad: 0.9                   # seconds of breathing room after narration
+  xfade: 0.6                       # crossfade seconds between scenes
+
+voice:
+  provider: auto                  # auto | elevenlabs | edge
+                                  # auto = ElevenLabs if key+quota, else edge-tts
+  speed: 0.95                     # 1.0 = normal (mapped to edge-tts rate)
+  edge_voice: en-US-ChristopherNeural   # free fallback (deep US male narrator)
+  elevenlabs:
+    voice_id: pNInz6obpgDQGcFmaJgB   # Adam — deep American male narrator
+    model: eleven_multilingual_v2
+    stability: 0.45
+    similarity_boost: 0.75
+    style: 0.35
+
+visuals:
+  width: 1920
+  height: 1080
+  fps: 24
+  search_count: 8                  # images fetched per visual query
+  per_chapter_queries: 3           # real-photo searches per chapter
+  ai_fallback: true                # free AI image (Pollinations) if search fails
+
+motion:
+  enabled: true                    # animated AI clips — auto-skipped on hosts
+  max_clips: 7                     #   without a video provider (Ken Burns used)
+  duration: 5
+
+music:
+  enabled: true
+  base_gain: 0.16                  # music volume under narration
+  sfx_gain: 0.30                   # whoosh/boom volume
+  chapter_boom: true               # deep boom at every chapter start
+
+upload:
+  enabled: true                    # auto-upload when credentials exist in .env
+  privacy: public                  # public | unlisted | private
+  category_id: "25"                # 25 = News & Politics
+  notify_on_pending: true          # keep video in outbox if credentials are missing
+
+trend_discovery:
+  queries:
+    - "biggest global trending stories this week {month_year}"
+    - "trending viral news stories right now {month_year}"
+    - "trending unsolved mysteries and strange events {month_year}"
+    - "biggest science and technology breakthroughs {month_year}"
+    - "most searched topics in the world today {month_year}"
+  research_queries: 5              # follow-up searches on the chosen topic
+  history_file: state/history.json # topic memory to avoid repeats

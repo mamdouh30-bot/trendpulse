@@ -1,0 +1,8 @@
+services:
+  trendpulse:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ./outbox:/app/outbox      # checkpoints survive container restarts
+      - ./state:/app/state
