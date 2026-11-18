@@ -27,7 +27,9 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 SEARCH_TIMEOUT = 120
 _DOWNLOAD_TIMEOUT = 60
-UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) TrendPulse/2.0"}
+UA = {"User-Agent":
+      "TrendPulseBot/3.0 (https://github.com/mamdouh30-bot/trendpulse; "
+      "trendpulse-bot@users.noreply.github.com) requests"}
 
 
 def _env() -> dict:
@@ -68,6 +70,34 @@ def _pixabay(query, n, gl, env):
     return pool
 
 
+def _wikimedia_photo(query, n, gl, env):
+    """Wikimedia Commons photo search — keyless and very reliable."""
+    r = requests.get(
+        "https://commons.wikimedia.org/w/api.php",
+        params={"action": "query", "format": "json", "generator": "search",
+                "gsrsearch": f"filetype:bitmap {query}",
+                "gsrnamespace": 6, "gsrlimit": max(n * 2, 12),
+                "prop": "imageinfo", "iiprop": "url|size|mime",
+                "iiurlwidth": 1600},
+        headers=UA, timeout=SEARCH_TIMEOUT)
+    r.raise_for_status()
+    pages = ((r.json().get("query") or {}).get("pages") or {})
+    pool = []
+    for p in pages.values():
+        for ii in (p.get("imageinfo") or []):
+            if ii.get("mime") not in ("image/jpeg", "image/png"):
+                continue
+            if int(ii.get("width") or 0) < 1000:
+                continue
+            url = ii.get("thumburl") or ii.get("url")
+            if url:
+                pool.append({"url": url, "w": int(ii.get("width") or 0)})
+            break
+        if len(pool) >= n:
+            break
+    return pool
+
+
 def _openverse(query, n, gl, env):
     r = requests.get(
         "https://api.openverse.org/v1/images/",
@@ -87,6 +117,7 @@ def _providers(env):
         chain.append(("pexels", _pexels))
     if env.get("PIXABAY_API_KEY"):
         chain.append(("pixabay", _pixabay))
+    chain.append(("wikimedia", _wikimedia_photo))
     chain.append(("openverse", _openverse))
     return chain
 

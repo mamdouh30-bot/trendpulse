@@ -171,6 +171,16 @@ def run_pipeline(args):
             raise RuntimeError("script has no scenes")
         logger.info(f"script: {len(script['scenes'])} scenes")
 
+        # resume guard: if most footage files vanished (fresh runner),
+        # re-run the motion stage instead of crashing in the renderer
+        if state.get("motion_done"):
+            have = sum(1 for s in script["scenes"]
+                       if s.get("motion_file") and Path(s["motion_file"]).exists())
+            if have < max(1, len(script["scenes"]) // 2):
+                logger.warning(f"footage missing on resume ({have}/"
+                               f"{len(script['scenes'])}) — re-running motion")
+                state["motion_done"] = False
+
         # ---------------- voiceover ----------------
         if not state.get("voice_done"):
             voiceover.generate_all(cfg, run, script, logger)
@@ -183,8 +193,8 @@ def run_pipeline(args):
             state["visuals_done"] = True
             save_state(run_dir / "state.json", state)
 
-        # ---------------- motion ----------------
-        if not args.mini and not args.skip_motion and not state.get("motion_done"):
+        # ---------------- motion (real B-roll footage) ----------------
+        if not args.skip_motion and not state.get("motion_done"):
             motion.generate_clips(cfg, run, script, logger)
             state["motion_done"] = True
             save_state(run_dir / "state.json", state)
@@ -244,8 +254,6 @@ def main():
     args = ap.parse_args()
     if args.publish:
         sys.exit(publish_only(args, load_cfg()))
-    if args.mini:
-        args.skip_motion = True
     sys.exit(run_pipeline(args))
 
 

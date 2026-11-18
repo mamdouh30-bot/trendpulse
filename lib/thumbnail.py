@@ -50,6 +50,19 @@ def _gen_base(cfg, run, meta, logger):
         except Exception as e2:  # noqa: BLE001
             logger.warning(f"pollinations thumbnail failed: {str(e2)[:100]}")
         vis = sorted((run["dir"] / "visuals").glob("scene_*.jpg"))
+        # best fallback: a frame grab from the real B-roll footage
+        try:
+            fr = sorted((run["dir"] / "footage" / "cache")
+                        .glob("clip_*.mp4"))
+            if fr:
+                grab = run["dir"] / "thumbnail_base.jpg"
+                run_cmd(["ffmpeg", "-y", "-v", "quiet", "-ss", "1.5",
+                         "-i", str(fr[0]), "-frames:v", "1", str(grab)],
+                        timeout=60, retries=1, logger=logger)
+                if grab.exists() and grab.stat().st_size > 20_000:
+                    return grab
+        except Exception:  # noqa: BLE001
+            pass
         return vis[0] if vis else None
 
 

@@ -61,6 +61,15 @@ visuals:
   ai_fallback: true                # free AI image (Pollinations) if search fails
   tool_cards: true                 # branded product cards for named tools
 
+motion:
+  enabled: true                    # real B-roll footage stage (lib/footage)
+
+footage:
+  per_chapter_clips: 10            # unique moving clips fetched per story
+  per_query_results: 6
+  providers: [pexels, pixabay, wikimedia, nasa]
+  credit: "Stock footage: Pexels / Pixabay / Wikimedia Commons (CC) / NASA (public domain)"
+
 links:
   subscribe_url: "https://www.youtube.com/@aimoneytested?sub_confirmation=1"
   channel_url: "https://www.youtube.com/@aimoneytested"

@@ -160,6 +160,13 @@ def _build_description(cfg, run, meta, topic, facts, logger):
         f"SUBSCRIBE so you never miss a digest: {sub_url}"
     )
     credit = cfg.get("music", {}).get("credit", "")
+    try:
+        fdata = json.loads((run["dir"] / "footage" / "credits.json")
+                           .read_text(encoding="utf-8"))
+        fcred = str(fdata.get("credit") or "").strip()
+    except Exception:  # noqa: BLE001
+        fcred = ""
+    credits_block = "\n".join(c for c in (fcred, credit) if c)
 
     parts = ["\n".join(hook_lines), "\n".join(digest_lines)]
     if link_lines:
@@ -170,8 +177,8 @@ def _build_description(cfg, run, meta, topic, facts, logger):
     if chapters:
         parts.append(chapters)
     parts.append(about)
-    if credit:
-        parts.append(credit)
+    if credits_block:
+        parts.append(credits_block)
     tags = meta.get("hashtags") or ["#AINews", "#AITools", "#AIMoney"]
     parts.append(" ".join(tags))
 

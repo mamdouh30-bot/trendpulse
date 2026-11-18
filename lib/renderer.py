@@ -134,11 +134,14 @@ def make_host_frames(cfg, run, script, logger):
 
 
 # ------------------------------------------------------------ scene renderer
-def _drawtext_filter(scene, dur, fps):
-    if scene.get("_host_frame") or scene.get("chapter") in (0, 99) \
-            or not scene.get("chapter_title"):
+def _drawtext_filter(entry, dur, fps):
+    scene = entry.get("scene") or {}
+    if entry.get("_no_chapter_text") or scene.get("_host_frame") \
+            or scene.get("chapter") in (0, 99) or not scene.get("chapter_title"):
         return None
-    tf = scene["_chapter_tf"]
+    tf = entry.get("_chapter_tf")
+    if not tf:
+        return None
     end = max(2.0, dur - 1.4)
     return (
         f"drawtext=fontfile={FONT_B}:textfile={tf}:fontcolor=white@0.94:"
@@ -190,16 +193,25 @@ def render_scene_clip(scene, entry, cfg, run, logger):
 
     if entry.get("motion_file"):
         mdur = probe_duration(Path(entry["motion_file"]))
-        ratio = dur / mdur
-        stretch = f"setpts={ratio:.5f}*PTS," if ratio > 1.02 else ""
-        vf = (
-            f"scale={cfg['visuals']['width']}:{cfg['visuals']['height']}:"
-            f"force_original_aspect_ratio=increase,"
-            f"crop={cfg['visuals']['width']}:{cfg['visuals']['height']},"
-            f"fps={fps},{stretch}{GRADE},fps={fps}"
-        )
-        cmd = ["ffmpeg", "-y", "-i", entry["file"], "-filter_complex", vf,
-               "-t", f"{dur:.3f}"]
+        Wv = int(cfg["visuals"]["width"])
+        Hv = int(cfg["visuals"]["height"])
+        base = (f"scale={Wv}:{Hv}:force_original_aspect_ratio=increase,"
+                f"crop={Wv}:{Hv},fps={fps},setsar=1")
+        if mdur > dur + 0.05:
+            # clip longer than the scene — start at a varied offset, trim
+            skip = float(entry.get("motion_skip_frac") or 0.0) * \
+                max(0.0, mdur - dur)
+            vf = f"{base},{GRADE}"
+            cmd = ["ffmpeg", "-y", "-ss", f"{skip:.3f}", "-i", entry["file"],
+                   "-filter_complex", vf, "-t", f"{dur:.3f}"]
+        else:
+            # clip shorter than the scene — slow it down, hold the last frame
+            ratio = dur / max(0.5, mdur)
+            deficit = max(0.0, dur - mdur * ratio)
+            pad = f"tpad=stop_mode=clone:stop_duration={deficit + 1.0:.2f},"
+            vf = f"{base},setpts={ratio:.5f}*PTS,{pad}{GRADE}"
+            cmd = ["ffmpeg", "-y", "-i", entry["file"],
+                   "-filter_complex", vf, "-t", f"{dur:.3f}"]
     else:
         W5 = int(cfg["visuals"]["width"] * 1.7)
         H5 = int(cfg["visuals"]["height"] * 1.7)
@@ -213,7 +225,7 @@ def render_scene_clip(scene, entry, cfg, run, logger):
         cmd = ["ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-t",
                f"{dur:.3f}", "-i", entry["file"], "-filter_complex", vf]
 
-    dtf = _drawtext_filter(scene, dur, fps)
+    dtf = _drawtext_filter(entry, dur, fps)
     if dtf:
         vf += "," + dtf
     vf += ",format=yuv420p"
@@ -329,6 +341,13 @@ def render_video(cfg, run, script, logger):
             mf = motion_dir / f"motion_{s['id']:03d}.mp4"
             if mf.exists():
                 s["motion_file"] = str(mf)
+        # dead media references after a resume on a fresh runner
+        if s.get("motion_file") and not Path(s["motion_file"]).exists():
+            s["motion_file"] = None
+        if s.get("motion_file_b") and not Path(s["motion_file_b"]).exists():
+            s["motion_file_b"] = None
+        if s.get("image_file") and not Path(s["image_file"]).exists():
+            s["image_file"] = None
 
         dur = max(3.0, s.get("voice_dur", 0) + pad)
         ch = s.get("chapter", 0)
@@ -358,7 +377,7 @@ def render_video(cfg, run, script, logger):
             entry["is_host"] = True
             last_scene_hosted = True
         else:
-            use_motion = (s.get("motion_file") and dur <= 8.5)
+            use_motion = bool(s.get("motion_file"))
             entry["file"] = s["motion_file"] if use_motion else s["image_file"]
             entry["motion_file"] = s["motion_file"] if use_motion else None
 
@@ -366,13 +385,45 @@ def render_video(cfg, run, script, logger):
         # zoom-in, b-roll cycles through eased pans/zooms
         if not entry.get("file"):
             entry["file"] = s.get("image_file")
+        if not entry.get("file") and not entry.get("motion_file"):
+            # rare: every visual lost on resume — branded placeholder beat
+            entry["file"] = str(intro_img)
+            entry["motion_file"] = None
         if entry.get("is_host"):
             entry["kb"] = "zoom_in"
         else:
             entry["kb"] = KB_CYCLE[kb_i % len(KB_CYCLE)]
             kb_i += 1
 
-        entries.append(entry)
+        # ---- two-shot cut: long scenes get a real edit rhythm ----
+        added_b = False
+        if entry.get("motion_file") and dur >= 9.0 and not entry.get("is_host"):
+            b_file = s.get("motion_file_b")
+            if b_file and Path(b_file).exists():
+                d1 = round(dur * 0.42, 3)
+                part_b = {"key": entry["key"] + "b", "file": b_file,
+                          "motion_file": b_file,
+                          "motion_skip_frac": 0.55 + (s["id"] * 0.37) % 0.3,
+                          "dur": round(dur - d1, 3), "voice_file": None,
+                          "scene": s, "_no_chapter_text": True}
+                entry["dur"] = d1
+                entries.append(entry)
+                entries.append(part_b)
+                added_b = True
+            elif s.get("image_file"):
+                d1 = round(dur * 0.45, 3)
+                part_b = {"key": entry["key"] + "b",
+                          "file": s["image_file"],
+                          "kb": KB_CYCLE[kb_i % len(KB_CYCLE)],
+                          "dur": round(dur - d1, 3), "voice_file": None,
+                          "scene": s, "_no_chapter_text": True}
+                kb_i += 1
+                entry["dur"] = d1
+                entries.append(entry)
+                entries.append(part_b)
+                added_b = True
+        if not added_b:
+            entries.append(entry)
         prev_chapter = ch
 
     # outro brand card; extra host-outro entry only when the last scene
@@ -387,17 +438,19 @@ def render_video(cfg, run, script, logger):
     entries = [e for e in entries
                if not (e.get("is_host") and not Path(e["file"]).exists())]
 
-    # chapter textfiles
+    # chapter textfiles (per entry, so second cuts stay clean)
     for e in entries:
         s = e.get("scene")
-        if s:
-            tf = rd / f"chap_{e['key']}.txt"
-            if s.get("chapter_title") and s.get("chapter") not in (0, 99):
-                label = (s.get("chapter_label")
-                         or f"CHAPTER {s['chapter']}")
-                tf.write_text(label, encoding="utf-8")
-            else:
-                tf.write_text("", encoding="utf-8")
+        tf = rd / f"chap_{e['key']}.txt"
+        if s and s.get("chapter_title") and s.get("chapter") not in (0, 99) \
+                and not e.get("_no_chapter_text"):
+            label = (s.get("chapter_label")
+                     or f"CHAPTER {s['chapter']}")
+            tf.write_text(label, encoding="utf-8")
+        else:
+            tf.write_text("", encoding="utf-8")
+        e["_chapter_tf"] = str(tf)
+        if s and not s.get("_chapter_tf"):
             s["_chapter_tf"] = str(tf)
 
     # timeline with xfade overlap compression

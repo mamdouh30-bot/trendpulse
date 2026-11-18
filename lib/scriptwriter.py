@@ -42,15 +42,18 @@ STORY_RULES = """STORY RULES:
 - The story's last line pivots with energy into the next story.
 - Total flow reads like one continuous host monologue, not bullet points."""
 
-VISUAL_RULES = """VISUAL QUERY RULES (used to find REAL photographs for the video):
-- visual_query = a concrete, searchable description of one shot, 6-12 words.
-- Think like a tech-news cinematographer: product close-ups, glowing server
-  racks, robot arms, phone screens with app interfaces, data centers, city
-  billboards, labs, keyboards, crowd at a keynote. Examples: 'data center
-  glowing server racks blue light', 'hand holding phone AI app interface',
-  'robot arm assembly line modern factory'.
-- No abstract concepts ('innovation', 'the future'), no text-on-screen requests.
-- Alternate wide establishing shots with intimate close-ups."""
+VISUAL_RULES = """VISUAL QUERY RULES (used to find REAL moving stock FOOTAGE clips):
+- visual_query = one concrete, searchable stock-VIDEO shot, 4-9 words.
+- Think like a tech-news cinematographer choosing B-ROLL THAT MOVES: trading
+  screens with live charts, robot arms working on a line, data-center aisles
+  with blinking lights, city traffic timelapse, hands typing on a laptop,
+  engineers walking through a lab, keynote crowd, drone over skyscrapers.
+  Examples: 'robot arm assembly line moving', 'stock market screens rising',
+  'data center server aisle lights', 'city traffic timelapse night',
+  'hands typing laptop closeup', 'engineers laboratory walking'.
+- Prefer MOTION verbs (moving, working, rising, walking, flying, timelapse).
+- No named people or brands, no abstract concepts ('innovation'), no text-
+  on-screen requests. Alternate wide establishing shots with close-ups."""
 
 OUTRO_RULES = """OUTRO RULES (2 scenes):
 - Scene 1: rapid-fire one-line recap of every story, in order, with the story's

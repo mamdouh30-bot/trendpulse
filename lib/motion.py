@@ -1,23 +1,12 @@
-"""Motion clips (portable edition).
+"""Motion stage: real B-roll footage acquisition (wraps lib.footage).
 
-AI video generation needs a paid/keyed provider which free hosts do not
-have by default, so on this edition key scenes gracefully use the cinematic
-Ken Burns stills from the renderer instead. The module keeps the same
-interface so a provider can be added later via TRENDPULSE_MOTION_PROVIDER.
+Every scene gets a real moving video clip from free stock providers
+(Pexels / Pixabay with a free key, Wikimedia Commons + NASA without any
+key). The renderer cuts, slows and grades the clips; still photos remain
+the graceful fallback for scenes whose queries returned no footage.
 """
-from pathlib import Path
+from . import footage
 
 
 def generate_clips(cfg, run, script, logger):
-    if not cfg["motion"]["enabled"]:
-        logger.info("motion disabled, skipping")
-        return True
-    import os
-    provider = os.environ.get("TRENDPULSE_MOTION_PROVIDER", "").strip()
-    if not provider:
-        logger.info("motion: no video provider configured on this host — "
-                    "key scenes will use cinematic Ken Burns instead")
-        return True
-    logger.warning(f"motion provider '{provider}' is not supported by the "
-                   f"portable edition — using Ken Burns fallback")
-    return True
+    return footage.assign_footage(cfg, run, script, logger)
