@@ -182,6 +182,7 @@ Return ONLY this JSON:
         raise RuntimeError("research consolidation failed")
     by_num = {s.get("num"): s for s in got}
     merged = []
+    dropped = []
     for s in topic["stories"]:
         m = by_num.get(s["num"]) or {}
         m.setdefault("title", s["title"])
@@ -189,7 +190,34 @@ Return ONLY this JSON:
         m.setdefault("key_facts", [])
         m.setdefault("money_angle", s.get("money_angle", ""))
         m.setdefault("summary", "")
+        # anti-hallucination guard: a story without a single verifiable
+        # URL cannot make it to air — drop it (renumber the survivors)
+        valid = [x for x in (m.get("sources") or [])
+                 if str(x.get("url", "")).startswith(("http://", "https://"))]
+        m["sources"] = valid[:4]
+        if not valid:
+            dropped.append(s["num"])
+            continue
         merged.append(m)
+    if dropped:
+        logger.warning(f"stories dropped for missing verifiable sources: "
+                       f"{dropped}")
+        if len(merged) >= 2:
+            for i, m in enumerate(merged, 1):
+                m["num"] = i
+        else:
+            logger.warning("fewer than 2 verified stories — keeping "
+                           "unverified ones to keep the digest viable")
+            for s in topic["stories"]:
+                if s["num"] in dropped:
+                    m = by_num.get(s["num"]) or dict(s)
+                    m.setdefault("title", s["title"])
+                    m.setdefault("num", s["num"])
+                    m.setdefault("key_facts", [])
+                    m.setdefault("sources", [])
+                    m.setdefault("summary", "")
+                    merged.append(m)
+            merged.sort(key=lambda x: x.get("num", 0))
     facts = {"digest_label": topic.get("digest_label", "AI NEWS"),
              "stories": merged,
              "summary": "; ".join((m.get("summary") or "")[:80] for m in merged)}

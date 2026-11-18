@@ -130,10 +130,15 @@ def _edge_tts(text, out_wav: Path, speed: float, logger=None):
         com = edge_tts.Communicate(text, voice, rate=rate)
         await com.save(str(mp3))
 
+    async def _synth_guarded():
+        # hard timeout: concurrent websocket calls can hang forever on
+        # rate-limited shared IPs (observed in production sandboxes)
+        await asyncio.wait_for(_synth(), timeout=120)
+
     last_err = None
     for attempt in range(1, 4):
         try:
-            asyncio.run(_synth())
+            asyncio.run(_synth_guarded())
             if mp3.exists() and mp3.stat().st_size > 5000:
                 _mp3_to_wav(mp3, out_wav, logger)
                 mp3.unlink(missing_ok=True)
@@ -225,7 +230,8 @@ def generate_all(cfg, run, script, logger):
         logger.info("voice provider: edge-tts (config)")
 
     ok, failed = 0, []
-    workers = 2 if use_el else 4
+    workers = 2 if use_el else 2   # low concurrency: edge-tts websockets hang
+                                    # when slammed in parallel on shared IPs
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futs = {}
         for s in scenes:

@@ -1,0 +1,69 @@
+{
+  "title": "AI News: 2 Stories That Actually Matter Today",
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Cold Open"
+    },
+    {
+      "num": 1,
+      "title": "The Model That shook the Labs"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_label": "Cold Open",
+      "chapter_title": "",
+      "narration": "AI just moved faster than anyone expected — and most people missed it. Two stories today, and one of them can put money in your pocket this week.",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_label": "Cold Open",
+      "chapter_title": "",
+      "narration": "A new open-source model is beating tools you pay for. And the second story is the one nobody is pricing in yet.",
+      "visual_query": "hand holding phone AI app interface closeup",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 3,
+      "chapter": 1,
+      "chapter_label": "STORY 1",
+      "chapter_title": "The Model That shook the Labs",
+      "narration": "Story one. The new model runs on hardware you already own, and in early benchmarks it beats names that raised billions.",
+      "visual_query": "robot arm modern lab technology closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "chapter_label": "STORY 1",
+      "chapter_title": "The Model That shook the Labs",
+      "narration": "The play is simple: try it free today, ship a small product with it this weekend, and you are ahead of ninety percent of builders.",
+      "visual_query": "developer coding multiple monitors dark room",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 5,
+      "chapter": 99,
+      "chapter_label": "Outro",
+      "chapter_title": "",
+      "narration": "That's the digest. Subscribe — the next one lands in twelve hours. Which tool are you trying first? Say it in the comments.",
+      "visual_query": "city billboards neon advertisements night",
+      "mood": "bold",
+      "is_key_scene": false
+    }
+  ]
+}

@@ -147,6 +147,37 @@ def _drawtext_filter(scene, dur, fps):
     )
 
 
+def _smoothstep(p):
+    """Smoothstep easing expression for ffmpeg (cubic ease in/out)."""
+    return f"({p}*{p}*(3-2*{p}))"
+
+
+KB_CYCLE = ["zoom_in", "pan_right", "zoom_out", "pan_left", "pan_up"]
+
+
+def _kb_filter(variant, dur, fps):
+    """Ken Burns variants: eased zoom in/out + directional pans (eased).
+
+    All variants keep max zoom 1.12 so a 1.7x upscaled source stays
+    pixel-safe — and the eased motion reads far more cinematic than a
+    constant-rate zoom."""
+    tf = max(1.0, dur * fps)
+    prog = f"(on/{tf:.2f})"
+    ease = _smoothstep(prog)
+    cx = "iw/2-(iw/zoom/2)"
+    cy = "ih/2-(ih/zoom/2)"
+    drift = 0.085
+    if variant == "pan_right":
+        return f"z='1.12':x='{cx}+iw/zoom*{drift}*{ease}':y='{cy}'"
+    if variant == "pan_left":
+        return f"z='1.12':x='{cx}-iw/zoom*{drift}*{ease}':y='{cy}'"
+    if variant == "pan_up":
+        return f"z='1.12':x='{cx}':y='{cy}-ih/zoom*0.06*{ease}'"
+    if variant == "zoom_out":
+        return f"z='max(1.02+0.10*{ease},1.0)':x='{cx}':y='{cy}'"
+    return f"z='min(1.10-0.10*{ease},1.11)':x='{cx}':y='{cy}'"
+
+
 def render_scene_clip(scene, entry, cfg, run, logger):
     """Render one scene entry to an intermediate mp4 (no audio)."""
     fps = int(cfg["visuals"].get("fps", 30))
@@ -156,8 +187,6 @@ def render_scene_clip(scene, entry, cfg, run, logger):
     if dest.exists() and dest.stat().st_size > 50_000:
         return dest
     dur = entry["dur"]
-    zrate = 0.10 / max(1.0, dur * fps)
-    zoom_in = (sum(ord(c) for c in entry["key"]) % 2 == 0)
 
     if entry.get("motion_file"):
         mdur = probe_duration(Path(entry["motion_file"]))
@@ -172,13 +201,12 @@ def render_scene_clip(scene, entry, cfg, run, logger):
         cmd = ["ffmpeg", "-y", "-i", entry["file"], "-filter_complex", vf,
                "-t", f"{dur:.3f}"]
     else:
-        W5 = cfg["visuals"]["width"] * 3
-        H5 = cfg["visuals"]["height"] * 3
-        z = (f"min(1+{zrate:.7f}*on,1.10)" if zoom_in
-             else f"max(1.10-{zrate:.7f}*on,1.0)")
+        W5 = int(cfg["visuals"]["width"] * 1.7)
+        H5 = int(cfg["visuals"]["height"] * 1.7)
+        kb = _kb_filter(entry.get("kb", "zoom_in"), dur, fps)
         vf = (
             f"scale={W5}:{H5},"
-            f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+            f"zoompan={kb}:"
             f"d=1:s={cfg['visuals']['width']}x{cfg['visuals']['height']}:"
             f"fps={fps},{GRADE}"
         )
@@ -284,6 +312,7 @@ def render_video(cfg, run, script, logger):
     vis_dir = run["dir"] / "visuals"
     motion_dir = run["dir"] / "motion"
     prev_chapter = 0
+    kb_i = 0
     last_scene_hosted = False
     for s in script["scenes"]:
         # self-heal asset references when resuming from checkpoints
@@ -332,6 +361,16 @@ def render_video(cfg, run, script, logger):
             use_motion = (s.get("motion_file") and dur <= 8.5)
             entry["file"] = s["motion_file"] if use_motion else s["image_file"]
             entry["motion_file"] = s["motion_file"] if use_motion else None
+
+        # cinematic motion assignment: host frames get a dignified slow
+        # zoom-in, b-roll cycles through eased pans/zooms
+        if not entry.get("file"):
+            entry["file"] = s.get("image_file")
+        if entry.get("is_host"):
+            entry["kb"] = "zoom_in"
+        else:
+            entry["kb"] = KB_CYCLE[kb_i % len(KB_CYCLE)]
+            kb_i += 1
 
         entries.append(entry)
         prev_chapter = ch
