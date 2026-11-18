@@ -1,14 +1,30 @@
-"""Procedural cinematic audio: dark score bed + whoosh/boom/riser SFX.
+"""Cinematic audio engine: real bundled music beds + procedural fallback,
+whoosh/boom/riser SFX, sidechain-style voice ducking.
 
-Everything is synthesized with numpy (royalty-free by construction) and aligned
-to the exact scene timeline of the cut.
+Bundled tracks (assets/music) are CC-BY (Kevin MacLeod) — credited in the
+description. The procedural fallback is synthesized with numpy
+(royalty-free by construction). Both are aligned to the exact scene
+timeline of the cut.
 """
+import subprocess
 import wave
 from pathlib import Path
 
 import numpy as np
 
 SR = 44100
+
+
+def load_audio(path, sr=SR):
+    """Decode any audio file to float32 stereo numpy at target sample rate."""
+    proc = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(path), "-f", "f32le",
+         "-acodec", "pcm_f32le", "-ac", "2", "-ar", str(sr), "pipe:1"],
+        capture_output=True, timeout=300)
+    if proc.returncode != 0 or not proc.stdout:
+        raise RuntimeError(f"audio decode failed: {path}")
+    x = np.frombuffer(proc.stdout, dtype=np.float32).reshape(-1, 2)
+    return np.clip(x, -1.0, 1.0)
 
 
 def _write_wav(dest: Path, stereo: np.ndarray):
@@ -60,7 +76,34 @@ def _lowpass_fast(x, alpha):
         return np.fft.irfft(X * H, n)
 
 
-def build_music(total, timeline, dest, base_gain=0.16, logger=None):
+def build_music(total, timeline, dest, base_gain=0.16, logger=None,
+                track=None):
+    n = int(total * SR)
+    env = _env_points(total, timeline)
+
+    if track and Path(track).exists():
+        # real music bed: loop the bundled track, ride the intensity envelope
+        bed = load_audio(track)
+        reps = int(np.ceil(n / len(bed)))
+        bed = np.tile(bed, (reps, 1))[:n]
+        # fade the loop seam in/out by crossfading 1.5 s of the tail
+        fade = min(int(1.5 * SR), len(bed) // 4)
+        ramp = np.linspace(0, 1, fade)[:, None]
+        bed[-fade:] = bed[-fade:] * ramp + bed[:fade][-fade:] * (1 - ramp)
+        bed = bed[:n]
+        peak = np.max(np.abs(bed)) + 1e-9
+        bed *= 0.9 / peak
+        stereo = bed * (env[:, None] * base_gain)
+        _write_wav(dest, stereo)
+        if logger:
+            logger.info(f"music bed (bundled: {Path(track).name}): "
+                        f"{total/60:.1f} min -> {dest.name}")
+        return
+
+    _build_music_procedural(total, timeline, dest, base_gain, logger)
+
+
+def _build_music_procedural(total, timeline, dest, base_gain=0.16, logger=None):
     n = int(total * SR)
     t = np.arange(n) / SR
     env = _env_points(total, timeline)
@@ -102,6 +145,24 @@ def build_music(total, timeline, dest, base_gain=0.16, logger=None):
     _write_wav(dest, stereo * base_gain)
     if logger:
         logger.info(f"music bed: {total/60:.1f} min -> {dest.name}")
+
+
+def apply_duck(music, voice, max_db=9.0, window_s=0.30):
+    """Sidechain-style ducking: lower the music while the host is speaking.
+
+    voice: mono float array; music: (n,2) stereo float array. Both same
+    sample rate and length (music may be longer — trimmed here).
+    """
+    n = min(len(music), len(voice))
+    music = music[:n]
+    v = np.abs(voice[:n])
+    w = max(1, int(window_s * SR))
+    kernel = np.ones(w) / w
+    env = np.convolve(v, kernel, mode="same")
+    env = env / (np.percentile(env, 97) + 1e-9)
+    env = np.clip(env, 0.0, 1.0) ** 0.7          # smooth attack feel
+    gain = 10 ** (-max_db * env / 20.0)          # up to -max_db while talking
+    return music * gain[:, None], voice[:n]
 
 
 def _whoosh(dur=0.55, center=750, width=900, amp=1.0):

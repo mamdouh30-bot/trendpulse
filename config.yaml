@@ -1,7 +1,7 @@
 # ============================================================
 #  AI Money — Autonomous AI News Digest Agency
-#  Format: Matt-Wolfe-style AI news digest, outproduced:
-#  every 12h, money angle on every story, tight 14-min cut.
+#  Format: broadcast-style digest with fixed host persona
+#  ("Adam Sterling"), real linked sources, twice a day.
 #  Portable configuration (GitHub Actions / Docker / VPS)
 # ============================================================
 
@@ -10,10 +10,24 @@ channel:
   tagline: "The AI stories that matter — and how to profit from them."
   badge_text: AI MONEY            # shown on thumbnails + intro cards
 
+persona:
+  name: Adam Sterling
+  role: HOST
+  shots_dir: assets/persona       # committed studio shots (z-ai generated)
+  intro_shot: host_intro.png      # desk wide shot -> episode intro
+  bridge_shots:                   # rotating shots at every story start
+    - host_talk_a.png
+    - host_talk_b.png
+    - host_point_r.png
+    - host_desk.png
+  cutaway_shot: host_closeup.png  # mid-story presence cutaway
+  outro_shot: host_outro.png      # subscribe outro
+  thumb_shot: host_thumb.png      # square portrait for thumbnails
+
 content:
   niche: ai_news_tools_money      # AI news, new tools, money opportunities
   language: en                    # videos are produced in English
-  format: digest                  # digest = N stories per video (Matt Wolfe style)
+  format: digest                  # digest = N stories per video
   target_minutes: 14.0            # final video target duration
   word_budget: 2200               # narration words (~150 wpm host voice)
   chapters: 4                     # stories per digest video
@@ -24,6 +38,7 @@ content:
   max_scenes: 44
   scene_pad: 0.8                  # seconds of breathing room after narration
   xfade: 0.6                      # crossfade seconds between scenes
+  host_cutaway_every: 7           # one host cutaway every N scenes
 
 voice:
   provider: auto                  # auto | elevenlabs | edge
@@ -40,21 +55,58 @@ voice:
 visuals:
   width: 1920
   height: 1080
-  fps: 24
+  fps: 30                         # broadcast-smooth motion
   search_count: 8                  # images fetched per visual query
   per_chapter_queries: 3           # real-photo searches per story
   ai_fallback: true                # free AI image (Pollinations) if search fails
+  tool_cards: true                 # branded product cards for named tools
 
-motion:
-  enabled: true                    # animated AI clips — auto-skipped on hosts
-  max_clips: 7                     #   without a video provider (Ken Burns used)
-  duration: 5
+links:
+  subscribe_url: "https://www.youtube.com/@aimoneytested?sub_confirmation=1"
+  channel_url: "https://www.youtube.com/@aimoneytested"
+  # official destinations auto-added to the description when the story
+  # mentions the tool (case-insensitive word match)
+  tools:
+    chatgpt:      {url: "https://chatgpt.com",           label: "ChatGPT"}
+    openai:       {url: "https://openai.com",            label: "OpenAI"}
+    sora:         {url: "https://sora.chatgpt.com",      label: "Sora"}
+    gemini:       {url: "https://gemini.google.com",     label: "Google Gemini"}
+    notebooklm:   {url: "https://notebooklm.google.com", label: "NotebookLM"}
+    grok:         {url: "https://grok.com",              label: "Grok"}
+    claude:       {url: "https://claude.ai",             label: "Claude"}
+    anthropic:    {url: "https://www.anthropic.com",     label: "Anthropic"}
+    deepseek:     {url: "https://chat.deepseek.com",     label: "DeepSeek"}
+    llama:        {url: "https://www.llama.com",         label: "Llama"}
+    meta:         {url: "https://ai.meta.com",           label: "Meta AI"}
+    midjourney:   {url: "https://www.midjourney.com",    label: "Midjourney"}
+    runway:       {url: "https://runwayml.com",          label: "Runway"}
+    elevenlabs:   {url: "https://elevenlabs.io",         label: "ElevenLabs"}
+    suno:         {url: "https://suno.com",              label: "Suno"}
+    udio:         {url: "https://www.udio.com",          label: "Udio"}
+    heygen:       {url: "https://www.heygen.com",        label: "HeyGen"}
+    synthesia:    {url: "https://www.synthesia.io",      label: "Synthesia"}
+    capcut:       {url: "https://www.capcut.com",        label: "CapCut"}
+    canva:        {url: "https://www.canva.com",         label: "Canva"}
+    notion:       {url: "https://www.notion.com",        label: "Notion"}
+    perplexity:   {url: "https://www.perplexity.ai",     label: "Perplexity"}
+    copilot:      {url: "https://github.com/features/copilot", label: "GitHub Copilot"}
+    huggingface:  {url: "https://huggingface.co",        label: "Hugging Face"}
+    nvidia:       {url: "https://www.nvidia.com",        label: "NVIDIA"}
+    groq:         {url: "https://groq.com",              label: "Groq"}
+    mistral:      {url: "https://mistral.ai",            label: "Mistral"}
+    cohere:       {url: "https://cohere.com",            label: "Cohere"}
+    stability:    {url: "https://stability.ai",          label: "Stability AI"}
+    firefly:      {url: "https://firefly.adobe.com",     label: "Adobe Firefly"}
+    veo:          {url: "https://labs.google/flow",      label: "Google Veo"}
 
 music:
-  enabled: true
-  base_gain: 0.16                  # music volume under narration
-  sfx_gain: 0.30                   # whoosh/boom volume
-  chapter_boom: true               # deep boom at every story start
+  provider: bundled               # bundled = real CC-BY tracks in assets/music
+  track: assets/music/electrodoodle.mp3
+  credit: 'Music: "Electrodoodle" by Kevin MacLeod (incompetech.com) — CC BY 4.0'
+  base_gain: 0.13                 # music volume under narration (pre-duck)
+  duck_db: 9.0                    # sidechain-style ducking depth
+  sfx_gain: 0.30                  # whoosh/boom volume
+  chapter_boom: true              # deep boom at every story start
 
 upload:
   enabled: true                    # auto-upload when credentials exist in .env
