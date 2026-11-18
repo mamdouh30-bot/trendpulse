@@ -85,7 +85,6 @@ def make_intro_card(run, cfg, title, logger):
     d = ImageDraw.Draw(img)
     ch_name = cfg["channel"]["badge_text"]
     f_small = ImageFont.truetype(FONT_B, 44)
-    f_title = ImageFont.truetype(FONT_B, 104)
     f_sub = ImageFont.truetype(FONT_R, 38)
 
     # channel badge
@@ -93,15 +92,23 @@ def make_intro_card(run, cfg, title, logger):
     d.rectangle(((W - tw) / 2 - 26, H * 0.42 - 20, (W + tw) / 2 + 26, H * 0.42 + 62),
                 fill=(214, 34, 44))
     d.text(((W - tw) / 2, H * 0.42), ch_name, font=f_small, fill="white")
-    # title (2 lines)
-    lines = _wrap(title.upper(), 34)
+    # title (2 lines, auto-shrunk so it never overflows)
+    lines = _wrap(title.upper(), 30)
+    size = 104
+    while size > 58:
+        f_t = ImageFont.truetype(FONT_B, size)
+        widest = max(d.textlength(ln, font=f_t) for ln in lines) if lines else 0
+        if widest <= W - 120:
+            break
+        size -= 6
+    f_title = ImageFont.truetype(FONT_B, size)
     y = H * 0.52
     for ln in lines:
         tw = d.textlength(ln, font=f_title)
         d.text(((W - tw) / 2, y), ln, font=f_title, fill=(240, 240, 244))
-        y += 118
+        y += size + 14
     # subtitle
-    sub = "A " + ch_name + " DOCUMENTARY"
+    sub = "THE AI NEWS DIGEST — NEW EVERY 12 HOURS"
     tw = d.textlength(sub, font=f_sub)
     d.text(((W - tw) / 2, y + 30), sub, font=f_sub, fill=(170, 172, 186))
 
@@ -127,7 +134,7 @@ def make_outro_card(run, cfg, logger):
     d.text(((W - tw) / 2, H * 0.50), name.upper(), font=f_big, fill=(240, 240, 244))
     tw = d.textlength(tag, font=f_tag)
     d.text(((W - tw) / 2, H * 0.50 + 150), tag, font=f_tag, fill=(178, 180, 194))
-    cta = "SUBSCRIBE  —  NEW INVESTIGATIONS EVERY 12 HOURS"
+    cta = "SUBSCRIBE  —  NEW AI DIGEST EVERY 12 HOURS"
     tw = d.textlength(cta, font=f_cta)
     d.text(((W - tw) / 2, H * 0.78), cta, font=f_cta, fill=(214, 34, 44))
     out = run["dir"] / "render"
@@ -293,7 +300,8 @@ def render_video(cfg, run, script, logger):
         if s:
             tf = rd / f"chap_{e['key']}.txt"
             if s.get("chapter_title") and s.get("chapter") not in (0, 99):
-                label = f"CHAPTER {s['chapter']}" + \
+                label = (s.get("chapter_label")
+                         or f"CHAPTER {s['chapter']}") + \
                         (f" — {s['chapter_title'].upper()}" if s.get("chapter_title") else "")
                 tf.write_text(label, encoding="utf-8")
             else:

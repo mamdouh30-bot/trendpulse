@@ -1,154 +1,191 @@
-"""Two-phase cinematic scriptwriter: outline -> per-section scenes (JSON)."""
+"""AI Money digest scriptwriter: hook -> per-story scenes -> outro (JSON).
+
+No outline phase: the digest batch IS the structure, which saves an LLM
+round-trip and keeps every episode in the Matt Wolfe format.
+"""
 from . import llm
-from .utils import save_state
+from .utils import load_state, save_state
 
 WRITER_SYSTEM = (
-    "You are an elite Netflix-level documentary scriptwriter writing narration for "
-    "a cinematic YouTube channel. Your narration is spoken aloud by a deep male "
-    "voice. It is vivid, tense, factual and paced. Short punchy sentences. Present "
-    "the story in media res, build escalating tension, land reveals on chapter "
-    "climaxes, never insult the viewer with fluff. English only. "
-    "You always answer with raw JSON only."
+    "You are the host voice of AI Money — an energetic, sharp AI news commentator "
+    "in the spirit of top tech YouTube hosts like Matt Wolfe. You talk directly to "
+    "the viewer ('you'), you cut the fluff, and you always land the practical "
+    "takeaway: why this matters and how to profit from it. Conversational, "
+    "confident, opinionated but factual. Concrete numbers, product names and dates "
+    "from the research — never invent facts. Short punchy sentences that sound "
+    "great spoken aloud. English only. Raw JSON only."
 )
 
 HOOK_INSTRUCTION = """HOOK RULES (this decides retention):
-- Scene 1 is a cold open in the middle of the most gripping moment: one shocking
-  line, no setup, max 25 words.
-- Scene 2-3 raise the stakes and tease the revelation, never revealing it.
-- Never start with greetings, channel names, or 'today we will talk about'."""
+- Scene 1 is a cold open: today's AI news is big and you are sifting the noise —
+  one energetic line that promises the N stories that actually matter, no
+  greetings, no 'welcome back', max 25 words.
+- Scene 2-3 tease the biggest story of the batch without fully revealing it.
+- Sound like a host, not a documentary: fast, confident, direct."""
 
-NARRATION_RULES = """NARRATION RULES:
-- Each scene's narration: 1-3 sentences, max 300 characters (spoken aloud).
-- Total flow must read like one continuous film, not bullet points.
-- Use concrete numbers, dates and names from the research. Never invent facts.
-- End each chapter on a cliffhanger line that pulls into the next."""
+STORY_RULES = """STORY RULES:
+- Each scene's narration: 1-3 sentences, max 420 characters (spoken aloud).
+- Scene 1 of the story opens with the story's hook — the single most gripping
+  verified fact, no throat-clearing.
+- Middle scenes deliver the verified facts with concrete numbers, names and
+  dates. Explain what the thing IS before why it matters.
+- The final 1-2 scenes of every story land the MONEY ANGLE: the specific play
+  the viewer can make today — a free tool to try, a strategy, an opportunity.
+  Concrete and actionable, never generic advice like 'stay informed'.
+- The story's last line pivots with energy into the next story.
+- Total flow reads like one continuous host monologue, not bullet points."""
 
-VISUAL_RULES = """VISUAL QUERY RULES (used to find REAL photographs for the film):
+VISUAL_RULES = """VISUAL QUERY RULES (used to find REAL photographs for the video):
 - visual_query = a concrete, searchable description of one shot, 6-12 words.
-- Think like a cinematographer: places, rooms, objects, silhouettes, documents,
-  machines, weather. Examples: 'newsroom at night empty desks monitors',
-  'cargo ship ocean storm aerial view', 'old filing cabinet closeup papers'.
-- No abstract concepts ('justice', 'fear'), no text-on-screen requests.
+- Think like a tech-news cinematographer: product close-ups, glowing server
+  racks, robot arms, phone screens with app interfaces, data centers, city
+  billboards, labs, keyboards, crowd at a keynote. Examples: 'data center
+  glowing server racks blue light', 'hand holding phone AI app interface',
+  'robot arm assembly line modern factory'.
+- No abstract concepts ('innovation', 'the future'), no text-on-screen requests.
 - Alternate wide establishing shots with intimate close-ups."""
 
+OUTRO_RULES = """OUTRO RULES (2 scenes):
+- Scene 1: rapid-fire one-line recap of every story, in order, with the story's
+  key takeaway (one short line per story, separated naturally).
+- Scene 2: one direct line inviting the viewer to subscribe for the next digest
+  (every 12 hours) + one specific question about today's stories to drive
+  comments. No begging."""
 
-def _fmt_facts(facts):
+
+def _fmt_stories(facts):
     import json
-    return json.dumps({
-        "summary": facts.get("summary", ""),
-        "timeline": facts.get("timeline", [])[:14],
-        "key_facts": facts.get("key_facts", [])[:20],
-        "dramatic_beats": facts.get("dramatic_beats", []),
-        "open_questions": facts.get("open_questions", []),
-    }, ensure_ascii=False, indent=1)
+    stories = facts.get("stories") or []
+    slim = []
+    for s in stories:
+        slim.append({
+            "num": s.get("num"),
+            "title": s.get("title", ""),
+            "summary": s.get("summary", ""),
+            "key_facts": (s.get("key_facts") or [])[:12],
+            "money_angle": s.get("money_angle", ""),
+        })
+    return json.dumps(slim, ensure_ascii=False, indent=1)
 
 
 def write_script(cfg, run, topic, facts, logger):
     """Returns script dict: {title, scenes:[...], chapters:[...]}."""
-    n_ch = int(cfg["content"]["chapters"])
-    hook_scenes = 3
-    outro_scenes = 2
-    total_scenes = int(cfg["content"]["max_scenes"])
-    ch_scenes = max(4, (total_scenes - hook_scenes - outro_scenes) // n_ch)
+    stories = (facts.get("stories") or []) or topic.get("stories", [])
+    if not stories:
+        raise RuntimeError("digest has no stories to script")
 
-    words_per_ch = int(cfg["content"]["word_budget"] * 0.17)
-    outline_prompt = f"""You are scripting a {cfg['content']['target_minutes']}-minute
-cinematic documentary for YouTube.
-
-TOPIC: {topic.get('title')}
-ANGLE: {topic.get('angle', '')}
-VISUAL WORLD: {topic.get('visual_world', '')}
-
-RESEARCH CORE:
-{_fmt_facts(facts)}
-
-Design the film spine: {n_ch} chapters that escalate, from the setup to the deepest
-reveal, ordered for maximum tension. Chapters must follow the dramatic beats.
-Return ONLY this JSON:
-{{
-  "title_options": ["3 click-worthy documentary titles, max 60 chars, no clickbait lies"],
-  "chapters": [
-    {{"num": 1, "title": "chapter title", "beat": "what happens + the tension line",
-      "scene_count": {ch_scenes}}}
-  ]
-}}"""
-    outline = llm.chat_json(outline_prompt, system=WRITER_SYSTEM, logger=logger)
-    chapters = outline.get("chapters") or []
-    if not chapters:
-        raise RuntimeError("outline produced no chapters")
-    title = (outline.get("title_options") or [topic.get("title", "Untitled")])[0]
+    hook_scenes = int(cfg["content"].get("hook_scenes", 3))
+    outro_scenes = int(cfg["content"].get("outro_scenes", 2))
+    sps = int(cfg["content"].get("scenes_per_story", 9))
+    n_stories = len(stories)
+    max_scenes = int(cfg["content"]["max_scenes"])
+    total_target = hook_scenes + n_stories * sps + outro_scenes
+    if total_target > max_scenes:
+        sps = max(5, (max_scenes - hook_scenes - outro_scenes) // n_stories)
+    body_words = int(cfg["content"]["word_budget"] * 0.82)
+    words_per_story = max(260, body_words // n_stories)
+    digest_label = topic.get("digest_label", facts.get("digest_label", "AI NEWS"))
+    title = topic.get("title", "AI News: The Stories That Matter Today")
 
     scenes = []
-    chapters_out = []
+    chapters_out = [{"num": 0, "title": "Cold Open"}]
 
-    def gen_section(section_label, scene_count, word_budget, beat, is_hook=False,
-                    is_outro=False, tail=""):
-        """Write a section in small batches (3 scenes per LLM call) so each
-        answer fits the free-tier output token budget."""
-        all_got = []
-        remaining = scene_count
-        while remaining > 0:
-            n = min(3, remaining)
-            prompt = f"""Film: {title}
-Topic: {topic.get('title')} — Angle: {topic.get('angle','')}
-Research core:
-{_fmt_facts(facts)}
+    # per-section cache: resume-safe (each finished section is saved, so a
+    # rate-limit crash never re-spends quota on already-written sections)
+    sec_path = run["dir"] / "script" / "sections.json"
+    sec_cache = load_state(sec_path, default={})
+
+    def gen_section(section_label, scene_count, word_budget, rules_extra,
+                    is_hook=False, final_story=False):
+        ck = f"{section_label}|{scene_count}"
+        if ck in sec_cache:
+            got = sec_cache[ck]
+            logger.info(f"section '{section_label}: {len(got)} scenes (cached)")
+            return got
+        per_scene = max(30, word_budget // max(1, scene_count))
+        final_note = ("\nThis is the FINAL story: end it by leading into the "
+                      "wrap-up, do not tease another story." if final_story else "")
+        prompt = f"""Episode: {title}
+Digest type: {digest_label} — {n_stories} stories
+
+RESEARCH CORE (verified facts):
+{_fmt_stories(facts)}
 
 SECTION: {section_label}
 {HOOK_INSTRUCTION if is_hook else ''}
-{'OUTRO RULES: Scene A resolves the story in one powerful line, scene B invites the viewer to subscribe for more deep investigations, no begging, one sentence each.' if is_outro else ''}
-{NARRATION_RULES}
+{rules_extra}
 {VISUAL_RULES}
-Chapter plan: {beat}
-{f"Already written scenes end with: {' '.join(str(all_got[-1].get('narration','')).split()[-12:]) if all_got else '(nothing yet)'}" if all_got else ''}
-Write exactly {n} scene(s) now, about {word_budget * n // max(scene_count, 1)} words total for this batch.
-{"Next chapter begins with: " + tail if (tail and remaining <= n) else ""}
+Write exactly {scene_count} scenes, about {word_budget} words total for this
+section. IMPORTANT: aim for ~{per_scene} words PER SCENE — that is 3 to 4 full
+spoken sentences each, up to the 420-character limit. A scene with one short
+sentence is a defect; pack it with concrete facts, numbers and consequences
+from the research core.{final_note}
 
 Return ONLY this JSON:
 {{"scenes": [
-  {{"narration": "...", "visual_query": "...", "mood": "tense|somber|curious|urgent|reflective",
-    "is_key_scene": true|false}}
+  {{"narration": "...", "visual_query": "...",
+    "mood": "hype|urgent|practical|curious|bold", "is_key_scene": true|false}}
 ]}}"""
-            data = llm.chat_json(prompt, system=WRITER_SYSTEM, logger=logger)
-            got = data.get("scenes") or []
-            if not got:
-                raise RuntimeError(f"section '{section_label}' produced no scenes")
-            all_got += got
-            remaining -= len(got)
-        return all_got
+        data = llm.chat_json(prompt, system=WRITER_SYSTEM, logger=logger)
+        got = data.get("scenes") or []
+        if not got:
+            raise RuntimeError(f"section '{section_label}' produced no scenes")
 
-    # Hook
-    hook = gen_section("COLD OPEN HOOK (chapter 0)", hook_scenes, 110,
-                       "the single most gripping moment of the story",
-                       is_hook=True)
+        # duration guard: regenerate once if the section came out too thin
+        words = sum(len(str(s.get("narration", "")).split()) for s in got)
+        if words < word_budget * 0.72:
+            logger.warning(f"section '{section_label}' too thin "
+                           f"({words}/{word_budget} words) — regenerating")
+            retry_prompt = (prompt + f"\n\nCRITICAL: your previous version had only {words} words\n"
+                            f"for {scene_count} scenes — far too short for a 14-minute video.\n"
+                            f"Each scene needs {per_scene}+ words (3-4 full sentences with\n"
+                            f"specific facts and numbers). Expand every scene.")
+            data2 = llm.chat_json(retry_prompt, system=WRITER_SYSTEM, logger=logger)
+            got2 = data2.get("scenes") or []
+            words2 = sum(len(str(s.get("narration", "")).split()) for s in got2)
+            if got2 and words2 > words:
+                got = got2
+        sec_cache[ck] = got
+        (run["dir"] / "script").mkdir(exist_ok=True)
+        save_state(sec_path, sec_cache)
+        return got
+
+    # ---- cold open hook ----
+    hook = gen_section(
+        f"COLD OPEN HOOK ({hook_scenes} scenes) — frame today's digest and tease "
+        f"the biggest story",
+        hook_scenes, 110, "", is_hook=True)
     scenes += hook
-    chapters_out.append({"num": 0, "title": "Cold Open"})
 
-    # Chapters
-    for ch in chapters[:n_ch]:
-        num = ch.get("num", len(chapters_out))
-        got = gen_section(f"CHAPTER {num}: {ch.get('title','')}",
-                          ch.get("scene_count", ch_scenes), words_per_ch,
-                          ch.get("beat", ""))
+    # ---- one section per story ----
+    for si, s in enumerate(stories):
+        num = int(s.get("num", len(chapters_out)))
+        label = (f"STORY {num}: {s.get('title', '')}\n"
+                 f"Story hook to open with: {s.get('hook', s.get('title', ''))}\n"
+                 f"Money angle to land at the end: {s.get('money_angle', '')}")
+        got = gen_section(label, sps, words_per_story, STORY_RULES,
+                          final_story=(si == n_stories - 1))
         scenes += got
-        chapters_out.append({"num": num, "title": ch.get("title", f"Chapter {num}")})
+        chapters_out.append({"num": num, "title": s.get("title", f"Story {num}")})
 
-    # Outro
-    outro = gen_section("OUTRO (chapter 99)", outro_scenes, 70,
-                        "resolution + call to subscribe", is_outro=True)
+    # ---- outro ----
+    recap = "; ".join(f"story {s.get('num')}: {s.get('title','')}"
+                      for s in stories)
+    outro = gen_section(f"OUTRO (2 scenes) — rapid recap of all stories: {recap}",
+                        outro_scenes, 90, OUTRO_RULES)
     scenes += outro
     chapters_out.append({"num": 99, "title": "Outro"})
 
-    # Validate + renumber
-    chapter_titles = {c["num"]: c["title"] for c in chapters_out}
+    # ---- validate + renumber ----
+    story_titles = {c["num"]: c["title"] for c in chapters_out}
     cleaned = []
     for i, s in enumerate(scenes, 1):
         narr = str(s.get("narration", "")).strip().strip('"')
-        if len(narr) > 330:
-            cut = narr[:330]
+        if len(narr) > 480:
+            cut = narr[:480]
             for sep in (". ", "! ", "? "):
                 p = cut.rfind(sep)
-                if p > 150:
+                if p > 200:
                     cut = cut[:p + 1]
                     break
             narr = cut
@@ -157,33 +194,33 @@ Return ONLY this JSON:
         vq = " ".join(str(s.get("visual_query", "")).split()[:14])
         cleaned.append({
             "id": len(cleaned) + 1,
-            "chapter": s.get("chapter") or (
-                0 if i <= hook_scenes else (99 if i > len(scenes) - outro_scenes else 1)
-            ),
+            "chapter": 0,
             "chapter_title": "",
+            "chapter_label": "Cold Open",
             "narration": narr,
-            "visual_query": vq or "dark empty room dramatic light window",
-            "mood": s.get("mood", "tense"),
+            "visual_query": vq or "glowing server racks data center blue light",
+            "mood": s.get("mood", "hype"),
             "is_key_scene": bool(s.get("is_key_scene")) or (i == 1) or (i == len(scenes)),
         })
-    # Map chapter titles correctly for every scene
-    hook_ct = hook_scenes
-    out_ct = outro_scenes
-    per_ch = {}
-    for s in cleaned:
-        per_ch[s["chapter"]] = per_ch.get(s["chapter"], 0) + 1
-    # re-assign chapters by position (LLM may mislabel): hook / chapters / outro
-    idx = 0
-    for s in cleaned:
-        if idx < hook_ct:
+
+    # re-assign chapters by position: hook / story sections / outro
+    body_start = hook_scenes
+    body_end = len(cleaned) - outro_scenes
+    for idx, s in enumerate(cleaned):
+        if idx < body_start:
             s["chapter"] = 0
-        elif idx >= len(cleaned) - out_ct:
+            s["chapter_label"] = "Cold Open"
+        elif idx >= body_end:
             s["chapter"] = 99
+            s["chapter_label"] = "Outro"
         else:
-            body_i = idx - hook_ct
-            s["chapter"] = 1 + (body_i // ch_scenes)
-        s["chapter_title"] = chapter_titles.get(s["chapter"], "")
-        idx += 1
+            body_i = idx - body_start
+            st = min(n_stories, 1 + body_i // sps)
+            s["chapter"] = st
+            s["chapter_label"] = f"STORY {st}"
+            s["chapter_title"] = story_titles.get(st, "")
+            if st == n_stories and s is cleaned[body_end - 1]:
+                pass  # last body scene keeps its story assignment
 
     script = {"title": title, "scenes": cleaned, "chapters": chapters_out}
     (run["dir"] / "script").mkdir(exist_ok=True)
@@ -191,28 +228,33 @@ Return ONLY this JSON:
     save_state(run["dir"] / "script" / "narration.txt",
                "\n\n".join(s["narration"] for s in cleaned))
     words = sum(len(s["narration"].split()) for s in cleaned)
-    logger.info(f"script done: {len(cleaned)} scenes, {words} words, "
+    logger.info(f"digest script done: {len(cleaned)} scenes, {words} words, "
                 f"title='{title}'")
     return script
 
 
 MINI_SCRIPT = {
-    "title": "The Signal From The Deep",
+    "title": "AI News: 2 Stories That Actually Matter Today",
     "chapters": [
         {"num": 0, "title": "Cold Open"},
-        {"num": 1, "title": "The Abyss Listens"},
+        {"num": 1, "title": "The Model That shook the Labs"},
         {"num": 99, "title": "Outro"},
     ],
     "scenes": [
-        {"id": 1, "chapter": 0, "chapter_title": "Cold Open", "narration": "It was 3 a.m. when the hydrophones heard it. A sound no ship, no whale, no machine on Earth could explain.",
-         "visual_query": "dark ocean waves night aerial view", "mood": "urgent", "is_key_scene": True},
-        {"id": 2, "chapter": 0, "chapter_title": "Cold Open", "narration": "Scientists traced the signal to a trench deeper than Mount Everest is tall. Then it stopped. For twenty years, nothing.",
-         "visual_query": "underwater deep sea trench darkness", "mood": "curious", "is_key_scene": False},
-        {"id": 3, "chapter": 1, "chapter_title": "The Abyss Listens", "narration": "Chapter One. The machines that listen to the ocean floor were built to catch enemy submarines. Instead, they caught a mystery.",
-         "visual_query": "submarine sonar room equipment vintage", "mood": "tense", "is_key_scene": True},
-        {"id": 4, "chapter": 1, "chapter_title": "The Abyss Listens", "narration": "When the signal returned in 2016, every expert agreed on one thing: whatever made it was still down there, moving.",
-         "visual_query": "research vessel ocean science ship deck", "mood": "somber", "is_key_scene": False},
-        {"id": 5, "chapter": 99, "chapter_title": "Outro", "narration": "If stories from the edge of the known world pull you in, subscribe. The next investigation is already underway.",
-         "visual_query": "person silhouette looking at sea horizon dusk", "mood": "reflective", "is_key_scene": False},
+        {"id": 1, "chapter": 0, "chapter_label": "Cold Open", "chapter_title": "",
+         "narration": "AI just moved faster than anyone expected — and most people missed it. Two stories today, and one of them can put money in your pocket this week.",
+         "visual_query": "glowing server racks data center blue light", "mood": "hype", "is_key_scene": True},
+        {"id": 2, "chapter": 0, "chapter_label": "Cold Open", "chapter_title": "",
+         "narration": "A new open-source model is beating tools you pay for. And the second story is the one nobody is pricing in yet.",
+         "visual_query": "hand holding phone AI app interface closeup", "mood": "curious", "is_key_scene": False},
+        {"id": 3, "chapter": 1, "chapter_label": "STORY 1", "chapter_title": "The Model That shook the Labs",
+         "narration": "Story one. The new model runs on hardware you already own, and in early benchmarks it beats names that raised billions.",
+         "visual_query": "robot arm modern lab technology closeup", "mood": "hype", "is_key_scene": True},
+        {"id": 4, "chapter": 1, "chapter_label": "STORY 1", "chapter_title": "The Model That shook the Labs",
+         "narration": "The play is simple: try it free today, ship a small product with it this weekend, and you are ahead of ninety percent of builders.",
+         "visual_query": "developer coding multiple monitors dark room", "mood": "practical", "is_key_scene": False},
+        {"id": 5, "chapter": 99, "chapter_label": "Outro", "chapter_title": "",
+         "narration": "That's the digest. Subscribe — the next one lands in twelve hours. Which tool are you trying first? Say it in the comments.",
+         "visual_query": "city billboards neon advertisements night", "mood": "bold", "is_key_scene": False},
     ],
 }

@@ -20,7 +20,7 @@ from .utils import load_env, probe_duration, run_cmd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-DEFAULT_EDGE_VOICE = "en-US-ChristopherNeural"   # deep cinematic US male
+DEFAULT_EDGE_VOICE = "en-US-AndrewMultilingualNeural"   # upbeat US male host
 
 
 def _env() -> dict:

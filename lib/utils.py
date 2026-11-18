@@ -78,8 +78,51 @@ def save_state(path: Path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _repair_truncated(text):
+    """Best-effort repair of JSON cut off mid-generation by the LLM.
+
+    Strips any prose/fence prefix, then tries closing open strings/brackets
+    at successive earlier cut points and returns the first parseable prefix,
+    or None if nothing parses."""
+    starts = [i for i in (text.find("{"), text.find("[")) if i != -1]
+    if not starts:
+        return None
+    text = text[min(starts):]
+    positions = [m.start() for m in re.finditer(r'[",}\]\[\{]', text)][-80:]
+    for pos in reversed(positions):
+        for cut in (pos, pos + 1):
+            prefix = text[:cut]
+            instr, esc, stack = False, False, []
+            for ch in prefix:
+                if instr:
+                    if esc:
+                        esc = False
+                    elif ch == "\\":
+                        esc = True
+                    elif ch == '"':
+                        instr = False
+                else:
+                    if ch == '"':
+                        instr = True
+                    elif ch in "{[":
+                        stack.append(ch)
+                    elif ch in "}]":
+                        if stack:
+                            stack.pop()
+            cand = prefix + ('"' if instr else "")
+            cand = cand.rstrip().rstrip(",")
+            cand += "".join("}" if c == "{" else "]"
+                            for c in reversed(stack))
+            try:
+                return json.loads(cand)
+            except Exception:  # noqa: BLE001
+                continue
+    return None
+
+
 def extract_json(text: str):
-    """Robustly pull the first valid JSON object/array out of an LLM answer."""
+    """Robustly pull the first valid JSON object/array out of an LLM answer.
+    Tolerates markdown fences, prose around the JSON, and truncated output."""
     if not text:
         raise ValueError("empty text")
     text = text.strip()
@@ -116,6 +159,10 @@ def extract_json(text: str):
                             return json.loads(text[start:i + 1])
                         except Exception:  # noqa: BLE001
                             break
+    # last resort: the LLM output was probably cut off mid-JSON
+    repaired = _repair_truncated(text)
+    if repaired is not None:
+        return repaired
     raise ValueError(f"no valid JSON found in: {text[:200]}")
 
 

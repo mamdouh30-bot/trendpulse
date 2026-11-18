@@ -171,8 +171,8 @@ def _download(url, dest, W, H):
 
 
 def _ai_fallback(query, dest, W, H, logger):
-    prompt = (f"{query}, editorial documentary photograph, realistic, 35mm film, "
-              f"natural lighting, cinematic composition, muted colors, film grain, "
+    prompt = (f"{query}, editorial tech photograph, realistic, modern, crisp "
+              f"professional lighting, high contrast, punchy colors, "
               f"high detail")
     tmp = dest.with_suffix(".ai.tmp")
     if ai_image(prompt, tmp, 1344, 768, logger):
