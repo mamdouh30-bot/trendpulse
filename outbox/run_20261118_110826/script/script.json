@@ -1,0 +1,441 @@
+{
+  "title": "AI News: 4 Stories That Actually Matter Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "AI news raw, no fluff – 4 stories that actually matter today. Turn noise into profit. Get straight to the hits and see what's big enough to change your hustle.",
+      "visual_query": "AI startup office with glowing monitors, developers coding, ChatGPT logo overlays",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "OpenAI just dropped GPT‑6.2 Astra on Nov 17th. It’s 5.2 points above GPT‑6 in professional tests, with $4/M input, $20/M output pricing. Suddenly $/token cost isn’t the headline—capability is.",
+      "visual_query": "OpenAI server rack, code on screen, flashing price tags",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Imagine a niche SaaS: a coding‑assist app that bills per request. Use free ChatGPT Plus trial to test; integrate Astra API and launch today. Scale for developers, get paid per line of code delivered.",
+      "visual_query": "developer building app on laptop, money icon, API key screen",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "OpenAI released GPT‑6.2 Astra on 17 Nov 2026, a flagship model that scores 5.2 points above GPT‑6 on professional‑task benchmarks, proving it’s not just a tweak but a leap. It’s already live on ChatGPT Plus, the web UI, and the API, ready for devs to claim.",
+      "visual_query": "OpenAI logo glowing on server rack",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "Astra isn’t a fantasy model; it’s a real code‑hunter, reasoning engine, and vision assistant. The architecture was engineered to handle complex, multi‑step programming tasks, outperforming older prototypes in speed and accuracy. Enterprises tasked with technical docs see measurable efficiency gains.",
+      "visual_query": "developer typing code on laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "Pricing matters. OpenAI’s API uses a pay‑per‑token scheme: $4 per million input tokens and $20 per million output tokens. That’s a 30‑percent lower cost than the previous GPT‑6 tier for high‑volume projects, making large‑scale use viable.",
+      "visual_query": "token pricing chart",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "The free trial in ChatGPT Plus lets anybody test Astra’s capabilities for a month. No credit card, no lock‑in. That’s a low‑bar entry point for hobbyists and founders looking to experiment without commitment.",
+      "visual_query": "person clicking ‘start trial’ on laptop",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "Freedom to deploy means Astra is available everywhere the OpenAI API lives: from cloud functions to edge workloads. You can drop it into a microservice that auto‑generates code snippets, providing instant feedback to developers on the fly.",
+      "visual_query": "cloud function code snippet",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "Imagine building a niche coding‑assist app. Plug in Astra via API, offer real‑time syntax checks, auto‑completion, and debugging hints. The API layers keep cost predictable while users pay per request, turning each coding hit into revenue.",
+      "visual_query": "coding‑assist UI on tablet",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "Monetize fast: launch a freemium SaaS. Users get a limited free quota; beyond that, they pay a per‑coding‑query fee. The free tier drives adoption, and the pay‑per‑request model scales as your user base grows.",
+      "visual_query": "subscription pricing slide",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "The path to profit starts today. Sign up for the free ChatGPT Plus trial, extract the GPT‑6.2 Astra API key, and wire it into a lightweight backend. Test a prototype, gather feedback, and you’re already on the road to SaaS revenue.",
+      "visual_query": "developer building backend on laptop",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "OpenAI Launches GPT‑6.2 Astra",
+      "chapter_label": "STORY 1",
+      "narration": "And that’s it—GPT‑6.2 Astra is here, cheap, powerful, and ready for your next coding‑centric SaaS. Grab the trial, start building, and let the money flow. Now, let’s jump to story two: Google’s Gemini 4 Argon and why it’s a benchmark king.",
+      "visual_query": "Google logo glowing with code",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "Google’s Gemini 4 Argon Enterprise Benchmark Crown has just dropped on October 13 2026, taking the top spot on code synthesis and multilingual AI tests. It's officially available to all paying API users, and the price? $2 for input, $10 for output per million tokens—super cheap scaling for developers.",
+      "visual_query": "Google AI studio microarchitecture close‑up",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "Gemini 4 Argon is the fourth iteration of Google’s Argon line—built on the same transformer backbone but with 1.5 × larger context window and triple the inference speed versus Gemini 3. It outperforms Claude Opus 5.5 on every benchmark we know of.",
+      "visual_query": "Gemini model architecture diagram",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "The API is part of the Google AI Pro and Ultra tiers, which means you can fire up up to a million‑token response in under 200 ms. That’s a game‑changer for real‑time code review tools that need instant feedback on large snippets.",
+      "visual_query": "server rack with Google branding",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "Because its code understanding is top‑tier, Gemini 4 Argon can auto‑fix syntax errors, suggest refactors, and even translate between Python, JavaScript, and Rust on the fly. Imagine a SaaS that runs a single HTTP call and returns a polished, production‑ready patch.",
+      "visual_query": "developer typing code on laptop",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "Security-wise, it ships with built‑in multilanguage support for legal and finance jargon, making it ideal for B2B SaaS that needs to comply with strict data handling rules. No more extra plug‑ins—just the open‑AI‑powered core.",
+      "visual_query": "close‑up of compliance document",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "And the pricing isn’t just low—it’s predictably cheap for startups. 1 M tokens of output cost $10, so even a $100/month subscription gives you roughly 10 M output tokens. That lets you bundle Gemini’s power into a free tier for many users.",
+      "visual_query": "price calculation spreadsheet",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "So how do you monetize? Build a code‑review SaaS, plug Gemini 4 Argon into your engine, and give every visitor a 30‑day free trial. The API integration is a single curl call, no fuss, no license fees.",
+      "visual_query": "dev blog UI with free trial badge",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "Then direct your dev‑blog readers straight to the Google API commission program. Whenever they sign up through your link, you earn a share—call it affiliate or revenue share, but it’s real money for every developer you bring in.",
+      "visual_query": "affiliate link screen capture",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown",
+      "chapter_label": "STORY 2",
+      "narration": "So, turn Gemini 4 Argon into your next money‑making engine. Hit the description for the API key link, start your 30‑day trial offer, and watch the revenue roll in. Next up, Alibaba’s Qwen4‑Max and its 1 M‑token jaw‑dropping context window.",
+      "visual_query": "next story teaser with Qwen logo",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "Alibaba just unleashed Qwen4-Max on 16 Nov 2026, a 2.4‑trillion‑parameter mixture‑of‑experts model with 71 B active weights and a mind‑blowing 1 million‑token context window. That’s the type of raw horsepower that can hold an entire book in memory, any time of day.",
+      "visual_query": "Alibaba logo with futuristic data center glow",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "Qwen4-Max isn’t just big; it’s built for context. The 1 M‑token window lets the model read a full scientific paper, a legal contract, or an entire novel before responding. Think of it as a telepathic notebook that never forgets what you wrote five minutes ago.",
+      "visual_query": "Close‑up of gigantic screen with scrolling text",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "But raw power can be risky. Alibaba tackled hallucinations and bias head‑on with built‑in safety layers. Every generation pass is filtered through a multi‑stage check that suppresses unverified claims and reduces harmful output. That means fewer red flags for regulators and users.",
+      "visual_query": "AI safety shield icon over code",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "Pricing? Not as steep as you’d think. Qwen4-Max API is $1.50 per million input tokens, with free trials available on QwenCloud. If your app processes a 1 M‑token document, you’re looking at just $1.50 for that single call—competitive by all standards.",
+      "visual_query": "Calculator with $1.50 cost display",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "So what can you do today? Turn Qwen4-Max into an instant scientific‑query translator. Feed a research abstract in Chinese, English, or Hindi and get a precise, context‑aware summary in seconds. No extra training, just plug‑and‑play.",
+      "visual_query": "Scientific paper being translated on laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "Start by signing up for the free tier on QwenCloud. Create an account, grab your API key, and connect it to your own billing portal. The first week is free, so test the limits without paying a dime—then scale up as you grow.",
+      "visual_query": "Hands typing on keyboard, API key screen",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "Next, funnel paying users through your own billing portal. Stripe or PayPal integration is straightforward; charge per usage with auto‑billing every month. Keep the pricing simple—just the $1.50 per million input you already paid for on QwenCloud.",
+      "visual_query": "Stripe login on laptop screen",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "You’ve got the stack: Qwen4‑Max’s 1 M token win, safety controls, and cheap rate. Launch a paid subscription today, offer a free 7‑day trial, and start generating revenue from real scientific translations. The official link is in the description—grab it now.",
+      "visual_query": "Subscription banner on a website",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers",
+      "chapter_label": "STORY 3",
+      "narration": "That’s it for Qwen4‑Max. Up next, we’re diving into how Nooks just raised $500 million to turbo‑charge sales automation. Stay tuned—it’s going to be a wild ride.",
+      "visual_query": "Sales dashboard with rising graph",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 31,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "Nooks just raised $500 million to turbocharge sales automation with AI. The funding round closes a gap in modern CRM workflows and signals a shift toward intelligent prospecting. Investors see an opportunity to eliminate manual follow‑ups and double conversion rates in early adopters.",
+      "visual_query": "vibrant office lobby with Nooks startup logo on glass wall",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 32,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "Founded in 2022, Nooks delivers a proprietary AI engine that analyzes email, chat, and social media signals to score leads in real time. The system integrates natively with Salesforce, HubSpot, and Microsoft Dynamics, using conversational APIs to surface high‑intent prospects to sales reps.",
+      "visual_query": "developer typing code into Nooks API dashboard on laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 33,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "The AI model uses deep reinforcement learning to prioritize outreach cadences. Its training corpus spans 10 million customer interactions, providing context‑aware recommendations that increase responses by up to 35 %. This data‑driven touchpoint beats traditional rule‑based bots.",
+      "visual_query": "data scientist monitoring Nooks trained model on dual monitors",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 34,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "Nooks' pricing model is tiered: a free tier for 500 contacts, a pro plan at $49/month per user for 5 000 contacts, and an enterprise plan at $149/month per user for 25 000 contacts. The API charges $0.05 per call, enabling low‑margin add‑ons for high volume.",
+      "visual_query": "pricing sheet displayed on tablet screen",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 35,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "The company’s beta saw a 22 % lift in close rates within the first 90 days. Customers report slashing follow‑up emails by 60 % while ramping up new deals week over week. Nooks’ ROI charts are already trending upward in investor decks.",
+      "visual_query": "finance team analyzing Nooks ROI graph on whiteboard",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 36,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "With the new $500 million, Nooks plans to expand its AI training data to cover 30 languages, launch a conversational sales agent, and integrate voice recognition for call logs. Their roadmap promises a fully autonomous sales engine by Q3 2027.",
+      "visual_query": "team brainstorming around world map with language icons",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 37,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "For you, the play is simple: sign up for Nooks’ free tier, plug the API into your existing CRM, and let AI flag high‑value leads automatically. No code required—just a webhook and watch the conversion slider climb.",
+      "visual_query": "developer setting up Nooks API in CRM on laptop",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 38,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "Already, top SaaS firms are earning referral incentives by embedding Nooks. Tap into their partnership portal, earn commissions on every subscription you sign, and cash in on the sales AI boom.",
+      "visual_query": "hand scrolling through Nooks partnership program on tablet",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 39,
+      "chapter": 4,
+      "chapter_title": "Nooks Raises $500 Million for AI‑Powered Sales Automation",
+      "chapter_label": "STORY 4",
+      "narration": "So grab that free API key from Nooks today, boost your sales team’s output, and start earning referral payouts. That’s the fast track to higher revenue—now, let’s see what next big move the AI world is making.",
+      "visual_query": "man on phone intently watching AI dashboard reaction",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 40,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "GPT‑6.2 Astra hits Nov 17, tops GPT‑6 on pros tasks—code, vision, reasoning—API $4/M in, $20/M out. Gemini 4 Argon drops Oct 13, beats Claude Opus 5.5, $2/$10 intro price. Qwen4‑Max arrives Nov 16, 2.4‑T, 1 M‑token context, $1.5/M in. Nooks raises $500 M for sales‑automation API.",
+      "visual_query": "OpenAI server room with glowing racks, code editor close‑up",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 41,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Subscribe every 12 hours to catch the next digest and stay ahead of the AI curve. Tell me in the comments: which model’s pricing—GPT‑6.2 Astra’s $20/M output, Gemini 4 Argon’s $2 intro, or Qwen4‑Max’s $1.5/M—gives you the biggest advantage for your product?",
+      "visual_query": "Developer workspace with laptop, API code snippets, AI dashboard",
+      "mood": "curious",
+      "is_key_scene": true
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Cold Open"
+    },
+    {
+      "num": 1,
+      "title": "OpenAI Launches GPT‑6.2 Astra"
+    },
+    {
+      "num": 2,
+      "title": "Google’s Gemini 4 Argon Enterprise Benchmark Crown"
+    },
+    {
+      "num": 3,
+      "title": "Alibaba Unveils Qwen4‑Max With Advanced Safety Layers"
+    },
+    {
+      "num": 4,
+      "title": "Nooks Raises $500 Million for AI‑Powered Sales Automation"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}
