@@ -284,6 +284,7 @@ def render_video(cfg, run, script, logger):
     vis_dir = run["dir"] / "visuals"
     motion_dir = run["dir"] / "motion"
     prev_chapter = 0
+    last_scene_hosted = False
     for s in script["scenes"]:
         # self-heal asset references when resuming from checkpoints
         if not s.get("voice_file"):
@@ -326,6 +327,7 @@ def render_video(cfg, run, script, logger):
             s["_host_frame"] = True
             entry["file"] = str(rd / "host_outro.png")
             entry["is_host"] = True
+            last_scene_hosted = True
         else:
             use_motion = (s.get("motion_file") and dur <= 8.5)
             entry["file"] = s["motion_file"] if use_motion else s["image_file"]
@@ -334,9 +336,12 @@ def render_video(cfg, run, script, logger):
         entries.append(entry)
         prev_chapter = ch
 
-    entries.append({"key": "hostout", "file": str(rd / "host_outro.png"),
-                    "dur": 5.0, "voice_file": None, "is_card": True,
-                    "is_host": True})
+    # outro brand card; extra host-outro entry only when the last scene
+    # did not already show the host (avoids repeating the same frame)
+    if not last_scene_hosted and (rd / "host_outro.png").exists():
+        entries.append({"key": "hostout", "file": str(rd / "host_outro.png"),
+                        "dur": 5.0, "voice_file": None, "is_card": True,
+                        "is_host": True})
     entries.append({"key": "card9", "file": str(outro_img), "dur": 4.0,
                     "voice_file": None, "is_card": True})
     # drop persona entries whose frames could not be composed

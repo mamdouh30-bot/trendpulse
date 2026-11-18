@@ -44,17 +44,14 @@ def shot_path(cfg, kind, idx=0):
 
 
 def cover_crop(img, W, H, focus_y=0.42):
-    """Cover-crop any image to exactly W x H (focal point slightly high)."""
+    """Cover-crop any image to exactly W x H (upscales small sources)."""
     sw, sh = img.size
-    target = W / H
-    if sw / sh > target:
-        nw, nh = int(sh * target), sh
-    else:
-        nw, nh = sw, int(sw / target)
-    nw, nh = max(nw, 8), max(nh, 8)
+    scale = max(W / sw, H / sh)
+    nw, nh = max(W, int(sw * scale + 0.5)), max(H, int(sh * scale + 0.5))
     img = img.resize((nw, nh), Image.LANCZOS)
     left = (nw - W) // 2
-    top = max(0, min(nh - H, int(nh * focus_y - H * focus_y)))
+    top = int((nh - H) * focus_y)
+    top = max(0, min(nh - H, top))
     return img.crop((left, top, left + W, top + H))
 
 
@@ -146,15 +143,20 @@ def compose_host_frame(cfg, shot_file, W, H, headline=None, chip_text=None,
                    stroke_width=4, stroke_fill=(8, 10, 20))
             cy += f_head.size + 12
 
-    # subscribe CTA ribbon (outro)
+    # subscribe CTA ribbon (outro) — top center, never covering the face
     if cta:
-        f_cta = _font(FONT_XB, 58)
+        f_cta = _font(FONT_XB, 54)
         tw = d.textlength(cta, font=f_cta)
         bx = (W - tw) // 2 - 34
-        by = int(H * 0.20)
-        d.rounded_rectangle((bx, by, bx + tw + 68, by + f_cta.size + 44),
+        by = int(H * 0.045)
+        d.rounded_rectangle((bx, by, bx + tw + 68, by + f_cta.size + 40),
                             radius=16, fill=(232, 29, 38, 245))
-        d.text((bx + 34, by + 22), cta, font=f_cta, fill=WHITE)
+        d.text((bx + 34, by + 20), cta, font=f_cta, fill=WHITE)
+        sub = "NEW AI DIGEST EVERY 12 HOURS"
+        f_sub = _font(FONT_SB, 30)
+        sw = d.textlength(sub, font=f_sub)
+        d.text(((W - sw) / 2, by + f_cta.size + 58), sub, font=f_sub,
+               fill=GOLD)
 
     return frame
 
