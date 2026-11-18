@@ -1,0 +1,160 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories that Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Nvidia Leadership Shakeup & New US AI Chip Export Rule Slump Amazon",
+        "hook": "Mr. Huang’s exit sparks a leadership quagmire just as Congress cracks down the AI chip pipeline.",
+        "angle": "Nvidia’s abrupt CEO departure fuels a sell‑off in tech stocks while a fresh U.S. export rule limits chip access to foreign buyers. Amazon’s shares fell sharply, signaling wider market anxiety over chip supply chains and AI spend.",
+        "money_angle": "Investors can eye high‑cap AI companies for short‑term gains or hedge with chip‑related ETFs.",
+        "visual_world": "A split Screen: Nvidia boardroom drama juxtaposed with a map of US export restrictions and a pie chart of Amazon’s earnings.",
+        "search_queries": [
+          "Nvidia leadership shakeup news",
+          "US AI chip export rule news"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Google hits the lead again with Gemini 4 Argon, but employees are skeptical",
+        "hook": "Google’s flagship model outpaces rivals—yet the rest of Alphabet questions its real impact.",
+        "angle": "Gemini 4 Argon, launched this week, reclaims benchmark dominance over OpenAI and Anthropic in enterprise‑relevant tasks. Internally, engineers fear the model’s performance may not live up to hype, sparking a debate on deployment strategy.",
+        "money_angle": "Content creators can leverage Gemini 4’s advanced text‑generation for high‑quality copywriting, boosting agency pipelines.",
+        "visual_world": "Screenshots of the model’s interface, competition leaderboard, a graphic of code reviews in a Google office, and a demo of a chatbot built on Gemini 4.",
+        "search_queries": [
+          "Gemini 4 Argon launch news",
+          "Google Gemini 4 employee skepticism news"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Anthropic IPO showdown: India’s AI scene watches closely",
+        "hook": "Anthropic plans an IPO—her first public offering could reshape AI talent flows in India.",
+        "angle": "With a proposed public listing, Anthropic may finally open up billions of dollars in capital, offering investors a taste of post‑OpenAI funding dynamics. Analysts suggest the move could energize India’s startup ecosystem, creating jobs and attracting talent.",
+        "money_angle": "Early-stage investors can look into secondary markets for Anthropic stock and seek exposure through related venture funds.",
+        "visual_world": "A graphic of the Indian AI talent map, Anthropic logo, an IPO filing snapshot, and a chart of projected valuation growth.",
+        "search_queries": [
+          "Anthropic IPO news",
+          "Anthropic IPO India impact news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Suno’s Visuals: Turn AI‑generated lyric videos into royalty‑free assets",
+        "hook": "Suno’s new Visuals tool lets musicians auto‑produce album art and lyric videos in minutes.",
+        "angle": "By adding a visual generation layer, Suno expands beyond audio, enabling creators to sell ready‑made video content to streaming platforms and marketers. The feature taps into the booming demand for fast‑turnaround multimedia during the pandemic‑era content boom.",
+        "money_angle": "You can upload your own music to Suno, apply Visuals, and sell the resulting videos on stock video sites to earn passive income.",
+        "visual_world": "Storyboard of an AI composing a beat, the Visuals UI layering images, a finished lyric video displayed on a YouTube clip, and a gallery of royalty‑free options.",
+        "search_queries": [
+          "Suno Visuals launch news",
+          "Suno AI-generated lyric videos news"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Nvidia Leadership Shakeup & New US AI Chip Export Rule Slump Amazon",
+        "summary": "Nvidia CEO Jensen Huang abruptly stepped down, leaving interim CEO Colette Kress. The U.S. Commerce Department tightened export controls on advanced AI chips, targeting China and other embargoed nations, and Amazon shares fell as the market reacted to chip‑supply uncertainty.",
+        "key_facts": [
+          "Jensen Huang resigned, Colette Kress appointed interim CEO",
+          "New export rule restricts AI chips to Chinese entities",
+          "Rule also applies to five other nations, impacting remote access",
+          "Export curbs threaten Southeast Asia data‑center boom",
+          "Amazon stock dropped sharply after the announcement",
+          "Nvidia shares fell as market feared supply‑chain impact",
+          "Policy targets preventing Chinese companies from using US AI chips at data centers",
+          "Rule prompted a broader sell‑off in tech stocks"
+        ],
+        "money_angle": "Investors can add chip‑related ETFs to hedge exposure or short Nvidia’s stock immediately, while Amazon traders can take short positions on the shares that slid the day the export rule was announced.",
+        "sources": [
+          {
+            "host": "marketwatch.com",
+            "url": "https://www.marketwatch.com/livecoverage/nvidia-earnings-stock-nvidia-jensen-huang-results-call/card/wall-street-analysts-wonder-about-nvidia-s-employee-morale-4BwtAsVzB3OGa3FABaH2"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/money/economy/us-ai-chip-curbs-threaten-southeast-asia-data-centre-boom-shares-slump/ar-AA2hBY4t?ocid=BingNewsVerp"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/us-tightens-ai-chip-export-191300418.html"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/money/general/leadership-shakeup-at-nvidia/vi-AA2hn8EN?ocid=BingNewsVerp"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Google hits the lead again with Gemini 4 Argon, but employees are skeptical",
+        "summary": "Google unveiled Gemini 4 Argon, tying with GPT‑6 Astra on benchmarks and lowering per‑task pricing. Internally, engineers report skepticism that Argon matches the hype, and Alphabet’s stock slipped after Bloomberg’s coverage of those doubts.",
+        "key_facts": [
+          "Gemini 4 Argon matches GPT‑6 Astra on the Artificial Analysis index",
+          "Model launches with lower cost per task than prior Gemini versions",
+          "Internal employees are testing a rival model they believe outperforms Argon",
+          "Alphabet stock fell after Bloomberg’s report on employee skepticism",
+          "Argon now available in the Gemini app and Google Search AI mode",
+          "Google claims Argon excels in knowledge work, cybersecurity, creative writing",
+          "Business Insider notes staff are also pursuing a better version called Barium/Carbon",
+          "Investors see a short‑term dip in Alphabet shares following doubts"
+        ],
+        "money_angle": "Content creators can sign up for the free Gemini 4 demo now, use it for instant copywriting trials, and compare its output to existing tools to spot cost‑effective copywriting workflows for agencies.",
+        "sources": [
+          {
+            "host": "tech.yahoo.com",
+            "url": "https://tech.yahoo.com/ai/gemini/articles/googles-gemini-4-argon-pulls-043728119.html"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/googl-stock-reviews-prompted-illicit-skepticism-203029696.html"
+          },
+          {
+            "host": "businessinsider.com",
+            "url": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/googl-stock-rises-gemini-4-125240353.html"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Anthropic IPO showdown: India’s AI scene watches closely",
+        "summary": "Anthropic is preparing for a Nasdaq IPO targeting a valuation near $1 trillion. The listing has drawn attention from India’s startup ecosystem, with concerns over potential capital inflows and retirement‑account exposure, while secondary market exposure is now possible through associated venture funds.",
+        "key_facts": [
+          "Anthropic’s planned IPO value is about $1 trillion, lower than early talks of $1.5 trillion",
+          "IPO expected to debut on Nasdaq this week after final pricing",
+          "Sources in India highlight potential job creation and talent attraction",
+          "Some activists warn the IPO could affect retirement account holdings",
+          "Early‑stage investors can seek Anthropic stock through secondary markets",
+          "Investment partners include large venture funds tied to the launch",
+          "Analysts note the IPO could signal future AI‑company listings",
+          "Anthropic’s revenue jumped 47% to $17 billion in Q3 before the filing"
+        ],
+        "money_angle": "Existing investors can search for Anthropic shares on secondary‑market platforms like Nasdaq support or via ETF exposure, while Indian startups can register with Indian venture funds that list Anthropic holdings for early equity access.",
+        "sources": [
+          {
+            "host": "msn.com"
+          }
+        ]
+      },
+      {
+        "title": "Suno’s Visuals: Turn AI‑generated lyric videos into royalty‑free assets",
+        "num": 4,
+        "key_facts": [],
+        "money_angle": "You can upload your own music to Suno, apply Visuals, and sell the resulting videos on stock video sites to earn passive income.",
+        "summary": ""
+      }
+    ],
+    "summary": "Nvidia CEO Jensen Huang abruptly stepped down, leaving interim CEO Colette Kress; Google unveiled Gemini 4 Argon, tying with GPT‑6 Astra on benchmarks and lowerin; Anthropic is preparing for a Nasdaq IPO targeting a valuation near $1 trillion. ; "
+  }
+}

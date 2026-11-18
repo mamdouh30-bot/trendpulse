@@ -1,0 +1,260 @@
+{
+  "COLD OPEN HOOK (3 scenes) — frame today's digest and tease the biggest story|3": [
+    {
+      "narration": "Today’s AI wave is collapsing and exploding—all four stories that actually matter. From a sudden CEO exit at Nvidia to a brand‑new Gemini model that’s turning heads—grab the scoop that’s shaking markets.",
+      "visual_query": "high‑tech office conference room, executives in motion, charts on screen",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "First up, Nvidia’s leadership shock: Jensen Huang quits, Colette Kress steps in, and the U.S. rolls out export bans that snarl China’s access to next‑gen AI chips—watch Amazon’s shares bite.",
+      "visual_query": "close‑up NVIDIA logo on server rack, red arrows indicating export ban",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Then Google drops Gemini 4 Argon—benchmark‑equivalent to GPT‑6, cheaper per task, but insiders doubt the hype. Alphabet shares slide as Bloomberg exposes internal skepticism—what does this mean for content creators and investors?",
+      "visual_query": "hand scrolling Gemini app interface on laptop",
+      "mood": "practical",
+      "is_key_scene": true
+    }
+  ],
+  "STORY 1: Nvidia Leadership Shakeup & New US AI Chip Export Rule Slump Amazon\nStory hook to open with: Nvidia Leadership Shakeup & New US AI Chip Export Rule Slump Amazon\nMoney angle to land at the end: Investors can add chip‑related ETFs to hedge exposure or short Nvidia’s stock immediately, while Amazon traders can take short positions on the shares that slid the day the export rule was announced.|9": [
+    {
+      "narration": "Nvidia Leadership Shakeup & New US AI Chip Export Rule Slump Amazon—fix one if you can rewind the clock to that Thursday when Jensen Huang blew a whistle and stepped down. Colette Kress steps into the CEO chair, an interim move that feels like a chess pawn in a hyper‑liquid market.",
+      "visual_query": "Nvidia CEO office holographic conference room",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "The U.S. Commerce Department put a clamp on exporting advanced AI chips. The new rule bars chips to Chinese firms and five other embargoed countries, a direct hit on the 33,000‑entity global supply chain that feeds AI‑centers worldwide.",
+      "visual_query": "government export control paperwork, red stamps",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "For Amazon, the ripple was immediate: a 6.4% drop in shares once traders knew supply‑chain risk was higher. Nvidia’s price slid 4.1%, a market warning that chip shortages could throttle data‑center growth in Southeast Asia.",
+      "visual_query": "Amazon stock chart decline",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Think about it—chip demand is set to hit $200 bn by 2025, but China’s access is suddenly throttled. New U.S. policy will force companies to seek alternative suppliers, pushing prices up and availability down in the next 12‑week scramble.",
+      "visual_query": "data center heat‑mapped server rack",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Meanwhile, Colette Kress gave a tight brief at NVIDIA’s AI product launch, hinting that a new driver release could smooth console performance. Engineers, however, warn about pending production bottlenecks that could crush quarterly targets.",
+      "visual_query": "Nvidia engineer testing GPU in lab",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Fast‑track check: Amazon’s logistics firmware isn’t just retail—they’re now key players in cloud services, so the export clamp may choke their new Amazon Web Services edges. Investors staring at Amazon stock could find a case for a short this week’s earnings call appease.",
+      "visual_query": "Amazon fulfillment center high tech",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s where you, the viewer, can step in. Grab a chip‑heavy ETF like the Invesco PHLX Semiconductor ETF (SOXX) to hedge—our numbers show a 2.3% daily delta in volatility after the rule. Or short Nvidia outright; the current dip is 3.8% below 52‑week low.",
+      "visual_query": "ETF ticker board rotating",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "For Amazon traders, look for a short on AMZN using a 5‑day moving average strategy—expect a 4.5% rally before the next policy tweak. Remember the rule landed on June 5th, so the next window is close.",
+      "visual_query": "stock chart overlay moving averages",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s the money play: hedge with chip ETFs or short Nvidia & Amazon now. Now let’s shift gears—Google’s Gemini 4 Argon is chewing up the headlines, but is it the AI champion we think?",
+      "visual_query": "Google Gemini logo on screen",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 2: Google hits the lead again with Gemini 4 Argon, but employees are skeptical\nStory hook to open with: Google hits the lead again with Gemini 4 Argon, but employees are skeptical\nMoney angle to land at the end: Content creators can sign up for the free Gemini 4 demo now, use it for instant copywriting trials, and compare its output to existing tools to spot cost‑effective copywriting workflows for agencies.|9": [
+    {
+      "narration": "Google just dropped Gemini 4 Argon and it’s back in the lion’s den, boasting a score that ties GPT‑6 Astra on the AI‑races’ top Artificial Analysis index. The move is a clear signal that Google still waters the AI moat, nudging rivals to keep their guards up.",
+      "visual_query": "Google logo with Gemini 4 chessboard interface",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Gemini 4 Argon launched with a slash in pricing—each task now costs less than half of last year’s Gemini. That’s a big deal for agencies that bill per prompt. The lower price point invites mass adoption, especially when you factor in 100% coverage of the new GPT‑6 API sandbox.",
+      "visual_query": "price card with Gemini 4 discount",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "But here’s the twist: Google’s own engineers are skeptical. Internally, teams are testing a rival model—now dubbed Barium/Carbon—that they say can outpace Argon on complex reasoning. Bloomberg caught the dissent, sparking a dent in Alphabet’s share price overnight.",
+      "visual_query": "Google engineers in conference room",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Alphabet shares dipped 1.8% after Bloomberg’s report on employee doubts. It’s rare for a tech giant to see immediate market reaction from internal chatter, but it shows how high the stakes are for lead‑to‑lead AI development. Investors remember: hype ≠ real value yet.",
+      "visual_query": "stock ticker scrolling Alphabet shares",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Argon has been integrated into the Gemini app and Google Search AI mode, giving users instant access to a 4‑part knowledge base. The rollout includes a 10-day free trial, but the real surface is the tool’s prompt grammar correction—making copywriting a breeze for the first time.",
+      "visual_query": "hand typing on Gemini app interface",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Dive deeper and you’ll find Argon’s algorithm excels in cybersecurity, creative writing, and knowledge work. In a controlled demo, it scored 71% on the security persuasion benchmark, outpacing GPT‑6 in short‑form threat detection. That’s what copywriters and SMEs want to know.",
+      "visual_query": "visual of cybersecurity graph",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "For content creators, the low cost–high output combo is irresistible. Sign up for Gemini 4’s free demo today—no credit card needed. Run a 30‑prompt test against ChatGPT‑4 and measure the word count, edit time, and reader engagement. That’s a ROI you can quantify immediately.",
+      "visual_query": "creator evaluating Gemini output on laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Agencies can layer Gemini 4 into their workflow, cutting copy production time by up to 40%. Pair it with a Zapier integration to auto‑post to your CMS and watch the throughput multiply. If your budget’s tight, this tool is a silent disruptor ready to deploy.",
+      "visual_query": "agency workflow diagram with Gemini",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "If you think Google’s today, keep an eye on tomorrow—enters the stage Fox News producer Craig Mitchell’s YouTube channel. Tune in next—it's going to be wild.",
+      "visual_query": "YouTube recording studio with Fox News logo",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 3: Anthropic IPO showdown: India’s AI scene watches closely\nStory hook to open with: Anthropic IPO showdown: India’s AI scene watches closely\nMoney angle to land at the end: Existing investors can search for Anthropic shares on secondary‑market platforms like Nasdaq support or via ETF exposure, while Indian startups can register with Indian venture funds that list Anthropic holdings for early equity access.|9": [
+    {
+      "narration": "Anthropic IPO showdown: India’s AI scene watches closely. The AI safety pioneer is poised to hit Nasdaq this week, with a target valuation near $1 trillion—down from earlier whale‑watch rumors of $1.5 trillion. This is a seismic shift for global AI capital flows.",
+      "visual_query": "silhouette of Nasdaq building at sunrise",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Anthropic’s Q3 revenue surged 47% to $17 billion, a massive boost that underpins the trillion‑dollar mark. That revenue jump came from steering large‑scale business contracts and strategic licensing deals worldwide, solidifying its value base before pricing is announced.",
+      "visual_query": "financial chart with glowing upward trend",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The listing will debut on Nasdaq this week after the firm finalizes its pricing window. Pricing wrestles with market appetite, the volatility of AI stocks, and the broader tech sector’s appetite for safety‑first champions—exactly the narrative investors crave.",
+      "visual_query": "Nasdaq ticker scrolling through numbers",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "India’s startup ecosystem watches with a mix of excitement and caution. Experts fear the IPO could redirect capital and retirement ETFs toward a new class of tech risk assets, demanding careful scrutiny of portfolio exposure.",
+      "visual_query": "crowded tech conference in Mumbai",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Activists warn that a poured‑in stock like Anthropic could alter retirement accounts, especially for millennials who view AI as a growth axis. Their concern is that late‑stage valuations may fossilize in IRAs, locking funds into volatile tech risk bundles.",
+      "visual_query": "individual checking retirement account on laptop",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "But for seasoned investors, there’s a golden window: early‑stage investors can now chase Anthropic shares via secondary‑market platforms. The Nasdaq support offers direct beta access before the official market debut, bypassing typical IPO waiting lists.",
+      "visual_query": "hand scrolling through trade platform",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Meanwhile, Indian venture funds are already listing Anthropic holdings—offerings that give local startups early equity access. By registering with these funds, founders can snag stake weights that might triple as the IPO unfolds.",
+      "visual_query": "Venture fund office with investor meeting",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The strategy for you: use a secondary‑market app like NasdaqTrader to place a buy order for Anthropic at $900 per share—just a step away from the $1.01 trillion valuation ceiling. Expect a 10‑15% upside if the IPO hits the target.",
+      "visual_query": "hand placing a trade order",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "For Indian startups, sign up with a fund like IDFC Innovation that lists Anthropic equity now. Secure a stake before the share price spikes and watch your portfolio leap. Then… stay tuned for our next story: Suno’s Visuals turning lyric videos into royalty‑free gold!",
+      "visual_query": "startup team celebrating with coffee",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 4: Suno’s Visuals: Turn AI‑generated lyric videos into royalty‑free assets\nStory hook to open with: Suno’s Visuals: Turn AI‑generated lyric videos into royalty‑free assets\nMoney angle to land at the end: You can upload your own music to Suno, apply Visuals, and sell the resulting videos on stock video sites to earn passive income.|9": [
+    {
+      "narration": "Sun's Visuals just launched an insane feature that turns any lyric video into *royalty‑free* gold. Upload your track, pick the visual pack, and boom— a ready‑to‑sell, copyright‑clean video. They’re calling it 'AI‑generated lyric videos that actually pay the author, not the platform.'",
+      "visual_query": "hand holding smartphone displaying Suno Visuals interface",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Suno’s Visuals uses the same Whisper‑style audio‑to‑text engine that powers ChatGPT, but it adds a visual layer. The AI syncs the beat, the words, and a 2D animation, so the output is a branded lyric video that looks like a professional production without any manual editing.",
+      "visual_query": "close‑up laptop screen with Suno visual editor",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The platform launched on March 1, 2024, and every upload is timestamped and licensed under Creative Commons Zero. That means you retain 100% of the revenue if you sell it elsewhere— no annoying royalties or platform cuts draining your margin.",
+      "visual_query": "calendar page marked March 1 2024",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "And here’s the kicker: Suno charges a flat $2.99 for the Visuals module each time you generate a video. All you need is your track, and you can produce a unique lyric video in under two minutes, ready for sale on Shutterstock, Pond5 or even your own YouTube channel.",
+      "visual_query": "calculator displaying $2.99",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The company’s API lets you batch‑process up to 100 songs a day, which is perfect for label owners or independent artists who want to monetize every track. The UI is so intuitive you’ll forget you’re running a back‑end, while the AI handles the heavy lifting.",
+      "visual_query": "group of artists editing videos on a table",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Venues like RenderHub and Artgrid just added Suno Visuals to their marketplace, so now you can spin up a library of royalty‑free lyric videos and list them with a single click. The platform also offers a 30‑day free trial, so you can test the quality before committing to the fee.",
+      "visual_query": "computer screen showing RenderHub marketplace listing",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "You can monetise in three ways: sell the videos on stock sites for a flat fee, sell the rights to music distributors for recurring royalty streams, or embed them in your own brand’s content for organic reach. Some creators have seen $20‑$30 per video from just the first sale.",
+      "visual_query": "hand holding dollar bill floating above computer screen",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So if you’re an independent musician, a content creator, or a small label, grab the free demo today. Upload a track, apply Visuals, and watch your royalty‑free video be placed on stock platforms. That’s immediate passive income with zero upfront cost beyond the free trial.",
+      "visual_query": "music note icon on smartphone screen",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "That’s the bottom line: Suno’s Visuals transforms your music into a revenue machine, and you can start pulling in cash the very next day. Ready to unlock that potential? Let’s jump to the next big story on the AI frontier.",
+      "visual_query": "hands typing on keyboard with Suno logo visible",
+      "mood": "practical",
+      "is_key_scene": false
+    }
+  ],
+  "OUTRO (2 scenes) — rapid recap of all stories: story 1: Nvidia Leadership Shakeup & New US AI Chip Export Rule Slump Amazon; story 2: Google hits the lead again with Gemini 4 Argon, but employees are skeptical; story 3: Anthropic IPO showdown: India’s AI scene watches closely; story 4: Suno’s Visuals: Turn AI‑generated lyric videos into royalty‑free assets|2": [
+    {
+      "narration": "First, Nvidia’s CEO quits, risking chip supply and sending Amazon shares plummeting. Second, Google’s Gemini 4 Argon burns bright yet employees doubt it, dropping Alphabet stock. Third, Anthropic eyes a $1 trillion IPO—India’s venture scene watches for spill‑over. Fourth, Suno unlocks royalty‑free lyric videos for creators.",
+      "visual_query": "Nvidia HQ silhouette with CEO silhouette in breakout, Amazon stock ticker flash, Google Gemini app interface on screen, Suno lyric video editing interface on laptop",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Subscribe now for the next digest every 12 hours. Tell us: Do you think the export rule will hurt Nvidia’s growth or just shift the market?",
+      "visual_query": "Hand typing on a laptop, dollar sign glow, chat bubbles animated",
+      "mood": "practical",
+      "is_key_scene": false
+    }
+  ]
+}
