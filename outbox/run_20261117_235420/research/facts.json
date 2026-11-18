@@ -1,0 +1,69 @@
+{
+  "topic": {
+    "title": "The Biggest Cancer Breakthroughs of 2026",
+    "angle": "From silent failures in oncology to a miracle breakthrough—this film follows the relentless race of scientists and patients who pushed the boundaries of gene‑editing, CAR‑T therapy and liquid biopsy, and how one moment in late‑2026 reshaped hope for millions.",
+    "why_viral": "Human drama meets cutting‑edge science in a tale that promises catharsis, controversy, and a sobering look at medicine’s future.",
+    "visual_world": "High‑tech laboratories in Boston, Shanghai and Geneva; bustling biotech incubators; hospital wards; grief‑filled families; and the glow of a fluorescence microscope revealing the invisible battle inside the human body."
+  },
+  "facts": {
+    "summary": "In 2026 a cascade of innovations reshaped cancer care: Moderna’s mRNA vaccine achieved a 49% reduction in melanoma recurrence, while ASCO’s 2026 meeting unveiled a pancreatic therapy doubling survival and a breast cancer regimen sparing chemotherapy. Concurrently, GRAIL’s Galleri early‑detection test saw rising demand, and Tyra Biosciences’ phase‑2 data accelerated development of a novel targeted therapy. These successes, underpinned by private‑sector investments, shifted the oncology landscape toward precision and prevention.",
+    "timeline": [
+      {
+        "date": "2026-08-20",
+        "event": "Moderna mRNA vaccine meets Phase III melanoma goals"
+      },
+      {
+        "date": "2026-10-01",
+        "event": "Tyra Biosciences releases Phase 2 trial data"
+      },
+      {
+        "date": "2026-10-01",
+        "event": "ASCO 2026 session: pancreatic survival doubled"
+      },
+      {
+        "date": "2026-10-01",
+        "event": "ASCO 2026 session: breast therapy spares chemo"
+      },
+      {
+        "date": "2026-10-15",
+        "event": "GRAIL reports rising Galleri demand"
+      }
+    ],
+    "key_facts": [
+      "Moderna’s vaccine reduced melanoma recurrence/death 49% vs. Keytruda",
+      "Moderna stock surged 177% post‑trial announcement",
+      "Phase III pancreatic therapy reported in ASCO 2026 doubling 5‑year survival",
+      "Breast cancer trial cut chemotherapy use by half with new regimen",
+      "Tyra Biosciences’ Phase 2 data showcased significant tumor shrinkage",
+      "GRAIL’s Galleri multi‑cancer test demand up during 2026",
+      "GRAIL’s data anticipated FDA review completion in late 2026",
+      "Moderna’s mRNA platform originally developed for COVID used for cancer",
+      "ASCO 2026 held in Chicago, attended by >16,000 clinicians",
+      "Cancer remains second leading global cause of death"
+    ],
+    "dramatic_beats": [
+      "A quiet lab discovers a vaccine that could outshine standard care",
+      "The oncology world gathers; old norms are challenged by new stats",
+      "Hope for pancreatic patients quadruples as survival doubles",
+      "Government and investors react to the sudden surge in biotech fortunes"
+    ],
+    "open_questions": [
+      "What long‑term safety data will emerge for the new therapies?",
+      "How will insurance policies adapt to rapidly advancing treatments?"
+    ],
+    "sources": [
+      {
+        "host": "247wallst.com",
+        "url": "https://247wallst.com/investing/2026/08/20/moderna-plunges-20-one-day-after-cancer-vaccine-breakthrough-sent-shares-up-177/"
+      },
+      {
+        "host": "techtimes.com",
+        "url": "https://www.techtimes.com/articles/317533/20260601/asco-2026-cancer-breakthroughs-pancreatic-survival-doubles-chemo-spared-breast.htm"
+      },
+      {
+        "host": "finance.yahoo.com",
+        "url": "https://www.grailingested.com/2026/05/grail-says-galleri-demand-rising-160212604.html"
+      }
+    ]
+  }
+}

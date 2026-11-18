@@ -1,0 +1,431 @@
+{
+  "title": "Silent Failures to Global Glory: 2026’s Cancer Revolution",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "Cold Open",
+      "narration": "Silhouette of a lab humming. A pipette drops; data spikes. The screen lights up. \"We did it.",
+      "visual_query": "quiet hospital lab, fluorescent lights, empty microscope stage",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "Cold Open",
+      "narration": "The world watches. ASCO Chicago. 16,000 clinicians. Pancreatic patients’ survival doubles, breast therapy halves chemo. Heads bow, cameras flash. The future blurs.",
+      "visual_query": "ASCO conference hall, packed auditorium, speaker podium",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "Cold Open",
+      "narration": "Investors cheer. Moderna shares surge 177%. GRAIL’s Galleri demand climbs. Unknown: how long will safety remain unshaken? The screen fades to black, leaving crowds in disbelief.",
+      "visual_query": "stock ticker flying beside a hospital corridor, empty chairs",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "Boston. Midnight. Rows of sequencers hum. A single vial labels “Moderna mRNA‑Melanoma.” An engineer eyes the data—49% recurrence drop, two‑week win over Keytruda. Hope leaks through fluorescent lights.",
+      "visual_query": "sequencer array bright at midnight in Boston lab",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "The screen blinks: phase III data, 12‑month follow‑up, mortality collapsed by nearly half. Glasses clink, coffee spills. A whisper spreads—this could rewrite melanoma care forever.",
+      "visual_query": "lab table with coffee, data screen projecting results",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "Outside the curtain of isolation, the city sleeps. Inside, a team presses a final pass code. The vial slides toward the world— but will insurance and regulators answer the hype?",
+      "visual_query": "Boston skyline at dawn, lab door swinging open",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "Night falls over Boston. A handful of researchers huddle around a flickering screen, the data stuttering like a heartbeat. Modena’s mRNA sequence glows— a promise of 49% melanoma rescue.",
+      "visual_query": "quiet laboratory at night, glow of computer screen, researchers in lab coats",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "The clock strikes 2 a.m. The lead scientist whispers the word: \"Trial completed.\" The room shivers; validation feels heavier than a tissue culture dish.",
+      "visual_query": "wide shot of lab with dim lights, close-up of a scientist's hand touching a",
+      "mood": "tense",
+      "is_key_scene": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "They stare at the numbers— 49% reduction. An invisible wave spreads across the data. Hope surges enough to knock over a coffee mug.",
+      "visual_query": "close-up of lab notebook, inked numbers, trembling hand",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "The fluorescent hum of a Boston lab cuts the night. Researchers stare at a growing curve—melanoma cells fading. A single mRNA dose could cut recurrence by 49%. The numbers feel like a promise.",
+      "visual_query": "Boston research lab, night, fluorescent lights, data console screens",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "The Restless Lab",
+      "narration": "Coffee mugs clatter as a senior scientist sighs. The data, unconfirmed yet, whispers success. One more test, one more patient, and dawn may finally shift.",
+      "visual_query": "Lab bench, broken coffee mug, close-up of shaking hand holding pipette",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 12,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "Chicago’s skyline blurs as thousands converge on the ASCO hall. 16,000 clinicians fill the room, eyes fixed on the monitors, waiting for a verdict that could rewrite cancer myths.",
+      "visual_query": "ASCO conference hall crowded with clinicians, large screen displaying graphs",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "A hush falls. Moderna’s Phase III melanoma results flash: 49% reduction in recurrence, beating Keytruda. Numbers ripple across the room, disbelief turning to awe.",
+      "visual_query": "Close‑up of digital screen showing Moderna trial data",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "Then the brush of hope sweeps. A pancreatic study announces a 2‑fold increase in 5‑year survival. Chairs creak, hands tighten around coffee cups—breath held in suspense.",
+      "visual_query": "Intimate shot of conference attendees tightening coffee cups",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "Chicago, October 1, 2026. A packed hall. The 16,000 clinicians stare at screens. The first slide blazes: pancreatic 5‑year survival doubles. Breath held. 3‑sentence max. 300 chars limit. m",
+      "visual_query": "Chairs packed conference hall, towering screen",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "Next screen. Breast cancer data flickers. New regimen cuts chemotherapy in half. No fancy buzz; pure numbers. Patients breathe relief, doubts linger. 5‑year survival, a shockwave. 3 sentences.",
+      "visual_query": "Close‑up of data chart on monitor",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "The room hushes. A reporter whispers: Moderna’s mRNA vaccine beats Keytruda—49% fewer recurrences. Stock rises 177%. The future feels fragile. The unknown presses forward. 3 sentences.",
+      "visual_query": "Sitting reporter with laptop, paused silence",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "June 2026, Chicago. 16,000 clinicians flood the hall. On the giant screen, Moderna’s vaccine reports a 49% drop in melanoma recurrence, stock surging 177%. The room listens, stunned, as numbers flicker, hope morphs into doubt.",
+      "visual_query": "busy conference hall, neon screens, clustered chairs, focused faces",
+      "mood": "tense|urgent|curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "The World Watches",
+      "narration": "The hall lights flicker as Dr. Rao announces a 100% increase in 5‑year survival for pancreatic patients. Expectation swells, disbelief lingers.",
+      "visual_query": "ASCO auditorium, doctors nodding, screens lit up",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 20,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "A young mother watches a slide: two‑thirds of breast cancer patients now skip chemotherapy. Her eyes widen; hope cracks like glass.",
+      "visual_query": "momentary close‑up of crying mother, screen behind",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 21,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "Confidential reports flood inboxes; investors rewrite portfolios. A stock ticker climbs 177%. Sudden glow, sharp edges of a saga yet unfurled.",
+      "visual_query": "trading floor, screens scrolling numbers",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "The ticker flashes 177%. Moderna’s mRNA pledge to cut melanoma death swells investor confidence. A quiet lab, now a blazing frontier. The world waits.",
+      "visual_query": "concrete lab with glowing microscopes, excited researchers, crowded studio background",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "In Chicago, ASCO domes bright. The pancreatic breakthrough silences skeptics: five‑year survival doubles, 2026 seals a new chapter. Don’t blame hope; it is evidence.",
+      "visual_query": "ASCO conference hall, podium, packed audience, dramatic lights",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "Half the chemo die‑harders stand in relief. Breast‑cancer patients hear the promise: new regimen lowers risk, cuts treatments in half. Families gasp, tears echo the data. The next page?",
+      "visual_query": "intimate close‑up of family holding hands, tearful faces, hospital corridor",
+      "mood": "reflective",
+      "is_key_scene": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "On October 1, 2026, ASCO’s lasered auditorium erupts. A graph shows pancreatic 5‑year survival flaring from 11% to 22%. The room gasps, reality cracking old myths.",
+      "visual_query": "ASCO conference hall with projection screen, audience in focused silence",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "Within minutes, a breast‑cancer study takes the stage. Half the patients avoid chemotherapy. Families stare, candles flickering against grief and hope.",
+      "visual_query": "close‑up of a family holding a newborn, tears trace screen",
+      "mood": "somber",
+      "is_key_scene": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Fourfold Hope",
+      "narration": "Wall Street moments shift. Moderna’s stock climbs 177% overnight; Tyra Biosciences’ phase‑2 data swirls into headlines. Investors scramble, books re‑balance faster than bloodwork.",
+      "visual_query": "stock ticker panel, frantic traders in a dim room",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 28,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "On 2026‑10‑15, regulators scuttle reports. Ambassadors of policy turn skeptics into investors. Moderna stock jumps 177%, echoing a ripple across biotech.",
+      "visual_query": "boardroom with reporters, screens flashing share prices",
+      "mood": "tense|curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 29,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "ASCO’s lectures in Chicago shocked 16,000. A pancreatic therapy doubles five‑year survival. Clinics scramble; production lines are lit like city grids, waiting for a wave.",
+      "visual_query": "hospital corridor with nurses rushing, test tubes on counters",
+      "mood": "urgent|tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 30,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "Investors stare at valuations. Scientists count silent bytes. The next data drop may rewrite the cure itself.",
+      "visual_query": "sterile lab, close‑up of patient gene sequencing readout",
+      "mood": "tense|curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 31,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "June 2026, regulators convene. FDA committees pressed to fast‑track. A single vote could ignite markets. Investors watch, breath held. Banks line up, eyes on biotech—one surge could ripple economies.",
+      "visual_query": "FDA committee room, tense faces, whiteboard graphs",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 32,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "By August 20, Moderna’s stock soars 177%. Trading floors erupt in frantic chatter. Clinics prepare for a wave—beds, staff, pharmacy slots all stretch. Patients line up; hope contracts with cash flow.",
+      "visual_query": "Wall Street trading floor, green candles, panoramic view",
+      "mood": "tense",
+      "is_key_scene": false
+    },
+    {
+      "id": 33,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "On October 1, ASCO's pancreatic breakthrough doubles 5‑year survival. Hospitals scramble to procure therapy. Meanwhile, Tyra’s data amplifies risk–benefit debate. The health system braces: each new vial a seed of uncertainty.",
+      "visual_query": "ASCO conference stage, graphic overlay of survival curves",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 34,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "Regulators huddle in dim rooms. A late‑night call from Moderna’s chief flashes Bloomberg: 177% surge, 49% melanoma win. Insurers shuffle files, banks whisper about IPOs. Clinics stand ready, vials trembling like newborns. What price will hope exact?",
+      "visual_query": "boardroom rain‑slick windows FBI insignia",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 35,
+      "chapter": 4,
+      "chapter_title": "The Surge",
+      "narration": "August 20, 2026. A single vial trembling in hand, the mRNA vaccine. One patient, after years of melanoma, watches the tide shift. 49% less recurrence—a silent storm in the lab had roared.",
+      "visual_query": "hand holding a small vial against hospital white backdrop, early morning light",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 36,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "October 1 in Chicago. Protocols flipped. Pancreatic survivors deafened by new data; 5‑year survival now doubled. The auditorium vibrates—each APIC graph like a heartbeat. As patients gather, hope thumps louder.",
+      "visual_query": "speakers on stage pointing at graphs, packed auditorium, bustling crowd",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 37,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "Midnight glow over a hospital cafeteria. The patient, eyes bright, unties the binder — his name, his story, the future. He steps toward the waiting room, the glass door ajar. What lies beyond that doorway? The next chapter waits in silence.",
+      "visual_query": "patient in cafeteria, unbinding binder, twilight outside through windows",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "id": 38,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "On the morning of 2026‑10‑01, a quiet lab hums with anticipation. A patient, combing through a binder, finds the results of Moderna’s Phase III trial—49% reduction in melanoma recurrence. Hope fractures the silence, as the numbers echo beyond the sterile walls.",
+      "visual_query": "clinical lab basement, handheld tablet illuminating patient’s face",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 39,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "In Chicago, ASCO 2026 ignites a storm. Surgeons stare at a graph: pancreatic survival doubled, breast therapy slashes chemo. The crowd’s gasp crescendos into disbelief—an old era dissolves into the new.",
+      "visual_query": "ASCO conference hall, projected survival curve, clinicians cheering",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 40,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "GRAIL’s Galleri demand soars, a wave of patients line up in front of the test’s booth. A nurse whispers, ‘FDA review late 2026.’ The room exhales, but the future still pulses, humming in the unspoken promise of early detection.",
+      "visual_query": "GRAIL reception line, faces of patients with hopeful eyes",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 41,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "The lab door cracks open. On a glass bench, Moderna’s mRNA vial glows under harsh light. A lone figure, patient Eli, eyes the vial as if it holds destiny.",
+      "visual_query": "lab bench with glass vial, patient silhouette",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 42,
+      "chapter": 5,
+      "chapter_title": "The Golden Moment",
+      "narration": "Cut to ASCO conference hall, 16,000 voices swell. A poster bursts: 49% melanoma reduction, 177% stock surge. Eli watches, realizing the world is rewriting hope.",
+      "visual_query": "ASCO hall crowded, poster display",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 43,
+      "chapter": 99,
+      "chapter_title": "Outro",
+      "narration": "On 2026‑08‑20 Moderna hit its target: a 49% cut in melanoma recurrence. The world watched as a pandemic vaccine turned oncologic champion. The silence before the breakthrough vanished into a new era.",
+      "visual_query": "clinical trial hall, patients in vaccine chair, monitor screens glow",
+      "mood": "tense",
+      "is_key_scene": true
+    },
+    {
+      "id": 44,
+      "chapter": 99,
+      "chapter_title": "Outro",
+      "narration": "If this chapter is your first glimpse, hit subscribe. More untold stories of science will follow.",
+      "visual_query": "dark studio window, softly lit camera lens, graphic subscription prompt",
+      "mood": "urgent",
+      "is_key_scene": true
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Cold Open"
+    },
+    {
+      "num": 1,
+      "title": "The Restless Lab"
+    },
+    {
+      "num": 2,
+      "title": "The World Watches"
+    },
+    {
+      "num": 3,
+      "title": "Fourfold Hope"
+    },
+    {
+      "num": 4,
+      "title": "The Surge"
+    },
+    {
+      "num": 5,
+      "title": "The Golden Moment"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}
