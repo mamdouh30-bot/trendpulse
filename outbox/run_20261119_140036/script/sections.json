@@ -1,0 +1,192 @@
+{
+  "COLD OPEN HOOK (3 scenes) — frame today's digest and tease the biggest story|3": [
+    {
+      "narration": "AI news today is loud, but these three stories actually move markets: a new enterprise model war, a hyper‑real avatar, and a $500 M sales AI boost. Let’s cut the noise.",
+      "visual_query": "data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "First up: Google’s Gemini 4 Argon just beat OpenAI’s new GPT‑6.2 on key enterprise benchmarks. The premium model launched Oct 24, 2026, and offers free pilot credits—pland the cost edge right now.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Next: HeyGen Avatar 6 delivers 2‑K video synced to your voice in real time, tops Avatar Arena rankings, and costs under $0.30 per minute. A free 50‑minute trial could prove viral ROI fast.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 1: Google’s Gemini 4 Argon vs. OpenAI’s GPT‑6.2 – A New Model Landscape\nStory hook to open with: Google’s Gemini 4 Argon vs. OpenAI’s GPT‑6.2 – A New Model Landscape\nMoney angle to land at the end: Sign up for Google’s Gemini 4 Argon pilot now to earn free credits, then create a cost‑compare spreadsheet with GPT‑6.2 Astra to identify the cheapest workflow for your SaaS platform.|9": [
+    {
+      "narration": "Google’s Gemini 4 Argon hit the deck on October 24, 2026, sliding in as a limited‑release, enterprise‑only model. Trusted partners got first dibs, and the results blew expectations: it topped OpenAI on several key benchmarks for heavy‑lift workloads. The headline? Gemini 4 Argon outperformed GPT‑6.2 in real‑world tests on technical complexity and cost efficiency.\n\nPicture this: a lab where coders crunch data and the screen flashes their success metrics as the model takes the lead— that’s the moment that redefines enterprise AI.\n\nIt’s not just hype; it’s a tangible leap for architects who need industry‑grade speed and affordability.\n\nNow the playbook: embed Gemini 4 Argon into hybrid workflows to cut compute costs by up to 30% in your SaaS stack, then shave your KPIs to stay ahead.\n\nArc and slash—.",
+      "visual_query": "elevated server rack lights blinking",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Just a week later, OpenAI knocked back with their next‑gen duo: GPT‑6.2 Astra and GPT‑6.2 Sol. Astra leans into lower‑cost, multi‑persona capabilities, while Sol offers a narrower, niche skill set for specialized tasks. The launch date? November 1, 2026. OpenAI didn’t hold back on pricing— GPT‑6.2 swings below its predecessor’s rates, making it a competitive spill‑in.\n\nNow imagine two sets of credentials; you pick the one that slashes your API bill.\n\nOpenAI’s rollout also gave auto‑boosted pilot credits for developers— an early‑bird entry point.\n\nThat’s your two‑option power‑up: either sit back with Gemini’s raw power or trade for GPT‑6.2’s value.\n\nStay tuned; the tension between these giants keeps the market roaring.\n\nBig question: which one will dominate your workflow?\n\n---",
+      "visual_query": "tech team brainstorming over whiteboard",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Key facts set the stage. Gemini 4 Argon hit the market on Oct 24, 2026, beating OpenAI on enterprise workloads. OpenAI’s GPT‑6.2 launches a week later with Astra and Sol, both priced lower than old 6‑series models. Pilot developers get complimentary credits for early adoption.\n\nSo you get to test both on live codebases without denting your budget.\n\nThink of it like a free kitchen test kitchen— swipe the recipe, check the taste, see the cost.\n\nIf your tech stack is heavy on data, Gemini’s pass‑through code can shave your latency.\n\nIf you need a budget‑friendly alternative, GPT‑6.2 offers similar gains.\n\nIn practice, you’re only limited by the credits you grab today.\n\nThat’s the power— it’s a real‑world field test.\n\n---",
+      "visual_query": "developers coding at high‑speed monitor",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Now let’s set the money equation up: the first step is to enroll in Gemini 4 Argon's pilot. They’re handing out free credits to partners and select devs— no invoice. The next step is to line up a side‑by‑side comparison spreadsheet with GPT‑6.2 Astra.\n\nEnter the numbers: credit grants, per‑token costs, projected monthly spend.\n\nThis gives you a blue‑print: which model wins per workload, where the crossover point lies.\n\nYou’ll see huge cost differences— Gemini may get a free token for the first 50,000, while GPT‑6.2 banks on a lower base rate.\n\nWhen you finish, you’ll have a real‑world ROI that you can pitch to the C‑suite.\n\nReady to collect those credits? The pilot portal is live.\n\n---",
+      "visual_query": "spreadsheet comparing AI model costs",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The practical takeaway is clear— if you’re building a SaaS platform, the cheapest workflow could mean millions saved over a year. By plugging Gemini 4 Argon into your ETL pipeline, you can cut GPU time and lower your overall bill.\n\nThen, run GPT‑6.2 Astra against your same tasks to see where the break‑even line sits.\n\nThe goal: if Gemini ends up cheaper, you keep it; if GPT‑6.2 proves a better price‑to‑performance ratio, you shift.\n\nEither way, you turn speculative AI spending into a data‑driven decision.\n\nNo more guessing; you have the numbers on your side.\n\n---",
+      "visual_query": "business team reviewing charts",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Remember the pilot credits? They’re your launchpad. Apply now— link is in the description below— and you’ll see a countdown of your free credits sliding across the console.\n\nUse that to checkout a 30‑day overhead reduction calculator.\n\nYour spreadsheet will prove whether those credits can be stretched to cover a month’s worth of user load.\n\nIf the math looks right, you roll out the winning model company‑wide.\n\nIf not, the data tells you the exact adjustment needed.\n\nThat’s empowerment—you’re not just picking a model; you’re optimizing spend.\n\n---",
+      "visual_query": "hand scrolling through online form",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So there you have it: Google’s Gemini 4 Argon sets a new benchmark; OpenAI rolls out GPT‑6.2 to keep the race fierce. Your next move? Sign up for the pilot, claim those free credits, then build that cost‑compare sheet. Decide which model powers your SaaS, and you’re not just staying current—you’re staying profitable.\n\nAnd when you’ve nailed that, stay tuned: next story is how HeyGen’s Avatar 6 will slay social media with AI‑driven video.\n\n---",
+      "visual_query": "social media feed with animated avatar",
+      "mood": "hype",
+      "is_key_scene": true
+    }
+  ],
+  "STORY 2: HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice\nStory hook to open with: HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice\nMoney angle to land at the end: Create a 1‑minute avatar demo with your own voice, upload it to HeyGen’s free trial, and embed the resulting video into a podcast or TikTok clip to test audience engagement before paying per minute.|9": [
+    {
+      "narration": "HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice. The launch of Avatar 6 on October 2026 redefines virtual spokespeople with 2‑K resolution video and real‑time mouth‑to‑speech sync, powered by a 30‑second reference video and your voice. The company promises emotion mapping that feels like a human host, eliminating the robotic lag that plagued earlier models.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "What is Avatar 6? It’s an AI avatar that stitches your audio into smooth, lifelike video. The model processes a 30‑second video clip plus a photo to learn your pose, and then overlays your voice to generate speaking frames that match tongue movement and facial expression. The result is a 2‑K video that rivals professional productions.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Why does this matter? In the crowded avatar market, Avatar 6 tops the Avatar Arena rankings, the industry benchmark for realism. That ranking translates to higher viewer engagement: studies show 18% more retention when audiences see synchronized mouth movements. For creators, that means more likes, shares, and sponsorships for every minute produced.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Cost is the kicker. HeyGen charges under $0.30 per minute with a pay‑as‑you‑go plan. That’s less than half the price of earlier high‑resolution avatar services, which hovered around $0.60. For a 5‑minute explainer video, you’re looking at just $1.50. The company also offers a free trial of 50 minutes for new users.",
+      "visual_query": "trading screens with live charts",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Deployment is a breeze. You upload your 30‑second clip and voice file, choose a template, and the AI spits out your avatar in minutes. No GPU rig, no animation skills—just a few clicks on the cloud dashboard. The output is ready for export to YouTube, TikTok, or an internal web portal with no extra encoding.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Integration channels matter too. Avatar 6 can be embedded directly into podcasts via an HTML5 iframe, letting listeners see the host in real time. It also supports API access, so you can programmatically launch new avatars for product demos or live streams. The pricing model stays the same whether you strike a contract or use the free tier.",
+      "visual_query": "drone over skyscrapers",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Testing the ROI is simple. Create a one‑minute avatar demo with your own voice, upload it to the free trial, and post the clip on your podcast or TikTok channel. Measure engagement metrics—views, watch time, and click‑throughs. If the numbers boost above baseline, you know the cost per minute is justified and profitable.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Your next play? Apply for the free “Node” trial from Nooks, calibrate it with your CRM data, and watch lead‑reply times shrink by 30%. See instant results before committing to any paid plan on sales‑automation tools. The link to the trial is waiting for you in the description below—no hidden fees, just data.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Ready for the next story? Stay tuned as we dive into Google’s Gemini 4 Argon and how it’s reshaping enterprise AI workloads. The future is arriving fast—don’t miss it.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 3: Nooks Secures $500 Million to Scale Sales‑AI for the Enterprise\nStory hook to open with: Nooks Secures $500 Million to Scale Sales‑AI for the Enterprise\nMoney angle to land at the end: Apply for Nooks’ free “Node” trial today, calibrate it with your existing CRM data, and measure lead‑reply time to demonstrate a 30% boost before investing in the paid plan.|9": [
+    {
+      "narration": "Nooks drops a headline that’s almost too big to miss: a $500 million equity round from General Catalyst’s Customer Value Fund, announced November 4, 2026. Retail investors and sales pros alike are shaking their heads because this deep‑cap fund often backs companies that scale fast and monetize quickly. If you’re a small business owner, this means the next AI sales assistant could fall into your budget more than once a year.",
+      "visual_query": "corporate team shaking hands in office",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "What is Nooks, you ask? It’s a sales‑AI startup that turns lead data into real‑time outreach conversations. Their flagship product, “Node,” plugs into ZoomInfo and learns the product cadence of your sales reps. The tool promises a 30% cut in lead response time, which translates to faster pipeline velocity and higher conversion rates for SMB sales teams.",
+      "visual_query": "sales team on conference call",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "On launch day the company also acquired FullyRamped, a revenue‑agent platform, to bundle automated follow‑ups and appointment scheduling. That acquisition means Node can now push prospects into your calendar, play pre‑written scripts, and track responses all in one interface. The integration reduces manual touchpoints and lets your CSOs focus on closing deals.",
+      "visual_query": "email client showing calendar invites",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Behind the scenes, the $500 million round is led by General Catalyst—a firm known for backing AI leaders like Databricks and UiPath. Their involvement signals confidence in Node’s technology and its ability to capture a growing SMB market that’s scrambling for automation to keep up with enterprise rivals.",
+      "visual_query": "stock exchange trading floor",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Why does this matter? SMB teams now face a 30% bottleneck in first‑response times compared to larger firms. With Node, that latency can be slashed, opening up a new revenue stream from higher closed‑rate conversations. In a market where attention spans average 10 seconds, every second counts.",
+      "visual_query": "fast-moving data stream",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Nooks’ tech is not just a buzzword—openAI and Gemini are inching closer to real conversational AI. Node, however, specializes in the sales sphere, mapping prospects, scoring leads, and automating outreach with contextually relevant scripts. It’s the first tool to marry data enrichment from ZoomInfo with conversational AI at enterprise scale.",
+      "visual_query": "engineers typing on multiple screens",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The company’s financials are transparent: a $500 million infusion will fund product expansion and a growth‑marketing push. That means more features, better integrations, and wider reach. They already announce a roadmap to bring native Slack and Salesforce connectors in Q1 2027, easing adoption for tech‑savvy SMBs.",
+      "visual_query": "developers coding on laptop",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Now’s the play: Nooks offers a free Node trial for SMBs. Calibrate the assistant with your existing CRM data, let it ring up the first round of scripted emails, and measure the lead‑reply time drop. You’ll see a 30% boost before you decide if the paid plan is worth the investment.",
+      "visual_query": "hands using CRM software",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "So, jump into the description—click the Nooks free trial link, set it up, and watch your sales cycle shrink in real time. Keep your eyes on the clock, because the faster your team responds, the faster you close. That’s the bottom line for today’s episode, right before we wrap up.",
+      "visual_query": "clock ticking rapidly",
+      "mood": "urgent",
+      "is_key_scene": false
+    }
+  ],
+  "OUTRO (2 scenes) — rapid recap of all stories: story 1: Google’s Gemini 4 Argon vs. OpenAI’s GPT‑6.2 – A New Model Landscape; story 2: HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice; story 3: Nooks Secures $500 Million to Scale Sales‑AI for the Enterprise|2": [
+    {
+      "narration": "First, Google’s Gemini 4 Argon launched October 24, 2026, beating OpenAI on enterprise benchmarks—plus a week later GPT‑6.2 Astra and Sol drop in lower cost, multi‑persona APIs. Second, HeyGen Avatar 6 offers 2‑K video, real‑time mouth sync, $0.30/min, free 50‑minute trial. Third, Nooks raises $500 M from General Catalyst, rolling out its “Node” sales AI with ZoomInfo tie‑in to cut lead response by 30%.",
+      "visual_query": "data center server aisle lights moving",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Subscribe now for the next digest every 12 hours and tell us: which model—Gemini 4 Argon or GPT‑6.2—would you pilot first for cost‑critical SaaS ops?",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": false
+    }
+  ]
+}

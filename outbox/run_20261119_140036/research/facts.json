@@ -1,0 +1,152 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Argon vs. OpenAI’s GPT‑6.2 – A New Model Landscape",
+        "hook": "Google reclaims the benchmark lead, but OpenAI launches two new GPT‑6.2 models at once.",
+        "angle": "Google today revealed its Gemini 4 Argon, a limited‑release model that tops OpenAI on several enterprise‑relevant benchmarks. A week later, OpenAI added GPT‑6.2 Astra and GPT‑6.2 Sol, expanding its lineup with new capabilities while keeping the release pipeline tight.",
+        "money_angle": "Developers can earn credits and API usage credits by early adoption, and enterprises can test hybrid workflows to lock in cost advantages.",
+        "visual_world": "High‑contrast cards of Gemini 4’s benchmark charts next to OpenAI’s model card screenshots; developers scripting in real‑time code editors; data center schematics with GPU clusters.",
+        "search_queries": [
+          "Google Gemini 4 Argon release news 2026",
+          "OpenAI GPT‑6.2 Astra Sol launch details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice",
+        "hook": "The new Avatar 6 can mimic your tone in real time, making virtual presences feel human.",
+        "angle": "HeyGen announced Avatar 6, a context‑aware model that generates lifelike audio and visual avatars from voice input. It tops the new Avatar Arena, with 1‑minute demos showing real‑time mouth‑to‑speech sync and emotion mapping.",
+        "money_angle": "Creators can sell avatar‑powered podcasts or video content, monetizing with custom brand packages on social platforms.",
+        "visual_world": "Side‑by‑side demo streams of users speaking into a mic while a stylized avatar mirrors them; UI of the HeyGen editor showing style presets and voice sliders.",
+        "search_queries": [
+          "HeyGen Avatar 6 news 2026",
+          "HeyGen Avatar 6 demo transcript"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Nooks Secures $500 Million to Scale Sales‑AI for the Enterprise",
+        "hook": "A $500 million round signals a shift toward AI‑powered customer success at scale.",
+        "angle": "Nooks, a sales‑automation platform, announced a $500 million equity round led by General Catalyst. The cash will fund product expansion, new sales channel integrations, and a growth‑marketing push. It reflects VC confidence in AI‑embedded outbound workflows.",
+        "money_angle": "Marketers can pilot Nooks’ AI sales bot to reduce lead response time and capture higher conversion rates, driving revenue upside for SMBs.",
+        "visual_world": "Pitch deck screenshots, investor reception footage, screenshots of the AI sales bot interface, and graphs showing pipeline lift expectations.",
+        "search_queries": [
+          "Nooks $500 million funding news 2026",
+          "Nooks AI sales bot platform review"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "BlueMatrix Buys Aiera – Bringing Governed Research to AI Systems",
+        "hook": "A major financial‑research AI platform switches hands, sparking a new wave of data governance.",
+        "angle": "BlueMatrix announced the acquisition of Aiera, an AI‑enabled financial research company, aiming to embed governed data discovery into AI workflows. The deal completes BlueMatrix’s push into AI‑driven investment research, promising tighter compliance, structured data formats, and faster turnaround for analysts.",
+        "money_angle": "Investment firms can leverage BlueMatrix’s governed AI to pre‑screen deals, reducing due‑diligence time and uncovering hidden value faster.",
+        "visual_world": "Cinematic shots of the downtown Shanghai office, side‑by‑side screens of Aiera’s AI dashboard before and after integration, and investors reviewing data plans.",
+        "search_queries": [
+          "BlueMatrix acquires Aiera news 2026",
+          "Aiera AI financial research platform details"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Argon vs. OpenAI’s GPT‑6.2 – A New Model Landscape",
+        "summary": "Google rolled out Gemini 4 Argon on October 24, 2026 as a limited‑release, enterprise‑focused model that beat OpenAI on several key benchmarks. A week later, OpenAI announced GPT‑6.2 Astra and GPT‑6.2 Sol, expanding its lineup with lower‑cost, multi‑persona options while keeping the release cadence tight. Both launches include pilot credits for developers and early‑adopter API usage.",
+        "key_facts": [
+          "Gemini 4 Argon released Oct 24, 2026 to trusted partners.",
+          "Gemini 4 Argon tops OpenAI benchmarks on enterprise workloads.",
+          "OpenAI launched GPT‑6.2 Astra and GPT‑6.2 Sol a week later.",
+          "Both models offer API usage credits for early adopters.",
+          "Practitioners can embed Gemini 4 Argon into hybrid workflows to cut costs.",
+          "OpenAI’s GPT‑6.2 pricing is lower than previous 6‑series models."
+        ],
+        "money_angle": "Sign up for Google’s Gemini 4 Argon pilot now to earn free credits, then create a cost‑compare spreadsheet with GPT‑6.2 Astra to identify the cheapest workflow for your SaaS platform.",
+        "sources": [
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/google-gemini-4-argon-203440828.html"
+          },
+          {
+            "host": "businessinsider.com",
+            "url": "https://www.businessinsider.com/google-gemini-4-argon-ai-model-public-release-cost-2026-10"
+          },
+          {
+            "host": "helpnetsecurity.com",
+            "url": "https://www.helpnetsecurity.com/2026/10/01/google-gemini-4-argon/"
+          },
+          {
+            "host": "cryptobriefing.com",
+            "url": "https://cryptobriefing.com/google-gemini-4-argon-25-trillion-tokens/"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice",
+        "summary": "HeyGen launched Avatar 6, a context‑aware audio‑driven model that delivers 2‑K resolution video with realistic mouth‑to‑speech sync and emotion mapping. The new avatar tops recent Avatar Arena rankings and supports script‑aware gestures through a 30‑second reference clip and voice file. Availability is billed per minute with a pay‑as‑you‑go plan and a free trial for creators.",
+        "key_facts": [
+          "Avatar 6 supports 2‑K video resolution.",
+          "It uses 30‑second video+photo + voice as reference.",
+          "Real‑time mouth‑to‑speech sync and emotion mapping.",
+          "Tops Avatar Arena ranking per latest comparison.",
+          "Pricing is < $0.30 per minute (pay‑as‑you‑go).",
+          "Free trial available for first 50 minutes."
+        ],
+        "money_angle": "Create a 1‑minute avatar demo with your own voice, upload it to HeyGen’s free trial, and embed the resulting video into a podcast or TikTok clip to test audience engagement before paying per minute.",
+        "sources": [
+          {
+            "host": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html"
+          },
+          {
+            "host": "unite.ai",
+            "url": "https://www.unite.ai/heygen-launches-avatar-6-with-script-aware-gestures-and-2k-video/"
+          },
+          {
+            "host": "heygen.com",
+            "url": "https://www.heygen.com/models/heygen-avatar-6"
+          },
+          {
+            "host": "x.com",
+            "url": "https://x.com/HeyGen/status/2122738285067813180"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Nooks Secures $500 Million to Scale Sales‑AI for the Enterprise",
+        "summary": "Nooks secured a $500 million equity round from General Catalyst’s Customer Value Fund on November 4, 2026 to fund product expansion and a growth‑marketing push. The round was led by General Catalyst and added new AI sales bot integrations for ZoomInfo and fully ramped acquisition for revenue‑agent capabilities. Nooks now offers a “Node” AI sales assistant that reduces lead response time and boosts conversion rates for SMBs.",
+        "key_facts": [
+          "Raised $500 million from General Catalyst’s Customer Value Fund.",
+          "Funding announced Nov 4, 2026 by Reuters and MSN.",
+          "Launch of AI sales assistant “Node” with ZoomInfo integration.",
+          "Added acquisition of FullyRamped to strengthen revenue‑agent platform.",
+          "Goal: cut lead response time by 30% for SMBs.",
+          "Target market: SMB sales teams using outbound workflows."
+        ],
+        "money_angle": "Apply for Nooks’ free “Node” trial today, calibrate it with your existing CRM data, and measure lead‑reply time to demonstrate a 30% boost before investing in the paid plan.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/money/startup/ai-sales-startup-nooks-secures-500-million-in-funding-for-expansion/ar-AA2gJTcV?ocid=BingNewsVerp"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/video/11-4-2026-nooks-secures-163841985.html"
+          }
+        ]
+      }
+    ],
+    "summary": "Google rolled out Gemini 4 Argon on October 24, 2026 as a limited‑release, enter; HeyGen launched Avatar 6, a context‑aware audio‑driven model that delivers 2‑K r; Nooks secured a $500 million equity round from General Catalyst’s Customer Value"
+  }
+}

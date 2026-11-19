@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Argon vs. OpenAI’s GPT‑6.2 – A New Model Landscape",
+        "hook": "Google reclaims the benchmark lead, but OpenAI launches two new GPT‑6.2 models at once.",
+        "angle": "Google today revealed its Gemini 4 Argon, a limited‑release model that tops OpenAI on several enterprise‑relevant benchmarks. A week later, OpenAI added GPT‑6.2 Astra and GPT‑6.2 Sol, expanding its lineup with new capabilities while keeping the release pipeline tight.",
+        "money_angle": "Developers can earn credits and API usage credits by early adoption, and enterprises can test hybrid workflows to lock in cost advantages.",
+        "visual_world": "High‑contrast cards of Gemini 4’s benchmark charts next to OpenAI’s model card screenshots; developers scripting in real‑time code editors; data center schematics with GPU clusters.",
+        "search_queries": [
+          "Google Gemini 4 Argon release news 2026",
+          "OpenAI GPT‑6.2 Astra Sol launch details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "HeyGen Avatar 6 – Audio‑Driven AI That Reads Your Voice",
+        "hook": "The new Avatar 6 can mimic your tone in real time, making virtual presences feel human.",
+        "angle": "HeyGen announced Avatar 6, a context‑aware model that generates lifelike audio and visual avatars from voice input. It tops the new Avatar Arena, with 1‑minute demos showing real‑time mouth‑to‑speech sync and emotion mapping.",
+        "money_angle": "Creators can sell avatar‑powered podcasts or video content, monetizing with custom brand packages on social platforms.",
+        "visual_world": "Side‑by‑side demo streams of users speaking into a mic while a stylized avatar mirrors them; UI of the HeyGen editor showing style presets and voice sliders.",
+        "search_queries": [
+          "HeyGen Avatar 6 news 2026",
+          "HeyGen Avatar 6 demo transcript"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Nooks Secures $500 Million to Scale Sales‑AI for the Enterprise",
+        "hook": "A $500 million round signals a shift toward AI‑powered customer success at scale.",
+        "angle": "Nooks, a sales‑automation platform, announced a $500 million equity round led by General Catalyst. The cash will fund product expansion, new sales channel integrations, and a growth‑marketing push. It reflects VC confidence in AI‑embedded outbound workflows.",
+        "money_angle": "Marketers can pilot Nooks’ AI sales bot to reduce lead response time and capture higher conversion rates, driving revenue upside for SMBs.",
+        "visual_world": "Pitch deck screenshots, investor reception footage, screenshots of the AI sales bot interface, and graphs showing pipeline lift expectations.",
+        "search_queries": [
+          "Nooks $500 million funding news 2026",
+          "Nooks AI sales bot platform review"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "BlueMatrix Buys Aiera – Bringing Governed Research to AI Systems",
+        "hook": "A major financial‑research AI platform switches hands, sparking a new wave of data governance.",
+        "angle": "BlueMatrix announced the acquisition of Aiera, an AI‑enabled financial research company, aiming to embed governed data discovery into AI workflows. The deal completes BlueMatrix’s push into AI‑driven investment research, promising tighter compliance, structured data formats, and faster turnaround for analysts.",
+        "money_angle": "Investment firms can leverage BlueMatrix’s governed AI to pre‑screen deals, reducing due‑diligence time and uncovering hidden value faster.",
+        "visual_world": "Cinematic shots of the downtown Shanghai office, side‑by‑side screens of Aiera’s AI dashboard before and after integration, and investors reviewing data plans.",
+        "search_queries": [
+          "BlueMatrix acquires Aiera news 2026",
+          "Aiera AI financial research platform details"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "6lF-w8vhpwQ",
+    "url": "https://youtube.com/watch?v=6lF-w8vhpwQ",
+    "privacy": "public"
+  }
+}
