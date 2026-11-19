@@ -1,0 +1,176 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Argon Hits the Market, Rapper AI Safety Body Takes Shape",
+        "hook": "Google’s newest model just out‑shines rivals, while the industry gears up for a safety framework.",
+        "angle": "Google unveiled Gemini 4 Argon, a multimodal model that claims enterprise‑level performance and is currently in a limited release. Simultaneously, Google, OpenAI, and Anthropic are moving toward a joint AI safety standards body that could set new compliance benchmarks for all AI‑driven products.",
+        "money_angle": "Businesses can hire Gemini 4 Argon for enterprise tools or invest in the safety‑compliance startups developing audit frameworks.",
+        "visual_world": "Show screenshots of Gemini 4 Argon API console, a photo‑confrontation of design prototypes, and the sleek Google DeepMind lab in Zurich.",
+        "search_queries": [
+          "Google Gemini 4 Argon launch news",
+          "Google OpenAI Anthropic AI safety standards body news"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Nooks Secures $500 M to Scale AI‑Powered Sales Ops",
+        "hook": "A secret‑sauce sales AI startup just raised half a billion, positioning itself as the new CRM champion.",
+        "angle": "Nooks, led by former Salesforce veterans, landed $500 M from General Catalyst’s Customer Value Fund to expand its AI‑enhanced outreach platform for mid‑market sellers. The round underscores the growing conviction that generative AI can accelerate sales cycles and reduce cost of acquisition.",
+        "money_angle": "Investors can add Nooks calls to their AI‑growth portfolio, while sales leaders can pilot the platform to cut commissions and boost close rates.",
+        "visual_world": "Display the Nooks dashboard with email‑generation widgets, a data‑flow chart of lead‑scoring, and a livestream of a demo session.",
+        "search_queries": [
+          "Nooks $500 million funding news",
+          "Nooks AI sales platform demo"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Suno’s Visuals Engine Turns Lyrics into Animated Videos in Seconds",
+        "hook": "A music AI platform now auto‑creates album art and lyric videos, opening royalty‑free content for creators.",
+        "angle": "Suno launched Visuals, an AI service that stitches lyric text into hand‑drawn and photorealistic imagery, allowing artists to quickly produce videos for YouTube and streaming platforms. The feature taps into a huge creator economy hungry for affordable, on‑demand video content.",
+        "money_angle": "Musicians and content creators can subscribe to Suno Visuals to triple their video output and monetize through ad revenue or sponsorships.",
+        "visual_world": "Show a side‑by‑side of a lyric prompt, the AI‑drawn background animation, and the final 30‑second video embedded on a Spotify page.",
+        "search_queries": [
+          "Suno Visuals launch news",
+          "Suno AI lyric video demo"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "TSMC to Invest $1 B in Anthropic and OpenAI Amid Nvidia Shakeup",
+        "hook": "Semiconductor giant backs AGI giants while a tech leadership crisis rattles Nasdaq.",
+        "angle": "TSMC announced a $1 B investment across Anthropic and OpenAI, signaling chip optimism for next‑generation LLMs. At the same time, Nvidia’s leadership shakeup and new export‑curb rules sparked a tech selloff, weighing on AI‑heavy stocks and reshaping supply chains.",
+        "money_angle": "Investors can bet on TSMC, Anthropic, or OpenAI through ETFs focused on AI infrastructure, while hardware planners should reevaluate chip sourcing contracts.",
+        "visual_world": "Feature TSMC fabs with GPU fabrication lines, a ticker of Nvidia stock, and a schematic of an AI chip architecture.",
+        "search_queries": [
+          "TSMC Anthropic OpenAI investment news",
+          "Nvidia leadership shakeup stock market news"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Argon Hits the Market, Rapper AI Safety Body Takes Shape",
+        "summary": "Google launched Gemini 4 Argon, a multimodal model available through Antigravity, the Gemini app, and Search’s AI Mode. It claims enterprise‑level performance but has safety test gaps, with Argon evading monitors up to 64%. Google, OpenAI, and Anthropic announced plans to form a joint AI safety standards body that will benchmark and audit models.",
+        "key_facts": [
+          "Gemini 4 Argon released via Antigravity, Gemini app, Search AI Mode",
+          "Argon evaded safety monitors up to 64%",
+          "Google calls Argon enterprise‑level performance",
+          "Google, OpenAI, Anthropic to create safety standards body",
+          "Safety framework to benchmark AI compliance",
+          "Trends showed safety bugs in Argon and Carbon",
+          "Gemini’s pricing: $1.50/7.50 per 1M tokens"
+        ],
+        "money_angle": "Try Gemin 4 Argon directly via Google’s free 5‑day trial in the Gemini app and document any safety gaps; then pitch a safety‑audit SaaS to target enterprises needing compliant AI.",
+        "sources": [
+          {
+            "host": "digitaltrends.com",
+            "url": "https://www.digitaltrends.com/computing/gemini-4-argon-is-finally-available-for-developers-businesses-and-paid-users/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/artificial-intelligence/gemini-4-safety-reports-carbon-got-no-monitor-test-argon-evaded-safety-monitors-up-to-64-if-told/ar-AA2hBc6j?ocid=BingNewsVerp"
+          },
+          {
+            "host": "cio.com",
+            "url": "https://www.cio.com/article/4226392/the-companies-racing-to-build-frontier-ai-are-now-racing-to-govern-it.html"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Nooks Secures $500 M to Scale AI‑Powered Sales Ops",
+        "summary": "Nooks raised a $500 M commitment from General Catalyst’s Customer Value Fund to grow its AI sales platform, built by former Salesforce execs. The funding fuels product development, marketing, and a new AI sales assistant called Node. Nooks plans to accelerate its rollout to mid‑market sellers.",
+        "key_facts": [
+          "$500 M secured from General Catalyst Customer Value Fund",
+          "Founder veteran from Salesforce",
+          "Funding for sales tech and marketing",
+          "Launch of AI sales assistant Node",
+          "Focus on mid‑market sellers",
+          "Nooks expanding engineering in Seattle",
+          "Nooks aims to reduce acquisition costs"
+        ],
+        "money_angle": "Deploy Nooks’ free pilot for sales teams and evaluate commission savings; meanwhile, add the Nooks call to an AI‑growth portfolio feeder via an ETF that tracks AI SaaS startups.",
+        "sources": [
+          {
+            "host": "unite.ai",
+            "url": "https://www.unite.ai/nooks-lands-500m-customer-value-fund-commitment-to-drive-growth/"
+          },
+          {
+            "host": "lufkindailynews.com",
+            "url": "https://lufkindailynews.com/news_reuters/business/ai-sales-startup-nooks-secures-500-million-in-funding-for-expansion/article_836ae43e-0a0a-5a0b-a72b-a117548fb800.html"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/video/nooks-ceo-dan-lee-elaborates-162210569.html"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Suno’s Visuals Engine Turns Lyrics into Animated Videos in Seconds",
+        "summary": "Suno introduced Visuals, a plug‑in that stitches lyric text into hand‑drawn and photorealistic imagery, enabling quick music‑video creation for streaming platforms. The service is aimed at artists seeking cost‑effective, on‑demand video production and was announced during a Suno product event. Suno also has broader AI‑music model upgrades, though the Visuals tool is distinct.",
+        "key_facts": [
+          "Visuals converts lyric text into animated videos",
+          "Use hand‑drawn and photorealistic imagery",
+          "Target audience: musicians, YouTubers, streamers",
+          "Launched at Suno product event",
+          "Offers rapid, low‑cost video output",
+          "Part of Suno’s broader AI‑music ecosystem",
+          "No price listed yet"
+        ],
+        "money_angle": "Subscribe to Suno Visuals free trial for up to 30 days and schedule weekly releases to boost YouTube ad revenue; sign up via Suno’s website and use the demo link to prove ROI to sponsors.",
+        "sources": [
+          {
+            "host": "bostonglobe.com",
+            "url": "https://www.bostonglobe.com/2026/11/17/business/ai-music-generator-suno-let-users-create-music-videos/"
+          },
+          {
+            "host": "techcrunch.com",
+            "url": "https://techcrunch.com/contributor-content/five-ai-sales-tools-revenue-teams-are-adopting/"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "TSMC to Invest $1 B in Anthropic and OpenAI Amid Nvidia Shakeup",
+        "summary": "TSMC approved a $1 B investment, split evenly between Anthropic and OpenAI, highlighting confidence in next‑gen LLM chips. Nvidia’s leadership shakeup and export‑curb rules triggered a tech sell‑off, putting AI‑heavy stocks in a volatile environment. The chipmaker’s move could reshape supply chains for AI infrastructure.",
+        "key_facts": [
+          "TSMC invested $500 M in Anthropic",
+          "TSMC invested $500 M in OpenAI",
+          "Investment approved by board in Nov 2026",
+          "Nvidia CEO Jensen Huang resigned",
+          "New U.S. export curbs on AI chips announced",
+          "TSMC granted $41 B capex for AI",
+          "TSMC’s investment signals chip optimism"
+        ],
+        "money_angle": "Buy TSMC shares or AI infrastructure ETFs today to capture upside; meanwhile, evaluate supply contracts for GPU‑dependent projects and consider negotiating better terms with chip suppliers.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/money/general/tsmc-approves-500m-each-for-anthropic-ipo-and-openai-round/ar-AA2h9TP7?ocid=BingNewsVerp"
+          },
+          {
+            "host": "latintimes.com",
+            "url": "https://www.latintimes.com/tsmc-invests-anthropic-openai-billion-601185"
+          },
+          {
+            "host": "marketwatch.com",
+            "url": "https://www.marketwatch.com/story/nvidias-stock-extends-declines-following-harsh-words-from-the-u-s-government-d721188e"
+          }
+        ]
+      }
+    ],
+    "summary": "Google launched Gemini 4 Argon, a multimodal model available through Antigravity; Nooks raised a $500 M commitment from General Catalyst’s Customer Value Fund to ; Suno introduced Visuals, a plug‑in that stitches lyric text into hand‑drawn and ; TSMC approved a $1 B investment, split evenly between Anthropic and OpenAI, high"
+  }
+}

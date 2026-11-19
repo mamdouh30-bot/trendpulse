@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Argon Hits the Market, Rapper AI Safety Body Takes Shape",
+        "hook": "Google’s newest model just out‑shines rivals, while the industry gears up for a safety framework.",
+        "angle": "Google unveiled Gemini 4 Argon, a multimodal model that claims enterprise‑level performance and is currently in a limited release. Simultaneously, Google, OpenAI, and Anthropic are moving toward a joint AI safety standards body that could set new compliance benchmarks for all AI‑driven products.",
+        "money_angle": "Businesses can hire Gemini 4 Argon for enterprise tools or invest in the safety‑compliance startups developing audit frameworks.",
+        "visual_world": "Show screenshots of Gemini 4 Argon API console, a photo‑confrontation of design prototypes, and the sleek Google DeepMind lab in Zurich.",
+        "search_queries": [
+          "Google Gemini 4 Argon launch news",
+          "Google OpenAI Anthropic AI safety standards body news"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Nooks Secures $500 M to Scale AI‑Powered Sales Ops",
+        "hook": "A secret‑sauce sales AI startup just raised half a billion, positioning itself as the new CRM champion.",
+        "angle": "Nooks, led by former Salesforce veterans, landed $500 M from General Catalyst’s Customer Value Fund to expand its AI‑enhanced outreach platform for mid‑market sellers. The round underscores the growing conviction that generative AI can accelerate sales cycles and reduce cost of acquisition.",
+        "money_angle": "Investors can add Nooks calls to their AI‑growth portfolio, while sales leaders can pilot the platform to cut commissions and boost close rates.",
+        "visual_world": "Display the Nooks dashboard with email‑generation widgets, a data‑flow chart of lead‑scoring, and a livestream of a demo session.",
+        "search_queries": [
+          "Nooks $500 million funding news",
+          "Nooks AI sales platform demo"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Suno’s Visuals Engine Turns Lyrics into Animated Videos in Seconds",
+        "hook": "A music AI platform now auto‑creates album art and lyric videos, opening royalty‑free content for creators.",
+        "angle": "Suno launched Visuals, an AI service that stitches lyric text into hand‑drawn and photorealistic imagery, allowing artists to quickly produce videos for YouTube and streaming platforms. The feature taps into a huge creator economy hungry for affordable, on‑demand video content.",
+        "money_angle": "Musicians and content creators can subscribe to Suno Visuals to triple their video output and monetize through ad revenue or sponsorships.",
+        "visual_world": "Show a side‑by‑side of a lyric prompt, the AI‑drawn background animation, and the final 30‑second video embedded on a Spotify page.",
+        "search_queries": [
+          "Suno Visuals launch news",
+          "Suno AI lyric video demo"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "TSMC to Invest $1 B in Anthropic and OpenAI Amid Nvidia Shakeup",
+        "hook": "Semiconductor giant backs AGI giants while a tech leadership crisis rattles Nasdaq.",
+        "angle": "TSMC announced a $1 B investment across Anthropic and OpenAI, signaling chip optimism for next‑generation LLMs. At the same time, Nvidia’s leadership shakeup and new export‑curb rules sparked a tech selloff, weighing on AI‑heavy stocks and reshaping supply chains.",
+        "money_angle": "Investors can bet on TSMC, Anthropic, or OpenAI through ETFs focused on AI infrastructure, while hardware planners should reevaluate chip sourcing contracts.",
+        "visual_world": "Feature TSMC fabs with GPU fabrication lines, a ticker of Nvidia stock, and a schematic of an AI chip architecture.",
+        "search_queries": [
+          "TSMC Anthropic OpenAI investment news",
+          "Nvidia leadership shakeup stock market news"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "rhBdWLx-hyM",
+    "url": "https://youtube.com/watch?v=rhBdWLx-hyM",
+    "privacy": "public"
+  }
+}
