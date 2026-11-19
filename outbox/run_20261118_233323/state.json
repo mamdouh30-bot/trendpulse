@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon: Google’s Bid to Re‑claim the AI Benchmark",
+        "hook": "Google just unleashed the most talked‑about AI model of 2026, but insiders are raising eyebrows.",
+        "angle": "Google announced Gemini 4 Argon, a frontier model that outperforms OpenAI’s and Anthropic’s offerings on enterprise‑relevant tests. Despite the press launch, internal engineers report mixed performance and uncertainty about real‑world readiness.",
+        "money_angle": "Enterprise developers can start testing Gemini 4 Argon through Google Cloud’s preview API, potentially unlocking higher revenue streams with low‑latency inference.",
+        "visual_world": "Sneak‑peek screenshots of Gemini 4’s prompt interface, Google Cloud console dashboards, and demo videos of the model answering complex business queries.",
+        "search_queries": [
+          "Gemini 4 Argon launch news",
+          "Gemini 4 Argon internal skepticism news"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI’s GPT‑6.2 Astra: A New Model that Won’t Show Up in Chat",
+        "hook": "OpenAI dropped a brand new model, yet it’s invisible in the default ChatGPT window.",
+        "angle": "After announcing GPT‑6.2 Astra and Sol, OpenAI left the new model off the regular chat interface, causing confusion among users and developers. The release notes explain that the model requires explicit API calls and is slated for a gradual rollout.",
+        "money_angle": "Investors and developers can immediately plug GPT‑6.2 into their own services via the OpenAI API to build niche products, tapping early‑adopter pricing.",
+        "visual_world": "API documentation screens, code snippets in popular IDEs, and early demo videos showing GPT‑6.2’s advanced reasoning capabilities.",
+        "search_queries": [
+          "GPT‑6.2 Astra release news",
+          "GPT‑6.2 not available chat screen news"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Netlify Reinvents App Building with AI‑Powered Connectors",
+        "hook": "Netlify just rolled out an AI‑agent architecture that lets you glue services together without writing code.",
+        "angle": "The platform’s new redesign introduces 'Connectors' for AI agents, allowing developers to stitch together business data and third‑party services via low‑code logic. The feature is positioned as a core productivity boost for modern web apps.",
+        "money_angle": "Freelance builders can monetize by offering pre‑made AI‑powered templates on Netlify’s marketplace, earning a share of each deployment.",
+        "visual_world": "Dashboard UI showing connector pipelines, visual bot workflows, and live demo sites auto‑populating inventory data from external APIs.",
+        "search_queries": [
+          "Netlify AI agent app building launch news",
+          "Netlify connectors AI news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Suno’s Visuals: Turning AI Lyric Videos Into a Monetizable Artform",
+        "hook": "Music fans now have a tool that turns their favorite Spotify tracks into AI‑generated lyric videos.",
+        "angle": "Suno released ‘Visuals’, which auto‑creates images and short videos to match song lyrics, letting creators produce shareable media quickly. The company claims the new engine can sync visuals to tempo and mood.",
+        "money_angle": "Content creators can upload these videos to YouTube and other platforms, earning ad revenue and licensing fees from music labels.",
+        "visual_world": "Screen recordings of the Visuals interface, sample lyric‑video renders, and the shareable embedded player embedded in streaming services.",
+        "search_queries": [
+          "Suno Visuals launch news",
+          "Suno AI-generated lyric videos monetization"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "a3qJVHJR-Vs",
+    "url": "https://youtube.com/watch?v=a3qJVHJR-Vs",
+    "privacy": "public"
+  }
+}
