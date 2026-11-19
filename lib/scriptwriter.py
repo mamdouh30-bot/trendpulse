@@ -92,6 +92,13 @@ def write_script(cfg, run, topic, facts, logger):
     total_target = hook_scenes + n_stories * sps + outro_scenes
     if total_target > max_scenes:
         sps = max(5, (max_scenes - hook_scenes - outro_scenes) // n_stories)
+    # duration floor: when research drops stories (e.g. 4 -> 2), the video
+    # must NOT fall under the 10-minute target — give every remaining story
+    # proportionally more scenes instead (capped to keep scenes readable)
+    min_scenes = int(cfg["content"].get("min_scenes", 30))
+    floor_sps = -(-(min_scenes - hook_scenes - outro_scenes)
+                  // max(1, n_stories))
+    sps = max(sps, min(floor_sps, 16))
     body_words = int(cfg["content"]["word_budget"] * 0.82)
     words_per_story = max(260, body_words // n_stories)
     digest_label = topic.get("digest_label", facts.get("digest_label", "AI NEWS"))

@@ -65,10 +65,10 @@ motion:
   enabled: true                    # real B-roll footage stage (lib/footage)
 
 footage:
-  per_chapter_clips: 10            # unique moving clips fetched per story
-  per_query_results: 6
-  providers: [pexels, pixabay, wikimedia, nasa]
-  credit: "Stock footage: Pexels / Pixabay / Wikimedia Commons (CC) / NASA (public domain)"
+  per_chapter_clips: 12            # unique moving clips fetched per story
+  per_query_results: 8
+  providers: [pexels, pixabay, mixkit, coverr, wikimedia, nasa]
+  credit: "Stock footage: Mixkit / Coverr / Pexels / Pixabay / Wikimedia Commons (CC) / NASA (public domain) — free licenses"
 
 links:
   subscribe_url: "https://www.youtube.com/@aimoneytested?sub_confirmation=1"

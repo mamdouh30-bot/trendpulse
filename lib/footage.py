@@ -2,10 +2,12 @@
 
 Instead of stacking still photos, every scene gets a real moving video clip
 downloaded from free providers and normalized to broadcast spec. Provider
-chain (first with results wins, per query):
+chain (mixed for diversity — at least two providers are always tried):
 
   pexels    Pexels Videos API   (PEXELS_API_KEY — free key, best quality)
   pixabay   Pixabay Videos API  (PIXABAY_API_KEY — free key)
+  mixkit    Mixkit library      (no key, direct MP4, free commercial license)
+  coverr    Coverr library      (no key, direct MP4, free license)
   wikimedia Wikimedia Commons   (no key, CC licenses, real-world clips)
   nasa      NASA video library  (no key, public domain, labs/space/robots)
 
@@ -38,6 +40,11 @@ _MAX_CLIP_MB = 80
 _MIN_WIDTH = 960
 _MIN_DUR = 3.0
 _TAKE = 18.0            # max seconds cut from any source clip
+
+BROWSER_UA = {"User-Agent":
+              "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
+_COVERR_BAD = ("premium", "staging", "paywall", "ai-generation")
 
 # broad fallback searches when a specific query has no results
 _GENERIC = [
@@ -202,7 +209,7 @@ def _wikimedia(query, n, env=None):
 def _nasa(query, n, env=None):
     r = requests.get(
         "https://images-api.nasa.gov/search",
-        params={"q": _words(query), "media_type": "video", "page_size": 10},
+        params={"q": _words(query), "media_type": "video", "page_size": 6},
         headers=UA, timeout=SEARCH_TIMEOUT)
     r.raise_for_status()
     items = ((r.json().get("collection") or {}).get("items") or [])
@@ -214,7 +221,7 @@ def _nasa(query, n, env=None):
             continue
         try:
             ar = requests.get(f"https://images-api.nasa.gov/asset/{nid}",
-                              headers=UA, timeout=SEARCH_TIMEOUT).json()
+                              headers=UA, timeout=12).json()
         except Exception:  # noqa: BLE001
             continue
         hrefs = [i.get("href", "") for i in
@@ -239,6 +246,91 @@ def _nasa(query, n, env=None):
     return out
 
 
+# ------------------------------------------------------------------ mixkit ---
+def _mixkit(query, n, env=None):
+    """Mixkit: free HD stock video, no key, direct MP4s (free license).
+
+    Page URL: https://mixkit.co/free-stock-video/<tag>/ ; asset URLs look
+    like https://assets.mixkit.co/videos/<id>/<id>-{360|720|1080}.mp4.
+    Mixkit tag pages exist only for SHORT popular tags, so we try a ladder:
+    first 3 words -> 2 words -> 1 word -> generic remap."""
+    words = re.findall(r"[a-z0-9]+", _words(query))
+    slugs = []
+    for k in (3, 2, 1):
+        if len(words) >= k:
+            slug = "-".join(words[:k])
+            if slug not in slugs:
+                slugs.append(slug)
+    g = _generic_for(str(query))
+    if g:
+        slug = "-".join(re.findall(r"[a-z0-9]+", g)[:2])
+        if slug not in slugs:
+            slugs.append(slug)
+    if not slugs:
+        slugs = ["technology"]
+    out = []
+    for slug in slugs[:4]:
+        try:
+            r = requests.get(
+                f"https://mixkit.co/free-stock-video/{slug}/",
+                headers=BROWSER_UA, timeout=SEARCH_TIMEOUT)
+            if r.status_code >= 400:
+                continue
+        except Exception:  # noqa: BLE001
+            continue
+        ids = re.findall(
+            r"assets\.mixkit\.co/videos/(\d{3,6})/\d{3,6}-360\.mp4",
+            r.text)
+        for vid in ids:
+            if vid in {c["page"] for c in out}:
+                continue
+            base = f"https://assets.mixkit.co/videos/{vid}/{vid}"
+            out.append({"url": f"{base}-720.mp4",
+                        "alt_urls": [f"{base}-1080.mp4", f"{base}-360.mp4",
+                                     f"{base}-720.mp4"],
+                        "w": 1280, "dur": 0.0, "provider": "mixkit",
+                        "page": vid, "query": query})
+            if len(out) >= n:
+                return out
+        if out:
+            return out
+    return out
+
+
+# ----------------------------------------------------------------- coverr ---
+def _coverr(query, n, env=None):
+    """Coverr: free HD stock video, no key, direct CDN MP4s (free license)."""
+    q = urllib.parse.quote(_words(query))
+    out = []
+    try:
+        r = requests.get(f"https://coverr.co/s?q={q}", headers=BROWSER_UA,
+                         timeout=SEARCH_TIMEOUT)
+        if r.status_code >= 400:
+            return out
+    except Exception:  # noqa: BLE001
+        return out
+    urls = re.findall(r'https://cdn\.coverr\.co/videos/[^"\'\s]+\.mp4',
+                      r.text)
+    seen = set()
+    ranked = []
+    for u in urls:
+        if any(b in u for b in _COVERR_BAD):
+            continue
+        if u in seen:
+            continue
+        seen.add(u)
+        pri = 0 if u.endswith("720p.mp4") else (1 if
+              u.endswith("1080p.mp4") else 2)
+        ranked.append((pri, u))
+    ranked.sort()
+    for _, u in ranked[:n]:
+        fid = u.rsplit("/", 2)[-2]
+        out.append({"url": u, "alt_urls": [u], "w": 1280, "dur": 0.0,
+                    "provider": "coverr", "page": fid[:60],
+                    "query": query})
+    return out
+
+
 # ------------------------------------------------------------------ search ---
 def _providers(env, order):
     chain = []
@@ -247,6 +339,10 @@ def _providers(env, order):
             chain.append(("pexels", _pexels))
         elif name == "pixabay" and env.get("PIXABAY_API_KEY"):
             chain.append(("pixabay", _pixabay))
+        elif name == "mixkit":
+            chain.append(("mixkit", _mixkit))
+        elif name == "coverr":
+            chain.append(("coverr", _coverr))
         elif name == "wikimedia":
             chain.append(("wikimedia", _wikimedia))
         elif name == "nasa":
@@ -255,10 +351,15 @@ def _providers(env, order):
 
 
 def search_pool(query, n, cfg_env, order, logger=None):
-    """Collect candidate clips for one query across the provider chain."""
+    """Collect candidate clips for one query across the provider chain.
+
+    Always tries at least two providers so every query mixes sources
+    (one provider alone produced repetitive B-roll in practice)."""
     q = _words(query)
     pool, tried = [], {q}
-    for name, fn in _providers(cfg_env, order):
+    providers = _providers(cfg_env, order)
+    hit_providers = 0
+    for name, fn in providers:
         try:
             got = fn(q, n, cfg_env)
         except Exception as e:  # noqa: BLE001
@@ -266,26 +367,34 @@ def search_pool(query, n, cfg_env, order, logger=None):
                 logger.warning(f"footage '{name}' failed for '{q}': "
                                f"{str(e)[:110]}")
             got = []
+        if got:
+            hit_providers += 1
         pool.extend(got)
-        if len(pool) >= 4:
-            return pool
+        # keep going until we have plenty of candidates from >=2 providers
+        if len(pool) >= max(6, n) and hit_providers >= 2:
+            break
+        if len(pool) >= n and hit_providers >= 2:
+            break
     # broaden: generic remap, then ONE last-resort topic (keep it fast)
-    g = _generic_for(q)
-    extras = ([g] if g else []) + _LAST_RESORT[:1]
-    for extra in extras:
-        if not extra or extra in tried:
-            continue
-        tried.add(extra)
-        for name, fn in _providers(cfg_env, order):
-            try:
-                got = fn(extra, n, cfg_env)
-            except Exception:  # noqa: BLE001
-                got = []
-            for c in got:
-                c["query"] = f"{query} [{extra}]"
-            pool.extend(got)
-            if len(pool) >= 4:
-                return pool
+    if len(pool) < 5:
+        g = _generic_for(q)
+        extras = ([g] if g else []) + _LAST_RESORT[:1]
+        for extra in extras:
+            if not extra or extra in tried:
+                continue
+            tried.add(extra)
+            for name, fn in _providers(cfg_env, order):
+                try:
+                    got = fn(extra, n, cfg_env)
+                except Exception:  # noqa: BLE001
+                    got = []
+                for c in got:
+                    c["query"] = f"{query} [{extra}]"
+                pool.extend(got)
+                if len(pool) >= 6:
+                    break
+            if len(pool) >= 6:
+                break
     return pool
 
 
@@ -318,11 +427,19 @@ def _download(url, dest, max_mb=_MAX_CLIP_MB, max_seconds=90):
 
 
 def _head_size(url):
+    """Return content length, or None when unknown/dead.
+
+    A missing content-length header (chunked responses, some CDNs) means
+    UNKNOWN — the caller should still attempt the download. Only a real
+    0-byte body is treated as dead."""
     try:
         h = requests.head(url, timeout=10, headers=UA, allow_redirects=True)
         if h.status_code >= 400:
             return None
-        return int(h.headers.get("content-length") or 0)
+        raw = h.headers.get("content-length")
+        if raw is None:
+            return -1                     # unknown size — try the download
+        return int(raw)
     except Exception:  # noqa: BLE001
         return None
 
@@ -382,10 +499,10 @@ def fetch_clip(cand, cache: Path, logger):
     try:
         for u in urls:
             size = _head_size(u)
-            if size is not None and size > 60 * 1_000_000:
+            if size is not None and size >= 0 and size > 60 * 1_000_000:
                 continue          # avoid multi-minute downloads
             if size == 0:
-                continue          # dead/empty URL
+                continue          # dead/empty URL (real 0-byte body)
             if _download(u, raw):
                 if _normalize(raw, dest, logger):
                     return dest
@@ -407,9 +524,10 @@ def assign_footage(cfg, run, script, logger):
         return False
     env = _env()
     order = fcfg.get("providers",
-                     ["pexels", "pixabay", "wikimedia", "nasa"])
-    per_ch = int(fcfg.get("per_chapter_clips", 10))
-    per_q = int(fcfg.get("per_query_results", 6))
+                     ["pexels", "pixabay", "mixkit", "coverr",
+                      "wikimedia", "nasa"])
+    per_ch = int(fcfg.get("per_chapter_clips", 12))
+    per_q = int(fcfg.get("per_query_results", 8))
     scenes = script.get("scenes") or []
     if not scenes:
         return False
@@ -433,7 +551,7 @@ def assign_footage(cfg, run, script, logger):
             if q and q not in seen:
                 seen.add(q)
                 queries.append(q)
-            if len(queries) >= 4:
+            if len(queries) >= 6:
                 break
         pool = []
         with ThreadPoolExecutor(max_workers=2) as ex:
@@ -456,10 +574,10 @@ def assign_footage(cfg, run, script, logger):
                     f"({len(queries)} queries)")
 
     def dl_batch(cands, want):
-        got = []
-        with ThreadPoolExecutor(max_workers=3) as ex:
+        got, fails = [], {"dead": 0}
+        with ThreadPoolExecutor(max_workers=4) as ex:
             futs = {ex.submit(fetch_clip, c, cache, logger): c
-                    for c in cands[: want * 2]}
+                    for c in cands[: want * 3]}
             for f in as_completed(futs):
                 try:
                     p = f.result()
@@ -468,22 +586,48 @@ def assign_footage(cfg, run, script, logger):
                 if p:
                     got.append(p)
                     providers_used.add(futs[f].get("provider", ""))
+                else:
+                    fails["dead"] += 1
                 if len(got) >= want:
                     break
+        if fails["dead"] and not got:
+            logger.warning(f"dl_batch: {fails['dead']} candidates all failed")
         return got
 
     clips_by_ch = {}
     for ch, pool in pool_by_ch.items():
         clips_by_ch[ch] = dl_batch(pool, per_ch) if pool else []
 
-    # global rotation so chapters never repeat the same clip order
+    # merge: any chapter whose downloaded pool is smaller than its scene
+    # count borrows from the other chapters so no scene repeats one clip
+    all_clips = []
+    seen_clips = set()
+    for ch in sorted(clips_by_ch):
+        for p in clips_by_ch[ch]:
+            if p not in seen_clips:
+                seen_clips.add(p)
+                all_clips.append(p)
+    for ch in sorted(chapters):
+        clips = clips_by_ch.get(ch) or []
+        need = len(chapters[ch])
+        if 0 < len(clips) < need:
+            extra = [p for p in all_clips if p not in clips]
+            clips_by_ch[ch] = clips + extra[: need - len(clips)]
+        elif not clips:
+            clips_by_ch[ch] = list(all_clips)
+
+    # rotation with distinct-neighbor guarantee: consecutive scenes must
+    # never share the same clip when the pool has more than one
     global_i = 0
     assigned = 0
     for ch, ch_scenes in sorted(chapters.items()):
-        clips = clips_by_ch.get(ch) or [c for lst in clips_by_ch.values()
-                                        for c in lst]
+        clips = clips_by_ch.get(ch) or []
         if not clips:
             continue
+        if len(clips) > 1:
+            # deterministic per-chapter rotation offset
+            shift = (int(ch) * 7 + 3) % len(clips)
+            clips = clips[shift:] + clips[:shift]
         for s in ch_scenes:
             cur = s.get("motion_file")
             if cur and not Path(cur).exists():
@@ -493,6 +637,14 @@ def assign_footage(cfg, run, script, logger):
                 s["motion_file_b"] = None
             if not s.get("motion_file"):
                 p = clips[global_i % len(clips)]
+                if len(clips) > 1:
+                    for _ in range(len(clips)):
+                        prev = str(s.get("_prev_motion") or "")
+                        if str(p) != prev:
+                            break
+                        global_i += 1
+                        p = clips[global_i % len(clips)]
+                s["_prev_motion"] = str(p)
                 s["motion_file"] = str(p)
                 s["motion_skip_frac"] = round(
                     ((s["id"] * 0.6180339887) % 1.0) * 0.40, 3)
@@ -505,12 +657,13 @@ def assign_footage(cfg, run, script, logger):
                     s["motion_file_b"] = str(p2)
         logger.info(f"chapter {ch}: footage for "
                     f"{sum(1 for s in ch_scenes if s.get('motion_file'))}"
-                    f"/{len(ch_scenes)} scenes from {len(clips)} clips")
+                    f"/{len(ch_scenes)} scenes from {len(set(str(s.get('motion_file')) for s in ch_scenes))} unique clips")
 
     (root / "credits.json").write_text(json.dumps(
         {"providers": sorted(providers_used),
-         "credit": "Stock footage: Pexels / Pixabay / "
-                   "Wikimedia Commons contributors (CC) / NASA (public domain)"},
+         "credit": "Stock footage: Mixkit / Coverr / Pexels / Pixabay / "
+                   "Wikimedia Commons contributors (CC) / "
+                   "NASA (public domain) — free licenses"},
         ensure_ascii=False), encoding="utf-8")
     logger.info(f"footage assigned to {assigned}/{len(scenes)} scenes "
                 f"(providers: {sorted(providers_used) or 'none'})")

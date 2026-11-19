@@ -199,6 +199,44 @@ Return ONLY this JSON:
             dropped.append(s["num"])
             continue
         merged.append(m)
+
+    # rescue pass: a story with no verifiable sources gets ONE more targeted
+    # verification search before being dropped — dropping stories shrinks
+    # the episode below the 10-minute target, so rescue whenever the digest
+    # would end up with fewer than 3 stories
+    rescued_nums = set()
+    if dropped and len(merged) < 3:
+        logger.info(f"rescue pass for dropped stories: {dropped}")
+        for s in topic["stories"]:
+            if s["num"] not in dropped:
+                continue
+            q = f"{s.get('title', '')} announcement details news"
+            raw2 = []
+            for r in llm.web_search(q, num=6, logger=logger):
+                raw2.append({
+                    "title": r.get("name", ""),
+                    "snippet": (r.get("snippet") or "")[:400],
+                    "url": r.get("url", ""),
+                    "host": r.get("host_name", ""),
+                })
+            valid2 = [x for x in raw2
+                      if str(x.get("url", "")).startswith(("http://",
+                                                           "https://"))]
+            if not valid2:
+                continue
+            m2 = by_num.get(s["num"]) or dict(s)
+            m2.setdefault("title", s["title"])
+            m2.setdefault("num", s["num"])
+            m2.setdefault("key_facts", [])
+            m2.setdefault("money_angle", s.get("money_angle", ""))
+            m2.setdefault("summary", "")
+            m2["sources"] = [{"host": x["host"], "url": x["url"]}
+                             for x in valid2][:3]
+            merged.append(m2)
+            rescued_nums.add(s["num"])
+            logger.info(f"story {s['num']} rescued with "
+                        f"{len(m2['sources'])} sources")
+
     if dropped:
         logger.warning(f"stories dropped for missing verifiable sources: "
                        f"{dropped}")
@@ -209,7 +247,7 @@ Return ONLY this JSON:
             logger.warning("fewer than 2 verified stories — keeping "
                            "unverified ones to keep the digest viable")
             for s in topic["stories"]:
-                if s["num"] in dropped:
+                if s["num"] in dropped and s["num"] not in rescued_nums:
                     m = by_num.get(s["num"]) or dict(s)
                     m.setdefault("title", s["title"])
                     m.setdefault("num", s["num"])
