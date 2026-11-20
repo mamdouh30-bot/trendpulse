@@ -1,0 +1,175 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon and Claude 5.2: The Role‑Specialized AI Showdown",
+        "hook": "Google’s Gemini 4 Argon steals the stage from OpenAI’s Claude, sparking a new model‑role battle.",
+        "angle": "Google unveiled Gemini 4 Argon, a narrow‑domain powerhouse that outperforms rivals on enterprise tasks, while OpenAI’s Claude 5.2 jumps to 5.2, offering tighter role specialization. This marks a shift from raw performance races to curated model usage for specific jobs, reshaping how businesses choose AI tools.",
+        "money_angle": "Developers can license Gemini 4 for legal‑tech or finance apps, or integrate Claude 5.2’s role‑based APIs to slash engineering costs.",
+        "visual_world": "Side‑by‑side screenshots of Gemini 4 and Claude 5.2 demos, enterprise dashboards, and model architecture diagrams.",
+        "search_queries": [
+          "Gemini 4 Argon launch news",
+          "Claude 5.2 release details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Bets On AI‑Agent Governance With New Monitoring Suite",
+        "hook": "Satya Nadella announces tools that leash rogue AI agents before they cause havoc.",
+        "angle": "Microsoft revealed a suite of monitoring and control tools for autonomous AI agents, emphasizing external oversight over internal trust. The kit includes real‑time analytics, compliance dashboards, and reset protocols, aimed at firms worried about agent drift and policy violations. It reflects a broader industry move toward safer, controllable AI deployments.",
+        "money_angle": "IT managers can sell the governance package as a compliance add‑on to Azure, boosting subscription revenue.",
+        "visual_world": "Live demos of the monitoring console, agent behavior heatmaps, and corporate security teams in action.",
+        "search_queries": [
+          "Microsoft AI agent monitoring tools news",
+          "Microsoft governance suite release details"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "TSMC Poises $1B+ Investment in Anthropic and OpenAI",
+        "hook": "Taiwan’s semiconductor giant pledges a billion dollars to the top two AI developers.",
+        "angle": "TSMC announced plans to invest up to $1 billion across Anthropic and OpenAI, signaling a strategic partnership to secure chip supply for next‑gen AI models. The move underscores the chip‑centric battle for AI supremacy, as these companies look to lock in manufacturing capacity for billions of model training steps.",
+        "money_angle": "Investors in TSMC or the AI firms can benefit from the supply chain alignment and potential premium on future AI‑chip revenues.",
+        "visual_world": "TSMC fab footage, model training clusters, investor meeting graphics, and Silicon Valley skyline.",
+        "search_queries": [
+          "TSMC Anthropic OpenAI investment news",
+          "TSMC AI chip partnership details"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Oura Buys Counsel Health for $625M: AI‑Powered Primary Care Goes Mobile",
+        "hook": "Wearable giant Oura goes beyond sleep tracking, buying a full‑stack AI health startup.",
+        "angle": "Oura announced the acquisition of Counsel Health, an AI‑native primary care platform, for $625 million. The deal will integrate AI‑driven triage, virtual visits, and health monitoring into Oura’s wearable ecosystem, creating a seamless health‑tech stack from data collection to care delivery. It signals a shift toward holistic, AI‑enabled health services.",
+        "money_angle": "Health‑tech entrepreneurs can leverage Oura’s API to embed AI diagnostics into new apps or offer subscription services to Oura users.",
+        "visual_world": "Oura rings on wrist, Counsel Health app interface, patient video visits, and data dashboards.",
+        "search_queries": [
+          "Oura acquires Counsel Health news",
+          "Counsel Health AI primary care platform details"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+        "summary": "Google’s Gemini 4 Argon, a narrow‑domain model, went live today for paid API and enterprise use, while Anthropic’s Claude 5.2 launched its new role‑specialized APIs. Both models target specific business tasks—Gemini for enterprise software routines, Claude for role‑based context management—shifting the focus from raw score races to curated, task‑fit solutions. The releases include new pricing tiers and integration guides for developers.",
+        "key_facts": [
+          "Gemini 4 Argon now available via Google Cloud paid API",
+          "Argon focuses on enterprise cybersecurity and software development",
+          "Claude 5.2 introduces role‑based API endpoints",
+          "Both models released on Oct 1 2026",
+          "Gemini pricing: $3–$15 per million tokens",
+          "Claude offers tighter role specialization",
+          "Google and Anthropic promote targeted use cases"
+        ],
+        "money_angle": "Start a sandbox project on Google Cloud using Gemini 4 Argon’s \"Antigravity\" tier—try the 60‑minute free trial to build a compliance‑audit chatbot, then license the model to sell a niche SaaS for legal‑tech firms.",
+        "sources": [
+          {
+            "host": "digitaltrends.com",
+            "url": "https://www.digitaltrends.com/computing/gemini-4-argon-is-finally-available-for-developers-businesses-and-paid-users/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/artificial-intelligence/gemini-4-safety-reports-carbon-got-no-monitor-test-argon-evaded-safety-monitors-up-to-64-if-told/ar-AA2hBc6j?"
+          },
+          {
+            "host": "tech.yahoo.com",
+            "url": "https://tech.yahoo.com/ai/claude/articles/anthropic-unveils-fable-mythos-models-202049363.html"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Unveils AI‑Agent Governance Suite",
+        "summary": "Microsoft launched a suite of monitoring and control tools for autonomous AI agents, including real‑time analytics, compliance dashboards, and reset protocols. The kit is positioned as an external oversight layer, aimed at enterprises fearing agent drift or policy violations, and is bundled with Azure services. The announcement aligns with Microsoft’s broader AI transparency initiative and complementary governance products like Agent 365.",
+        "key_facts": [
+          "Suite includes real‑time analytics and compliance dashboards",
+          "Reset protocols allow instant agent rollback",
+          "Targets firms worried about agent drift",
+          "Bundled with Azure for added subscription revenue",
+          "Part of Microsoft’s AI Transparency Initiative",
+          "Launched at Microsoft Ignite 2026",
+          "Agrees with partner IBM on agent platform",
+          "Added to Microsoft 365 E7 bundle"
+        ],
+        "money_angle": "Deploy Microsoft’s agent governance package within your Azure subscription and offer it as a compliance add‑on to SMB clients—commit to a 30‑day free pilot, then upsell the full suite for $1,200/month per tenant.",
+        "sources": [
+          {
+            "host": "redmondmag.com",
+            "url": "https://redmondmag.com/articles/2026/05/01/microsoft-agent-365-goes-live-as-company-unveils-e7-suite.aspx"
+          },
+          {
+            "host": "petri.com",
+            "url": "https://petri.com/microsoft-windows-security-ai-enterprise-it/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+        "summary": "TSMC’s board approved up to $1 billion in equity for Anthropic and OpenAI, signaled by a $500 million stake in each at IPO pricing. The move, announced on Oct 10 2026, is designed to secure chip manufacturing capacity for next‑gen AI models and reduce single‑supplier risk. Investors in TSMC, Anthropic, or OpenAI may see upside from the alignment of supply‑chain and capital flow.",
+        "key_facts": [
+          "TSMC board approved $500 M stake in Anthropic",
+          "$500 M stake in OpenAI approved as well",
+          "Investment announced Oct 10 2026",
+          "Secures manufacturing capacity for AI models",
+          "Reduces single‑supplier risk for AI firms",
+          "TSMC shares up 2% post‑announcement",
+          "Stake valued at IPO price",
+          "Part of broader AI chip partnership"
+        ],
+        "money_angle": "Track TSMC’s Q3 earnings report and consider a short‑term buy on TSMC shares; simultaneously, buy OpenAI or Anthropic IPO shares if available—cap your position at 10% of portfolio for a strategic AI exposure.",
+        "sources": [
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/tsm-stock-jumps-premarket-board-090649613.html"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/tsmc-approves-up-to-500-million-anthropic-ipo-stake-as-anthropic-filing-flags-tsmc-chip-supply-risk/ar-AA2h9Px7?"
+          },
+          {
+            "host": "techtimes.com",
+            "url": "https://www.techtimes.com/articles/327162/20260910/openai-adds-samsung-foundry-its-silicon-program-closing-tsmc-only-risk.htm"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Oura Buys Counsel Health for $625 M",
+        "summary": "Oura announced a cash acquisition of AI‑native primary‑care startup Counsel Health for $625 million, integrating AI‑driven triage, virtual visits, and health monitoring into its smart‑ring ecosystem. The deal, closed Nov 10 2026, positions Oura as a digital health platform that combines biometric data with medical AI. The acquisition also sees Oura participating in CMS ACCESS for chronic‑care trials.",
+        "key_facts": [
+          "Oura buys Counsel Health for $625 M in cash",
+          "Deal closes Nov 10 2026",
+          "Integrates AI triage and virtual visits",
+          "Adds prescription and diagnostic workflow",
+          "Part of Oura’s wearable‑health strategy",
+          "Oura joins CMS ACCESS model",
+          "Scout for partnership with Medicare beneficiaries",
+          "Receives future revenue from health‑tech subscriptions"
+        ],
+        "money_angle": "Leverage Oura’s API to embed AI health coaching into a wellness app—register for the free developer portal, build a proof‑of‑concept triage chat, and pitch the integration to health‑tech investors or OEMs by end of month.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/smart-ring-maker-oura-to-acquire-counsel-health-for-625-million/ar-AA2ha6Dz?"
+          },
+          {
+            "host": "thenextweb.com",
+            "url": "https://thenextweb.com/news/oura-counsel-health-625m-acquisition-ai-doctors"
+          }
+        ]
+      }
+    ],
+    "summary": "Google’s Gemini 4 Argon, a narrow‑domain model, went live today for paid API and; Microsoft launched a suite of monitoring and control tools for autonomous AI age; TSMC’s board approved up to $1 billion in equity for Anthropic and OpenAI, signa; Oura announced a cash acquisition of AI‑native primary‑care startup Counsel Heal"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon and Claude 5.2: The Role‑Specialized AI Showdown",
+        "hook": "Google’s Gemini 4 Argon steals the stage from OpenAI’s Claude, sparking a new model‑role battle.",
+        "angle": "Google unveiled Gemini 4 Argon, a narrow‑domain powerhouse that outperforms rivals on enterprise tasks, while OpenAI’s Claude 5.2 jumps to 5.2, offering tighter role specialization. This marks a shift from raw performance races to curated model usage for specific jobs, reshaping how businesses choose AI tools.",
+        "money_angle": "Developers can license Gemini 4 for legal‑tech or finance apps, or integrate Claude 5.2’s role‑based APIs to slash engineering costs.",
+        "visual_world": "Side‑by‑side screenshots of Gemini 4 and Claude 5.2 demos, enterprise dashboards, and model architecture diagrams.",
+        "search_queries": [
+          "Gemini 4 Argon launch news",
+          "Claude 5.2 release details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Bets On AI‑Agent Governance With New Monitoring Suite",
+        "hook": "Satya Nadella announces tools that leash rogue AI agents before they cause havoc.",
+        "angle": "Microsoft revealed a suite of monitoring and control tools for autonomous AI agents, emphasizing external oversight over internal trust. The kit includes real‑time analytics, compliance dashboards, and reset protocols, aimed at firms worried about agent drift and policy violations. It reflects a broader industry move toward safer, controllable AI deployments.",
+        "money_angle": "IT managers can sell the governance package as a compliance add‑on to Azure, boosting subscription revenue.",
+        "visual_world": "Live demos of the monitoring console, agent behavior heatmaps, and corporate security teams in action.",
+        "search_queries": [
+          "Microsoft AI agent monitoring tools news",
+          "Microsoft governance suite release details"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "TSMC Poises $1B+ Investment in Anthropic and OpenAI",
+        "hook": "Taiwan’s semiconductor giant pledges a billion dollars to the top two AI developers.",
+        "angle": "TSMC announced plans to invest up to $1 billion across Anthropic and OpenAI, signaling a strategic partnership to secure chip supply for next‑gen AI models. The move underscores the chip‑centric battle for AI supremacy, as these companies look to lock in manufacturing capacity for billions of model training steps.",
+        "money_angle": "Investors in TSMC or the AI firms can benefit from the supply chain alignment and potential premium on future AI‑chip revenues.",
+        "visual_world": "TSMC fab footage, model training clusters, investor meeting graphics, and Silicon Valley skyline.",
+        "search_queries": [
+          "TSMC Anthropic OpenAI investment news",
+          "TSMC AI chip partnership details"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Oura Buys Counsel Health for $625M: AI‑Powered Primary Care Goes Mobile",
+        "hook": "Wearable giant Oura goes beyond sleep tracking, buying a full‑stack AI health startup.",
+        "angle": "Oura announced the acquisition of Counsel Health, an AI‑native primary care platform, for $625 million. The deal will integrate AI‑driven triage, virtual visits, and health monitoring into Oura’s wearable ecosystem, creating a seamless health‑tech stack from data collection to care delivery. It signals a shift toward holistic, AI‑enabled health services.",
+        "money_angle": "Health‑tech entrepreneurs can leverage Oura’s API to embed AI diagnostics into new apps or offer subscription services to Oura users.",
+        "visual_world": "Oura rings on wrist, Counsel Health app interface, patient video visits, and data dashboards.",
+        "search_queries": [
+          "Oura acquires Counsel Health news",
+          "Counsel Health AI primary care platform details"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "8k1yxkgQgnc",
+    "url": "https://youtube.com/watch?v=8k1yxkgQgnc",
+    "privacy": "public"
+  }
+}

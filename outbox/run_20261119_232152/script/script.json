@@ -1,0 +1,441 @@
+{
+  "title": "AI News: 4 Stories That Actually Matter Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "AI this week isn’t fluff—four headlines that actually crush the noise and show real money moves. We’re slicing through the clutter to give you the single story that’s reshaping the market.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Google drops Gemini 4 Argon and Anthropic spins Claude 5.2’s role‑specialized API. Think specialist AI built for a single job—enterprise security or software dev—priced at $3–$15 per million tokens. This isn’t a race; it’s a niche takeover.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Microsoft’s Ignite launches an AI‑agent governance suite, bundled with Azure. Real‑time dashboards, instant rollback, and a compliance overlay that could become every SMB’s new compliance add‑on, priced at $1,200 a month. This is the future control panel for autonomous agents.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown. On Oct 1 2026, Google drops Gemini 4 Argon and Anthropic releases Claude 5.2. Both play for specific tasks—software dev and role context—turning AI into a tool, not just a score holder.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Gemini 4 Argon, the narrow‑domain model, now lives on Google Cloud paid API. Its focus is enterprise cybersecurity and software development. Pricing ranges $3–$15 per million tokens, giving firms a predictable bill for mission‑critical work.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Claude 5.2 launches role‑based API endpoints. It lets developers set a role context—say, legal counsel or financial analyst—right in the prompt, tightening output reliability for business use cases. That’s a game‑changer for compliance‑heavy industries.",
+      "visual_query": "engineers walking through lab",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Both releases dropped Oct 1 2026, the same day, showcasing a shift from raw benchmarks to curated, task‑fit solutions. Google and Anthropic marketed dedicated integration guides, making it easier for startups to hit the ground running.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Google’s Argon tier named “Antigravity” offers a 60‑minute free trial. Within that hour you can spin up a compliance‑audit chatbot that scans policy files, flags deviations, and even generates audit reports—all for legal‑tech or fintech niches.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Use the trial to prototype a SaaS for law firms: build an intake bot, connect to your document repo, and monetize the AI layer. Licensing Gemini 4 Argon gives you a scalable, single‑vendor solution without the overhead of in‑house ML teams.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Claude’s role endpoints are perfect for HR onboarding bots or customer support. You can shirt‑sleeve a role, feed relevant policies, and let the AI generate context‑aware responses that pass audit tests out of the box.",
+      "visual_query": "engineers walking through lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "The play? Tap the free trial, iterate a compliance bot in under an hour, then license the model to launch a niche SaaS for legal‑tech firms. Expect recurring revenue, low churn, and a design that scales as regulations evolve.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Ready to shift from hype to profit? The official link for Gemini 4 Argon is in the description. Let’s move on to the next story—Microsoft’s new AI‑Agent governance suite, rollout alert!",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "Microsoft Unveils AI‑Agent Governance Suite at Microsoft Ignite 2026.  A new kit packs real‑time analytics, compliance dashboards, and instant reset protocols for autonomous agents.  Think of it as the safety net for robots that keep running 24/7 in your cloud stack.",
+      "visual_query": "data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "Inside the suite, the real‑time analytics module streams agent telemetry straight into Azure Monitor.  Every command, decision, and error is logged at the millisecond level.  DevOps can see a live pulse, and operators can spot drift before it turns into a policy breach.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "The compliance dashboard is built on Azure Policy and delivers cross‑company views.  A single screen tells you who, where, and how the agent is acting against GDPR, HIPAA, or internal SLAs.  No custom scripting needed—just drag‑drop controls.",
+      "visual_query": "trading screens with live charts",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "Reset protocols let you roll back an agent to its last safe state in under five seconds.  Imagine a customer‑service bot that starts misbehaving—instantly pause, review logs, and reset without a single service outage.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "Microsoft bundles the suite with Azure and even pushes it into Microsoft 365 E7 subscriptions.  That means every enterprise user gets built‑in governance, not an add‑on they choose separately.  It’s the same strategy that turbocharged Azure’s growth last year.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "Because it’s a transparency initiative, the kit works hand‑in‑hand with the new Agent 365 toolset.  Together they audit, track, and retire AI agents that deviate from policy.  Microsoft even partnered with IBM to certify the platform under COPPA and e‑commerce standards.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "So what does this mean for you?  You can deploy the governance package inside your Azure subscription and sell it as a compliance add‑on to SMB clients.  Offer a 30‑day free pilot right away, then upsell the full suite at $1,200 per tenant per month.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "The product is already live on the Azure Marketplace, and Microsoft has a quick-start guide with CLI scripts.  Sign up through the Azure portal, enable the agent controls, and watch your agent compliance metrics climb from day one.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "Microsoft Unveils AI‑Agent Governance Suite",
+      "chapter_label": "STORY 2",
+      "narration": "That’s your playbook for 2026: empower your agents, earn compliance bucks, and keep leading in AI governance.  Stay tuned, next up we dive into TSMC’s $1 B investment in Anthropic and OpenAI, reshaping chip supply chains.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "T​SMC Invests Up to $1 B in Anthropic & OpenAI—yes, the chip king just poured a million dollars into two leading AI labs. On October 10, 2026, its board approved a $500 million stake in each company, locking in future silicon supply for the next‑gen models.",
+      "visual_query": "data center server aisle lights blinking",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "First, the $500 million stake in Anthropic: that’s a direct bet on a company that just launched Claude 5.2, a role‑specialized model that’s already climbing the GPT leaderboard. Anthropic is no longer a celebrity fund; it’s a silicon partner with TSMC’s advanced manufacturing.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "The second half, $500 million in OpenAI. OpenAI’s next‑generation models will need more GPUs, more fabs. By tying capital to capacity, TSMC ensures that when GPT‑7 lands, the chips will be ready and in the pocket of the same supplier who built them.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "Why this matters? The AI‑chip market is already squeezed by competition from ASML and Samsung. TSMC’s injection not only secures a footprint for Anthropic and OpenAI but also reduces the risk of a single‑supplier bottleneck—a big risk for global AI deployments.",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "The market reaction was instant. TSMC shares jumped 2% after the announcement, a clear pressure‑release for tech investors. If you’re chasing alpha, this is a cue: chip‑makers that hold AI unicorns in their portfolio will likely keep the price near the top.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "OpenAI doesn’t have a public float yet, but its valuation is in the 30‑plus billion range, and the $500 million stake keeps it grounded in that universe. Anthropic, meanwhile, is already trading quietly on private market exchanges—your money can start lining up now.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "So here’s your play: track TSMC’s Q3 earnings report coming next month—look for a higher-than‑expected fab margin and AI capacity hit‑rate. A short‑term buy on TSMC can be a great hedge for your portfolio and a direct stake in AI silicon.",
+      "visual_query": "data center server aisle lights blinking",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "Simultaneously, keep an eye on any early OpenAI or Anthropic IPO sizing. If you’re a capped 10% exposure strategy, buy a fraction of those shares when they become available—this is a directional bet on AI growth with controlled risk.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "TSMC Invests Up to $1 B in Anthropic & OpenAI",
+      "chapter_label": "STORY 3",
+      "narration": "Remember, this chip‑funding deal is the new gold rush for AI. Buy TSMC, study the margins, and stack your future AI shares now. I’ll be back to dive into the next story about Oura’s $625 million health‑tech takeover—stay tuned.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 31,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "Oura Buys Counsel Health for $625 M.  This cash deal wraps an AI‑native primary‑care startup into the wearable brand’s ecosystem on Nov 10 2026, signaling a bold move into medical AI.\nThe headline alone tells you Oura is shifting from sleep‑tracking to full health care.\nIt’s a $625 million sweetener that signals confidence in data‑driven medicine.\nMoods shift from shock to possibility as we dissect the implications.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 32,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "First, who is Oura?  Oura is a Copenhagen‑based wearables company known for the smart‑ring that tracks heart rate, sleep, and activity.  Before this, it was quietly a sleep‑tech brand.\nNow it’s positioning itself as a digital health platform.\nThe smart‑ring’s biosensors generate real‑time metrics that Oura wants to sell beyond personal wellness.",
+      "visual_query": "data center server aisle lights",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 33,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "Counsel Health, the target, is an AI‑native primary‑care startup.  Its platform offers automated triage, virtual visits, and health monitoring.\nThe company built a workflow that parses symptoms and routes patients to the right care level.\nAI powers both the decision tree and the conversation.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 34,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "The deal closed on Nov 10 2026 for $625 million in cash.  Oura paid entirely in cash, showing it’s not looking for equity or restructuring;\nit’s a straight‑forward acquisition.\nThe transaction’s size underscores how much health tech now competes for AI integration.",
+      "visual_query": "trading screens with live charts",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 35,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "Integration is hands‑on: Oura will embed Counsel Health’s AI triage into its ring data stream.\nPatients will get instant symptom assessments, virtual visits, and prescription workflow, all triggered by the ring’s biometric alerts.\nThis turns a ring into a continuous health check‑up.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 36,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "Strategically, Oura joins CMS ACCESS for chronic‑care trials.  It’s set to service Medicare beneficiaries through Oura’s wearables.\nThat means a governmental payment stream and a path to mass adoption.\nThe partnership also opens revenue from health‑tech subscriptions.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 37,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "Financially, the $625 million purchase is dwarfed by Oura’s annual revenue, but it positions the company for a new revenue channel.\nThe move reduces reliance on the sleep‑tech market—an industry that is slowing.\nIt also increases the company’s IP in AI health, a high‑margin tier.",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 38,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "Now the money angle: Leverage Oura’s API to embed AI health coaching into a wellness app.\nRegister for the free developer portal, build a triage chat in 60‑minutes, and pitch the integration to health‑tech investors or OEMs by end of month.\nThe API is waiting in the description.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 39,
+      "chapter": 4,
+      "chapter_title": "Oura Buys Counsel Health for $625 M",
+      "chapter_label": "STORY 4",
+      "narration": "That’s the play: build, demo, monetize.  If you’re a developer, grab the free API now, showcase how a ring can deliver medical triage, and you could secure a contract with a health‑tech OEM.\nNext, we’ll wrap up with the biggest AI shifts this week—stay tuned!",
+      "visual_query": "data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 40,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Gemini 4 Argon and Claude 5.2 just dropped—Google’s Argon is a narrow, cybersecurity‑heavy model, $3–$15 per million tokens, while Anthropic’s Claude 5.2 adds role‑specialized endpoints for tighter context control. Both are priced for enterprise apps. Microsoft unveils an agent governance suite with real‑time analytics, reset protocols, and compliance dashboards, bundled into Azure for $1,200/month per tenant.",
+      "visual_query": "data center server aisle lights moving",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 41,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Subscribe every 12 hours for the next AI digest—no fluff, just the deals that hit your bottom line. What’s your take: will Gemini’s enterprise focus or Claude’s role specialization dominate the SaaS market?",
+      "visual_query": "stock market screens rising",
+      "mood": "curious",
+      "is_key_scene": true
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Cold Open"
+    },
+    {
+      "num": 1,
+      "title": "Gemini 4 Argon & Claude 5.2: Role‑Specialized AI Showdown"
+    },
+    {
+      "num": 2,
+      "title": "Microsoft Unveils AI‑Agent Governance Suite"
+    },
+    {
+      "num": 3,
+      "title": "TSMC Invests Up to $1 B in Anthropic & OpenAI"
+    },
+    {
+      "num": 4,
+      "title": "Oura Buys Counsel Health for $625 M"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}
