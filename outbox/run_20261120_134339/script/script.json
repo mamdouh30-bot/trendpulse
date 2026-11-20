@@ -1,0 +1,441 @@
+{
+  "title": "AI News: 4 Stories You Need to Know Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "AI news today is heavy. Four stories that actually move markets and your wallet. Don’t get lost in the noise—focus on the real deal.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Picture a Pixel phone turning your voice into running code in seconds. Gemini 4 Carbon just landed, and it lets you sell voice‑to‑code tools on the Play Store for dollars, not minutes.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Meanwhile, Alibaba drops a 530‑billion‑parameter engine that can write, debug, and build 3D game worlds for free—cutting indie dev costs by 70%. Ready to monetize that next level?",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 4,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "Google’s Gemini 4 Carbon powers the new Pixel and a generation of co‑authored apps. It dropped in late November 2026 and is already humming inside the Pixel 9 and Pixel Watch, turning voice commands into code on the fly. Talk about the future of IoT software, hands‑on.",
+      "visual_query": "engineers typing code on mobile devices",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "Gemini 4 Carbon is a premium multimodal model. Only paying developers and Ultra subscribers get it, so the beta isn’t public. It understands text, audio, images, then spits out clean, ready‑to‑run JavaScript or Kotlin in seconds. No cloud latency, no data egregious breach risk.",
+      "visual_query": "code snippets appearing on screen",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "Google taps the model into Pixel 9’s new AI chip and the Watch’s new voice‑to‑code engine. Now you can say, “Write me a grocery list app,” and the phone will draft the UI and backend for you. It’s truly integrated hardware and software synergy.",
+      "visual_query": "smartwatch dictating code",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "If you’re a dev, the auto‑build API lets you publish Gemini extensions on the Play Store. Every line you code can earn you money. Pay‑per‑use pricing kicks in once users install your tool; your revenue flow starts the moment they hit *Get*.",
+      "visual_query": "developer uploading app to Play Store",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "Imagine a tiny voice‑to‑code utility that transforms spoken specs into a runnable Todo app. Bundle as a Play‑Store extension, price it $1.99. Super low barrier to entry, instant global reach, and you own 100% of the revenue.",
+      "visual_query": "hand holding a phone with app icon",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "Test drive is free. Sign up on Google Cloud, enable Gemini 4 Carbon, and start building in under 24 hours. Start coding the tool, upload it, set the price, and watch the first dollar hit your account. Thirteen new users means a few cents earned.",
+      "visual_query": "developer coding on laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "Keep an eye on logged user activity. Every purchase adds data you can optimize. Upgrade to the Enterprise tier for more concurrent agents and even higher pay‑per‑use rates. The more sophisticated the tool, the higher your returns per user.",
+      "visual_query": "analytics dashboard with revenue chart",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "So grab Google Cloud, spin up a prototype today, price it $1.99, and earn as people demand AI‑powered helpers. The first dollar feels sweet when it comes straight from your Play‑Store catalog.",
+      "visual_query": "cash register opening, coins falling",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+      "chapter_label": "STORY 1",
+      "narration": "That’s a quick play for instant revenue. Next up: Alibaba’s free game‑dev engine that could slash your production costs by 70%. Stay tuned for the hack that could change indie game dev forever.",
+      "visual_query": "game designers working on computers",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 13,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "Alibaba just dropped Qwen 4‑Max, a 530‑billion‑parameter juggernaut, and handed it to game studios for free. No subscription, no hidden fees—just raw power to design levels and generate 3‑D assets straight from text. That’s a game‑changer for indie devs in 2026.",
+      "visual_query": "hands typing code on laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "Released in November 2026, Qwen 4‑Max can debug code, riff on level design, and churn out 3‑D models faster than any previous model. With a single prompt, a 110‑meter auto‑debug session can squash bugs that used to take an entire sprint.",
+      "visual_query": "engineers walking through lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "The model runs on Alibaba Cloud’s edge nodes, so you pay only for compute time. For free, you get a baseline of 10,000 text‑to‑3‑D renders per month. That’s like starting a studio with a free GPU farm.",
+      "visual_query": "data center server aisle lights",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "Developers can create a “ready‑to‑sell” level prototype in under an hour. The AI lays out textures, vehicles, NPC routes, even AI behavior scripts—all synced to your chosen engine, like Unity or Unreal.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "Imagine slicing 70 % off your production budget by letting Qwen 4‑Max handle level geometry and asset creation. That extra cash could fund marketing or a next‑gen DLC—something that would normally blow your cash reserve.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "The trick? Submit your prototype to itch.io and set a $9.99/month subscription. Fans pull in a steady stream of income, and you keep the assets while the platform handles updates. It’s a win‑win for creators and players.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "But the biggest edge is the free engine itself. Alibaba says devs who build >30 level packs can earn revenue share from cloud compute credits—basically reverse‑patrol your costs into profit.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "For every level you pitch, you can cross‑sell to other studios. Qwen 4‑Max’s API lets you embed the same model in your own editor—granting on‑demand asset generation to clients who pay you, not Alibaba.",
+      "visual_query": "engineers walking through lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+      "chapter_label": "STORY 2",
+      "narration": "So sign up for Alibaba’s free Qwen 4‑Max program now, spin a killer level prototype, and launch it on itch.io for $9.99/month. The official link is waiting for you in the description—don’t miss the next wave of game dev tech.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "id": 22,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "visual_query": "engineers walking in a lab",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "In early November 2026, Meta snapped up Conductor, a multi‑agent AI coding platform. The deal instantly added a suite of agents that can run parallel tasks, cutting developer hours by a third. This isn’t a buzzword; it’s a full‑stack productivity overhaul.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "Conductor’s core tech spins up dedicated coding bots that fetch libraries, write tests, and refactor code—all in real time. Think of each agent as a micro‑engineer, freeing senior devs to focus on architecture. The result? Faster delivery, fewer bugs, and lower TCO for enterprises.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "Apple’s parallel move was hiring a former NotebookLM team last month. NotebookLM was known for AI‑assisted build tools that reduce boilerplate by 45%. Apple wants to embed that logic across Xcode, potentially slashing app release cycles by half.",
+      "visual_query": "data center server aisle lights",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "For freelancers, Conductor makes a game changer. With two agents on a sample web app, you can auto‑generate a functional MVP in under a day. That’s a billable asset you can pass off for $500, and you do it in half the time you’d normally need.",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "Imagine recruiting a client who needs a prototype, you deliver in 12 hours, and you cash in $200 per hour from a 2‑agent sprint. Meta’s stack, Apple’s talent, Conductor’s speed—all converge to let you charge premium rates for rapid delivery.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "Concrete numbers: two agents = up to 40% faster code output, initials at $200/hour yields $8,000 in a 40‑hour month. That’s the value of a single Conductor trial for a solo dev or small agency. No upfront cost, no technical barrier—just log in and spin up.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "Register for Conductor’s free trial today, build that sample web app with two agents, and start billing $200 an hour for rapid prototyping. The platform is live in the cloud, no infrastructure headache, just pure code generation in minutes.",
+      "visual_query": "robot arm working on a line",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+      "chapter_label": "STORY 3",
+      "narration": "That’s your playcard for the week—fast, high‑margin work that’s already in the hands of leading tech giants. Now, let’s switch gears to the next story about AI sales automation taking 30% off your cycle times. Stay tuned!",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 31,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "id": 32,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "Nooks is a sales‑automation platform that plugs GPT‑powered chat into CRM workflows. It’s SaaS, not a development kit, and it claims to slash sales cycle times by 30 %. General Catalyst backed it with a $500 million round in early 2027, just after announcing the new funds.",
+      "visual_query": "hands typing on laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 33,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "The company focuses on SMBs that need to scale outreach without hiring more reps. Its AI assistant can draft personalized emails, schedule calls, and qualify leads—all automatically. By 2027, 12 % of Nooks customers already report a 30 % drop in deal closing time.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "id": 34,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "Nooks’ core engine is built on GPT‑4 Turbo and integrates with Salesforce, HubSpot, and Microsoft Dynamics. The onboarding flow takes less than 15 minutes if you already have a CRM set up. No training data upload required—just connect your accounts and let the bot do the heavy lifting.",
+      "visual_query": "engineers walking",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 35,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "When you trigger the AI gateway, the system automatically pulls contact data, drafts a message, and schedules follow‑ups. It respects your existing email templates and brand voice, ensuring compliance with GDPR and CAN-SPAM. The platform logs every interaction for future optimization.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 36,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "Nooks’ pricing model is pay‑as‑you‑go. You pay $0.10 per outbound email, which drops to $0.05 when you hit 10,000 messages a month. For SMBs that send 1,000 emails daily, that’s less than a dollar a day in tooling costs—essentially free marketing power.",
+      "visual_query": "trading screens with live charts",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "id": 37,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "The biggest win is automation. A typical sales rep spends 40 % of their day on repetitive outreach. With Nooks, that time is reclaimed for closing deals. Early adopters say they added 3–5 new opportunities per week after the bot started drafting outreach.",
+      "visual_query": "hands typing on laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "id": 38,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "Ready to test it? Sign up for Nooks’ free demo, plug it into your existing CRM, and automate outreach to 100 leads per day using the GPT‑powered assistant—all at zero cost for the first 30 days. The link is in the description, so you can start earning today.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "id": 39,
+      "chapter": 4,
+      "chapter_title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+      "chapter_label": "STORY 4",
+      "narration": "That’s the today’s big deal—$500 million fueling a tool that can jumpstart your sales process. Stay tuned as we dive into more AI breakthroughs that can change the way you work.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "id": 40,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Google’s Gemini 4 Carbon powers Pixel 9 and auto‑code from voice—sell a $1.99 extension on the Play Store. Alibaba’s Qwen 4‑Max gives free 3D asset jazz that cuts indie dev costs 70 %—list level prototypes for $9.99/mo. Meta’s Conductor lets freelancers boot web apps in hours—charge $200/hr. Nooks’ $500 M AI gateway slashes sales cycles 30 %—automate 100 leads a day free for 30 days.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "id": 41,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Hit subscribe for the next 12‑hour digest and tell us—which tool will you spin into profits first?",
+      "visual_query": "trading screens with live charts",
+      "mood": "bold",
+      "is_key_scene": true
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Cold Open"
+    },
+    {
+      "num": 1,
+      "title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps"
+    },
+    {
+      "num": 2,
+      "title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine"
+    },
+    {
+      "num": 3,
+      "title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom"
+    },
+    {
+      "num": 4,
+      "title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}

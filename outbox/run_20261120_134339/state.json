@@ -1,0 +1,56 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories You Need to Know Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+        "hook": "Google just broke the model‑size wall and handed us a Gemini‑powered phone.",
+        "angle": "Gemini 4 Carbon launched with unprecedented multimodal collaboration, now rolling out in the Pixel 9 and Pixel Watch. The upgrade lets developers build fully‑AI‑driven creative tools and unlocks in‑device voice‑to‑code features.",
+        "money_angle": "Developers can cash in by publishing Gemini‑powered app extensions on the Play Store and use the new auto‑build API to generate revenue‑generating code on a pay‑per‑use basis.",
+        "visual_world": "Screenshots of the Pixel 9 with the Gemini UI, demo videos of a music‑mixing app created by Gemini, a live coding session where Gemini generates an entire app in real time.",
+        "search_queries": [
+          "Google Gemini 4 Carbon launch news",
+          "Pixel 9 Gemini 4 Carbon features"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+        "hook": "Alibaba’s new Qwen4‑Max promises to replace every Unity, Unreal, and Godot teacher.",
+        "angle": "Qwen4‑Max drops a 530‑Billion‑parameter model that can auto‑debug, design levels, and even generate 3D assets from plain text. Game studios can spin up full prototypes in minutes.",
+        "money_angle": "Indie devs and studios can monetize faster by using Qwen4‑Max to create high‑quality assets and levels on a subscription basis, reducing asset‑budget costs by up to 70 %."
+      },
+      {
+        "num": 3,
+        "title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+        "hook": "Meta and Apple just joined forces with the next generation of no‑code AI coders.",
+        "angle": "Meta bought Conductor, a multi‑agent AI coding platform, while Apple hired the former NotebookLM team to accelerate its AI‑assisted development. Both moves aim to democratize enterprise software creation.",
+        "money_angle": "Freelance coders can use Conductor’s agent architecture to build applications faster and lock in higher hourly rates, while entrepreneurs can launch AI‑powered startups with less technical overhead."
+      },
+      {
+        "num": 4,
+        "title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+        "hook": "Nooks just raised half a billion dollars to turn sales reps into AI‑driven hyper‑scalers.",
+        "angle": "The funding will be used to scale Nooks’ AI gateway that integrates GPT‑powered conversation boosters with CRM workflows. The tool promises to cut sales cycle times by 30 % nationwide.",
+        "money_angle": "SMBs can adopt Nooks’ platform to automate email outreach and lead qualification, boosting revenue without hiring new reps."
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "KGt67yg5XbQ",
+    "url": "https://youtube.com/watch?v=KGt67yg5XbQ",
+    "privacy": "public"
+  }
+}

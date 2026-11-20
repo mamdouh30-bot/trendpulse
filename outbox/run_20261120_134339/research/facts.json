@@ -1,0 +1,142 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories You Need to Know Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+        "hook": "Google just broke the model‑size wall and handed us a Gemini‑powered phone.",
+        "angle": "Gemini 4 Carbon launched with unprecedented multimodal collaboration, now rolling out in the Pixel 9 and Pixel Watch. The upgrade lets developers build fully‑AI‑driven creative tools and unlocks in‑device voice‑to‑code features.",
+        "money_angle": "Developers can cash in by publishing Gemini‑powered app extensions on the Play Store and use the new auto‑build API to generate revenue‑generating code on a pay‑per‑use basis.",
+        "visual_world": "Screenshots of the Pixel 9 with the Gemini UI, demo videos of a music‑mixing app created by Gemini, a live coding session where Gemini generates an entire app in real time.",
+        "search_queries": [
+          "Google Gemini 4 Carbon launch news",
+          "Pixel 9 Gemini 4 Carbon features"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+        "hook": "Alibaba’s new Qwen4‑Max promises to replace every Unity, Unreal, and Godot teacher.",
+        "angle": "Qwen4‑Max drops a 530‑Billion‑parameter model that can auto‑debug, design levels, and even generate 3D assets from plain text. Game studios can spin up full prototypes in minutes.",
+        "money_angle": "Indie devs and studios can monetize faster by using Qwen4‑Max to create high‑quality assets and levels on a subscription basis, reducing asset‑budget costs by up to 70 %."
+      },
+      {
+        "num": 3,
+        "title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+        "hook": "Meta and Apple just joined forces with the next generation of no‑code AI coders.",
+        "angle": "Meta bought Conductor, a multi‑agent AI coding platform, while Apple hired the former NotebookLM team to accelerate its AI‑assisted development. Both moves aim to democratize enterprise software creation.",
+        "money_angle": "Freelance coders can use Conductor’s agent architecture to build applications faster and lock in higher hourly rates, while entrepreneurs can launch AI‑powered startups with less technical overhead."
+      },
+      {
+        "num": 4,
+        "title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+        "hook": "Nooks just raised half a billion dollars to turn sales reps into AI‑driven hyper‑scalers.",
+        "angle": "The funding will be used to scale Nooks’ AI gateway that integrates GPT‑powered conversation boosters with CRM workflows. The tool promises to cut sales cycle times by 30 % nationwide.",
+        "money_angle": "SMBs can adopt Nooks’ platform to automate email outreach and lead qualification, boosting revenue without hiring new reps."
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Google’s Gemini 4 Carbon Powers the New Pixel and a Generation of Co‑Authored Apps",
+        "summary": "Google rolled out Gemini 4 Carbon, a premium multimodal model, to developers and Ultra subscribers. It is already integrated in Pixel 9 phones and the Pixel Watch, enabling in‑device code generation from voice. Developers can publish Gemini‑powered extensions on the Play Store and use the auto‑build API to monetize code on a pay‑per‑use basis.",
+        "key_facts": [
+          "Gemini 4 Carbon launched in late November 2026",
+          "Model offered to paying developers and Ultra subscribers",
+          "Integrated into Pixel 9 and Pixel Watch devices",
+          "Supports voice‑to‑code and multimodal collaboration",
+          "Auto‑build API generates revenue‑mining code",
+          "Play Store extensions can be sold for a fee"
+        ],
+        "money_angle": "Sign up for Gemini 4 Carbon via Google Cloud in 24 hrs, build a small voice‑to‑code tool, bundle it as a Play‑Store extension, and charge a $1.99 one‑time fee.",
+        "sources": [
+          {
+            "host": "thenextweb.com",
+            "url": "https://thenextweb.com/news/google-gemini-4-carbon-available-developers-ultra"
+          },
+          {
+            "host": "9to5google.com",
+            "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/googles-gemini-4-carbon-tops-three-agent-benchmarks-at-under-half-the-cost-per-task/ar-AA2has1z?ocid=BingNewsVerp"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Alibaba Unveils Qwen4‑Max and Gives Game Developers a Free AI Engine",
+        "summary": "Alibaba released Qwen 4‑Max, a 530‑billion‑parameter model, with free access for game studios. The model can debug code, design levels, and generate 3D assets from text. Indie developers can use these assets on a subscription basis, cutting their production spend by up to 70 %.",
+        "key_facts": [
+          "Qwen 4‑Max launched by Alibaba in November 2026",
+          "530 Billion‑parameter model",
+          "Offers auto‑debug, level design, 3D asset generation",
+          "Free AI engine for game developers",
+          "Can reduce asset budget costs by ~70 %"
+        ],
+        "money_angle": "Join Alibaba’s free Qwen 4‑Max program, generate a “ready‑to‑sell” level prototype, and offer it on itch.io for a subscription price of $9.99/month.",
+        "sources": [
+          {
+            "host": "bizpacreview.com",
+            "url": "https://www.bizpacreview.com/2026/11/16/alibabas-new-ai-may-run-circles-around-americas-best-1667833/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Meta’s Conductor Acquisition and Apple’s AI Acqui‑Hire Signal a Coding‑Automation Boom",
+        "summary": "Meta acquired Conductor, a multi‑agent AI coding platform, while Apple hired former NotebookLM developers to boost its AI‑assisted build tools. Conductor lets engineers run multiple coding agents in parallel, aiming to lower technical overhead for enterprise apps. Freelancers can leverage this architecture to speed delivery and increase rates.",
+        "key_facts": [
+          "Meta bought Conductor in early November 2026",
+          "Conductor supports multi‑agent parallel coding",
+          "Apple hired NotebookLM team for AI‑assisted development",
+          "Platform targets enterprise software creation",
+          "Freelancers can use Conductor to shorten delivery time"
+        ],
+        "money_angle": "Register for Conductor’s free trial, set up a sample web app with two agents, and bill the first month at $200/hour for rapid prototyping.",
+        "sources": [
+          {
+            "host": "techcrunch.com",
+            "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
+          },
+          {
+            "host": "siliconangle.com",
+            "url": "https://siliconangle.com/2026/11/04/meta-acquires-ai-coding-startup-conductor-whose-app-runs-several-coding-agents-at-once/"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Nooks Secures $500 M to Expand Sales Automation Powered by AI",
+        "summary": "Nooks raised $500 million in a General Catalyst financing round to extend its AI‑powered sales gateway. The platform integrates GPT‑powered conversation boosters within CRM workflows, targeting a 30 % sales‑cycle reduction. SMBs can adopt Nooks to automate outreach and qualify leads without hiring more reps.",
+        "key_facts": [
+          "Nooks secured $500 M funding from General Catalyst",
+          "AI gateway merges GPT‑chat with CRM workflows",
+          "Claims 30 % reduction in sales cycle times",
+          "Funding used to scale sales automation tools",
+          "SMBs can automate email outreach via Nooks"
+        ],
+        "money_angle": "Sign up for Nooks’ free demo, plug it into your existing CRM, and automate outreach to 100 leads per day using the GPT‑powered assistant at zero cost for the first 30 days.",
+        "sources": [
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/video/nooks-ceo-dan-lee-elaborates-162210569.html"
+          },
+          {
+            "host": "ijr.com",
+            "url": "https://ijr.com/discover/nooks-secures-500m-general-catalyst-financing-commitment-6c86c728"
+          }
+        ]
+      }
+    ],
+    "summary": "Google rolled out Gemini 4 Carbon, a premium multimodal model, to developers and; Alibaba released Qwen 4‑Max, a 530‑billion‑parameter model, with free access for; Meta acquired Conductor, a multi‑agent AI coding platform, while Apple hired for; Nooks raised $500 million in a General Catalyst financing round to extend its AI"
+  }
+}
