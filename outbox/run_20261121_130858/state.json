@@ -1,0 +1,63 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Anthropic Goes Public While AI Safety Standards Take Shape",
+        "hook": "Anthropic’s IPO cracks open a new chapter for investors and regulators.",
+        "angle": "Anthropic announced its first public offering, marking the first U.S. AI‑firm IPO in 2026 and lifting the company’s valuation above $20 billion. At the same time, Anthropic, OpenAI, and Google unveiled plans to form an independent AI safety standards body, sending a strong signal that safety will be law‑not‑just‑policy.",
+        "money_angle": "Early IPO investors and holders of the new safety‑standard bond may see a surge in demand, offering an attractive entry point for fund managers and retail traders.",
+        "visual_world": "Shares trading screens, the Anthropic logo in neon, a boardroom where executives shake hands, and a whiteboard sketch of the proposed safety‑audit framework.",
+        "search_queries": [
+          "Anthropic IPO news 2026",
+          "Anthropic OpenAI Google AI safety standards body"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals",
+        "hook": "The new AI‑tool lineup turns creativity from code to chat and canvas.",
+        "angle": "Perplexity added a voice‑controlled AI teammate for iOS and Android, making on‑the‑go brainstorming possible. HeyGen released Avatar 6, a context‑aware, audio‑driven character that topped new avatar evaluations. Suno launched Visuals, an AI that automatically generates lyric video footage and album art from text prompts, opening a ready‑made pipeline for musicians.",
+        "money_angle": "Creative professionals can license these tools immediately to speed up content production, boosting revenue for indie artists and marketing agencies.",
+        "visual_world": "Mobile devices with Perplexity’s voice UI, a holographic Avatar 6 avatar speaking, Suno’s AI‑generated video frames flying across a studio monitor.",
+        "search_queries": [
+          "Perplexity voice mode launch 2026",
+          "Suno Visuals release news 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Nvidia’s Revenue Double and the Nasdaq to Deep Correction",
+        "hook": "Nvidia’s earnings soar while the Nasdaq slumps, a paradox of doom and boom.",
+        "angle": "Nvidia reported revenue more than double year‑over‑year, a testament to AI‑chip demand. Yet the Nasdaq fell 5 % and plunged 16 % from its peak, with AI stocks like Nvidia, Anthropic, and others dragging the index down amid a tech sell‑off triggered by leadership changes and export curbs.",
+        "money_angle": "Investors can exploit the sharp Nasdaq dip to buy AI‑focused exchange‑traded funds or individual stocks at discounted levels.",
+        "visual_world": "Wall Street ticker tape, Nvidia logo with rocket icon, a bar graph climbing while the Nasdaq chart drops, investors in a trading room.",
+        "search_queries": [
+          "Nvidia revenue 2026 news",
+          "Nasdaq correction 2026 AI stocks"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Apple Expands Across AI Frontiers: Siri on tvOS and NotebookLM Acqui‑Hire",
+        "hook": "Apple boots up new AI teams while turning every screen into a smart assistant.",
+        "angle": "Apple rolled out Siri AI support to older Apple TV 4K models via a tvOS update, bringing conversational AI to households that still use legacy hardware. Meanwhile, Apple announced an acqui‑hire of Hux, the former NotebookLM AI startup, adding generative‑AI expertise to its design and software teams.",
+        "money_angle": "App developers can integrate Apple’s new Siri SDK to reach millions of TV users, generating new subscription or in‑app‑purchase revenue streams.",
+        "visual_world": "A TV screen displaying Siri’s overlay, a sleek Apple design studio with developers looking at NotebookLM tech, a smartphone with Siri’s voice widget.",
+        "search_queries": [
+          "Apple Siri tvOS update 2026",
+          "Apple acqui‑hire Hux NotebookLM news"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true
+}

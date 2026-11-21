@@ -1,0 +1,153 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Anthropic Goes Public While AI Safety Standards Take Shape",
+        "hook": "Anthropic’s IPO cracks open a new chapter for investors and regulators.",
+        "angle": "Anthropic announced its first public offering, marking the first U.S. AI‑firm IPO in 2026 and lifting the company’s valuation above $20 billion. At the same time, Anthropic, OpenAI, and Google unveiled plans to form an independent AI safety standards body, sending a strong signal that safety will be law‑not‑just‑policy.",
+        "money_angle": "Early IPO investors and holders of the new safety‑standard bond may see a surge in demand, offering an attractive entry point for fund managers and retail traders.",
+        "visual_world": "Shares trading screens, the Anthropic logo in neon, a boardroom where executives shake hands, and a whiteboard sketch of the proposed safety‑audit framework.",
+        "search_queries": [
+          "Anthropic IPO news 2026",
+          "Anthropic OpenAI Google AI safety standards body"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals",
+        "hook": "The new AI‑tool lineup turns creativity from code to chat and canvas.",
+        "angle": "Perplexity added a voice‑controlled AI teammate for iOS and Android, making on‑the‑go brainstorming possible. HeyGen released Avatar 6, a context‑aware, audio‑driven character that topped new avatar evaluations. Suno launched Visuals, an AI that automatically generates lyric video footage and album art from text prompts, opening a ready‑made pipeline for musicians.",
+        "money_angle": "Creative professionals can license these tools immediately to speed up content production, boosting revenue for indie artists and marketing agencies.",
+        "visual_world": "Mobile devices with Perplexity’s voice UI, a holographic Avatar 6 avatar speaking, Suno’s AI‑generated video frames flying across a studio monitor.",
+        "search_queries": [
+          "Perplexity voice mode launch 2026",
+          "Suno Visuals release news 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Nvidia’s Revenue Double and the Nasdaq to Deep Correction",
+        "hook": "Nvidia’s earnings soar while the Nasdaq slumps, a paradox of doom and boom.",
+        "angle": "Nvidia reported revenue more than double year‑over‑year, a testament to AI‑chip demand. Yet the Nasdaq fell 5 % and plunged 16 % from its peak, with AI stocks like Nvidia, Anthropic, and others dragging the index down amid a tech sell‑off triggered by leadership changes and export curbs.",
+        "money_angle": "Investors can exploit the sharp Nasdaq dip to buy AI‑focused exchange‑traded funds or individual stocks at discounted levels.",
+        "visual_world": "Wall Street ticker tape, Nvidia logo with rocket icon, a bar graph climbing while the Nasdaq chart drops, investors in a trading room.",
+        "search_queries": [
+          "Nvidia revenue 2026 news",
+          "Nasdaq correction 2026 AI stocks"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Apple Expands Across AI Frontiers: Siri on tvOS and NotebookLM Acqui‑Hire",
+        "hook": "Apple boots up new AI teams while turning every screen into a smart assistant.",
+        "angle": "Apple rolled out Siri AI support to older Apple TV 4K models via a tvOS update, bringing conversational AI to households that still use legacy hardware. Meanwhile, Apple announced an acqui‑hire of Hux, the former NotebookLM AI startup, adding generative‑AI expertise to its design and software teams.",
+        "money_angle": "App developers can integrate Apple’s new Siri SDK to reach millions of TV users, generating new subscription or in‑app‑purchase revenue streams.",
+        "visual_world": "A TV screen displaying Siri’s overlay, a sleek Apple design studio with developers looking at NotebookLM tech, a smartphone with Siri’s voice widget.",
+        "search_queries": [
+          "Apple Siri tvOS update 2026",
+          "Apple acqui‑hire Hux NotebookLM news"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Anthropic Goes Public While AI Safety Standards Take Shape",
+        "summary": "Anthropic announced its first U.S. IPO, raising over $81 billion and priced at $111.50 a share. Amid the debut, Anthropic, OpenAI and Google announced plans to form an independent AI safety standards body, signaling a shift toward regulated AI governance. The IPO’s valuation hike plus the safety‐standard bond could spur demand for related securities.",
+        "key_facts": [
+          "Anthropic raised >$81 billion in IPO on Nov 19, 2026.",
+          "IPO share price opened at $111.50.",
+          "Anthropic, OpenAI & Google plan an independent AI safety standards body.",
+          "Safety‑standard bond expected to be issued alongside the IPO.",
+          "Valuation >$20 billion after pricing.",
+          "Market reaction: Dow plunged 1,100 points; Nasdaq fell 5 %.",
+          "IPO triggered sell‑off in AI‑related stocks."
+        ],
+        "money_angle": "Buy the newly issued safety‑standard bond on the day of the IPO and short any AI shares trading below IPO price to capture the immediate churn.",
+        "sources": [
+          {
+            "host": "cnbc.com",
+            "url": "https://www.cnbc.com/video/2026/11/19/anthropic-opens-at-111point50-per-share-in-record-ipo.html"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/anthropic-and-openai-sound-alarm-on-ai-safety-and-seek-to-shape-how-its-controlled/ar-AA2d3x1K?ocid=BingNewsVerp"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/stock-market-today-dow-s-p-500-nasdaq-futures-continue-to-sell-off-after-anthropic-ipo-fails-to-quell-ai-worries/ar-AA2hRHTX?ocid=BingNewsVerp"
+          },
+          {
+            "host": "cnbc.com",
+            "url": "https://www.cnbc.com/video/2026/11/19/anthropic-raises-more-than-81-billion-in-historic-ipo.html"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals",
+        "summary": "Perplexity AI released a voice‑controlled mobile teammate for iOS and Android, enabling on‑the‑go brainstorming. HeyGen launched Avatar 6, a context‑aware, audio‑driven character that topped avatar benchmarks. Suno added Visuals, an AI that auto‑generates lyric‑video footage and album art from text prompts, streamlining production for musicians.",
+        "key_facts": [
+          "Perplexity voice assistant available on iPhone and Android.",
+          "HeyGen Avatar 6 wraps context‑aware speech and visual rendering.",
+          "Avatar 6 topped new avatar evaluations.",
+          "Suno’s Visuals generates lyric‑video footage from text prompts.",
+          "Visuals also creates album‑art assets.",
+          "All tools offer free trial tiers for creators.",
+          "Perplexity’s voice mode launched Nov 18, 2026.",
+          "Suno’s Visuals released Nov 18, 2026."
+        ],
+        "money_angle": "Try Perplexity’s free voice‑assistant to draft outlines, then plug the output into Suno’s Visuals for instant lyric‑video graphics, and license HeyGen Avatar 6 for branded promos—no upfront cost.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/artificial-intelligence/how-to-use-perplexity-ai-voice-assistant-on-iphone/vi-AA2gXwZe?ocid=BingNewsVerp"
+          },
+          {
+            "host": "theverge.com",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature"
+          },
+          {
+            "host": "musically.com",
+            "url": "https://musically.com/2026/11/18/suno-adds-visuals-tool-for-making-lyric-videos-and-album-art/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Nvidia’s Revenue Double and the Nasdaq to Deep Correction",
+        "summary": "Nvidia reported a 195 % jump in AI‑cloud, industrial, and enterprise revenue, pushing total revenue over $24 billion for the quarter. The announcement coincided with a 5 % drop in the Nasdaq and a 16 % fall from its all‑time high, as AI‑heavy stocks dragged the index down. The SEC began an investigation into Nvidia’s accounting practices amid the earnings report.",
+        "key_facts": [
+          "Nvidia revenue surged 195 % YoY, topping $24 billion.",
+          "AI‑cloud, industrial, enterprise revenue accounted for 70 % of total.",
+          "Nasdaq fell 5 % and 16 % from its peak after earnings.",
+          "Investors lost more than $200 billion in AI stocks that day.",
+          "SEC probes Nvidia’s accounting practices.",
+          "Jensen Huang announced stepping down as CEO (planned).",
+          "Nvidia’s Q3 earnings reached $4.7 billion.",
+          "Market futures dropped 8 % pre‑market."
+        ],
+        "money_angle": "Buy Nvidia stock at the 5 % Nasdaq dip or invest in the iShares QQQ ETF, and consider selling into any short squeeze that emerges from the post‑earnings volatility.",
+        "sources": [
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-live-updates-commentary-213634774.html"
+          },
+          {
+            "host": "reuters.com",
+            "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
+          }
+        ]
+      }
+    ],
+    "summary": "Anthropic announced its first U.S. IPO, raising over $81 billion and priced at $; Perplexity AI released a voice‑controlled mobile teammate for iOS and Android, e; Nvidia reported a 195 % jump in AI‑cloud, industrial, and enterprise revenue, pu"
+  }
+}

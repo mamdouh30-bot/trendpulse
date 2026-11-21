@@ -1,0 +1,165 @@
+{
+  "COLD OPEN HOOK (3 scenes) — frame today's digest and tease the biggest story|3": [
+    {
+      "narration": "Today's AI news isn’t fluff—it's a market shuffle. I’ll cut straight to the 4 stories that actually shake your portfolio. Stay tuned for the biggest move of the day.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "First up, a tech giant just listed and already setting new safety rules. It’s not just a $81 billion IPO—it's the birth of an AI standards bond that could be the next big speculative play. The price jumped to $111.50 a share, then—boom—triggered a market-wide selloff. Imagine buying that bond and timing a short on falling AI stocks.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Next, creative AI tools are taking over. Voice‑first assistants, context‑aware avatars, and instant lyric‑video generators are now live. No software in your pocket can claim to run faster than a Perplexity voice app or generate album art in seconds. Free trials let you test, then monetize with brand promos or YouTube content. Your workflow just got a $0 entry ticket to the future.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 1: Anthropic Goes Public While AI Safety Standards Take Shape\nStory hook to open with: Anthropic Goes Public While AI Safety Standards Take Shape\nMoney angle to land at the end: Buy the newly issued safety‑standard bond on the day of the IPO and short any AI shares trading below IPO price to capture the immediate churn.|9": [
+    {
+      "narration": "Anthropic Goes Public While AI Safety Standards Take Shape. On November 19, 2026, the company pulled the plug on a covert venture and opened its stock to the world, pulling in more than $81 billion. Every share opened at $111.50, flooding the market with a valuation jump that sent the Dow tumbling 1,100 points and the Nasdaq down 5%.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "This wasn’t just a cash grab. Anthropic, OpenAI, and Google rolled together to announce a new independent AI safety standards body. Their goal? To create and enforce guidelines that all major AI firms must follow. The move is designed to curb risk and bring stability to an industry that has been skyrocketing faster than regulation.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Backstage, the IPO is only the tip of the iceberg. At the same day, a safety‑standard bond is slated to be issued. Think of it as a guaranteed ticket: you get a bond that’s pegged to safety compliance, and you’re betting on a future where AI companies must prove adherence or face penalties.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "But the market had a different reaction. Investors panicked and sold off AI stocks. By day’s end, the sector jittered, and AI's share price fell below the IPO price on several exchanges. This volatility is a classic profit window for traders who know how to move quickly.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "So here’s your play: On the first trading day, buy the newly issued safety‑standard bond. It’s a straightforward, risk‑managed bet you can close out in weeks or hold for the long term. The bond price itself will reflect the combined appetite for safety compliance and the initial IPO hype.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Simultaneously, short any AI shares that slip below their IPO price. The short squeeze potential is high; as soon as the bond buys hype subsides, those underpriced shares will bounce back. Pair the bond with a short to lock in a guaranteed risk‑free cushion on the downside.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Why does this matter? You’re not just riding a tech wave; you’re betting on new regulatory backbones and market correction. If the safety‑standard bond performs, you profit from compliance certainty. If AI stocks rebound, you benefit from a classic short squeeze strategy.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Grab the bond today, trail the share price, and watch the profit curve climb. The official link to the bond offering is waiting for you in the description below. No missed bets—just solid plays that keep you ahead of the curve.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s it for Anthropic’s IPO and the safety‑standard bond. Up next, we dive into the next AI wave that’s literally ending the creative block—stay tuned for the voice‑first tool that’s changing every creator’s workflow.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 2: Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals\nStory hook to open with: Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals\nMoney angle to land at the end: Try Perplexity’s free voice‑assistant to draft outlines, then plug the output into Suno’s Visuals for instant lyric‑video graphics, and license HeyGen Avatar 6 for branded promos—no upfront cost.|9": [
+    {
+      "narration": "Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals. Imagine talking to an AI on your phone, and it turns your thoughts into videos and animated characters—all free to test. That’s the headline today for creators and marketers alike.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "First up, Perplexity AI launches a voice‑controlled mobile teammate on iPhone and Android. On November 18, 2026, the company rolled out this feature, letting users brainstorm on the go without typing. It’s a simple voice‑to‑text engine that feeds ideas straight into your scripts, saving hours of drafting.",
+      "visual_query": "hands typing on smartphone",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Next, HeyGen drops Avatar 6, a context‑aware, audio‑driven animated character. In its debut, Avatar 6 topped the latest avatar benchmarks, meaning it can follow conversations and render realistic movement in real time. For marketers, it’s a ready‑made promo talent that can speak your brand’s tone without hiring a voice actor.",
+      "visual_query": "animated character on screen",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Third, Suno releases Visuals—an AI that auto‑generates lyric‑video footage and album art from text prompts. Launched November 18, 2026, Visuals lets musicians generate polished video assets with a single sentence. Creators can now produce full lyric visuals in minutes, cutting out costly production pipelines.",
+      "visual_query": "digital studio with screens",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Perplexity’s voice assistant isn’t just a demo; it’s free to try. Grab the app, speak your outline, and watch the AI lay out the structure of your video content. No subscription, no hidden fees—just raw AI power at your fingertips.",
+      "visual_query": "phone screen showing Perplexity interface",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "With the outline in hand, feed it into Suno’s Visuals. Type a prompt like “dark midnight city with neon lights” and the AI spits out a 2‑minute lyric‑video clip and matching album cover frame. The tool gives you a complete visual package for your next single or promo—all for free during the trial.",
+      "visual_query": "computer screen with Suno Visuals interface",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Now, why would you license HeyGen Avatar 6? The platform offers a zero‑upfront cost model for branded promos. You can embed the avatar in your ad, let it speak your script, and distribute across social channels or live streams. The only cost is the monthly service fee after the free trial.",
+      "visual_query": "studio setup with animated avatar",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Putting it all together: use Perplexity’s free voice‑assistant to draft your content, plug that into Suno’s Visuals for instant lyric‑video graphics, and license HeyGen Avatar 6 for dynamic promo clips—all without initial investment. It’s a zero‑cost, high‑impact creative workflow that can launch a campaign overnight.",
+      "visual_query": "creative team collaborating over a laptop",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "So start now—download Perplexity, try Suno, and register for HeyGen. Every click builds a viral-ready asset, and the next rung on the AI ladder is just a voice command away. And stay tuned, because the next story will hit you straight: Nvidia’s revenue shock and a Nasdaq deep correction.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 3: Nvidia’s Revenue Double and the Nasdaq to Deep Correction\nStory hook to open with: Nvidia’s Revenue Double and the Nasdaq to Deep Correction\nMoney angle to land at the end: Buy Nvidia stock at the 5 % Nasdaq dip or invest in the iShares QQQ ETF, and consider selling into any short squeeze that emerges from the post‑earnings volatility.|9": [
+    {
+      "narration": "Nvidia’s revenue jumped 195% YoY, topping $24 billion, and that’s not a typo – the AI‑cloud, industrial, and enterprise segment alone accounted for 70% of that number in Q3. If that sounds like a rocket launch, it isn’t. The company’s AI product lineup, from GPUs to its new data‑center architecture, drove the surge. The headline is simple: Nvidia is the king of AI chips, and it’s just scorched a bigger market.\n\nWhat this means for you is that the AI boom is real and it’s doing a massive burn‑out on the stock market. The company’s earnings just set a new benchmark inside the sector, and the upside is tangible for investors who want a seat at the table of silicon‑powered AI engines.\n\nThe reason you should care is this: when a tech giant hits double‑hundred percent growth, it sets a precedent that ripples across the entire Nasdaq. It also triggers a frenzy in AI laggards that can’t keep up, widening the volatility gap.\n\nFeel the market pulse: the Nasdaq fell 5% and 16% from its all‑time high immediately after the earnings release, ripping a bet off hundreds of other AI stocks. Investors lost in excess of $200 billion in AI equities that day, a colossus crash that only made sense given Nvidia’s stride.\n\nAnd here’s the kicker: the SEC opened an investigation into Nvidia’s accounting practices right after the announcement, a twist that could stop or slow the momentum if any regulatory pain unfolds. A revisit to the fundamentals not only adds caution but also creates trading opportunities.\n\nThe story’s not just about numbers; it’s about risk, reward, and timing. Nvidia’s lion‑hearted earnings report crushed expectations and opened up pockets of mispricing across the exchange. That’s where savvy traders start looking.\n\nNow, if you’re watching this in 2026, it’s time to act. Grab the dip: buy Nvidia stock at the 5% Nasdaq drop or hedge with the iShares QQQ ETF. These instruments give you exposure to the broader tech rally while ducking the AI chip frenzy.\n\nBut don’t sit still. After the earnings swing, monitor for short squeezes. In the next several days, volatility could push the price higher if the market corrects itself. That means you could profit by selling into a short squeeze that often follows these big drops.\n\nEnergy levels are rising – Nvidia’s revenue double, the Nasdaq correction is deep, and your next move is to capture the play. Ready? In the description below is the link to purchase shares, complete with a step‑by‑step guide on how to set up your QQQ trades. Let’s make money from the AI surge together. Now, onto the next frontier of AI innovation!",
+      "visual_query": "trading screens with live charts rising",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Picture the trading floor: a wall of glowing screens shows the Nasdaq’s 5% plunge in real time. Traders’ faces glow with the same blue as the numbers. That flash of red and green is Nvidia’s $24 billion spike, the single biggest revenue jump in the sector this quarter. Ahead of the release, analysts had predicted a 120% increase, so a 195% leap was a stunning outlier.\n\nBut let’s break down the math: $24 billion divided by a 70% AI segment means $16.8 billion in AI revenue alone. That’s more than the combined revenue of several mid‑cap companies.\n\nWhy matters: AI demand is the engine of tech valuations. When a company like Nvidia leads with such growth, it signals to investors that the AI infrastructure market is healthy and expanding.\n\nThe fanfare also triggers a cascade. A 5% Nasdaq drop is nothing without context: it dipped from a peak of 18,000 to 17,100, erasing $200 billion of market value across AI names. The sigh of the market was no surprise given the sheer scale of Nvidia’s earnings.\n\nAnd the SEC’s probe adds a regulatory dimension. It presses for more transparency and could slow momentum if allegations stick. Spotting that tension is key for traders hoping to ride the wave.\n\nSo, the big picture: Nvidia’s double‑hundred percent climb parried from a quarterly earnings release, spiked the Nasdaq drop, and revived an SEC investigation—all in one fell swoop.\n\nYour next decision? Tremble or leap? The droplet market offers a clear catalyst for entry.\n\nKnow the play: choose between direct Nvidia shares, which will resolve near the mid‑point of the daily dip, or take the QQQ, offering a diversified hedge against the volatility of individual AI names.\n\nAnticipate the kicker: after the earnings/SEC chatter, short traders cheering for a sell‑off could trigger a squeeze. Buy the chip, then pivot into a short squeeze setup when the market finds the rebound.\n\nLet’s convert that adrenaline into action. Grab Nvidia stock or QQQ now before the next market heartbeat.",
+      "visual_query": "stock market screens with live charts rising",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Let’s talk cores – Nvidia’s AI houses. In Q3, AI‑cloud, industrial, and enterprise revenue grew at 195% YoY, capping the total at over $24 billion. That 195% is a lynchpin: it outpaces typical tech growth by a factor of two and signals that Nvidia is surging not just in hardware but in software SaaS, AI‑as‑a‑service, and cloud infrastructure.\n\nAll this surges from three product lines: the next‑gen GPUs, the CUDA ecosystem, and new data‑center silicon. Those acquisitions combined to serve top AI workloads for the cloud and enterprise customers. The context is clear: Nvidia is no longer a chip maker; it is the AI engine that powers everything from self‑driving cars to data centers.\n\nThe market reaction is immediate and massive. Nasdaq crashed 5% since the earnings, dropping 16% from its peak. The panic wasn’t about Nvidia but the ripple effect on AI‑heavy names that trailed behind Nvidia’s benchmark.\n\nInvestors lost more than $200 billion in AI stocks the day after Nvidia’s report. That raw betrayal underscores the volatility – a cautionary tone for those wanting to simply surf the wave.\n\nMeanwhile, the SEC’s probing Nvidia’s accounting shook the fundamentals of the earnings claim. This raises the bar for any investor who has to read between the lines rather than just the headline. Avoid being the fallout victim.\n\nThus"
+    }
+  ],
+  "OUTRO (2 scenes) — rapid recap of all stories: story 1: Anthropic Goes Public While AI Safety Standards Take Shape; story 2: Creative AI Tools Roll Out: Voice‑First Perplexity, HeyGen Avatar 6, and Suno’s Visuals; story 3: Nvidia’s Revenue Double and the Nasdaq to Deep Correction|2": [
+    {
+      "narration": "Anthropic just went public, raising $81 billion at $111.50 a share—plus a safety‑standard bond on tap for quick gains and shorting AI stocks. Creative AI is here: Perplexity voice‑assistant, HeyGen Avatar 6, and Suno’s Visuals let creators multitask graphics, audio, and avatars for free. Nvidia’s revenue sprint hit $24 billion, but the Nasdaq plunged 5 % and the market lost $200 billion in AI shares—yet the QQQ ETF still hovers for a rebound.",
+      "visual_query": "hands typing laptop closeup, trading screens rising, data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Subscribe now for fresh 12‑hour AI digests and tell us—would you buy a safety‑standard bond or short AI stocks after an IPO spike?",
+      "visual_query": "stock market screens rising, traders watching news on screens",
+      "mood": "curious",
+      "is_key_scene": false
+    }
+  ]
+}
