@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI Money: 4 Stories That Just Landed",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon vs GPT‑6.2: The Model Showdown",
+        "hook": "Biggest AI model clash in weeks—Google’s Gemini 4 Argon faces OpenAI’s GPT‑6.2 Astra.",
+        "angle": "Google released Gemini 4 Argon, topping benchmarks against GPT‑4 and surpassing OpenAI’s GPT‑6.2 in enterprise‑relevant tasks. The rivalry accelerates the race to the AGI frontier and signals a shift in market dominance.\n\nThis battle redefines how businesses evaluate AI performance, affecting everything from SaaS pricing to internal R&D budgets.",
+        "money_angle": "Venture firms should freshen their due‑diligence pipelines for companies building customer‑facing uses of either model.",
+        "visual_world": "Contrasting lab footage of Google’s data center humming with Gemini 4 Argon, side‑by‑side comparison charts, and Santiago‑designed dashboards showing real‑time benchmark scores.",
+        "search_queries": [
+          "\"Gemini 4 Argon\" news 2026",
+          "\"GPT‑6.2\" release details 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft’s Rogue‑AI Guard: New Monitoring Suite Unveiled",
+        "hook": "Microsoft reveals a tool that keeps a close eye on rogue AI agents—protecting enterprises from unseen risks.",
+        "angle": "Microsoft CEO Satya Nadella announced a corporate‑grade platform that detects, isolates, and controls autonomous agents. It allows firms to enforce compliance without trusting the AI’s internal logic, a shift toward external safety layers.\n\nThe feature promises to reduce costly compliance breaches and unlock safer AI integrations across regulated sectors.",
+        "money_angle": "IT buyers should request a demo to save millions in potential regulatory fines.",
+        "visual_world": "Screenshots of the new dashboard, incident‑alert flowcharts, and a stylized depiction of AI agents as drones being corralled by a central console.",
+        "search_queries": [
+          "\"Microsoft rogue AI monitoring\" news 2026",
+          "\"external AI controls\" Microsoft announcement 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "OpenAI’s New Attacker AI – Turning Offense Into Defense",
+        "hook": "OpenAI unveils an AI that plays the role of a hacker to test your security systems.",
+        "angle": "The new security product lets enterprises simulate sophisticated cyber‑attacks using generative AI. The tool speeds penetration testing and uncovers blind spots in real time.\n\nIt blends threat modelling with next‑gen automation, compelling businesses to adopt proactive AI‑driven defense pipelines.",
+        "money_angle": "Cyber‑security firms can license the tool to offer premium penetration‑testing services.",
+        "visual_world": "Interactive studio showing the AI generating exploit scripts, a visualization of attack vectors, and a stress‑test dashboard for security analysts.",
+        "search_queries": [
+          "\"OpenAI attacker AI\" news 2026",
+          "\"AI penetration testing\" OpenAI product 2026"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Nooks Raises $500 M – A Gold Rush for AI‑Powered Sales",
+        "hook": "AI sales startup Nooks lands a $500 million funding round, opening a billion‑dollar market for revenue automation.",
+        "angle": "General Catalyst’s $500 M commitment fuels Nooks’ plan to scale a suite that uses AI to qualify leads, propose contracts, and predict churn. The valuation hits $3 B, reflecting investor confidence in AI‑enabled sales acceleration.\n\nThe deal illustrates how AI can directly slash sales cycles and boost margin—turning insiders into sellers of opportunity.",
+        "money_angle": "Investors and sales leaders can seize the chance to pilot Nooks’ platform in high‑volume sectors for immediate ROI.",
+        "visual_world": "Animated mock‑ups of Nooks’ AI assistant chatting with a prospect, revenue charts spiking, and a road‑map of scalable integrations.",
+        "search_queries": [
+          "\"Nooks\" funding round 2026",
+          "\"AI sales platform\" Nooks 2026"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "hc4lhxpiXOQ",
+    "url": "https://youtube.com/watch?v=hc4lhxpiXOQ",
+    "privacy": "public"
+  }
+}

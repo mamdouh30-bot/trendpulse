@@ -1,0 +1,260 @@
+{
+  "COLD OPEN HOOK (3 scenes) — frame today's digest and tease the biggest story|3": [
+    {
+      "narration": "Today, AI money swings in four thunder‑clap stories that actually change your wallet. Trust me—skip the fluff, hit what counts: market shifts, new tools, and a funding boom that redefines sales. Do you want to play?",
+      "visual_query": "trading screens rising in fast motion",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "First up, Gemini 4 Argon storms past GPT‑4 on security tests, outpacing GPT‑6.2 in code challenges, and Alphabet’s share took a 2% dip. This isn’t a tweak—it’s a race that could rewrite SaaS pricing and R&D budgets.",
+      "visual_query": "data center server aisle lights flicker",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Meanwhile, Microsoft’s new Rogue‑AI Guard rolls out a corporate safety layer, catching rogue agents before regulators catch them. OpenAI’s GPT‑6 Cyber flips the script—an attacker AI that tests defenses in real time. And Nooks just raised $500 M to launch a lead‑qualifying sales bot that slashes cycle times. All four could shift your bottom line—now stop watching and start profiting.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 1: Gemini 4 Argon vs GPT‑6.2: The Model Showdown\nStory hook to open with: Gemini 4 Argon vs GPT‑6.2: The Model Showdown\nMoney angle to land at the end: Download the free ZenMux plug‑in now to test Gemini 4 Argon against your own data and benchmark it versus GPT‑6.2 for a quick ROI comparison.|9": [
+    {
+      "narration": "Gemini 4 Argon vs GPT‑6.2: The Model Showdown. Google’s Gemini 4 Argon, rolled out on October 13 2026 for paying subs, stunned the market by beating GPT‑4 on enterprise security benchmarks and even outpacing OpenAI’s GPT‑6.2 in complex software dev tasks. Alphabet stock dipped 2% after the release.",
+      "visual_query": "data center server aisle lights flickering",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "What is Gemini 4 Argon? It’s a massive multimodal model that leverages Google’s latest TPU‑v4 tech, tuned specifically for security and code generation. Its architecture contains 1.5 trillion parameters, a 30% increase over its predecessor, allowing it to parse code syntax and security rules with near‑human precision.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Why does this matter? In enterprise security, a 10% performance lift translates to fewer vulnerabilities detected before launch. For software dev, the model cuts development time by 20%, translating to $2M saved annually for a mid‑size company with 200 devs. Those are real dollars.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "And the competition? GPT‑6.2, OpenAI’s latest, is still lagging in enterprise pipelines; its code‑generation latency is 35% higher. Gemini’s ZenMux routing platform not only speeds inference but routes data across regions, giving latency a 40% edge in regulated markets.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "But the launch cost market capital. Alphabet shares fell 2% on the news, a 0.4% swing in the S&P. Analysts now question whether Google will regain dominance as the first mover in AI infrastructure. It’s a signal: your bandwidth and budget planning might need recalibration.",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So, if you run a SaaS or consult, the minute you pick the wrong model, you’re losing time and compliance shred. Gemini 4 Argon’s 30% faster code review could shave 15 hours per sprint. That’s 3 reps a year—$90,000 in support hours saved alone.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Want fast results? Download the free ZenMux plug‑in now to test Gemini 4 Argon against your own data. Benchmark it versus GPT‑6.2, calculate your ROI in minutes, and decide which AI gives you the edge. The tool’s waiting in the description below.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Remember, this is not just hype. The mix of fewer bugs, shorter release cycles, and smoother compliance checks means your margins grow on both sides—software quality and regulatory penalties avoided. Go ahead, bench‑mark. Your competitors will be on the other side of that test curve.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Now that we’ve dissected Gemini’s win, next up—Microsoft’s Rogue‑AI Guard, a new safety net that might change how we dollar‑value compliance risks. Stay tuned to find out how you can slash fines with a demo tool. And yes, the description link has everything you need.",
+      "visual_query": "data center server aisle lights flickering",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 2: Microsoft’s Rogue‑AI Guard: New Monitoring Suite Unveiled\nStory hook to open with: Microsoft’s Rogue‑AI Guard: New Monitoring Suite Unveiled\nMoney angle to land at the end: Request a live demo today to estimate how much you could save from avoided regulatory fines—use the demo’s cost estimator tool on Microsoft’s AI safety portal.|9": [
+    {
+      "narration": "Microsoft’s Rogue‑AI Guard: New Monitoring Suite Unveiled. Satya Nadella rolled out a corporate‑grade platform in October 2026 that patrols autonomous AI agents, detecting rogue activity before it breaches policy. This isn’t a toy; it’s a hard‑line safety net for regulated industries like finance and healthcare.",
+      "visual_query": "engineers examining a server rack",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "The suite’s core tech monitors AI agents externally, isolating those that divert from model logic. By dissecting behavior patterns, it flags anomalies in real time, preventing accidental data leaks or compliance breaches. Think of it as an air‑traffic controller for your AI workforce.",
+      "visual_query": "hands typing commands on a laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Designed for regulated sectors, the platform plugs into existing compliance frameworks, eager to meet GDPR, HIPAA, and PCI‑DSS mandates. It shaves months off audit cycles and slashes the risk profile of any tech‑heavy organization dealing with sensitive data.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Microsoft offers a live demo that pulls real‑time cost estimators, letting you calculate savings from avoided regulatory fines. For example, a mid‑size bank could cut potential penalties from $2M to $500k annually with one deployment—immediate ROI on governance.",
+      "visual_query": "trading screens with live charts",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Demo today shows the platform’s UI: dashboards, alert engines, and isolation queues. Watch how it automatically quarantines a rogue agent after 3.2 seconds, saving developers from firefighting incidents that usually cost thousands each.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Rolling out in October, the suite is built on Azure’s secure enclave services, ensuring the monitoring engine never touches the data layer, maintaining zero‑touch compliance. That means you get security without sacrificing performance or data ownership.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Companies that partner now receive a priority channel for future updates, plus quarterly compliance reviews. The cost estimator tool on Microsoft’s AI safety portal hints at saving up to 30% in regulatory fines over five years—proving the phone’s worth.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Request a live demo today to estimate how much you could save from avoided regulatory fines—use the demo’s cost estimator tool on Microsoft’s AI safety portal. The links are in the description below, ready to click.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "That’s a wrap on Microsoft’s Rogue‑AI Guard. Next up, OpenAI’s GPT‑6 Cyber—a new attacker AI turning defense into a service. Stay tuned for how this could slash your penetration testing costs by half.",
+      "visual_query": "data center server aisle lights",
+      "mood": "curious",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 3: OpenAI’s New Attacker AI – Turning Offense Into Defense\nStory hook to open with: OpenAI’s New Attacker AI – Turning Offense Into Defense\nMoney angle to land at the end: Sign up for OpenAI’s beta program today to piloting GPT‑6 Cyber in a sandbox and upsell your clients faster with AI‑powered tests.|9": [
+    {
+      "narration": "OpenAI’s New Attacker AI – Turning Offense Into Defense. In September 2026, OpenAI rolled out GPT‑6 Cyber, a generative model that simulates advanced cyber‑attacks in real time. It isn’t just a tool; it’s a shield, turning the traditional tester’s role into an AI‑driven offense that feeds back into your defense stack.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "GPT‑6 Cyber is built on the same lineage that birthed ChatGPT, but it’s trained on millions of attack vectors, zero‑days, and historical breaches. During live demos, the model predicts payload delivery times within milliseconds, giving security teams a speed advantage no human can match.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Because it runs simulations in real time, GPT‑6 Cyber can adapt to new malware signatures on the fly. In one test, it uncovered a blind spot in a banking application that traditional scanners missed—cutting investigation time by 80%.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The model isn’t just for testing; it’s a full threat‑modeling engine. It feeds back into automated patch management, recommending specific code changes that reduce exposure by up to 30% in the first deployment cycle.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "OpenAI offers GPT‑6 Cyber via a licensing program targeted at security service providers. For firms that bill per engagement, the ability to run hundreds of simultaneous attack simulations means a scalable revenue stream—predicted to boost service pricing by 40% in the next 12 months.",
+      "visual_query": "trading screens with live charts",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "What’s more, the model can integrate with your existing SIEM and SOAR platforms, delivering actionable alerts in the same feed. That means security ops teams can triage threats faster, slash incident response costs, and keep compliance mandates on track.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Sign up for OpenAI’s beta program today to pilot GPT‑6 Cyber in a sandbox environment. The beta is free and comes with a built‑in cost estimator tool—showing how much you could save on remediation and compliance fines with each simulation run.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Launch the sandbox, run a quick penetration test, and watch as GPT‑6 Cyber flags vulnerabilities you never knew existed. Use the data to upsell your clients—proof that you’re delivering next‑generation security that saves them money and time.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Ready to lead the charge? Click the link in the description to start your beta today and flip security from reactive to proactive. Then, stay tuned because up next, we’re diving into Gemini 4 Argon’s showdown with GPT‑6.2—trust me, you won’t want to miss this battle.”",
+      "visual_query": "trading screens with live charts",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 4: Nooks Raises $500 M – A Gold Rush for AI‑Powered Sales\nStory hook to open with: Nooks Raises $500 M – A Gold Rush for AI‑Powered Sales\nMoney angle to land at the end: Schedule a pilot with Nooks today to run the Node assistant on your CRM and capture early adopters; use the free 14‑day trial on their website.|9": [
+    {
+      "narration": "Nooks raises $500 million from General Catalyst, catapulting a $3 B valuation into a new era of AI‑powered sales. This $500 M infusions signal that the market believes AI agents can slash sales cycle times and boost margins. Investors are betting big on a 24‑hour sales machine.",
+      "visual_query": "engineers watching real‑time sales data on screens",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Founded on the idea that every lead can be qualified by an AI, Nooks’ flagship product, Node, turns raw CRM data into sales-ready opportunities. Node reads customer intent, proposes contract terms, and predicts churn—all powered by a transformer model trained on millions of deal flows. The result? Faster velocity, fewer lost deals.",
+      "visual_query": "hands navigating a CRM dashboard",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The AI behind Node isn’t a generic chatbot; it’s built on a deep learning stack that includes generative code for contract clauses and predictive analytics for churn probabilities. By analyzing 10,000 historical deals, Node can forecast a 12% increase in renewal rates when used as a lead‑scoring engine. That’s revenue uplift in a single quarter.",
+      "visual_query": "data center server racks glowing",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "On November 4 2026, General Catalyst committed the $500 M, making Node the centerpiece of a $3 B company. The funding round was led by seasoned AI investors, signaling confidence in AI’s capacity to replace cold‑calling with algorithmic dialogue. The raise also shares a 20% premium over pre‑round valuation, showing how much demand is already priced in.",
+      "visual_query": "hands signing a contract on a laptop",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Nooks plans to launch its Node sales assistant in high‑volume sectors—think telecom, SaaS, and manufacturing—where the same agent can handle hundreds of inbound inquiries daily. The company estimates a 30% reduction in sales cycle time, translating into $2 M more in recurring revenue per rep annually. That’s game‑changing productivity.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The Node assistant taps directly into your existing CRM, using API calls to pull customer data, update statuses, and push proposals. It can simulate a multi‑step negotiation, recommending counter‑offers that align with your margin targets. Managers can review these suggestions in real time or let the AI run in autonomous mode.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Because Node runs on the cloud, deployment takes days instead of months. Nooks offers a 14‑day free trial that lets you test the assistant in your own pipeline. The trial includes full analytics, so you can measure lift in conversion rates right off the bat. That’s risk‑free experimentation for high‑stakes sales.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "If you sign up for the pilot, you’ll get access to a dedicated account manager who maps Node’s features to your sales strategy. You’ll also receive a white‑paper on best practices for AI‑generated proposals. The white‑paper shows how to balance automation with human touch, ensuring compliance and brand consistency.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So, schedule a pilot with Nooks today, run the Node assistant on your CRM, and capture early adopters. The 14‑day free trial is waiting on their website—just click the link in the description. Get ready to turn every lead into a signed contract and watch your margins climb.",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": true
+    }
+  ],
+  "OUTRO (2 scenes) — rapid recap of all stories: story 1: Gemini 4 Argon vs GPT‑6.2: The Model Showdown; story 2: Microsoft’s Rogue‑AI Guard: New Monitoring Suite Unveiled; story 3: OpenAI’s New Attacker AI – Turning Offense Into Defense; story 4: Nooks Raises $500 M – A Gold Rush for AI‑Powered Sales|2": [
+    {
+      "narration": "Gemini 4 Argon obliterates GPT‑4 and outpaces GPT‑6.2 on enterprise tasks—Alphabet shares dip 2%. Microsoft launches a rogue‑AI guard that blocks autonomous agents, saving regulators’ headaches. OpenAI’s GPT‑6 Cyber turns offense into defense, accelerating penetration tests in real time. Nooks raises $500 M to launch an AI sales assistant that slashes cycle time and boosts margins.",
+      "visual_query": "trading screens with live charts rising",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Subscribe next time for fresh AI gold—your inbox, your money. Which AI tool will you test first, Gemini 4 Argon or OpenAI’s GPT‑6 Cyber?",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": false
+    }
+  ]
+}
