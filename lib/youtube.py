@@ -32,6 +32,44 @@ def _get_service():
     return build("youtube", "v3", credentials=creds)
 
 
+def _norm_title(t):
+    import re
+    return re.sub(r"[^a-z0-9]+", " ", str(t or "").lower()).strip()
+
+
+def find_recent_duplicate(title, logger=None, hours=36):
+    """True if a video with the same normalized title was already published
+    on this channel within `hours` — the hard guard against the resume
+    race that once produced duplicate uploads. Fails OPEN (returns False)
+    when the API is unavailable so production never stalls on it."""
+    try:
+        import datetime as _dt
+        svc = _get_service()
+        ch = svc.channels().list(part="snippet", mine=True).execute()
+        cid = ((ch.get("items") or [{}])[0]).get("id")
+        if not cid:
+            return False
+        after = (_dt.datetime.now(_dt.timezone.utc)
+                 - _dt.timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        res = svc.search().list(part="snippet", channelId=cid, type="video",
+                                order="date", maxResults=25,
+                                publishedAfter=after,
+                                q=str(title)[:80]).execute()
+        target = _norm_title(title)
+        for it in (res.get("items") or []):
+            if _norm_title(it["snippet"].get("title")) == target and target:
+                if logger:
+                    logger.warning(
+                        "duplicate-title guard: same title already live "
+                        f"({it['snippet'].get('publishedAt')})")
+                return True
+        return False
+    except Exception:  # noqa: BLE001
+        if logger:
+            logger.warning("duplicate-title check skipped (API unavailable)")
+        return False
+
+
 def upload(video_path: Path, thumb_path, meta, cfg, logger):
     from googleapiclient.http import MediaFileUpload
 

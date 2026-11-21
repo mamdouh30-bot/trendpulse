@@ -64,6 +64,40 @@ _GENERIC = [
 _LAST_RESORT = ["technology timelapse", "business people working",
                 "city aerial timelapse"]
 
+# Universal B-roll: queries with a guaranteed hit on every provider. When a
+# chapter's own queries come back thin, these fill the gap so EVERY scene
+# ships with real moving footage — no static image ever reaches the render.
+UNIVERSAL_QUERIES = [
+    "city aerial timelapse night", "data center server aisle",
+    "stock market screens charts", "robot arm assembly line",
+    "modern office people working", "technology abstract lights",
+]
+
+# ---------------------------------------------------------------- history --
+def load_clip_history(cfg):
+    """URLs of clips used by PREVIOUS episodes (cross-run anti-repetition)."""
+    path = PROJECT_ROOT / (cfg.get("footage", {}) or {}).get(
+        "history_file", "state/clip_history.json")
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return set(data) if isinstance(data, list) else set()
+    except Exception:  # noqa: BLE001
+        return set()
+
+
+def save_clip_history(cfg, used_urls):
+    path = PROJECT_ROOT / (cfg.get("footage", {}) or {}).get(
+        "history_file", "state/clip_history.json")
+    try:
+        old = load_clip_history(cfg) if path.exists() else set()
+        merged = sorted(set(used_urls) | old)
+        max_keep = int((cfg.get("footage", {}) or {}).get(
+            "history_max", 4000))
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(merged[-max_keep:]), encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
+
 
 def _env() -> dict:
     env = load_env(PROJECT_ROOT / ".env")
@@ -528,6 +562,10 @@ def assign_footage(cfg, run, script, logger):
                       "wikimedia", "nasa"])
     per_ch = int(fcfg.get("per_chapter_clips", 12))
     per_q = int(fcfg.get("per_query_results", 8))
+    history = load_clip_history(cfg)
+    if history:
+        logger.info(f"clip history: {len(history)} previously-used URLs "
+                    f"will be avoided")
     scenes = script.get("scenes") or []
     if not scenes:
         return False
@@ -569,11 +607,24 @@ def assign_footage(cfg, run, script, logger):
             if u not in seen_u:
                 seen_u.add(u)
                 uniq.append(c)
-        pool_by_ch[ch] = uniq
-        logger.info(f"footage pool chapter {ch}: {len(uniq)} candidates "
-                    f"({len(queries)} queries)")
+        fresh = [c for c in uniq if c["url"] not in history]
+        if len(uniq) and not fresh:
+            # whole pool already used by earlier episodes — better a repeat
+            # than a static image; relax completely for this chapter
+            logger.warning(f"chapter {ch}: all {len(uniq)} candidates used "
+                           f"before — relaxing history filter")
+            fresh = uniq
+        elif len(fresh) < max(4, per_ch // 2) and len(uniq) > len(fresh):
+            # keep some used ones as backfill, fresh first
+            backfill = [c for c in uniq if c["url"] in history]
+            fresh = fresh + backfill[: max(2, per_ch // 4)]
+        pool_by_ch[ch] = fresh
+        logger.info(f"footage pool chapter {ch}: {len(fresh)} candidates "
+                    f"({len(uniq)} found, "
+                    f"{len(uniq) - len([c for c in uniq if c['url'] not in history])} "
+                    f"filtered by history, {len(queries)} queries)")
 
-    def dl_batch(cands, want):
+    def dl_batch(cands, want, url_map):
         got, fails = [], {"dead": 0}
         with ThreadPoolExecutor(max_workers=4) as ex:
             futs = {ex.submit(fetch_clip, c, cache, logger): c
@@ -585,6 +636,7 @@ def assign_footage(cfg, run, script, logger):
                     p = None
                 if p:
                     got.append(p)
+                    url_map[str(p)] = futs[f].get("url", "")
                     providers_used.add(futs[f].get("provider", ""))
                 else:
                     fails["dead"] += 1
@@ -595,8 +647,9 @@ def assign_footage(cfg, run, script, logger):
         return got
 
     clips_by_ch = {}
+    url_map = {}                     # downloaded path -> source URL
     for ch, pool in pool_by_ch.items():
-        clips_by_ch[ch] = dl_batch(pool, per_ch) if pool else []
+        clips_by_ch[ch] = dl_batch(pool, per_ch, url_map) if pool else []
 
     # merge: any chapter whose downloaded pool is smaller than its scene
     # count borrows from the other chapters so no scene repeats one clip
@@ -615,6 +668,41 @@ def assign_footage(cfg, run, script, logger):
             clips_by_ch[ch] = clips + extra[: need - len(clips)]
         elif not clips:
             clips_by_ch[ch] = list(all_clips)
+
+    # ---- universal B-roll guarantee: EVERY scene gets moving footage ----
+    total_scenes = sum(len(v) for v in chapters.values())
+    if len(all_clips) < total_scenes:
+        want_u = min(24, total_scenes - len(all_clips) + 6)
+        logger.warning(f"pool thin ({len(all_clips)}/{total_scenes}) — "
+                       f"fetching {want_u} universal B-roll clips")
+        u_pool = []
+        seen_uq = set()
+        with ThreadPoolExecutor(max_workers=3) as ex:
+            futs = [ex.submit(search_pool, q, per_q, env, order, logger)
+                    for q in UNIVERSAL_QUERIES]
+            for f in futs:
+                try:
+                    for c in f.result():
+                        if c["url"] not in seen_uq:
+                            seen_uq.add(c["url"])
+                            u_pool.append(c)
+                except Exception:  # noqa: BLE001
+                    pass
+        u_fresh = [c for c in u_pool if c["url"] not in history] or u_pool
+        got_u = dl_batch(u_fresh, want_u, url_map)
+        for p in got_u:
+            if p not in seen_clips:
+                seen_clips.add(p)
+                all_clips.append(p)
+        for ch in sorted(chapters):
+            clips = clips_by_ch.get(ch) or []
+            need = len(chapters[ch])
+            extra = [p for p in all_clips if p not in clips]
+            if len(clips) < need:
+                clips_by_ch[ch] = clips + extra[: need - len(clips)]
+            elif not clips:
+                clips_by_ch[ch] = list(all_clips)
+        logger.info(f"universal pool added — total {len(all_clips)} clips")
 
     # rotation with distinct-neighbor guarantee: consecutive scenes must
     # never share the same clip when the pool has more than one
@@ -667,4 +755,17 @@ def assign_footage(cfg, run, script, logger):
         ensure_ascii=False), encoding="utf-8")
     logger.info(f"footage assigned to {assigned}/{len(scenes)} scenes "
                 f"(providers: {sorted(providers_used) or 'none'})")
+
+    # record what this episode used, so future episodes avoid these clips
+    used_urls = set()
+    for s in scenes:
+        for k in ("motion_file", "motion_file_b"):
+            p = s.get(k)
+            if p and Path(p).exists():
+                u = url_map.get(str(p))
+                if u:
+                    used_urls.add(u)
+    if used_urls:
+        save_clip_history(cfg, used_urls)
+        logger.info(f"clip history updated: +{len(used_urls)} URLs")
     return assigned > 0

@@ -74,6 +74,45 @@ def make_outro_card(run, cfg, logger):
     return dest
 
 
+def make_subscribe_banner(run, cfg, logger):
+    """Animated subscribe banner (PIL) overlaid on the intro/outro host
+    frames; lib.renderer slides it up inside the ffmpeg overlay filter."""
+    rd = run["dir"] / "render"
+    rd.mkdir(exist_ok=True)
+    dest = rd / "banner_subscribe.png"
+    if dest.exists() and dest.stat().st_size > 1000:
+        return dest
+    H = 168
+    f_main = _font(FONT_XB, 54)
+    f_ch = _font(FONT_XB, 40)
+    f_sub = _font(FONT_B, 22)
+    sub_txt = "NEW DIGEST EVERY 12 HOURS"
+    # measure on a scratch canvas, then size the banner to fit the text
+    scratch = ImageDraw.Draw(Image.new("RGBA", (1200, H)))
+    sub_w = scratch.textlength(sub_txt, font=f_sub)
+    W = max(760, int(488 + max(scratch.textlength("AI MONEY", font=f_ch),
+                               sub_w) + 26))
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    # translucent dark backing for legibility on any footage
+    d.rounded_rectangle((0, 0, W, H), radius=22, fill=(10, 10, 14, 185))
+    # red subscribe button
+    bx0, by0, bx1, by1 = 22, 26, 462, 142
+    d.rounded_rectangle((bx0, by0, bx1, by1), radius=16,
+                        fill=(232, 29, 38, 255))
+    tw = d.textlength("SUBSCRIBE", font=f_main)
+    d.text(((bx0 + bx1 - tw) / 2, (by0 + by1 - f_main.size) / 2 + 2),
+           "SUBSCRIBE", font=f_main, fill=(255, 255, 255, 255))
+    # channel block
+    d.text((486, 44), cfg["channel"]["name"].upper(), font=f_ch,
+           fill=(255, 255, 255, 255))
+    d.text((488, 104), sub_txt, font=f_sub,
+           fill=(210, 210, 218, 255))
+    img.save(dest)
+    logger.info("subscribe banner drawn")
+    return dest
+
+
 def make_host_frames(cfg, run, script, logger):
     """Pre-compose every persona frame used by the cut (bridge/cutaway/outro)."""
     W = int(cfg["visuals"]["width"])
@@ -181,15 +220,31 @@ def _kb_filter(variant, dur, fps):
     return f"z='min(1.10-0.10*{ease},1.11)':x='{cx}':y='{cy}'"
 
 
+def _overlay_filter(entry):
+    """Subscribe banner slide-up overlay expression (needs banner input)."""
+    if not entry.get("overlay_banner"):
+        return None
+    return ("overlay=x='(main_w-overlay_w)/2':"
+            "y='main_h-overlay_h-64+(1-min(1,max(0,(t-0.5)/0.6)))"
+            "*(overlay_h+140)':enable='gte(t,0.45)'")
+
+
 def render_scene_clip(scene, entry, cfg, run, logger):
     """Render one scene entry to an intermediate mp4 (no audio)."""
     fps = int(cfg["visuals"].get("fps", 30))
     rd = run["dir"] / "render"
     rd.mkdir(exist_ok=True)
     dest = rd / f"clip_{entry['key']}.mp4"
-    if dest.exists() and dest.stat().st_size > 50_000:
+    done = dest.with_suffix(".done")
+    # integrity: a runner killed mid-render leaves a half-written mp4 that
+    # passes a size check — only trust clips with a completed marker
+    if dest.exists() and done.exists() and dest.stat().st_size > 50_000:
         return dest
+    dest.unlink(missing_ok=True)
+    done.unlink(missing_ok=True)
     dur = entry["dur"]
+    banner = rd / "banner_subscribe.png"
+    use_overlay = bool(entry.get("overlay_banner") and banner.exists())
 
     if entry.get("motion_file"):
         mdur = probe_duration(Path(entry["motion_file"]))
@@ -225,6 +280,14 @@ def render_scene_clip(scene, entry, cfg, run, logger):
         cmd = ["ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-t",
                f"{dur:.3f}", "-i", entry["file"], "-filter_complex", vf]
 
+    ovl = _overlay_filter(entry) if use_overlay else None
+    if ovl:
+        # banner becomes input #1; label the base chain then composite
+        vf = f"[0:v]{vf}[bg];[bg][1:v]{ovl}"
+        cmd.insert(cmd.index("-i", 1) + 2, "-loop")
+        cmd.insert(cmd.index("-i", 1) + 3, "1")
+        cmd.insert(cmd.index("-i", 1) + 4, "-i")
+        cmd.insert(cmd.index("-i", 1) + 5, str(banner))
     dtf = _drawtext_filter(entry, dur, fps)
     if dtf:
         vf += "," + dtf
@@ -233,6 +296,7 @@ def render_scene_clip(scene, entry, cfg, run, logger):
     cmd += ["-c:v", "libx264", "-preset", CLIP_PRESET, "-crf", CLIP_CRF,
             "-pix_fmt", "yuv420p", "-an", str(dest)]
     run_cmd(cmd, timeout=900, retries=2, logger=logger)
+    done.touch()  # render completed — cache-safe on resume
     return dest
 
 
@@ -309,13 +373,19 @@ def render_video(cfg, run, script, logger):
     intro_img = make_intro_card(run, cfg, script["title"], logger)
     outro_img = make_outro_card(run, cfg, logger)
     host_frames = make_host_frames(cfg, run, script, logger)
+    has_fixed_intro = any(s.get("is_fixed_intro") for s in script["scenes"])
+    if has_fixed_intro:
+        make_subscribe_banner(run, cfg, logger)
 
     entries = []
     entries.append({"key": "card0", "file": str(intro_img), "dur": 3.0,
                     "voice_file": None, "is_card": True})
 
     intro_host = rd / "host_intro.png"
-    if intro_host.exists():
+    # when a FIXED intro scene exists it shows the host itself (with the
+    # animated subscribe banner) — the old silent 4.6s host beat would just
+    # repeat the same frame twice, so it is skipped
+    if intro_host.exists() and not has_fixed_intro:
         entries.append({"key": "hostin", "file": str(intro_host),
                         "dur": 4.6, "voice_file": None, "is_card": True,
                         "is_host": True})
@@ -323,6 +393,8 @@ def render_video(cfg, run, script, logger):
     voice_dir = run["dir"] / "voice"
     vis_dir = run["dir"] / "visuals"
     motion_dir = run["dir"] / "motion"
+    motion_pool = (sorted(p for p in motion_dir.glob("motion_*.mp4"))
+                   if motion_dir.exists() else [])
     prev_chapter = 0
     kb_i = 0
     last_scene_hosted = False
@@ -354,8 +426,14 @@ def render_video(cfg, run, script, logger):
         entry = {"key": f"s{s['id']:03d}", "dur": dur,
                  "voice_file": s["voice_file"], "scene": s}
 
+        # 0) FIXED channel intro: host frame + animated subscribe banner
+        if s.get("is_fixed_intro") and (rd / "host_intro.png").exists():
+            s["_host_frame"] = True
+            entry["file"] = str(rd / "host_intro.png")
+            entry["is_host"] = True
+            entry["overlay_banner"] = True
         # 1) story bridge: first scene of each story shows the host
-        if ch not in (0, 99) and ch != prev_chapter and \
+        elif ch not in (0, 99) and ch != prev_chapter and \
                 (rd / f"host_ch{ch}.png").exists():
             s["_host_frame"] = True
             entry["file"] = str(rd / f"host_ch{ch}.png")
@@ -375,11 +453,19 @@ def render_video(cfg, run, script, logger):
             s["_host_frame"] = True
             entry["file"] = str(rd / "host_outro.png")
             entry["is_host"] = True
+            entry["overlay_banner"] = True
             last_scene_hosted = True
         else:
             use_motion = bool(s.get("motion_file"))
             entry["file"] = s["motion_file"] if use_motion else s["image_file"]
             entry["motion_file"] = s["motion_file"] if use_motion else None
+            if not use_motion and motion_pool:
+                # NO static images: borrow a real clip from this run's pool
+                pick = motion_pool[(s["id"] * 3 + 1) % len(motion_pool)]
+                entry["file"] = str(pick)
+                entry["motion_file"] = str(pick)
+                entry["motion_skip_frac"] = round(
+                    ((s["id"] * 0.5757) % 1.0) * 0.40, 3)
 
         # cinematic motion assignment: host frames get a dignified slow
         # zoom-in, b-roll cycles through eased pans/zooms
@@ -399,7 +485,12 @@ def render_video(cfg, run, script, logger):
         added_b = False
         if entry.get("motion_file") and dur >= 9.0 and not entry.get("is_host"):
             b_file = s.get("motion_file_b")
-            if b_file and Path(b_file).exists():
+            if (not b_file or not Path(b_file).exists()) and len(motion_pool) >= 2:
+                pick = motion_pool[(s["id"] * 5 + 2) % len(motion_pool)]
+                if str(pick) != str(entry["motion_file"]):
+                    b_file = str(pick)
+            if b_file and Path(b_file).exists() and \
+                    str(b_file) != str(entry["motion_file"]):
                 d1 = round(dur * 0.42, 3)
                 part_b = {"key": entry["key"] + "b", "file": b_file,
                           "motion_file": b_file,
@@ -410,18 +501,20 @@ def render_video(cfg, run, script, logger):
                 entries.append(entry)
                 entries.append(part_b)
                 added_b = True
-            elif s.get("image_file"):
-                d1 = round(dur * 0.45, 3)
-                part_b = {"key": entry["key"] + "b",
-                          "file": s["image_file"],
-                          "kb": KB_CYCLE[kb_i % len(KB_CYCLE)],
-                          "dur": round(dur - d1, 3), "voice_file": None,
-                          "scene": s, "_no_chapter_text": True}
-                kb_i += 1
-                entry["dur"] = d1
-                entries.append(entry)
-                entries.append(part_b)
-                added_b = True
+            elif len(motion_pool) >= 2:
+                # even the b-shot must MOVE: a different pool clip, never a still
+                pick = motion_pool[(s["id"] * 7 + 3) % len(motion_pool)]
+                if str(pick) != str(entry["motion_file"]):
+                    d1 = round(dur * 0.42, 3)
+                    part_b = {"key": entry["key"] + "b", "file": str(pick),
+                              "motion_file": str(pick),
+                              "motion_skip_frac": 0.40 + (s["id"] * 0.29) % 0.4,
+                              "dur": round(dur - d1, 3), "voice_file": None,
+                              "scene": s, "_no_chapter_text": True}
+                    entry["dur"] = d1
+                    entries.append(entry)
+                    entries.append(part_b)
+                    added_b = True
         if not added_b:
             entries.append(entry)
         prev_chapter = ch
@@ -506,6 +599,7 @@ def render_video(cfg, run, script, logger):
     chain = ""
     acc = clips and entries[0]["dur"] or 0
     prev = "[v0]"
+    trans_i = 0
     for j in range(1, len(clips)):
         off = acc - xfade
         s_next = entries[j].get("scene")
@@ -516,7 +610,9 @@ def render_video(cfg, run, script, logger):
             trans = "fadeblack"
         elif ch_next is not None and ch_prev is not None \
                 and ch_next != ch_prev:
-            trans = "smoothleft"
+            # alternate directional wipes between chapters for variety
+            trans = ("smoothleft", "smoothright")[trans_i % 2]
+            trans_i += 1
         else:
             trans = "fade"
         outlbl = f"[x{j}]"

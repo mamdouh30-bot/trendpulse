@@ -14,6 +14,7 @@ Usage:
 import argparse
 import datetime as dt
 import json
+import re
 import shutil
 import sys
 import traceback
@@ -224,10 +225,47 @@ def run_pipeline(args):
         # ---------------- publish ----------------
         upload_result = None
         if not args.mini and cfg["upload"]["enabled"]:
-            upload_result = youtube.upload(final_path, run_dir / "thumbnail.jpg",
-                                           meta, cfg, logger)
-            if not upload_result.get("uploaded"):
-                logger.warning("video kept in outbox for manual upload")
+            # duplicate-publish guard: never upload a title that went live
+            # already (local history within 36h OR live on the channel).
+            # Covers the resume race that once published one episode twice.
+            _dupe = False
+            _t_norm = re.sub(r"[^a-z0-9]+", " ",
+                             str((meta or {}).get("title") or "").lower()).strip()
+            if _t_norm:
+                _now = dt.datetime.now(dt.timezone.utc)
+                for h in load_state(PROJECT_ROOT / "state" / "history.json",
+                                    default=[]):
+                    try:
+                        d = dt.datetime.fromisoformat(
+                            str(h.get("date")))
+                        if d.tzinfo is None:
+                            d = d.replace(tzinfo=dt.timezone.utc)
+                        if (_now - d).total_seconds() > 36 * 3600:
+                            continue
+                    except Exception:  # noqa: BLE001
+                        continue
+                    h_norm = re.sub(r"[^a-z0-9]+", " ",
+                                    str(h.get("title") or "").lower()).strip()
+                    if h_norm and h_norm == _t_norm:
+                        _dupe = True
+                        logger.warning("DUPLICATE title in local history "
+                                       f"({h.get('date')}) — upload blocked")
+                        break
+                if not _dupe:
+                    _dupe = youtube.find_recent_duplicate(
+                        (meta or {}).get("title", ""), logger)
+                    if _dupe:
+                        logger.warning("DUPLICATE title live on channel — "
+                                       "upload blocked")
+            if _dupe:
+                upload_result = {"uploaded": False,
+                                 "reason": "duplicate-title guard — publish "
+                                           "skipped (video kept in outbox)"}
+            else:
+                upload_result = youtube.upload(
+                    final_path, run_dir / "thumbnail.jpg", meta, cfg, logger)
+                if not upload_result.get("uploaded"):
+                    logger.warning("video kept in outbox for manual upload")
         state["published"] = upload_result
         save_state(run_dir / "state.json", state)
 

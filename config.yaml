@@ -31,6 +31,7 @@ content:
   target_minutes: 14.0            # final video target duration
   word_budget: 2200               # narration words (~150 wpm host voice)
   chapters: 4                     # stories per digest video
+  intro_scene: true               # FIXED branded intro + subscribe CTA every episode
   hook_scenes: 3                  # cold-open scenes
   outro_scenes: 2                 # recap + subscribe scenes
   scenes_per_story: 9             # narration scenes per digest story
@@ -68,6 +69,8 @@ footage:
   per_chapter_clips: 12            # unique moving clips fetched per story
   per_query_results: 8
   providers: [pexels, pixabay, mixkit, coverr, wikimedia, nasa]
+  history_file: state/clip_history.json   # clips used by past episodes — never repeat
+  history_max: 4000
   credit: "Stock footage: Mixkit / Coverr / Pexels / Pixabay / Wikimedia Commons (CC) / NASA (public domain) — free licenses"
 
 links:

@@ -63,6 +63,25 @@ OUTRO_RULES = """OUTRO RULES (2 scenes):
   comments. No begging."""
 
 
+# Fixed channel intro — IDENTICAL narration in every single episode.
+# It plays before the cold open, welcomes the viewer, introduces the host
+# and drives the subscribe call-to-action (rendered with a sliding subscribe
+# banner by lib/renderer.py).
+INTRO_NARRATION = (
+    "Welcome to AI Money — I'm Adam Sterling. Every single day I cut through "
+    "the noise and bring you the AI stories that actually matter, with the "
+    "money angle you can act on. If that sounds like your kind of edge, hit "
+    "subscribe right now — new digests land here every twelve hours, and you "
+    "don't want to miss the next one."
+)
+FIXED_INTRO_SCENE = {
+    "narration": INTRO_NARRATION,
+    "visual_query": "television studio news desk broadcast lights",
+    "mood": "bold",
+    "is_fixed_intro": True,
+}
+
+
 def _fmt_stories(facts):
     import json
     stories = facts.get("stories") or []
@@ -86,17 +105,19 @@ def write_script(cfg, run, topic, facts, logger):
 
     hook_scenes = int(cfg["content"].get("hook_scenes", 3))
     outro_scenes = int(cfg["content"].get("outro_scenes", 2))
+    intro_extra = 1 if cfg["content"].get("intro_scene", True) else 0
     sps = int(cfg["content"].get("scenes_per_story", 9))
     n_stories = len(stories)
     max_scenes = int(cfg["content"]["max_scenes"])
-    total_target = hook_scenes + n_stories * sps + outro_scenes
+    total_target = intro_extra + hook_scenes + n_stories * sps + outro_scenes
     if total_target > max_scenes:
-        sps = max(5, (max_scenes - hook_scenes - outro_scenes) // n_stories)
+        sps = max(5, (max_scenes - intro_extra - hook_scenes - outro_scenes)
+                  // n_stories)
     # duration floor: when research drops stories (e.g. 4 -> 2), the video
     # must NOT fall under the 10-minute target — give every remaining story
     # proportionally more scenes instead (capped to keep scenes readable)
     min_scenes = int(cfg["content"].get("min_scenes", 30))
-    floor_sps = -(-(min_scenes - hook_scenes - outro_scenes)
+    floor_sps = -(-(min_scenes - intro_extra - hook_scenes - outro_scenes)
                   // max(1, n_stories))
     sps = max(sps, min(floor_sps, 16))
     body_words = int(cfg["content"]["word_budget"] * 0.82)
@@ -105,7 +126,11 @@ def write_script(cfg, run, topic, facts, logger):
     title = topic.get("title", "AI News: The Stories That Matter Today")
 
     scenes = []
-    chapters_out = [{"num": 0, "title": "Cold Open"}]
+    chapters_out = [{"num": 0, "title": "Intro"}]
+
+    # ---- FIXED channel intro (identical every episode, no LLM call) ----
+    if intro_extra:
+        scenes.append(dict(FIXED_INTRO_SCENE))
 
     # per-section cache: resume-safe (each finished section is saved, so a
     # rate-limit crash never re-spends quota on already-written sections)
@@ -218,13 +243,17 @@ Return ONLY this JSON:
             "visual_query": vq or "glowing server racks data center blue light",
             "mood": s.get("mood", "hype"),
             "is_key_scene": bool(s.get("is_key_scene")) or (i == 1) or (i == len(scenes)),
+            "is_fixed_intro": bool(s.get("is_fixed_intro")),
         })
 
-    # re-assign chapters by position: hook / story sections / outro
-    body_start = hook_scenes
+    # re-assign chapters by position: fixed intro / hook / story sections / outro
+    body_start = intro_extra + hook_scenes
     body_end = len(cleaned) - outro_scenes
     for idx, s in enumerate(cleaned):
-        if idx < body_start:
+        if intro_extra and idx == 0:
+            s["chapter"] = 0
+            s["chapter_label"] = "Intro"
+        elif idx < body_start:
             s["chapter"] = 0
             s["chapter_label"] = "Cold Open"
         elif idx >= body_end:
@@ -253,24 +282,28 @@ Return ONLY this JSON:
 MINI_SCRIPT = {
     "title": "AI News: 2 Stories That Actually Matter Today",
     "chapters": [
-        {"num": 0, "title": "Cold Open"},
+        {"num": 0, "title": "Intro"},
         {"num": 1, "title": "The Model That shook the Labs"},
         {"num": 99, "title": "Outro"},
     ],
     "scenes": [
-        {"id": 1, "chapter": 0, "chapter_label": "Cold Open", "chapter_title": "",
-         "narration": "AI just moved faster than anyone expected — and most people missed it. Two stories today, and one of them can put money in your pocket this week.",
-         "visual_query": "glowing server racks data center blue light", "mood": "hype", "is_key_scene": True},
+        {"id": 1, "chapter": 0, "chapter_label": "Intro", "chapter_title": "",
+         "is_fixed_intro": True,
+         "narration": INTRO_NARRATION,
+         "visual_query": "television studio news desk broadcast lights", "mood": "bold", "is_key_scene": True},
         {"id": 2, "chapter": 0, "chapter_label": "Cold Open", "chapter_title": "",
+         "narration": "AI just moved faster than anyone expected — and most people missed it. Two stories today, and one of them can put money in your pocket this week.",
+         "visual_query": "glowing server racks data center blue light", "mood": "hype", "is_key_scene": False},
+        {"id": 3, "chapter": 0, "chapter_label": "Cold Open", "chapter_title": "",
          "narration": "A new open-source model is beating tools you pay for. And the second story is the one nobody is pricing in yet.",
          "visual_query": "hand holding phone AI app interface closeup", "mood": "curious", "is_key_scene": False},
-        {"id": 3, "chapter": 1, "chapter_label": "STORY 1", "chapter_title": "The Model That shook the Labs",
+        {"id": 4, "chapter": 1, "chapter_label": "STORY 1", "chapter_title": "The Model That shook the Labs",
          "narration": "Story one. The new model runs on hardware you already own, and in early benchmarks it beats names that raised billions.",
          "visual_query": "robot arm modern lab technology closeup", "mood": "hype", "is_key_scene": True},
-        {"id": 4, "chapter": 1, "chapter_label": "STORY 1", "chapter_title": "The Model That shook the Labs",
+        {"id": 5, "chapter": 1, "chapter_label": "STORY 1", "chapter_title": "The Model That shook the Labs",
          "narration": "The play is simple: try it free today, ship a small product with it this weekend, and you are ahead of ninety percent of builders.",
          "visual_query": "developer coding multiple monitors dark room", "mood": "practical", "is_key_scene": False},
-        {"id": 5, "chapter": 99, "chapter_label": "Outro", "chapter_title": "",
+        {"id": 6, "chapter": 99, "chapter_label": "Outro", "chapter_title": "",
          "narration": "That's the digest. Subscribe — the next one lands in twelve hours. Which tool are you trying first? Say it in the comments.",
          "visual_query": "city billboards neon advertisements night", "mood": "bold", "is_key_scene": False},
     ],
