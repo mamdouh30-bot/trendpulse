@@ -1,0 +1,151 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+        "hook": "Google’s Gemini 4 beats every rival in a frantic AI‑model showdown.",
+        "angle": "Google has unleashed three variants of Gemini 4 – Hydrogen, Argon, and Carbon – each with specialised capabilities, from multi‑AI collaboration to enterprise‑grade precision. This push re‑establishes Google as the benchmark leader and ignites a new arms race among the top model builders.",
+        "money_angle": "Developers can license Gemini 4 Carbon for enterprise apps and scale up revenue by embedding AI‑driven workflow tools.",
+        "visual_world": "Panels of Google Cloud App Studio, Gemini 4 API dashboards, live demos of a multi‑AI task board, and GIFs of the new model code pipeline.",
+        "search_queries": [
+          "Google Gemini 4 Hydrogen release news",
+          "Gemini 4 Carbon announcement details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+        "hook": "OpenAI’s GPT‑6.2 and Anthropic’s Claude Fable 5.2 strike again, reshaping the model hierarchy.",
+        "angle": "OpenAI rolled out GPT‑6.2 with richer multimodal abilities, while Anthropic’s Claude Fable 5.2 surpassed Gemini 4 Carbon on benchmark tests. Investors and creators are scrambling to integrate these models for higher‑quality text, image, and code generation.",
+        "money_angle": "Content creators can use GPT‑6.2’s advanced image‑to‑text pipeline to produce niche blogs that monetize through paid memberships.",
+        "visual_world": "Side‑by‑side performance charts, prompts, and output samples from GPT‑6.2 and Claude in a digital studio setting.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 release news",
+          "Claude Fable 5.2 benchmark results"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+        "hook": "Apple partners with OpenEvidence to launch a massive AI health study app.",
+        "angle": "Apple’s new app invites iPhone 15+ users for a 12‑month health‑AI study, gathering data from up to 200,000 participants. This initiative positions Apple at the forefront of wearable‑driven medical research while offering a generous data‑collection revenue stream.",
+        "money_angle": "Clinics and health‑tech firms can monetize under Apple’s data‑sharing agreements by accessing the study’s insights for drug trials and personalized medicine.",
+        "visual_world": "iPhone 15 interface showing the study enrollment screen, data collection widgets, and a graphic of Apple Intelligence processing health metrics on a server farm.",
+        "search_queries": [
+          "Apple health AI study app news",
+          "OpenEvidence Apple partnership details"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Manus Raises $500 M: AI Startup’s Post‑Meta Breakup Surge",
+        "hook": "The AI‑driven manuscript platform Manus just closed a $500 million round.",
+        "angle": "Manus, a generative‑AI‑powered content creation platform, secured $500 million in Series B funding after Meta was forced to reverse its acquisition. The infusion expands Manus’ capacity to train next‑gen language models and scale into new markets.",
+        "money_angle": "Early investors or token holders could see immediate upside as Manus expands its revenue streams and prepares for an IPO or strategic sale.",
+        "visual_world": "Merchandised toner of a Manus pitch deck, a countdown timer for the funding window, and a stylised map showing the company’s global office footprint.",
+        "search_queries": [
+          "Manus AI startup funding news",
+          "Meta reverse acquisition manuscripts details"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+        "summary": "Google released three Gemini 4 variants—Hydrogen, Argon, and Carbon—on November 12 and December 28, 2026. Carbon offers enterprise‑grade reasoning, while Hydrogen focuses on fast, low‑cost workloads. The new lineup pushes Google ahead of rivals on benchmarks and sparks a renewed arms race among AI model builders.",
+        "key_facts": [
+          "Hydrogen released Nov 12, 2026, as a fast lightweight model.",
+          "Carbon released Oct 28, 2026, with advanced cybersecurity and enterprise focus.",
+          "Argon is designed for multi‑AI collaboration in the Gemini 4 family.",
+          "Google claims Carbon outperforms Gemini 4 Hydrogen on coding benchmarks.",
+          "Gemini 4 Carbon is available via the Google Cloud API and Perplexity Pro plans.",
+          "Google’s launch was announced on its official blog and covered by Yahoo Finance."
+        ],
+        "money_angle": "Tap Gemini 4 Carbon’s API immediately: sign up for a free trial on Google Cloud, integrate its coding assistance into your internal tools, and begin charging clients for AI‑driven workflow automation.",
+        "sources": [
+          {
+            "host": "google.com",
+            "url": "https://www.ghacks.net/2026/11/13/google-releases-gemini-4-hydrogen-in-search-and-the-gemini-app-replacing-gemini-3-8-flash/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/google-launches-gemini-4-hydrogen-scores-57-on-coding-benchmark-triples-flash/ar-AA2hk5fR?ocid=BingNewsVerp"
+          },
+          {
+            "host": "techrepublic.com",
+            "url": "https://www.techrepublic.com/article/news-google-gemini-4-carbon-access/"
+          },
+          {
+            "host": "note.com",
+            "url": "https://note.com/0x__tom/n/n8192d68f60ac?hl=en"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+        "summary": "OpenAI launched GPT‑6.2 (Astra) on November 16, 2026, offering multimodal and coding improvements. Anthropic’s Claude Fable 5.2 debuted on November 9, 2026, surpassing Gemini 4 Carbon on several benchmarks, including life‑science image tasks. Both models lower token costs, expanding revenue options for content creators and developers.",
+        "key_facts": [
+          "GPT‑6.2 Astra released Nov 16, 2026, priced $8/mo for 1M input tokens.",
+          "Claude Fable 5.2 launched Nov 9, 2026, at 20% lower API token pricing.",
+          "Fable 5.2 tops life‑science image benchmark at 67%.",
+          "OpenAI’s GPT‑6.2 improves website, gaming, and 3D design coding.",
+          "Anthropic’s Fable 5.2 beats GPT‑6.2 on science tests at 74.6%.",
+          "Both models allow free trial usage in API sandbox."
+        ],
+        "money_angle": "Start a niche blog powered by GPT‑6.2’s image‑to‑text API: upload custom pictures, auto‑generate explanatory articles, and monetize via paid memberships within 48 hours.",
+        "sources": [
+          {
+            "host": "theverge.com",
+            "url": "https://www.theverge.com/tech/1035483/openai-releases-its-updated-gpt-6-2-astra-model"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-in/news/other/anthropic-launches-claude-fable-52-and-mythos-52-launched-anthropic-claims-breakthrough-in-coding-robotics-and-scientific-research/ar-AA2h6PR9?ocid=BingNewsVerp"
+          },
+          {
+            "host": "wccftech.com",
+            "url": "https://wccftech.com/openais-gpt-6-2-astra-becomes-the-first-model-to-achieve-a-100-score-on-arc-agi-3-while-being-8x-cheaper-than-anthropics-fable-5-2-but-actual-users-are-not-impressed/"
+          },
+          {
+            "host": "cryptobriefing.com",
+            "url": "https://cryptobriefing.com/claude-fable-5-2-vials-aa-benchmark-tools/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+        "summary": "Apple, in partnership with OpenEvidence, opened a 12‑month conversational health study in the U.S., recruiting up to 200,000 adults. Participants can ask health questions via the app and rate AI responses, feeding data into Apple’s research pipeline. The initiative offers a revenue stream for clinics that access study insights under Apple’s data‑sharing agreements.",
+        "key_facts": [
+          "Study launched Nov 16, 2026, targeting 200,000 US adults.",
+          "Participants interact with an AI health chatbot through the Apple Health app.",
+          "OpenEvidence co‑manages data collection and analysis.",
+          "Users rate accuracy, trust, and impact of AI responses.",
+          "Insights will be shared with partners following Apple data‑sharing agreements."
+        ],
+        "money_angle": "Health‑tech firms can sign up for Apple’s data‑sharing program today, receive anonymized study insights, and incorporate them into personalized medicine campaigns, generating new revenue streams.",
+        "sources": [
+          {
+            "host": "techrepublic.com",
+            "url": "https://www.techrepublic.com/article/news-apple-health-ai-study-eligible-iphones/"
+          },
+          {
+            "host": "beckerhealthcare.com",
+            "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/apple-to-study-how-patients-use-ai-for-health-advice/"
+          }
+        ]
+      }
+    ],
+    "summary": "Google released three Gemini 4 variants—Hydrogen, Argon, and Carbon—on November ; OpenAI launched GPT‑6.2 (Astra) on November 16, 2026, offering multimodal and co; Apple, in partnership with OpenEvidence, opened a 12‑month conversational health"
+  }
+}

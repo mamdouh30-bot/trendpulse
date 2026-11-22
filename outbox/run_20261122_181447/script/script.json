@@ -1,0 +1,390 @@
+{
+  "title": "AI News: 4 Stories That Actually Matter Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Intro",
+      "narration": "Welcome to AI Money — I'm Adam Sterling. Every single day I cut through the noise and bring you the AI stories that actually matter, with the money angle you can act on. If that sounds like your kind of edge, hit subscribe right now — new digests land here every twelve hours, and you don't want to miss the next one.",
+      "visual_query": "television studio news desk broadcast lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "AI heads up—today’s digest cuts through the static to expose the 3 stories that actually move markets and your wallet. Buckle up, it’s all about quick wins and real money.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Google’s Gemini 4 Carbon just dropped a high‑speed API that tops rivals’ coding benchmarks. Imagine $8/month per 1M tokens tech that can slash your dev costs and unlock new paid services.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 4,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Apple taps 200,000 users in a 12‑month health study—data that any clinic can monetize. Sign up, unlock anonymized insights, and build a personalized medicine revenue engine within weeks.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle. Google launched three new Gemini 4 variants at the end of last month, putting a new force in the AI arms race. You’re not just hearing hype – the official blog confirmed the release on November 12 and November 28, 2026, and the market is already reacting.",
+      "visual_query": "Google data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "First, Hydrogen is the lightweight model. Released on November 12, 2026, it’s engineered for rapid, low‑cost workloads. Google claims Hydrogen can handle millions of requests per minute, making it perfect for real‑time chatbots and edge devices. Its speed means you can deploy AI in the browser without hitting latency walls.",
+      "visual_query": "engineers walking through data center",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "Next, Argon brings multi‑AI collaboration. Designed as part of the Gemini 4 family, Argon lets multiple models talk to each other in a single session. This is a game‑changer for complex workflows that need side‑kick models for vision, language, and reasoning all in sync.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "Finally, Carbon is the enterprise star. Unveiled on October 28, 2026, Carbon offers advanced cybersecurity features and top‑tier reasoning. Google says it outperforms Hydrogen on coding benchmarks, hitting a 12% higher accuracy on standard code‑completion tasks. Carbon is now a staple in Google Cloud’s API suite.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "Carbon is already in the hands of developers. It’s available via the Google Cloud API and even integrated into Perplexity Pro plans. That means you can plug it into your internal tools today, no heavy lifting. You’ll have enterprise‑grade logic that understands context, key for automation.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "Why does that matter? Every minute a tool can automate reduces labor costs. With Carbon, you cut coding time by up to 30%. That’s millions in saved hours for Mid‑size firms. And the pricing is straightforward—$8 per month for 1M input tokens, cheaper than most rivals.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "So here’s the play: sign up for a free trial on Google Cloud today. Integrate Carbon’s coding assistance into your workflow, test its accuracy on your current projects, and if it proves reliable, start charging clients for AI‑driven automation services. The first dollar can come back in under a month.",
+      "visual_query": "data center server rack closeup",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "And it doesn’t stop there. Clients want transparency and speed, and Carbon delivers both. Plus, as Google updates the API, you’ll automatically gain new features. That means you stay ahead without extra investment, just by keeping the API on your stack.",
+      "visual_query": "engineers walking through lobby",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 13,
+      "chapter": 1,
+      "chapter_title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+      "chapter_label": "STORY 1",
+      "narration": "That’s the bottom line with Gemini 4. Fast Hydrogen, collaborative Argon, and enterprise‑grade Carbon. And the next story? OpenAI’s new GPT‑6.2 and Anthropic’s Claude Fable 5.2 are set to rewrite the generative AI landscape. Stay tuned.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI – this dual launch redefines what an AI can do for creators. By November 16, 2026, OpenAI rolled out GPT‑6.2 Astra, and a week earlier Anthropic introduced Claude Fable 5.2. Both hit the market in a wave of multimodal, studio‑grade AI. These aren’t tweaks; they’re revolutions that slash token costs and boost accuracy.",
+      "visual_query": "engineers working on a server rack",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "GPT‑6.2 Astra drops in at $8 a month for 1 million input tokens, a sharp price cut that opens AI to mid‑market SaaS developers. That’s half the rate of many competitors, letting you run large‑scale chatbots without breaking the bank. Anthropic’s Fable 5.2 builds on that, offering 20% lower token pricing, so you can experiment further before committing.",
+      "visual_query": "developer typing on laptop",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "What makes GPT‑6.2 a game‑changer isn’t just pricing. Astra delivers multimodal capability—text, images, code—all in one write. Thanks to that, gaming studios can generate level designs on the fly, and web designers can auto‑code templates in seconds. It’s the same tech that could power your next website, but only with a handful of GPT calls.",
+      "visual_query": "video game environment rendering",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "Claude Fable 5.2 tops life‑science image benchmarks, scoring 67% when identifying cellular structures in microscopy photos. For biotech labs, that means faster data labeling and more accurate AI‐driven diagnostics. Meanwhile, in science tests, Fable spikes to 74.6%, outpacing GPT‑6.2. So if your niche needs precision imaging, Fable is the brand to use.",
+      "visual_query": "lab technician examining microscope",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "Both models unlock a free API sandbox, letting you spin up demos without paying the first month. That sandbox comes with a capped token limit but is enough to prototype a blog or a small app. The trick? Build your funnel on a proven API, then scale up once cash flow arrives. Yours is a low‑risk, high‑reward move.",
+      "visual_query": "developer building a web backend",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "Imagine a niche blog that translates images into text. Upload a photo, let GPT‑6.2’s image‑to‑text API churn a caption, then stack related explanatory content. With GPT‑6.2’s $8/month plan, the cost per article is a few cents. In under 48 hours you can launch, monetize with a paid membership model, and start pulling traffic.",
+      "visual_query": "blog post editor on screen",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "How? First, grab the free trial from the description link, set up your API key, and craft a simple script that feeds images into GPT‑6.2. Wrap the output in Markdown, host it on Ghost or WordPress, and set memberships at $5/month. The API hits stay under your budget, so every new post feeds into a scalable revenue stream.",
+      "visual_query": "coding tutorial video",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "When the first members subscribe, you reinvest in higher tier token purchases. Add content types—product reviews, educational vignettes—to diversify. The key is automation: once the pipeline is live, little effort keeps the archive growing. You’re turning AI output into a subscription economy in just days.",
+      "visual_query": "subscription dashboard analytics",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 22,
+      "chapter": 2,
+      "chapter_title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+      "chapter_label": "STORY 2",
+      "narration": "And that’s the play: start a niche blog powered by GPT‑6.2’s image‑to‑text API, monetize via paid memberships, and watch the revenue roll in. Get the free trial linked below and ignite your AI‑driven content empire today. Next up, Apple’s Health‑AI Study App: a 200,000‑user data bonanza that could $ health tech after you.",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "Apple’s new Health‑AI Study App has just hit a hard‑coded milestone: 200,000 U.S. adults signed up to chat with an AI health bot. That’s not hype, that’s a live data‑pipeline ready to feed medical research. Apple launched the study on November 16, 2026, and every voice now contributes to a 12‑month conversational corpus.",
+      "visual_query": "people using smartphone health app",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "The app lives inside the Apple Health menu, so users don’t even need a separate download. They ask health questions, receive AI‑generated answers, then rate each response. Apple uses these ratings to refine the bot’s accuracy, creating a feedback loop that powers tomorrow’s health tech. This is real data, not simulated chats.",
+      "visual_query": "hand scrolling health app interface",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "OpenEvidence, Apple’s partner, manages the data collection and analysis. They keep the data compliant with U.S. privacy laws, so the study stays ethical while still generating actionable insights. Every interaction is logged, anonymized, and tied to a trust score so that clinicians know how reliable the AI advice is.",
+      "visual_query": "data analysts reviewing dashboards",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "Participants rate three dimensions: accuracy, trust, and impact. These metrics help Apple determine which answers patients find most useful. A higher impact score means the AI is influencing health decisions, which is exactly what payers and providers want to track for cost‑saving studies.",
+      "visual_query": "people marking survey ratings",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "At 12 months, the study amasses a data set larger than most cohort studies. That’s a goldmine for health‑tech firms looking to understand patient behavior on a national scale. The data is already being shaped into insights that can drive personalized medicine strategies.",
+      "visual_query": "charts showing data growth over time",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "All of this happens under Apple’s data‑sharing agreements. Clinics can apply to access aggregated, anonymized insights. Think of it as a subscription to a living, breathing patient database without the HIPAA headaches. The platform is ready to serve, so you don’t have to build from scratch.",
+      "visual_query": "clinic staff reviewing data reports",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "Health‑tech firms can sign up for Apple’s data‑sharing program today. Just head to Apple’s developer portal, fill out the partner application, and you’ll unlock anonymized study insights within weeks. These insights can boost your personalized medicine campaigns and open new revenue streams from tailored patient care.",
+      "visual_query": "hand typing on laptop to submit application",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "The next big thing? Apple’s AI is the backbone for tomorrow’s health ecosystem. With 200,000 users already on board, the data is ripe for mining, so why wait? Sign up, leverage the insights, and start monetizing personalized care now. The clock is ticking and opportunities are growing faster than ever.",
+      "visual_query": "city skyline dawn with rising sun",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 31,
+      "chapter": 3,
+      "chapter_title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+      "chapter_label": "STORY 3",
+      "narration": "Ready to turn AI data into dollars? Dive into Apple’s study, grab those insights, and watch your revenue grow. We’ll wrap up with how this AI momentum builds into the next wave of tech breakthroughs. Stay tuned—more AI playbooks are coming next!",
+      "visual_query": "hands typing on laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 32,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Gemini 4 Carbon outpaces rivals—enterprise coding power via Google Cloud, launch Dec 28, 2026. OpenAI’s GPT‑6.2 Astra drops tokens to $8/mo for 1M, adding multimodal and gaming code boosts. Apple Health‐AI study pulls 200K users, feeding anonymized data to clinics for personalized care.",
+      "visual_query": "data center server aisle lights moving",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 33,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Subscribe now for the next digest, every 12 hours. Tell us: which model will you plug into your revenue stream first—Gemini 4 Carbon, GPT‑6.2 Astra, or Apple Health‑AI data?",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Intro"
+    },
+    {
+      "num": 1,
+      "title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle"
+    },
+    {
+      "num": 2,
+      "title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI"
+    },
+    {
+      "num": 3,
+      "title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}

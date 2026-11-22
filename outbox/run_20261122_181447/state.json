@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Takes the Crown: Hydrogen, Argon, and Carbon Arrive in Rapid Battle",
+        "hook": "Google’s Gemini 4 beats every rival in a frantic AI‑model showdown.",
+        "angle": "Google has unleashed three variants of Gemini 4 – Hydrogen, Argon, and Carbon – each with specialised capabilities, from multi‑AI collaboration to enterprise‑grade precision. This push re‑establishes Google as the benchmark leader and ignites a new arms race among the top model builders.",
+        "money_angle": "Developers can license Gemini 4 Carbon for enterprise apps and scale up revenue by embedding AI‑driven workflow tools.",
+        "visual_world": "Panels of Google Cloud App Studio, Gemini 4 API dashboards, live demos of a multi‑AI task board, and GIFs of the new model code pipeline.",
+        "search_queries": [
+          "Google Gemini 4 Hydrogen release news",
+          "Gemini 4 Carbon announcement details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI‑GPT‑6.2 and Claude Fable 5.2: The New Faces of Generative AI",
+        "hook": "OpenAI’s GPT‑6.2 and Anthropic’s Claude Fable 5.2 strike again, reshaping the model hierarchy.",
+        "angle": "OpenAI rolled out GPT‑6.2 with richer multimodal abilities, while Anthropic’s Claude Fable 5.2 surpassed Gemini 4 Carbon on benchmark tests. Investors and creators are scrambling to integrate these models for higher‑quality text, image, and code generation.",
+        "money_angle": "Content creators can use GPT‑6.2’s advanced image‑to‑text pipeline to produce niche blogs that monetize through paid memberships.",
+        "visual_world": "Side‑by‑side performance charts, prompts, and output samples from GPT‑6.2 and Claude in a digital studio setting.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 release news",
+          "Claude Fable 5.2 benchmark results"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Apple’s Health‑AI Study App: 200,000 Users, 12‑Month Data Surge",
+        "hook": "Apple partners with OpenEvidence to launch a massive AI health study app.",
+        "angle": "Apple’s new app invites iPhone 15+ users for a 12‑month health‑AI study, gathering data from up to 200,000 participants. This initiative positions Apple at the forefront of wearable‑driven medical research while offering a generous data‑collection revenue stream.",
+        "money_angle": "Clinics and health‑tech firms can monetize under Apple’s data‑sharing agreements by accessing the study’s insights for drug trials and personalized medicine.",
+        "visual_world": "iPhone 15 interface showing the study enrollment screen, data collection widgets, and a graphic of Apple Intelligence processing health metrics on a server farm.",
+        "search_queries": [
+          "Apple health AI study app news",
+          "OpenEvidence Apple partnership details"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Manus Raises $500 M: AI Startup’s Post‑Meta Breakup Surge",
+        "hook": "The AI‑driven manuscript platform Manus just closed a $500 million round.",
+        "angle": "Manus, a generative‑AI‑powered content creation platform, secured $500 million in Series B funding after Meta was forced to reverse its acquisition. The infusion expands Manus’ capacity to train next‑gen language models and scale into new markets.",
+        "money_angle": "Early investors or token holders could see immediate upside as Manus expands its revenue streams and prepares for an IPO or strategic sale.",
+        "visual_world": "Merchandised toner of a Manus pitch deck, a countdown timer for the funding window, and a stylised map showing the company’s global office footprint.",
+        "search_queries": [
+          "Manus AI startup funding news",
+          "Meta reverse acquisition manuscripts details"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "6elxI4JUNQg",
+    "url": "https://youtube.com/watch?v=6elxI4JUNQg",
+    "privacy": "public"
+  }
+}
