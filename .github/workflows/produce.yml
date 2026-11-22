@@ -1,19 +1,21 @@
 # ============================================================
 #  TrendPulse — GitHub Actions autonomous producer (free hosting)
-#  Runs the full pipeline twice a day: 09:00 & 21:00 Asia/Dubai.
-#  Video uploads straight to YouTube; only small state JSON is
-#  committed back so the next run can resume where it stopped.
+#  Publishes every 12 hours (09:00 & 21:00 Asia/Dubai) and NEVER
+#  stops: two extra catch-up slots (15:00 & 03:00 Dubai) resume
+#  any cycle that failed earlier, and every slot retries a failed
+#  cycle 3 times in-job. Only small state JSON is committed back
+#  so the next run can resume where it stopped.
 # ============================================================
 
 name: TrendPulse Production
 
 on:
   schedule:
-    - cron: "0 5,17 * * *"     # 05:00 & 17:00 UTC = 09:00 & 21:00 Dubai
-  workflow_dispatch: {}        # manual "Run workflow" button
+    - cron: "0 5,11,17,23 * * *"  # 09:00/15:00/21:00/03:00 Dubai — 2 publishes + 2 catch-up slots
+  workflow_dispatch: {}           # manual "Run workflow" button
 
 permissions:
-  contents: write              # needed to commit checkpoints back
+  contents: write                 # needed to commit checkpoints back
 
 concurrency:
   group: trendpulse
@@ -67,11 +69,24 @@ jobs:
           chmod 600 .env
           echo ".env written with $(grep -c '=' .env || true) entries"
 
-      - name: Run production cycle
-        continue-on-error: true
-        run: python3 run_cycle.py
+      - name: Run production cycle (3 self-heal attempts)
+        id: cycle
+        run: |
+          set +e
+          rc=1
+          for i in 1 2 3; do
+            echo "=== TrendPulse attempt $i/3 ==="
+            python3 run_cycle.py
+            rc=$?
+            if [ $rc -eq 0 ]; then break; fi
+            echo "attempt $i failed (rc=$rc) — cooling down 90s, then retrying"
+            sleep 90
+          done
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Commit checkpoints back to the repo
+        if: always()
         run: |
           git config user.name "trendpulse-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -80,3 +95,12 @@ jobs:
             || echo "nothing to commit"
           git pull --rebase --autostash origin ${GITHUB_REF_NAME} || true
           git push
+
+      - name: Fail loudly if production did not complete
+        if: always()
+        run: |
+          rc="${{ steps.cycle.outputs.rc }}"
+          if [ "$rc" != "0" ]; then
+            echo "::error::production cycle failed after 3 attempts (rc=$rc) — next catch-up slot will resume it automatically"
+            exit 1
+          fi

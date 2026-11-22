@@ -182,6 +182,18 @@ def run_pipeline(args):
                                f"{len(script['scenes'])}) — re-running motion")
                 state["motion_done"] = False
 
+        # resume guard: voice wavs are gitignored (too heavy for the repo);
+        # when a crashed run is resumed on a fresh runner they are gone —
+        # re-run the (free) TTS stage instead of KeyError-ing in the renderer
+        if state.get("voice_done"):
+            vdir = run_dir / "voice"
+            have = sum(1 for s in script["scenes"]
+                       if (vdir / f"scene_{s['id']:03d}.wav").exists())
+            if have < len(script["scenes"]):
+                logger.warning(f"voice files missing on resume ({have}/"
+                               f"{len(script['scenes'])}) — re-running voiceover")
+                state["voice_done"] = False
+
         # ---------------- voiceover ----------------
         if not state.get("voice_done"):
             voiceover.generate_all(cfg, run, script, logger)

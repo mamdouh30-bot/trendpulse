@@ -27,6 +27,9 @@ FONT_B = host.FONT_B
 FONT_SB = host.FONT_SB
 FONT_R = ("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 GRADE = "eq=contrast=1.05:saturation=1.06,vignette=PI/4.6,noise=alls=6:allf=t+u"
+# Stills (host frames / brand cards) skip temporal noise: on 2-core CI the
+# noise pass over a zoompanned still is the #1 cause of render timeouts.
+GRADE_STILL = "eq=contrast=1.05:saturation=1.06,vignette=PI/4.6"
 
 
 def _font(path, size):
@@ -268,26 +271,35 @@ def render_scene_clip(scene, entry, cfg, run, logger):
             cmd = ["ffmpeg", "-y", "-i", entry["file"],
                    "-filter_complex", vf, "-t", f"{dur:.3f}"]
     else:
-        W5 = int(cfg["visuals"]["width"] * 1.7)
-        H5 = int(cfg["visuals"]["height"] * 1.7)
+        # 1.25x upscale: max KB zoom (1.12) + pan drift stay pixel-safe while
+        # costing ~half the pixels of the old 1.7x path on CI runners
+        W5 = int(cfg["visuals"]["width"] * 1.25)
+        H5 = int(cfg["visuals"]["height"] * 1.25)
         kb = _kb_filter(entry.get("kb", "zoom_in"), dur, fps)
         vf = (
             f"scale={W5}:{H5},"
             f"zoompan={kb}:"
             f"d=1:s={cfg['visuals']['width']}x{cfg['visuals']['height']}:"
-            f"fps={fps},{GRADE}"
+            f"fps={fps},{GRADE_STILL}"
         )
         cmd = ["ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-t",
                f"{dur:.3f}", "-i", entry["file"], "-filter_complex", vf]
 
     ovl = _overlay_filter(entry) if use_overlay else None
     if ovl:
-        # banner becomes input #1; label the base chain then composite
+        # banner becomes input #1; label the base chain then composite.
+        # the banner MUST be capped (-framerate/-t): an infinite looped
+        # input stalls framesync against the fixed-length main input and
+        # was the root cause of the CI render timeouts
         vf = f"[0:v]{vf}[bg];[bg][1:v]{ovl}"
-        cmd.insert(cmd.index("-i", 1) + 2, "-loop")
-        cmd.insert(cmd.index("-i", 1) + 3, "1")
-        cmd.insert(cmd.index("-i", 1) + 4, "-i")
-        cmd.insert(cmd.index("-i", 1) + 5, str(banner))
+        cmd.insert(cmd.index("-i", 1) + 2, "-framerate")
+        cmd.insert(cmd.index("-i", 1) + 3, str(fps))
+        cmd.insert(cmd.index("-i", 1) + 4, "-t")
+        cmd.insert(cmd.index("-i", 1) + 5, f"{dur:.3f}")
+        cmd.insert(cmd.index("-i", 1) + 6, "-loop")
+        cmd.insert(cmd.index("-i", 1) + 7, "1")
+        cmd.insert(cmd.index("-i", 1) + 8, "-i")
+        cmd.insert(cmd.index("-i", 1) + 9, str(banner))
     dtf = _drawtext_filter(entry, dur, fps)
     if dtf:
         vf += "," + dtf
@@ -295,9 +307,48 @@ def render_scene_clip(scene, entry, cfg, run, logger):
     cmd[cmd.index("-filter_complex") + 1] = vf
     cmd += ["-c:v", "libx264", "-preset", CLIP_PRESET, "-crf", CLIP_CRF,
             "-pix_fmt", "yuv420p", "-an", str(dest)]
-    run_cmd(cmd, timeout=900, retries=2, logger=logger)
+    try:
+        run_cmd(cmd, timeout=900, retries=2, logger=logger)
+    except Exception:  # noqa: BLE001
+        # one clip must never kill the whole episode: fall back to a cheap
+        # chain (1:1 scale + gentle zoom, no grade/noise) that still MOVES
+        logger.warning(f"clip {entry['key']} failed — rendering LITE fallback")
+        lite = _lite_clip_cmd(entry, dest, dur, fps, cfg, banner,
+                              use_overlay)
+        run_cmd(lite, timeout=900, retries=1, logger=logger)
     done.touch()  # render completed — cache-safe on resume
     return dest
+
+
+def _lite_clip_cmd(entry, dest, dur, fps, cfg, banner, use_overlay):
+    """Emergency low-cost command for a scene the full chain cannot render.
+
+    Stills keep a slow zoom (never a frozen frame); motion clips keep the
+    real footage with just a scale/crop. No grade, no noise, no easing."""
+    W = int(cfg["visuals"]["width"])
+    H = int(cfg["visuals"]["height"])
+    frames = max(1.0, dur * fps)
+    if entry.get("motion_file"):
+        vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,"
+              f"crop={W}:{H},fps={fps},setsar=1")
+        cmd = ["ffmpeg", "-y", "-ss", "0", "-i", entry["file"],
+               "-filter_complex", vf, "-t", f"{dur:.3f}"]
+    else:
+        kb = (f"z='min(1.03+0.05*(on/{frames:.2f}),1.08)':"
+              f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'")
+        vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,"
+              f"crop={W}:{H},zoompan={kb}:d=1:s={W}x{H}:fps={fps}")
+        cmd = ["ffmpeg", "-y", "-loop", "1", "-framerate", str(fps), "-t",
+               f"{dur:.3f}", "-i", entry["file"], "-filter_complex", vf]
+    if use_overlay and banner and Path(banner).exists():
+        vf = (f"[0:v]{vf}[bg];[bg][1:v]"
+              "overlay=x='(main_w-overlay_w)/2':y='main_h-overlay_h-64'")
+        cmd += ["-framerate", str(fps), "-t", f"{dur:.3f}",
+                "-loop", "1", "-i", str(banner)]
+    cmd[cmd.index("-filter_complex") + 1] = vf + ",format=yuv420p"
+    cmd += ["-c:v", "libx264", "-preset", CLIP_PRESET, "-crf", CLIP_CRF,
+            "-pix_fmt", "yuv420p", "-an", str(dest)]
+    return cmd
 
 
 # ------------------------------------------------------------- audio mixing
@@ -424,7 +475,7 @@ def render_video(cfg, run, script, logger):
         dur = max(3.0, s.get("voice_dur", 0) + pad)
         ch = s.get("chapter", 0)
         entry = {"key": f"s{s['id']:03d}", "dur": dur,
-                 "voice_file": s["voice_file"], "scene": s}
+                 "voice_file": s.get("voice_file"), "scene": s}
 
         # 0) FIXED channel intro: host frame + animated subscribe banner
         if s.get("is_fixed_intro") and (rd / "host_intro.png").exists():
