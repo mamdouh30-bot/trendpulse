@@ -1,0 +1,69 @@
+{
+  "topic": {
+    "title": "AI News: 4 Game‑Changing Stories From Gemini, Anthropic, OpenAI & Your New Side‑Hustle",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon: Google’s Benchmark‑Domination Dawn",
+        "hook": "Google just unleashed a model that might outpace OpenAI’s GPT in every enterprise benchmark.",
+        "angle": "Gemini 4 Argon was announced with limited release, claiming top scores on LLM, vision‑chat, and code‑generation tasks, shaking up the leaderboard. Its arrival comes as Google promises broader accessibility in Q1 2027 and signals a new focus on fine‑tuned enterprise services.",
+        "money_angle": "Developers can start a mid‑tier SaaS that anchors on Gemini 4 Argon’s API to deliver industry‑specific chatbots, immediately monetizing through subscription fees.",
+        "visual_world": "High‑energy graphics of the Gemini 4 Argon logo, benchmark charts, screenshots of its code‑completion demos, and a developer studio modulating API calls in real time.",
+        "search_queries": [
+          "Gemini 4 Argon launch news 2026",
+          "Google Gemini 4 benchmark results 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Anthropic’s IPO Breaks Records and Shakes Wall Street",
+        "hook": "A $9 billion IPO turns Anthropic into the largest AI‑first public deal ever.",
+        "angle": "On November 13, Anthropic went public, raising $3.1 billion on a $9 billion valuation, eclipsing OpenAI’s $462 million subscription model. The company’s shift from private contracts to stock market liquidity positions it to fund next‑generation agent research.",
+        "money_angle": "Investors today can put money into Anthropic’s shares or trade its derivatives, gaining exposure to a high‑growth AI engine without direct R&D.",
+        "visual_world": "NASDAQ tickers, a stock chart zooming into early trading, investors in a trading floor, and the Anthropic logo on a fresh IPO banner.",
+        "search_queries": [
+          "Anthropic IPO news 2026",
+          "Anthropic valuation record 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "OpenAI Unveils GPT‑6.2 Astra & Sol: Calling Coders Into a Lower‑Cost Future",
+        "hook": "OpenAI’s new model promises cheaper, faster code generation and a new pricing tier.",
+        "angle": "GPT‑6.2 Astra and Sol were released with a 25 % drop in token cost and a 12 % increase in throughput. The announcement also includes a new developer‑friendly API plan priced at $0.0006/1k tokens, which could slashes budgets for startups building code assistants.",
+        "money_angle": "Tech founders can immediately pilot GPT‑6.2 on their internal tooling, reducing engineering costs and accelerating product roadmaps.",
+        "visual_world": "API dashboard live‑coding demos, comparison tables of speed vs. cost, the OpenAI logo superimposed on a futuristic coding environment.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra Sol launch news",
+          "GPT‑6.2 pricing details 2026"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "How to Turn AI‑Generated Images Into Real Cash—A 2026 Playbook",
+        "hook": "A study shows that selling AI art can still be profitable if you choose the right niche.",
+        "angle": "Research from Note.com revealed that while generic image markets are saturated, selling themed AI art—like historical reenactments or niche collectibles—can command 3–4× higher prices. It recommends using platforms like Etsy, Redbubble, and custom print‑on‑demand services.",
+        "money_angle": "Creators can start building a portfolio of niche AI images, upload them to print‑on‑demand sites, and earn passive royalties from downloads and physical sales.",
+        "visual_world": "Print‑on‑demand storefront screens, examples of high‑selling AI art, side‑by‑side comparison of bulk vs. niche pricing.",
+        "search_queries": [
+          "selling AI images profitable 2026 study",
+          "AI art niche markets 2026 case study"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": false,
+    "reason": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  }
+}

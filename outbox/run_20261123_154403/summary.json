@@ -1,0 +1,13 @@
+{
+  "finished_at": "2026-11-23T16:56:13",
+  "topic": "AI News: 4 Game‑Changing Stories From Gemini, Anthropic, OpenAI & Your New Side‑Hustle",
+  "title": "AI Just Leveled Up: 4 Stories You Need to Know (Nov 23)",
+  "video_file": "/home/runner/work/trendpulse/trendpulse/outbox/run_20261123_154403/render/final.mp4",
+  "duration_minutes": 13.1,
+  "thumbnail": "/home/runner/work/trendpulse/trendpulse/outbox/run_20261123_154403/thumbnail.jpg",
+  "upload": {
+    "uploaded": false,
+    "reason": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  },
+  "size_mb": 584.1
+}

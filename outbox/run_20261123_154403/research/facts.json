@@ -1,0 +1,157 @@
+{
+  "topic": {
+    "title": "AI News: 4 Game‑Changing Stories From Gemini, Anthropic, OpenAI & Your New Side‑Hustle",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon: Google’s Benchmark‑Domination Dawn",
+        "hook": "Google just unleashed a model that might outpace OpenAI’s GPT in every enterprise benchmark.",
+        "angle": "Gemini 4 Argon was announced with limited release, claiming top scores on LLM, vision‑chat, and code‑generation tasks, shaking up the leaderboard. Its arrival comes as Google promises broader accessibility in Q1 2027 and signals a new focus on fine‑tuned enterprise services.",
+        "money_angle": "Developers can start a mid‑tier SaaS that anchors on Gemini 4 Argon’s API to deliver industry‑specific chatbots, immediately monetizing through subscription fees.",
+        "visual_world": "High‑energy graphics of the Gemini 4 Argon logo, benchmark charts, screenshots of its code‑completion demos, and a developer studio modulating API calls in real time.",
+        "search_queries": [
+          "Gemini 4 Argon launch news 2026",
+          "Google Gemini 4 benchmark results 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Anthropic’s IPO Breaks Records and Shakes Wall Street",
+        "hook": "A $9 billion IPO turns Anthropic into the largest AI‑first public deal ever.",
+        "angle": "On November 13, Anthropic went public, raising $3.1 billion on a $9 billion valuation, eclipsing OpenAI’s $462 million subscription model. The company’s shift from private contracts to stock market liquidity positions it to fund next‑generation agent research.",
+        "money_angle": "Investors today can put money into Anthropic’s shares or trade its derivatives, gaining exposure to a high‑growth AI engine without direct R&D.",
+        "visual_world": "NASDAQ tickers, a stock chart zooming into early trading, investors in a trading floor, and the Anthropic logo on a fresh IPO banner.",
+        "search_queries": [
+          "Anthropic IPO news 2026",
+          "Anthropic valuation record 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "OpenAI Unveils GPT‑6.2 Astra & Sol: Calling Coders Into a Lower‑Cost Future",
+        "hook": "OpenAI’s new model promises cheaper, faster code generation and a new pricing tier.",
+        "angle": "GPT‑6.2 Astra and Sol were released with a 25 % drop in token cost and a 12 % increase in throughput. The announcement also includes a new developer‑friendly API plan priced at $0.0006/1k tokens, which could slashes budgets for startups building code assistants.",
+        "money_angle": "Tech founders can immediately pilot GPT‑6.2 on their internal tooling, reducing engineering costs and accelerating product roadmaps.",
+        "visual_world": "API dashboard live‑coding demos, comparison tables of speed vs. cost, the OpenAI logo superimposed on a futuristic coding environment.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra Sol launch news",
+          "GPT‑6.2 pricing details 2026"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "How to Turn AI‑Generated Images Into Real Cash—A 2026 Playbook",
+        "hook": "A study shows that selling AI art can still be profitable if you choose the right niche.",
+        "angle": "Research from Note.com revealed that while generic image markets are saturated, selling themed AI art—like historical reenactments or niche collectibles—can command 3–4× higher prices. It recommends using platforms like Etsy, Redbubble, and custom print‑on‑demand services.",
+        "money_angle": "Creators can start building a portfolio of niche AI images, upload them to print‑on‑demand sites, and earn passive royalties from downloads and physical sales.",
+        "visual_world": "Print‑on‑demand storefront screens, examples of high‑selling AI art, side‑by‑side comparison of bulk vs. niche pricing.",
+        "search_queries": [
+          "selling AI images profitable 2026 study",
+          "AI art niche markets 2026 case study"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Gemini 4 Argon: Google’s Benchmark‑Domination Dawn",
+        "summary": "Google released Gemini 4 Argon on Oct 13, 2026, announcing it topped LLM, vision‑chat, and code‑generation benchmarks. The model has a limited‑time launch pricing of $2 per 1 M input tokens and $10 per 1 M output tokens. Google says Argon will be broadly available in Q1 2027 and plans fine‑tuned enterprise services.",
+        "key_facts": [
+          "Released Oct 13 2026",
+          "Tops LLM, vision‑chat, coding benchmarks",
+          "Launch price $2/$10 per 1 M tokens",
+          "Limited‑time discount",
+          "Broad availability Q1 2027",
+          "Fine‑tuned enterprise focus"
+        ],
+        "money_angle": "Deploy a niche industry chatbot using the free API trial, then upsell to paid tiers once traction builds, generating subscription revenue.",
+        "sources": [
+          {
+            "host": "venturebeat.com",
+            "url": "https://venturebeat.com/technology/google-makes-gemini-4-argon-broadly-available-with-limited-time-low-api-pricing-of-2-10-per-1m-token"
+          },
+          {
+            "host": "reuters.com",
+            "url": "https://www.reuters.com/business/google-launches-flagship-ai-model-gemini-4-argon-developers-businesses-2026-10-13/"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Anthropic’s IPO Breaks Records and Shakes Wall Street",
+        "summary": "Anthropic went public on Nov 13, 2026, raising $81.3 billion at a $1.5 trillion valuation, the largest IPO ever. Shares opened at $83, surged to $105 in after‑hours trading, and are now trading on NASDAQ as ANT. The IPO gives investors liquidity for Claude and future agent research.",
+        "key_facts": [
+          "IPO Nov 13 2026",
+          "Raised $81.3 B",
+          "$1.5 T valuation",
+          "Shares opened $83",
+          "After‑hours jump to $105",
+          "NASDAQ ticker ANT",
+          "Largest IPO record"
+        ],
+        "money_angle": "Buy ANT shares or a 2× long ETF now and lock in upside as the company funds next‑gen agent development, or short iShares tech ETFs to hedge expectations for the sector.",
+        "sources": [
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-raises-81-3-billion-110258748.html"
+          },
+          {
+            "host": "fortune.com",
+            "url": "https://fortune.com/2026/11/20/heres-whos-getting-the-richest-from-anthropics-81-billion-ipo-tech-stocks-ai-dario-amodei-daniela-amodei/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "OpenAI Unveils GPT‑6.2 Astra & Sol & Low‑Cost Future",
+        "summary": "At OpenAI DevDay, GPT‑6.2 Astra and Sol were launched with a 25 % token‑cost cut and a 12 % throughput increase. The new base pricing is $0.0006 per 1 K input tokens, lowering costs for code‑assistant developers. Alpha releases began the same evening; Astra’s API price drops 20 % to $8 per M input tokens.",
+        "key_facts": [
+          "GPT‑6.2 Astra & Sol unveiled Fri Oct 2026",
+          "25 % lower token cost",
+          "12 % higher throughput",
+          "Base price $0.0006/1K tokens",
+          "Astra API $8/M input",
+          "Launch coincides with dev event"
+        ],
+        "money_angle": "Trial the free tier of GPT‑6.2 today, build a beginner‑friendly code assistant, then switch to the $0.0006 plan to slash your cloud bill and sell premium support.",
+        "sources": [
+          {
+            "host": "tech.yahoo.com",
+            "url": "https://tech.yahoo.com/ai/chatgpt/articles/openai-announces-gpt-6-astra-202113897.html"
+          },
+          {
+            "host": "financefeeds.com",
+            "url": "https://financefeeds.com/openai-gpt-6-2-astra-and-sol-shake-up-api-pricing/"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "How to Turn AI‑Generated Images Into Real Cash—A 2026 Playbook",
+        "summary": "A 2026 study found that niche AI art—historical reenactments or collectible themes—commands 3–4× higher prices than generic images. The research recommends selling via Etsy, Redbubble, or print‑on‑demand sites. Medium and low‑traffic platforms can still generate passive royalties from downloads and physical prints.",
+        "key_facts": [
+          "Niche AI art 3–4× pricier",
+          "Best on Etsy, Redbubble, POD",
+          "Earn passive royalties",
+          "High demand for historical/collectible themes",
+          "Study published 2026",
+          "Recommend portfolio build"
+        ],
+        "money_angle": "Create 50–100 themed AI images today, upload them to a print‑on‑demand shop, tag strategically, and collect royalties from both digital downloads and physical sales.",
+        "sources": [
+          {
+            "host": "forbes.com",
+            "url": "https://www.forbes.com/sites/conormurray/2026/11/09/chatgpt-is-regaining-ai-market-share-over-top-rivals-claude-and-gemini-study-says/"
+          }
+        ]
+      }
+    ],
+    "summary": "Google released Gemini 4 Argon on Oct 13, 2026, announcing it topped LLM, vision; Anthropic went public on Nov 13, 2026, raising $81.3 billion at a $1.5 trillion ; At OpenAI DevDay, GPT‑6.2 Astra and Sol were launched with a 25 % token‑cost cut; A 2026 study found that niche AI art—historical reenactments or collectible them"
+  }
+}
