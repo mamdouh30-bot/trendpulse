@@ -1,0 +1,493 @@
+{
+  "title": "AI Money: 4 Stories That Just Landed – Models, Tools, Stocks & Profit",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Intro",
+      "narration": "Welcome to AI Money — I'm Adam Sterling. Every single day I cut through the noise and bring you the AI stories that actually matter, with the money angle you can act on. If that sounds like your kind of edge, hit subscribe right now — new digests land here every twelve hours, and you don't want to miss the next one.",
+      "visual_query": "television studio news desk broadcast lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Today’s AI bazaar is a noise minefield, but I’ll cut through the chatter and deliver the 4 stories that actually matter, from new models to stock spikes. Stay tuned for the biggest shocker in AI.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "OpenAI just released GPT‑6.2 Astra, slashing API costs to $8 per million tokens, while Sol drops to $2—half the price on large‑scale coding. The new models set a fresh Marathon on the Epoch Capabilities Index at 174.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 4,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Meanwhile, Google’s Gemini 4 Carbon lets AI agents collaborate in real time, making teamwork possible for complex programming and cyber‑security tasks. Developers can now create a split-video workflow, stitching intro, mid and outro agents together—free demo on Cloud.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "OpenAI drops GPT‑6.2 Astra and Sol – the next leap in code and creativity. On Nov 17 2026 the release shattered price expectations, giving coders lightning‑fast inference and tighter safety at a fraction of the cost.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "GPT‑6.2 Astra comes with a 20 % price cut: 8 USD per million tokens. That's 30 % cheaper than the last generation and 4x faster on Code‑Sci benchmarks. Developers now have a gold‑standard for enterprise automation.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "Sol, the workhorse model, is the cheapest option on the market: just $2 per million tokens. Sol’s 5‑point jump on the Epoch Capabilities Index proves it’s not just cheap—it’s smarter, delivering quality code faster.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "Both Astra and Sol launch in Codex and ChatGPT Work, so you can swap them instantly in your pipelines. No new SDKs, just an updated API endpoint. That means you can start saving money tomorrow.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "Why does this matter? The average code‑generation cost drops from $4 to $2 per M tokens. For a $10 M monthly spend, that’s $5 M shaved off, or 50 % of your AI budget. That’s a half‑million-dollar ROI in a single year.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "The next killer feature: tighter safety nets. Astra and Sol have built‑in filter updates that cut hallucinations by 40 %. That translates to fewer bugs, fewer manual reviews, and faster time‑to‑market for your products.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "Money angle: tap the free GPT‑6.2 Sol at $2 per 1M tokens for your automated‑coding pipeline right now. Set up a quick test on the OpenAI playground, run a 100‑thousand‑token workload, and watch your costs drop by half.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "Pull the trigger: sign up for an OpenAI API key, configure Sol, and replace GPT‑6.1 calls. Your code bot will be 2x faster and 50 % cheaper. The pay‑per‑token model makes scaling a breeze.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 13,
+      "chapter": 1,
+      "chapter_title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+      "chapter_label": "STORY 1",
+      "narration": "That’s all for today’s code explosion. Now stay tuned as we dive into Gemini 4 Carbon and see how Google’s multi‑AI teamwork can double your content output. See the link below for the free demo—let’s keep the money flowing.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool. On November 12 2026, Google launched Gemini 4 Carbon, marking the first Google LLM to support distinct AI agents that can delegate, share context, and sync outputs in real time.",
+      "visual_query": "engineers collaborating with AI interface",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Gemini 4 Carbon is a generative model engineered for multi‑agent workflows. Each agent runs its own instance of Gemini, allowing them to break large tasks into sub‑tasks, then hand off results. This modularity is a game‑changer for complex coding and cyber‑security projects.",
+      "visual_query": "AI agents exchanging data",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Released with a hard launch on November 12 2026, Gemini 4 Carbon hit the general availability route the same day. Developers can hit the API gateway within minutes, and enterprises can start integrating the model into their existing pipelines without a long beta process.",
+      "visual_query": "developers typing on keyboard",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "The new model runs under Google AI Ultra, a subscription tier that bundles compute, storage, and priority access. Ultra users can spin up multiple agents simultaneously, scaling to the size of your project without hitting rate limits. It’s all about speed and reliability.",
+      "visual_query": "data center server racks glowing",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Google positioned Gemini 4 Carbon to compete with OpenAI’s single‑model dominance. By allowing separate agents to communicate, the platform reduces friction in creative workflows and opens doors to choreographed video editing, script writing, and even real‑time monitoring of security scans.",
+      "visual_query": "robotic arm inspecting components",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Investors spotted that Google’s Agile‑API approach could inject new revenue streams. The API key structure mirrors that of Google Cloud’s AI products, with per‑minute billing and per‑token usage caps—ideal for corporate budgeting and compliance.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Team apps are already testing Gemini 4 Carbon for video creation. A single 5‑minute clip can now be split into intro, middle, and outro, each handled by a dedicated agent. The final montage is stitched automatically, saving hours of manual editing.",
+      "visual_query": "hands editing video timeline",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "Here’s your play: launch a 5‑minute content‑creation workflow that splits a video into intro, mid‑section, and outro agents, then stitches them together—try the free community demo on Google Cloud this week. The demo is live, no prep needed.",
+      "visual_query": "cloud computing dashboard",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 22,
+      "chapter": 2,
+      "chapter_title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+      "chapter_label": "STORY 2",
+      "narration": "That’s the power of multi‑agent AI—now imagine using it in your next project. Stay tuned, because next up we dive into Anthropic’s record‑breaking IPO that’s reshaping the market.",
+      "visual_query": "street view with skyscrapers",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "Anthropic broke IPO records on November 20, 2026, pulling in a staggering $81 billion. They priced shares at $83 each, more than doubling the amount of capital raised by any previous AI company. The move sent the stock sky‑high, and the company’s valuation topped $10 billion.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "The first trading day was a fireworks display. Anthropic shares opened at $111.50, a 34 % jump from the $83 IPO price. By the end of the day the stock hovered around $97.50, still above the offering price but slightly depressed after early momentum slowed.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "Why does this matter for you? A $10 billion valuation means the company can pay for talent, build new models, and push into industries like finance and healthcare. Anthropic’s core mission—to build safe, controllable AI—could become a cornerstone of next‑generation tech.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "Each founder snagged a $280 million cash windfall when their shares converted. That’s a headline winner that shows how lucrative AI IPOs can be when they ignite investor appetite and a clear path to profit.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "The aftermarket offers a unique entry point. After the initial surge, the share price dipped below $83 in pre‑market, then rebounded to closings above $100. This volatility creates a window for disciplined traders to catch upside before the next upward swing.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "Now’s the time to act. Grab Anthropic stock when it trades above $100—targeting that sweet spot of post‑IPO exhaustion and fresh upside. Just remember, the rally may pause for a day or two, so timing is key.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "If you prefer data‑driven entry, Bloomberg Terminal’s free 14‑day market data experiment lets you backtest entry points, analyze volume spikes, and build day‑trade models—all without paying for a subscription. Check the description for the link to get started.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "Why settle for speculation when you can harness real market signals? The experiment offers charts, trend lines, and even machine‑learning alerts to pinpoint the best buy moments. It’s a low‑cost way to turn research into profit.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 31,
+      "chapter": 3,
+      "chapter_title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+      "chapter_label": "STORY 3",
+      "narration": "That’s the Anthropic play. Stay sharp on the next move—whether that’s a new AI tool or a stock surge, the market’s hungry for the next big thing. Ready for the next headline? Let’s jump to OpenAI’s newest leap.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 32,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "CoreWeave rockets 22 % on November 23 2026, pulling AI‑infrastructure stock charts through the roof in a single trading session. The surge followed Nvidia’s headline announcement that Jensen Huang had returned as CEO, a move that sent a clear signal of renewed confidence in AI hardware demand.",
+      "visual_query": "stock market screens rising during late afternoon",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 33,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "CoreWeave, a cloud provider that powers large‑language‑model training, had been trading off‑pace all year. The 22 % jump was the largest daily gain for an AI cloud company in the last three months, showing investors that the market is willing to pay a premium for high‑performance AI workloads.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 34,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "Nvidia’s own shares surged 32 % the same day, a record‑breaking rally that catapulted the chipmaker to a $1.5 trillion market cap milestone. The two companies moved as a tandem; CoreWeave’s leap directly mirrored the spike in Nvidia’s valuation, reinforcing the narrative that AI infrastructure is a growth engine.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 35,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "Why does this matter? The AI infrastructure sector has long struggled with balancing supply and demand. With enterprise workloads hitting new peaks—think GPT‑6.2 model training and real‑time generative media—cloud platforms like CoreWeave are the backbone that turns raw compute into profitable services.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 36,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "CoreWeave’s recent earnings report disclosed a 48 % increase in AI‑workload customers, and their gross margin climbed from 34 % to 42 % thanks to newer, more efficient GPU deployments. That margin expansion fuels capital for expanding data‑center capacity and will likely keep the stock on a uptrend if execution stays on track.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 37,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "Investors eye CoreWeave for its scalable infrastructure promise, but the real opportunity is now. With Nvidia pulling the helm of AI strategy, security around AI workloads is tightening, driving demand for specialized cloud gates that CoreWeave already offers in its accelerator‑optimized clusters.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 38,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "The free Yahoo Finance market‑data API gives you instant alerts: set a $0.05 price change flag on CRWV’s trading volume, and you’ll be the first to know when the next wave hits. This tool is a low‑cost, high‑impact way to stay ahead of the flock.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 39,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "Swipe the link in the description to pull that API right into your spreadsheet. Watch the volume bars spike and your notification light up—then decide whether to add CRWV to your watchlist before the next heartbeat.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 40,
+      "chapter": 4,
+      "chapter_title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+      "chapter_label": "STORY 4",
+      "narration": "CoreWeave’s breakout today is a green flag for anyone building AI at scale—specifically, those who can monetize the need for hybrid cloud and edge compute. If you’re looking to capture this upside, start watching CRWV now and tune your alerts to catch the next move before the market does.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 41,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "OpenAI slashes GPT‑6.2 Sol to $2 a million tokens, cutting code costs in half; Gemini 4 Carbon lets AI agents split tasks and stitch results in real time; Anthropic rockets to $10 B valuation after an $81 B IPO, trading above $100; CoreWeave jumps 22 % after Jensen Huang returns and Nvidia surges 32 %.",
+      "visual_query": "trading screens with live chart moving",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 42,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Hit subscribe for fresh AI Money every 12 hours. Tell me: which model—GPT‑6.2 Sol or Gemini 4 Carbon—could slash your dev ops costs the most?",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Intro"
+    },
+    {
+      "num": 1,
+      "title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity"
+    },
+    {
+      "num": 2,
+      "title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool"
+    },
+    {
+      "num": 3,
+      "title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street"
+    },
+    {
+      "num": 4,
+      "title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}

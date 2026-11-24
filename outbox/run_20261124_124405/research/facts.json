@@ -1,0 +1,172 @@
+{
+  "topic": {
+    "title": "AI Money: 4 Stories That Just Landed – Models, Tools, Stocks & Profit",
+    "digest_label": "AI MONEY",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+        "hook": "OpenAI just launched two game‑changing models that can write code and generate art faster than ever.",
+        "angle": "On November 17, 2026 OpenAI released GPT‑6.2 Astra and its sibling GPT‑6.2 Sol, each boasting higher inference speeds and fine‑tuned safety layers. The dual launch underscores OpenAI’s strategy to dominate both developer tooling and creative AI markets while setting new industry benchmarks.",
+        "money_angle": "Developers can slash subscription costs by switching to the more efficient GPT‑6.2 Sol for API usage, freeing budget for scale.",
+        "visual_world": "High‑resolution renderings of the OpenAI logo, the GPT‑6.2 landing page, code editors filling with AI‑generated snippets, and a living‑room scene where a user watches AI create a painting in seconds.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra launch news 2026",
+          "GPT‑6.2 Sol API pricing change 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+        "hook": "Google’s Gemini 4 Carbon finally lets multiple AI agents finish a job together, like a 100‑person team in a single prompt.",
+        "angle": "Released on November 12, 2026, Gemini 4 Carbon adds the ability for separate Gemini agents to delegate tasks, share context, and sync outputs in real time. This breakthrough positions Google as the frontline challenger to OpenAI’s single‑model supremacy.",
+        "money_angle": "Content creators can use Gemini 4 Carbon to generate multi‑section videos in minutes, boosting output and revenue potential.",
+        "visual_world": "Animated split‑screen of Gemini agents exchanging text, a dashboard showing task allocation, and a creative studio where an artist sees AI‑generated layers auto‑added to a design.",
+        "search_queries": [
+          "Google Gemini 4 Carbon multi‑AI collaboration news 2026",
+          "Gemini 4 Carbon demo video 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+        "hook": "Anthropic went public yesterday and crushed all IPO benchmarks, sending its shares soaring for a buyer frenzy.",
+        "angle": "On November 20, 2026, Anthropic’s public offering raised over $10 billion, the largest AI‑company IPO ever. The $720 million final valuation marks a milestone for the industry and signals investor confidence in controllable, high‑performance AI.",
+        "money_angle": "Investors can grab Anthropic stock early in the aftermarket to capture overnight upside from the record debut.",
+        "visual_world": "Stock ticker with soaring numbers, a trading floor with analysts celebrating, slide shows of the Anthropic logo and product demos, a pile of freshly printed IPO prospectus sheets.",
+        "search_queries": [
+          "Anthropic IPO record news 2026",
+          "Anthropic shares priced $10 billion 2026"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+        "hook": "After Nvidia reinstated Jensen Huang, CoreWeave surged 22 %, proving AI‑cloud demand is still roaring.",
+        "angle": "On November 23, 2026 stock markets reacted to Nvidia’s CEO reversal, lifting AI cloud providers. CoreWeave’s shares jumped 22 %, driven by renewed investor confidence and a surge in AI‑related workload demand across Fortune‑500 firms.",
+        "money_angle": "Shares of CoreWeave now offer a high‑return entry point for investors looking for exposure to the AI‑infrastructure boom.",
+        "visual_world": "Chart overlays of CoreWeave stock, a bustling data‑center with humming GPUs, a newsfeed headline about Huang’s return, and a graph showing AI workload growth.",
+        "search_queries": [
+          "CoreWeave 22% surge Nvidia Huang news 2026",
+          "Nvidia CEO return stock reaction 2026"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI MONEY",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+        "summary": "On November 17 2026 OpenAI released GPT‑6.2 Astra and GPT‑6.2 Sol, offering higher inference speed and tighter safety. Astra’s API price fell 20 % to $8 per million tokens, while Sol stayed at $2, making Sol the cheaper choice for high‑volume code generation. Both models outperform prior releases on the Epoch Capabilities Index and are available for Codex and ChatGPT Work.",
+        "key_facts": [
+          "Released Nov 17 2026",
+          "Astra pricing 20 % lower to $8/million tokens",
+          "Sol priced at $2 per 1M tokens",
+          "Astra score 174 on Epoch Capabilities Index",
+          "Sol 5‑point advantage over previous model",
+          "Astra & Sol available in Codex and ChatGPT Work"
+        ],
+        "money_angle": "Use the free GPT‑6.2 Sol at $2 per 1M tokens to run your automated‑coding pipeline, cutting costs by ~50 % compared to GPT‑6.1.",
+        "sources": [
+          {
+            "host": "financefeeds.com",
+            "url": "https://financefeeds.com/openai-gpt-6-2-astra-and-sol-shake-up-api-pricing/"
+          },
+          {
+            "host": "kucoin.com",
+            "url": "https://www.kucoin.com/news/flash/openai-launches-gpt-6-2-astra-and-sol-with-new-pricing-and-personality-shifts"
+          },
+          {
+            "host": "unite.ai",
+            "url": "https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+        "summary": "Google debuted Gemini 4 Carbon on November 12 2026, enabling distinct Gemini agents to delegate tasks, share context, and sync outputs in real time. The model was rolled out to developers and enterprises via a new API and is the first Google LLM to support multi‑agent collaboration. Gemini 4 Carbon is positioned to compete with OpenAI’s single‑model dominance and is available for general use on its GA release day.",
+        "key_facts": [
+          "Released Nov 12 2026",
+          "Agents can delegate, share context, sync outputs",
+          "General Availability announced Nov 12",
+          "API now available to developers and enterprises",
+          "Focus on complex programming and cyber‑security tasks",
+          "Runs on Google AI Ultra subscription"
+        ],
+        "money_angle": "Launch a 5‑minute content‑creation workflow that splits a video into intro, mid‑section, and outro agents, then stitches them together—try the free community demo on Google Cloud this week.",
+        "sources": [
+          {
+            "host": "siliconangle.com",
+            "url": "https://siliconangle.com/2026/10/28/google-debuts-flagship-gemini-4-carbon-model-with-cybersecurity-upgrades/"
+          },
+          {
+            "host": "unite.ai",
+            "url": "https://www.unite.ai/google-expands-gemini-4-carbon-access-beyond-cybersecurity-defenders/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/tech-companies/google-debuts-gemini-4-carbon-improved-coding-agentic-task-capabilities/ar-AA2gjsPf"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+        "summary": "On November 20 2026 Anthropic raised $81 billion in its IPO, the largest ever for an AI company, with shares priced at $83 and a final valuation surpassing $10 B. The offering closed 34 % higher on its first trading day and gave founders $280 M each when sold. Shares fell below the IPO price in pre‑market but opened well above and are now trading around $97.5.",
+        "key_facts": [
+          "Raised $81 B total",
+          "Shares priced at $83 per share",
+          "First trade $97.5, +34 %",
+          "Final valuation > $10 B",
+          "Founders cashed $280 M each",
+          "Shares opened at $111.5 on Nov 22"
+        ],
+        "money_angle": "Buy Anthropic stock in the aftermarket when it trades above $100 to capture overnight upside, or use the free 14‑day market data experiment on Bloomberg Terminal to time entries.",
+        "sources": [
+          {
+            "host": "reuters.com",
+            "url": "https://www.reuters.com/legal/transactional/anthropic-prices-blockbuster-ipo-83-share-source-says-2026-11-18/"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-just-started-trading-amazon-170309552.html"
+          },
+          {
+            "host": "fortune.com",
+            "url": "https://fortune.com/2026/11/20/heres-whos-getting-the-richest-from-anthropics-81-billion-ipo-tech-stocks-ai-dario-amodei-daniela-amodei/"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+        "summary": "CoreWeave’s shares jumped 22 % on November 23 2026 after Nvidia reinstated CEO Jensen Huang, sparking a rally in AI‑infrastructure stocks. The surge reflected renewed investor confidence amid increased demand for AI workloads across Fortune‑500 firms. Nvidia shares also posted a 32 % gain following Huang’s return, supporting the market‑wide rally.",
+        "key_facts": [
+          "CoreWeave up 22 % on Nov 23",
+          "Nvidia shares up 32 % post‑Huang"
+        ],
+        "money_angle": "Add CoreWeave (CRWV) to your AI‑infrastructure watchlist and set a $0.05 alert for new volume spikes in the next 24 hours via the free market‑data API from Yahoo Finance.",
+        "sources": [
+          {
+            "host": "cnbc.com",
+            "url": "https://www.cnbc.com/2026/11/11/stocks-making-the-biggest-moves-wednesday-stocks-moving-the-most-today-live-updates.html"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-23-220910824.html"
+          },
+          {
+            "host": "reuters.com",
+            "url": "https://www.reuters.com/legal/transactional/huangs-stunning-nvidia-return-sparks-relief-battered-ai-trade-2026-11-23/"
+          }
+        ]
+      }
+    ],
+    "summary": "On November 17 2026 OpenAI released GPT‑6.2 Astra and GPT‑6.2 Sol, offering high; Google debuted Gemini 4 Carbon on November 12 2026, enabling distinct Gemini age; On November 20 2026 Anthropic raised $81 billion in its IPO, the largest ever fo; CoreWeave’s shares jumped 22 % on November 23 2026 after Nvidia reinstated CEO J"
+  }
+}

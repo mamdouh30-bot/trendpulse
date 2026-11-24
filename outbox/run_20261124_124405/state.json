@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI Money: 4 Stories That Just Landed – Models, Tools, Stocks & Profit",
+    "digest_label": "AI MONEY",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Drops GPT‑6.2 Astra and Sol – The Next Leap in Code & Creativity",
+        "hook": "OpenAI just launched two game‑changing models that can write code and generate art faster than ever.",
+        "angle": "On November 17, 2026 OpenAI released GPT‑6.2 Astra and its sibling GPT‑6.2 Sol, each boasting higher inference speeds and fine‑tuned safety layers. The dual launch underscores OpenAI’s strategy to dominate both developer tooling and creative AI markets while setting new industry benchmarks.",
+        "money_angle": "Developers can slash subscription costs by switching to the more efficient GPT‑6.2 Sol for API usage, freeing budget for scale.",
+        "visual_world": "High‑resolution renderings of the OpenAI logo, the GPT‑6.2 landing page, code editors filling with AI‑generated snippets, and a living‑room scene where a user watches AI create a painting in seconds.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra launch news 2026",
+          "GPT‑6.2 Sol API pricing change 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Gemini 4 Carbon Lets AIs Work in Teams – Google’s New Multi‑AI Collaboration Tool",
+        "hook": "Google’s Gemini 4 Carbon finally lets multiple AI agents finish a job together, like a 100‑person team in a single prompt.",
+        "angle": "Released on November 12, 2026, Gemini 4 Carbon adds the ability for separate Gemini agents to delegate tasks, share context, and sync outputs in real time. This breakthrough positions Google as the frontline challenger to OpenAI’s single‑model supremacy.",
+        "money_angle": "Content creators can use Gemini 4 Carbon to generate multi‑section videos in minutes, boosting output and revenue potential.",
+        "visual_world": "Animated split‑screen of Gemini agents exchanging text, a dashboard showing task allocation, and a creative studio where an artist sees AI‑generated layers auto‑added to a design.",
+        "search_queries": [
+          "Google Gemini 4 Carbon multi‑AI collaboration news 2026",
+          "Gemini 4 Carbon demo video 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Anthropic Breaks IPO Records – The $10 B Public Debut That Shook Wall Street",
+        "hook": "Anthropic went public yesterday and crushed all IPO benchmarks, sending its shares soaring for a buyer frenzy.",
+        "angle": "On November 20, 2026, Anthropic’s public offering raised over $10 billion, the largest AI‑company IPO ever. The $720 million final valuation marks a milestone for the industry and signals investor confidence in controllable, high‑performance AI.",
+        "money_angle": "Investors can grab Anthropic stock early in the aftermarket to capture overnight upside from the record debut.",
+        "visual_world": "Stock ticker with soaring numbers, a trading floor with analysts celebrating, slide shows of the Anthropic logo and product demos, a pile of freshly printed IPO prospectus sheets.",
+        "search_queries": [
+          "Anthropic IPO record news 2026",
+          "Anthropic shares priced $10 billion 2026"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "CoreWeave Rockets 22 % as Nvidia Returns Huang – The AI Cloud’s Massive Upswing",
+        "hook": "After Nvidia reinstated Jensen Huang, CoreWeave surged 22 %, proving AI‑cloud demand is still roaring.",
+        "angle": "On November 23, 2026 stock markets reacted to Nvidia’s CEO reversal, lifting AI cloud providers. CoreWeave’s shares jumped 22 %, driven by renewed investor confidence and a surge in AI‑related workload demand across Fortune‑500 firms.",
+        "money_angle": "Shares of CoreWeave now offer a high‑return entry point for investors looking for exposure to the AI‑infrastructure boom.",
+        "visual_world": "Chart overlays of CoreWeave stock, a bustling data‑center with humming GPUs, a newsfeed headline about Huang’s return, and a graph showing AI workload growth.",
+        "search_queries": [
+          "CoreWeave 22% surge Nvidia Huang news 2026",
+          "Nvidia CEO return stock reaction 2026"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "5RsLYVk27uc",
+    "url": "https://youtube.com/watch?v=5RsLYVk27uc",
+    "privacy": "public"
+  }
+}
