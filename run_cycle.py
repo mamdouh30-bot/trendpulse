@@ -61,14 +61,22 @@ def _parse_ts(raw) -> dt.datetime | None:
 
 
 def last_finished_at() -> dt.datetime | None:
-    """Newest publish timestamp across outbox summaries + state/history.json."""
+    """Newest *successful publish* timestamp across outbox summaries +
+    state/history.json.
+
+    CRITICAL: only cycles whose upload actually succeeded count. Dead-token
+    cycles used to count here too, which re-armed the cadence guard after
+    every failed slot and silenced production for 10+ hours per slot —
+    exactly the 'agent stopped publishing' outage of Nov 23-24."""
     newest = None
     outbox = ROOT / "outbox"
     if outbox.exists():
         for sj in outbox.glob("run_*/summary.json"):
             try:
-                d = _parse_ts(json.loads(sj.read_text(encoding="utf-8"))
-                              .get("finished_at"))
+                data = json.loads(sj.read_text(encoding="utf-8"))
+                up = data.get("upload") or {}
+                ok = bool(up.get("uploaded")) and bool(up.get("video_id"))
+                d = _parse_ts(data.get("finished_at")) if ok else None
             except Exception:  # noqa: BLE001
                 d = None
             if d and (not newest or d > newest):
@@ -80,7 +88,8 @@ def last_finished_at() -> dt.datetime | None:
         except Exception:  # noqa: BLE001
             hist = []
         for h in reversed(hist or []):
-            d = _parse_ts(h.get("date"))
+            # a history entry counts as a publish only when a video id exists
+            d = _parse_ts(h.get("date")) if h.get("video_id") else None
             if d and (not newest or d > newest):
                 newest = d
     return newest
