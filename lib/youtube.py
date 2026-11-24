@@ -79,13 +79,14 @@ def upload(video_path: Path, thumb_path, meta, cfg, logger):
         logger.warning(f"upload unavailable: {str(e)[:160]}")
         return {"uploaded": False, "reason": str(e)[:300]}
 
-    privacy = cfg["upload"]["privacy"]
+    up_cfg = cfg.get("upload") or {}
+    privacy = up_cfg.get("privacy", "public")
     body = {
         "snippet": {
             "title": meta["title"][:100],
             "description": meta.get("description", "")[:4900],
             "tags": meta.get("tags", [])[:22],
-            "categoryId": cfg["upload"]["category_id"],
+            "categoryId": up_cfg.get("category_id", "28"),
         },
         "status": {
             "privacyStatus": privacy,

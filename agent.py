@@ -142,6 +142,22 @@ def run_pipeline(args):
     script, meta, final_path, total, upload_result = state.get("script"), None, None, None, None
 
     try:
+        # ---------------- backlog drain (token was renewed?) ----------------
+        # episodes stored on the pending-episodes GitHub release while the
+        # YouTube token was broken get published here first, before any new
+        # content is produced
+        if not args.mini and cfg["upload"]["enabled"]:
+            try:
+                from lib import backlog
+                published = backlog.drain_pending(cfg, logger)
+                if published:
+                    (PROJECT_ROOT / "state" / "publish_alert.json").unlink(
+                        missing_ok=True)
+                    logger.info(f"backlog: {published} stored episode(s) "
+                                "published after token renewal")
+            except Exception as e:  # noqa: BLE001
+                logger.warning(f"backlog drain skipped: {str(e)[:140]}")
+
         # ---------------- trends + research ----------------
         if "trends" in stages and not state.get("trends_done"):
             topic = trends.select_topic(cfg, run, logger)
@@ -278,6 +294,34 @@ def run_pipeline(args):
                     final_path, run_dir / "thumbnail.jpg", meta, cfg, logger)
                 if not upload_result.get("uploaded"):
                     logger.warning("video kept in outbox for manual upload")
+                    # NEVER lose an episode with the ephemeral runner: store
+                    # it on the pending-episodes GitHub release; the next
+                    # cycle publishes it once the token works again
+                    try:
+                        from lib import backlog
+                        saved = backlog.save_pending(
+                            final_path, run_dir / "thumbnail.jpg", meta,
+                            run_dir.name, logger)
+                        if saved:
+                            upload_result["backlog_saved"] = True
+                            upload_result["reason"] = (
+                                str(upload_result.get("reason"))[:160]
+                                + " — episode saved to GitHub Releases "
+                                  "backlog, will publish on token renewal")
+                    except Exception as e:  # noqa: BLE001
+                        logger.warning(f"backlog save failed: {str(e)[:140]}")
+                    # visible alarm: the workflow turns the job red and the
+                    # monitoring cron reports it, until the token is renewed
+                    save_state(PROJECT_ROOT / "state" / "publish_alert.json", {
+                        "failed_at": dt.datetime.now(dt.timezone.utc)
+                            .isoformat(timespec="seconds"),
+                        "run": run_dir.name,
+                        "title": (meta or {}).get("title", ""),
+                        "reason": str(upload_result.get("reason"))[:300],
+                    })
+            if upload_result.get("uploaded"):
+                (PROJECT_ROOT / "state" / "publish_alert.json").unlink(
+                    missing_ok=True)
         state["published"] = upload_result
         save_state(run_dir / "state.json", state)
 

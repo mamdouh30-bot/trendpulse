@@ -423,29 +423,63 @@ def render_video(cfg, run, script, logger):
 
     intro_img = make_intro_card(run, cfg, script["title"], logger)
     outro_img = make_outro_card(run, cfg, logger)
-    host_frames = make_host_frames(cfg, run, script, logger)
     has_fixed_intro = any(s.get("is_fixed_intro") for s in script["scenes"])
     if has_fixed_intro:
         make_subscribe_banner(run, cfg, logger)
-
-    entries = []
-    entries.append({"key": "card0", "file": str(intro_img), "dur": 3.0,
-                    "voice_file": None, "is_card": True})
-
-    intro_host = rd / "host_intro.png"
-    # when a FIXED intro scene exists it shows the host itself (with the
-    # animated subscribe banner) — the old silent 4.6s host beat would just
-    # repeat the same frame twice, so it is skipped
-    if intro_host.exists() and not has_fixed_intro:
-        entries.append({"key": "hostin", "file": str(intro_host),
-                        "dur": 4.6, "voice_file": None, "is_card": True,
-                        "is_host": True})
 
     voice_dir = run["dir"] / "voice"
     vis_dir = run["dir"] / "visuals"
     motion_dir = run["dir"] / "motion"
     motion_pool = (sorted(p for p in motion_dir.glob("motion_*.mp4"))
                    if motion_dir.exists() else [])
+
+    # PRESENTER v6: real MOVING presenter clips (anchor/host/reporter stock
+    # footage) replace every static persona frame — a person on screen must
+    # always be a live video, never a photo (hard channel requirement).
+    presenter_pool = (sorted(p for p in motion_dir.glob("presenter_*.mp4"))
+                      if motion_dir.exists() else [])
+    pres_i = 0
+
+    def next_presenter():
+        nonlocal pres_i
+        if presenter_pool:
+            p = presenter_pool[pres_i % len(presenter_pool)]
+            pres_i += 1
+            return p
+        return None
+
+    def assign_moving(entry, s):
+        """Fill a host slot with a MOVING visual: presenter clip first,
+        then generic b-roll, then the branded graphic card (text art, not
+        a photo) as the absolute last resort — a static person is forbidden."""
+        p = next_presenter()
+        if p:
+            entry["file"] = str(p)
+            entry["motion_file"] = str(p)
+            return True
+        if motion_pool:
+            pick = motion_pool[(s["id"] * 3 + 1) % len(motion_pool)]
+            entry["file"] = str(pick)
+            entry["motion_file"] = str(pick)
+            entry["motion_skip_frac"] = round(
+                ((s["id"] * 0.5757) % 1.0) * 0.40, 3)
+            return True
+        entry["file"] = str(intro_img)
+        return False
+
+    entries = []
+    entries.append({"key": "card0", "file": str(intro_img), "dur": 3.0,
+                    "voice_file": None, "is_card": True})
+
+    # when no FIXED intro scene exists, open with a 4.6s moving presenter
+    # beat instead of the old silent still
+    if not has_fixed_intro:
+        p = next_presenter()
+        if p:
+            entries.append({"key": "hostin", "file": str(p),
+                            "motion_file": str(p), "dur": 4.6,
+                            "voice_file": None, "is_card": True,
+                            "is_host": True})
     prev_chapter = 0
     kb_i = 0
     last_scene_hosted = False
@@ -477,55 +511,44 @@ def render_video(cfg, run, script, logger):
         entry = {"key": f"s{s['id']:03d}", "dur": dur,
                  "voice_file": s.get("voice_file"), "scene": s}
 
-        # 0) FIXED channel intro: host frame + animated subscribe banner
-        if s.get("is_fixed_intro") and (rd / "host_intro.png").exists():
+        # 0) FIXED channel intro: a MOVING presenter + subscribe banner
+        if s.get("is_fixed_intro"):
             s["_host_frame"] = True
-            entry["file"] = str(rd / "host_intro.png")
-            entry["is_host"] = True
             entry["overlay_banner"] = True
-        # 1) story bridge: first scene of each story shows the host
-        elif ch not in (0, 99) and ch != prev_chapter and \
-                (rd / f"host_ch{ch}.png").exists():
-            s["_host_frame"] = True
-            entry["file"] = str(rd / f"host_ch{ch}.png")
             entry["is_host"] = True
+            assign_moving(entry, s)
+        # 1) story bridge: first scene of each story shows the presenter
+        elif ch not in (0, 99) and ch != prev_chapter:
+            s["_host_frame"] = True
+            entry["is_host"] = True
+            assign_moving(entry, s)
         # 2) tool card beats b-roll on money-angle scenes
         elif s.get("tool_card_file") and Path(s["tool_card_file"]).exists():
             entry["file"] = s["tool_card_file"]
-        # 3) mid-story host cutaway
-        elif s["id"] % max(2, cut_every) == 0 and \
-                (rd / "host_cutaway.png").exists():
+        # 3) mid-story presenter cutaway
+        elif s["id"] % max(2, cut_every) == 0:
             s["_host_frame"] = True
-            entry["file"] = str(rd / "host_cutaway.png")
             entry["is_host"] = True
-        # 4) outro host frame
-        elif ch == 99 and (rd / "host_outro.png").exists() and \
-                s is script["scenes"][-1]:
+            assign_moving(entry, s)
+        # 4) outro scene: presenter + subscribe banner
+        elif ch == 99 and s is script["scenes"][-1]:
             s["_host_frame"] = True
-            entry["file"] = str(rd / "host_outro.png")
-            entry["is_host"] = True
             entry["overlay_banner"] = True
+            entry["is_host"] = True
+            assign_moving(entry, s)
             last_scene_hosted = True
         else:
             use_motion = bool(s.get("motion_file"))
-            entry["file"] = s["motion_file"] if use_motion else s["image_file"]
+            entry["file"] = s["motion_file"] if use_motion else None
             entry["motion_file"] = s["motion_file"] if use_motion else None
-            if not use_motion and motion_pool:
+            if not use_motion:
                 # NO static images: borrow a real clip from this run's pool
-                pick = motion_pool[(s["id"] * 3 + 1) % len(motion_pool)]
-                entry["file"] = str(pick)
-                entry["motion_file"] = str(pick)
-                entry["motion_skip_frac"] = round(
-                    ((s["id"] * 0.5757) % 1.0) * 0.40, 3)
+                assign_moving(entry, s)
 
-        # cinematic motion assignment: host frames get a dignified slow
-        # zoom-in, b-roll cycles through eased pans/zooms
-        if not entry.get("file"):
-            entry["file"] = s.get("image_file")
+        # absolute last resort for any slot still empty: the branded
+        # graphic card (text art) — a static photo is never allowed
         if not entry.get("file") and not entry.get("motion_file"):
-            # rare: every visual lost on resume — branded placeholder beat
             entry["file"] = str(intro_img)
-            entry["motion_file"] = None
         if entry.get("is_host"):
             entry["kb"] = "zoom_in"
         else:
@@ -570,12 +593,15 @@ def render_video(cfg, run, script, logger):
             entries.append(entry)
         prev_chapter = ch
 
-    # outro brand card; extra host-outro entry only when the last scene
-    # did not already show the host (avoids repeating the same frame)
-    if not last_scene_hosted and (rd / "host_outro.png").exists():
-        entries.append({"key": "hostout", "file": str(rd / "host_outro.png"),
-                        "dur": 5.0, "voice_file": None, "is_card": True,
-                        "is_host": True})
+    # extra outro presenter beat only when the last scene was not already a
+    # presenter shot (avoids back-to-back same feel)
+    if not last_scene_hosted:
+        p = next_presenter()
+        if p:
+            entries.append({"key": "hostout", "file": str(p),
+                            "motion_file": str(p), "dur": 5.0,
+                            "voice_file": None, "is_card": True,
+                            "is_host": True, "overlay_banner": True})
     entries.append({"key": "card9", "file": str(outro_img), "dur": 4.0,
                     "voice_file": None, "is_card": True})
     # drop persona entries whose frames could not be composed

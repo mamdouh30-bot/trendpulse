@@ -104,3 +104,7 @@ jobs:
             echo "::error::production cycle failed after 3 attempts (rc=$rc) — next catch-up slot will resume it automatically"
             exit 1
           fi
+          if [ -f state/publish_alert.json ]; then
+            echo "::error::episode produced but YouTube upload FAILED (OAuth token expired/revoked). The episode is safe on the 'pending-episodes' GitHub release and will publish automatically after YT_REFRESH_TOKEN is renewed. Reason: $(cat state/publish_alert.json)"
+            exit 1
+          fi

@@ -20,6 +20,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import time
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -72,6 +73,80 @@ UNIVERSAL_QUERIES = [
     "stock market screens charts", "robot arm assembly line",
     "modern office people working", "technology abstract lights",
 ]
+
+# PRESENTER v6 — real moving people for every host slot. The channel owner
+# requires a natural MOVING presenter (anchor/host/reporter stock footage)
+# on screen, never a still photo of a person.
+PRESENTER_QUERIES = [
+    "news anchor studio desk", "presenter talking to camera",
+    "woman presenting camera studio", "man speaking to camera interview",
+    "podcast host microphone talking", "reporter reporting camera street",
+    "businesswoman presenting office", "tv studio host show",
+]
+
+
+def acquire_presenters(cfg, run, logger, want=8):
+    """Fetch real MOVING presenter clips used for the fixed channel intro,
+    story bridges, cutaways and outro (replaces all static persona frames).
+
+    Clips land in outbox/<run>/motion/presenter_XX.mp4 and their URLs are
+    recorded in the clip-history ledger so every episode gets NEW presenters
+    and no clip ever repeats across episodes."""
+    env = _env()
+    fcfg = cfg.get("footage") or {}
+    order = fcfg.get("providers",
+                     ["pexels", "pixabay", "mixkit", "coverr",
+                      "wikimedia", "nasa"])
+    want = int(fcfg.get("presenter_clips", want))
+    history = load_clip_history(cfg)
+    motion_dir = run["dir"] / "motion"
+    motion_dir.mkdir(parents=True, exist_ok=True)
+    cache = run["dir"] / "footage" / "cache"
+    cache.mkdir(parents=True, exist_ok=True)
+
+    cands, seen = [], set()
+    for q in PRESENTER_QUERIES:
+        try:
+            for c in search_pool(q, 6, env, order, logger):
+                u = c.get("url")
+                if u and u not in seen and u not in history:
+                    seen.add(u)
+                    cands.append(c)
+        except Exception:  # noqa: BLE001
+            pass
+        if len(cands) >= want * 2:
+            break
+    if not cands:
+        logger.warning("presenter pool: no fresh candidates found")
+        return []
+
+    got, url_map = [], {}
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        futs = {ex.submit(fetch_clip, c, cache, logger): c for c in cands}
+        for f in as_completed(futs):
+            try:
+                p = f.result()
+            except Exception:  # noqa: BLE001
+                p = None
+            if p:
+                got.append(p)
+                url_map[str(p)] = futs[f].get("url", "")
+            if len(got) >= want:
+                break
+
+    presenters = []
+    for i, p in enumerate(sorted(got), 1):
+        dest = motion_dir / f"presenter_{i:02d}.mp4"
+        try:
+            shutil.copyfile(p, dest)
+            presenters.append(dest)
+        except Exception:  # noqa: BLE001
+            pass
+    if url_map:
+        save_clip_history(cfg, set(url_map.values()))
+    logger.info(f"presenter pool: {len(presenters)} moving host clips "
+                f"(want {want}, candidates {len(cands)})")
+    return presenters
 
 # ---------------------------------------------------------------- history --
 def load_clip_history(cfg):
