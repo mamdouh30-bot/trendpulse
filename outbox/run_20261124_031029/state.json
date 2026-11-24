@@ -1,0 +1,69 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Drops GPT‑6.2 Astra and Sol, Gemini 4 Takes on Real‑World Tasks",
+        "hook": "OpenAI just unleashed two new generations of models that could rewrite the AI handbook.",
+        "angle": "On November 17, OpenAI announced GPT‑6.2 Astra and Sol, a paired model set that promises longer context and stronger reasoning. Gemini 4 meanwhile demonstrated task‑specific performance in Japan, signaling a shift from generalist hype to niche specialization.",
+        "money_angle": "Early adopters can license GPT‑6.2 for custom content creation or fine‑tune Gemini 4 for domain‑specific bots, unlocking new SaaS revenue streams.",
+        "visual_world": "Showcasing a Lovelace‑style interface with token counters, a live demo of Gemini 4 answering financial questions, and OpenAI’s new model call dashboard.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra Sol release news 2026",
+          "Gemini 4 real‑world task demo Japan news 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "HeyGen Unveils Avatar 6: Audio‑Driven, Context‑Aware Virtual Actors",
+        "hook": "The next frontier of virtual production is here—avatars that truly hear you.",
+        "angle": "HeyGen’s Avatar 6 introduces audio‑driven lip sync and contextual understanding, climbing to #1 in Avatar Arena tests. The model supports multi‑language voices and real‑time emotion cues, making it a game changer for marketing videos and virtual influencers.",
+        "money_angle": "Creators can layer Avatar 6 into YouTube or TikTok scripts, generating high‑engagement content and sponsorships without living on set.",
+        "visual_world": "Animated clips of Avatar 6 speaking and reacting to prompts, side‑by‑side comparisons with prior avatars, and a studio view of the SDK demo.",
+        "search_queries": [
+          "HeyGen Avatar 6 release announcement 2026 news",
+          "Avatar Arena Avatar 6 ranking 2026 report"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study",
+        "hook": "Apple is turning 15‑million iPhones into medical trial participants.",
+        "angle": "Apple partnered with OpenEvidence to roll out a study app that collects health data from iPhone 15 users with iOS 26+. The experiment will run for 12 months, gathering over 200k data points to train AI models for personalized medicine.",
+        "money_angle": "Scientists and pharma can license the anonymized datasets to accelerate drug discovery, while developers can build health‑AI services that tap into the new insights.",
+        "visual_world": "Screenshots of the study app interface, footage of users wearing Apple HealthKit, and a quiet lab where AI models are being trained on this data.",
+        "search_queries": [
+          "Apple OpenEvidence health study app launch 2026",
+          "Apple iOS 26 health AI research 200k participants news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Selling AI‑Generated Images: The Only Way That Actually Pays",
+        "hook": "Forget hyped marketplaces—money lives in the right selling channel.",
+        "angle": "A new analysis of 20 AI image sales methods finds that niche licensing to commercial brands and embedding in generative design tools are the only profitable strategies, while direct marketplace sales barely break even. The study highlights how to avoid the saturated creator economy trap.",
+        "money_angle": "Creators should license images to agencies or integrate into design software, charging per asset or subscription, to generate steady revenue.",
+        "visual_world": "Infographics of sales funnels, screenshots of design software with AI plug‑ins, and a case study of a brand using AI imagery in advertising.",
+        "search_queries": [
+          "AI image selling strategies 2026 study report",
+          "Commercial brand AI image licensing news 2026"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": false,
+    "reason": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "finished_at": "2026-11-24T04:15:50",
+  "topic": "AI News: 4 Stories That Actually Matter Today",
+  "title": "AI News: 4 Updates Worth Knowing Today",
+  "video_file": "/home/runner/work/trendpulse/trendpulse/outbox/run_20261124_031029/render/final.mp4",
+  "duration_minutes": 12.5,
+  "thumbnail": "/home/runner/work/trendpulse/trendpulse/outbox/run_20261124_031029/thumbnail.jpg",
+  "upload": {
+    "uploaded": false,
+    "reason": "('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
+  },
+  "size_mb": 493.4
+}

@@ -1,0 +1,187 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Drops GPT‑6.2 Astra and Sol, Gemini 4 Takes on Real‑World Tasks",
+        "hook": "OpenAI just unleashed two new generations of models that could rewrite the AI handbook.",
+        "angle": "On November 17, OpenAI announced GPT‑6.2 Astra and Sol, a paired model set that promises longer context and stronger reasoning. Gemini 4 meanwhile demonstrated task‑specific performance in Japan, signaling a shift from generalist hype to niche specialization.",
+        "money_angle": "Early adopters can license GPT‑6.2 for custom content creation or fine‑tune Gemini 4 for domain‑specific bots, unlocking new SaaS revenue streams.",
+        "visual_world": "Showcasing a Lovelace‑style interface with token counters, a live demo of Gemini 4 answering financial questions, and OpenAI’s new model call dashboard.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra Sol release news 2026",
+          "Gemini 4 real‑world task demo Japan news 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "HeyGen Unveils Avatar 6: Audio‑Driven, Context‑Aware Virtual Actors",
+        "hook": "The next frontier of virtual production is here—avatars that truly hear you.",
+        "angle": "HeyGen’s Avatar 6 introduces audio‑driven lip sync and contextual understanding, climbing to #1 in Avatar Arena tests. The model supports multi‑language voices and real‑time emotion cues, making it a game changer for marketing videos and virtual influencers.",
+        "money_angle": "Creators can layer Avatar 6 into YouTube or TikTok scripts, generating high‑engagement content and sponsorships without living on set.",
+        "visual_world": "Animated clips of Avatar 6 speaking and reacting to prompts, side‑by‑side comparisons with prior avatars, and a studio view of the SDK demo.",
+        "search_queries": [
+          "HeyGen Avatar 6 release announcement 2026 news",
+          "Avatar Arena Avatar 6 ranking 2026 report"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study",
+        "hook": "Apple is turning 15‑million iPhones into medical trial participants.",
+        "angle": "Apple partnered with OpenEvidence to roll out a study app that collects health data from iPhone 15 users with iOS 26+. The experiment will run for 12 months, gathering over 200k data points to train AI models for personalized medicine.",
+        "money_angle": "Scientists and pharma can license the anonymized datasets to accelerate drug discovery, while developers can build health‑AI services that tap into the new insights.",
+        "visual_world": "Screenshots of the study app interface, footage of users wearing Apple HealthKit, and a quiet lab where AI models are being trained on this data.",
+        "search_queries": [
+          "Apple OpenEvidence health study app launch 2026",
+          "Apple iOS 26 health AI research 200k participants news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Selling AI‑Generated Images: The Only Way That Actually Pays",
+        "hook": "Forget hyped marketplaces—money lives in the right selling channel.",
+        "angle": "A new analysis of 20 AI image sales methods finds that niche licensing to commercial brands and embedding in generative design tools are the only profitable strategies, while direct marketplace sales barely break even. The study highlights how to avoid the saturated creator economy trap.",
+        "money_angle": "Creators should license images to agencies or integrate into design software, charging per asset or subscription, to generate steady revenue.",
+        "visual_world": "Infographics of sales funnels, screenshots of design software with AI plug‑ins, and a case study of a brand using AI imagery in advertising.",
+        "search_queries": [
+          "AI image selling strategies 2026 study report",
+          "Commercial brand AI image licensing news 2026"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Drops GPT‑6.2 Astra and Sol, Gemini 4 Takes on Real‑World Tasks",
+        "summary": "On Nov 17 2026 OpenAI launched the paired GPT‑6.2 Astra and Sol, lowering Astra’s API price to $8 per million input tokens. Gemini 4 debuted in Japan, showing strong niche performance on real‑world tasks. The pair offers a longer context window and higher reasoning scores than previous OpenAI models.",
+        "key_facts": [
+          "Release date: 17 Nov 2026",
+          "Astra price: $8 per million tokens",
+          "Sol price: $2 per million tokens",
+          "Astra’s context window: 128K tokens",
+          "Gemini 4 released in Japan",
+          "Gemini 4 excels in task‑specific real‑world scenarios",
+          "OpenAI API integrates both models into ChatGPT Work and Codex"
+        ],
+        "money_angle": "Sign up for OpenAI’s free API tier now, then immediately test GPT‑6.2 Astra on a niche problem (e.g., legal summary) and bill the result as a paid SaaS or consult service.",
+        "sources": [
+          {
+            "host": "kucoin.com",
+            "url": "https://www.kucoin.com/news/flash/openai-launches-gpt-6-2-astra-and-sol-with-new-pricing-and-personality-shifts"
+          },
+          {
+            "host": "financefeeds.com",
+            "url": "https://financefeeds.com/openai-gpt-6-2-astra-and-sol-shake-up-api-pricing/"
+          },
+          {
+            "host": "unite.ai",
+            "url": "https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/"
+          },
+          {
+            "host": "9to5google.com",
+            "url": "https://9to5google.com/2026/10/01/gemini-4-struggle-report/"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "HeyGen Unveils Avatar 6: Audio‑Driven, Context‑Aware Virtual Actors",
+        "summary": "HeyGen unveiled Avatar 6 on 17 Nov 2026, adding audio‑driven lip sync, grammatical‑aware gestures, and real‑time emotion cues. The model tops the Avatar Arena leaderboard with 84.4 % indistinguishability from real footage and supports 2K‑to‑4K resolution. Avatar 6 can produce fully scripted video from a single photo, supporting multiple languages.",
+        "key_facts": [
+          "Release date: 17 Nov 2026",
+          "Audio‑driven lip sync and contextual gestures",
+          "84.4 % indistinguishable from real footage (Avatar Arena)",
+          "Up to 4K resolution, 2K default output",
+          "Supports multi‑language voices",
+          "Script‑aware motion matching to dialogue",
+          "No length limit on generated clips"
+        ],
+        "money_angle": "Start a TikTok channel using Avatar 6’s free trial: record a 30‑second script in your native language, embed the avatar video, and monetize with brand sponsorships targeting niche audiences.",
+        "sources": [
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/heygen-introduces-avatar-6-audio-170700762.html"
+          },
+          {
+            "host": "unite.ai",
+            "url": "https://www.unite.ai/heygen-launches-avatar-6-with-script-aware-gestures-and-2k-video/"
+          },
+          {
+            "host": "agihunt.info",
+            "url": "https://agihunt.info/en/p/1a1eafd9b62e9be2304e30af1fc"
+          },
+          {
+            "host": "avatararena.io",
+            "url": "https://avatararena.io/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study",
+        "summary": "Apple partnered with OpenEvidence to launch the “Apple Health AI Usage Study” on 15 Nov 2026, targeting up to 200 000 iPhone 15 users running iOS 26+. The 12‑month study will collect health data and allow participants to ask AI health questions via a dedicated app. Results will feed personalized medicine research and potential industry licensing.",
+        "key_facts": [
+          "Launch date: 15 Nov 2026",
+          "Target cohort: 200 000 U.S. iPhone 15 users",
+          "Study duration: 12 months",
+          "Platform: dedicated iOS app (iOS 26+)",
+          "Participants can ask AI health queries and rate responses",
+          "Collected data used for medical chatbot evaluation",
+          "OpenEvidence provides anonymized dataset to researchers"
+        ],
+        "money_angle": "",
+        "sources": [
+          {
+            "host": "digitaltrends.com",
+            "url": "https://www.digitaltrends.com/cool-tech/apple-launches-health-ai-usage-study-to-explore-ai-health-advice/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/apple-launches-health-ai-usage-study-to-explore-how-people-use-ai-for-medical-advice/ar-AA2hxmao?ocid=BingNewsVerp"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/apple-and-openevidence-study-how-much-iphone-users-trust-ai-health-answers/ar-AA2hw9l7?ocid=BingNewsVerp"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Selling AI‑Generated Images: The Only Way That Actually Pays",
+        "hook": "Forget hyped marketplaces—money lives in the right selling channel.",
+        "angle": "A new analysis of 20 AI image sales methods finds that niche licensing to commercial brands and embedding in generative design tools are the only profitable strategies, while direct marketplace sales barely break even. The study highlights how to avoid the saturated creator economy trap.",
+        "money_angle": "Creators should license images to agencies or integrate into design software, charging per asset or subscription, to generate steady revenue.",
+        "visual_world": "Infographics of sales funnels, screenshots of design software with AI plug‑ins, and a case study of a brand using AI imagery in advertising.",
+        "search_queries": [
+          "AI image selling strategies 2026 study report",
+          "Commercial brand AI image licensing news 2026"
+        ],
+        "key_facts": [],
+        "summary": "",
+        "sources": [
+          {
+            "host": "propelrc.com",
+            "url": "https://www.propelrc.com/how-to-sell-ai-generated-images/"
+          },
+          {
+            "host": "aitoolversus.com",
+            "url": "https://www.aitoolversus.com/2026/10/stock-sites-that-accept-ai-generated.html"
+          },
+          {
+            "host": "thecascadehub.com",
+            "url": "https://thecascadehub.com/selling-ai-generated-stock-images-2026/"
+          }
+        ]
+      }
+    ],
+    "summary": "On Nov 17 2026 OpenAI launched the paired GPT‑6.2 Astra and Sol, lowering Astra’; HeyGen unveiled Avatar 6 on 17 Nov 2026, adding audio‑driven lip sync, grammatic; Apple partnered with OpenEvidence to launch the “Apple Health AI Usage Study” on; "
+  }
+}

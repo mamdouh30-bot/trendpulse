@@ -1,0 +1,254 @@
+{
+  "COLD OPEN HOOK (3 scenes) — frame today's digest and tease the biggest story|3": [
+    {
+      "narration": "Today, AI news is huge. I’ll sift the noise and deliver the four stories that actually matter. Find out how to profit now, no fluff.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "First up, OpenAI dropped GPT‑6.2 Astra and Sol on Nov 17. Astra hunts $8 per million tokens and boasts a 128K context window—game‑changing for legal and consulting SaaS.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Then the world saw Avatar 6, 84.4% indistinguishable from real footage, 2K–4K resolution, no length limit. I’ll show you how to launch a TikTok channel that sells brand sponsorships in minutes.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 1: OpenAI Drops GPT‑6.2 Astra and Sol, Gemini 4 Takes on Real‑World Tasks\nStory hook to open with: OpenAI Drops GPT‑6.2 Astra and Sol, Gemini 4 Takes on Real‑World Tasks\nMoney angle to land at the end: Sign up for OpenAI’s free API tier now, then immediately test GPT‑6.2 Astra on a niche problem (e.g., legal summary) and bill the result as a paid SaaS or consult service.|9": [
+    {
+      "narration": "On November 17, 2026, OpenAI dropped GPT‑6.2 Astra and Sol, shaking up the AI marketplace. Astra now costs only $8 per million input tokens, and Sol for $2, slashing developer costs while delivering longer context and higher reasoning. This shift could change how we bill AI services.",
+      "visual_query": "developer studio with code on screen",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Astra’s context window expands to 128K tokens—a leap from GPT‑4’s 8K. That means you can feed it an entire legal brief, a 200‑page report, or a whole novel in one go. Sol, at a fraction of the price, offers a lighter, cost‑effective alternative for quick tasks.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "OpenAI didn’t stop there. Gemini 4 hit Japan earlier this month, scoring top marks on real‑world niche tests like troubleshooting industrial equipment and drafting legal drafts with near‑human precision. Its performance shows AI can handle specialist tasks now, not just general chat.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Both Astra and Sol slide into ChatGPT Work and Codex, the very platforms professionals already trust. That means instant access for teams building consulting dashboards, coding assistants, and compliance monitors without new infra. Integration lowers friction and accelerates adoption numbers across your pipeline.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Why should you care? Cost is just the first advantage. With Astra’s 128K window, a customer can upload an entire regulatory filing and get instant, precise, compliant summaries. Bill that precision as a premium SaaS, and your margin jumps from GPT‑4’s $18 per 1M tokens to a 60% markup on every card.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Imagine a legal‑tech startup: you sign up for OpenAI’s free tier, spin up Astra on a demo machine, feed it a 100-page contract, and deliver an 800‑word executive summary in seconds. Charge $200 per summary, and the first month you hit $20k in revenue with zero server costs.",
+      "visual_query": "stock market screens rising",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The playback is simple: PRD → code call → model → JSON compliance report. All off‑the‑shelf. No need for expensive hardware or custom training. You get instant scaling and can focus on niche domains—real‑estate, patent law, or financial compliance—where depth really pays.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Next up, HeyGen is about to change how we create video content. Don’t blink because the next story is a revolution in virtual actors and real‑time script generation.",
+      "visual_query": "video production set with cameras",
+      "mood": "urgent",
+      "is_key_scene": true
+    }
+  ],
+  "STORY 2: HeyGen Unveils Avatar 6: Audio‑Driven, Context‑Aware Virtual Actors\nStory hook to open with: HeyGen Unveils Avatar 6: Audio‑Driven, Context‑Aware Virtual Actors\nMoney angle to land at the end: Start a TikTok channel using Avatar 6’s free trial: record a 30‑second script in your native language, embed the avatar video, and monetize with brand sponsorships targeting niche audiences.|9": [
+    {
+      "narration": "HeyGen just dropped Avatar 6— the first fully audio‑driven virtual actor that reads your script and pulls a realistic mouth on the fly. The demo showed a 2K‑to‑4K clip that could be written in a single sentence. That’s a game‑changer for funnel‑driven content.",
+      "visual_query": "hands writing script on laptop",
+      "mood": "hype",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Avatar 6 launched on Nov 17 2026, shattering the Avatar Arena leaderboard with 84.4 % indistinguishability from real footage. No other model in the competition sits that high on the realism column. For you, that means hyper‑believable influencer footage without a human shot.",
+      "visual_query": "closeup of live video streaming screen",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "What makes it stand out? It builds lip sync directly from your audio, then layers context‑aware gestures that match the dialogue. Bring a phoneme‑level script and watch the avatar automatically do the motion matching, no manual rigging needed.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Multi‑language support is built‑in, so whether you’re speaking Mandarin, Spanish, or your native tongue, Avatar 6 will give you a localized voice that feels native. That’s huge for reaching niche communities who crave content in their own language.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The model has no length limit, so you can make a 90‑second explainer or a 5‑minute podcast‑style video. You spin the same script into dozens of clips, each with a crisp, realistic facial expression and subtle emotion cues. Total production time drops from days to minutes.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Pricing is a free trial that lets you render up to 5 minutes per day. After that, you pay $0.20 per minute for high‑resolution output, or you can drop the Avatar 6 SDK into your content workflow for a flat monthly fee starting at $500.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "You don’t have to wait for a cinematic budget to create starring avatars. Shoot a 30‑second script in your native language, drop the avatar output into TikTok, and hit your audience with a fresh, talk‑to‑camera feel—no expensive crew, no editing fuss.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Now lock in the next step: sign up for Avatar 6’s free trial, upload your script, and start posting. The first video costs nothing—just creativity. Monetize through brand sponsorships that love niche markets and hyper‑targeted video ads.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s it for avatars. Next up, we’re diving into OpenAI’s GPT‑6.2 Astra and Sol, and how you can turn that into real money. Stay tuned!",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 3: Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study\nStory hook to open with: Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study\nMoney angle to land at the end: |9": [
+    {
+      "narration": "Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study, kicking off on 15 Nov 2026. Imagine a cohort of two‐hundred‑thousand iPhone 15 users, all running iOS 26+, each uploading health data through a dedicated app. This isn’t a pilot; it’s a 12‑month data goldmine for medical AI.",
+      "visual_query": "iPhone user recording health data",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "OpenEvidence, the privacy‑first analytics firm, is the partner behind the study. They’ll anonymize the data, turning raw biometrics into a clean dataset accessible only to vetted researchers. That guarantees compliance while still feeding the next generation of AI‑powered health assistants.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The app lets participants ask AI nutrition questions and rate the answers on a 5‑point scale. Each interaction becomes a feedback loop, improving the model’s accuracy in real‑world scenarios. Think AI reps that truly learn from your true concerns, not just textbook queries.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Apple’s iOS 26+ enables secure on‑device encryption, guaranteeing that raw data never leaves the user’s phone unless explicitly shared. That’s the trust factor investors care about and the research community excited about. Proprietary algorithms, anonymous pool, pandemic‑ready data—pure gold.",
+      "visual_query": "keynote crowd",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The study’s 12‑month timeline means you’ll see insights in waves. Every month, new health trend graphs will surface. Developers can build early‑warning health bots that alert users before a heart rhythm anomaly spikes. The payoff: personalized medicine, better outcomes, and a new revenue stream for startups.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "OpenEvidence will release the anonymized dataset to academic institutions, but that’s only part of the story. Private companies can license subsets for niche wearables or clinical diagnostics. Think a partnership that turns 200,000 data points into a subscription‑based health SDK.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Why does this matter for you right now? Splash your portfolio with a Health‑AI club. Create a low‑cost chatbot using the released data, host webinars, and charge institutions to analyze their own patient records through your interface.",
+      "visual_query": "drone over skyscrapers",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The official link to join the OpenEvidence app is waiting in the description. Download it, register as a research partner, and start feeding your AI models raw, real‑world health data today.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s powerful, but stick around—next up we’ll reveal how Avatar 6’s 84.4% real‑ness can crack TikTok’s algorithm and skyrocket your sponsorship revenue. You won’t want to miss it!",
+      "visual_query": "city traffic timelapse night",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 4: Selling AI‑Generated Images: The Only Way That Actually Pays\nStory hook to open with: Forget hyped marketplaces—money lives in the right selling channel.\nMoney angle to land at the end: Creators should license images to agencies or integrate into design software, charging per asset or subscription, to generate steady revenue.|9": [
+    {
+      "narration": "Forget hyped marketplaces—money lives in the right selling channel. The truth is simple: creators aren’t making headlines on fleeting NFT drops or sketchy print‑on‑demand sites. They’re turning pixels into paid, licensed assets that agencies, tools, and studios actually buy.",
+      "visual_query": "creative studio workspace with design software open",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Imagine you’re working on a brand identity for a fast‑growth fintech. You need a thousand unique, on‑brand illustrations. Buying one‑by‑one from a marketplace would cost you thousands in commissions and time. Licensing from a dedicated agency already has those ten‑thousand‑plus image libraries; you just pay per use.",
+      "visual_query": "agency office with multiple screens displaying images",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "AI‑generated images can hit that scale. In 2026, we saw a surge of tools that allow you to generate thousands of unique assets with a single prompt, ensuring consistency in style and color palette. Those images come ready for licensing agreements, no waiting for a human to paint them.",
+      "visual_query": "computer generating art with real‑time preview",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The key advantage? Licensing cuts the friction. Once an image is vetted for copyright and content policy, agencies can pull it into a content hub, assign it a price tag, and distribute it via APIs to designers and marketers. You’re not selling to a buyer; you’re selling to a system.",
+      "visual_query": "cloud server with API call visual",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Look at Shutterstock’s new AI integration— they’re already rolling out automated asset tagging and instant royalty calculations. Those models can tag, price, and upload your work in minutes, turning creation time into payment time. The payout per asset can range from $5 to $20, depending on usage rights.",
+      "visual_query": "Shutterstock interface with AI tagging interface",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "You might think this is only for big players. No. A small illustrator can upload a batch of 200 AI‑generated, themed images to an agency portal and receive instant licensing fees. The agency handles the long‑term contracts while you collect a steady cash flow month after month.",
+      "visual_query": "illustrator at a laptop uploading images",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Subscribers love this model. A design‑tool plugin that lets teams pull licensed AI art directly into Figma or Sketch reduces creative bottlenecks. The plugin automatically populates a marketplace, pulls the latest license terms, and finalizes the purchase—all within the design environment.",
+      "visual_query": "designer using Figma with plugin sidebar",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Your next move? Sign up for a free trial with an agency like Adobe Stock or Vecteezy. Upload a sample batch of 10 AI images you’ve created—watch how quickly they’re catalogued, tagged, and ready for license purchases. The official link is in the description below, so you can start earning today.",
+      "visual_query": "user clicking \"upload\" button in stock portal",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So ditch the marketplace hype and channel your creativity into licensed assets. Every image you produce can become a revenue stream, and the agency handles the heavy lifting. Ready to turn pixels into profit? Let’s jump into the next big AI story and see what else is on the rise.",
+      "visual_query": "mountain range sunrise with rising sun",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "OUTRO (2 scenes) — rapid recap of all stories: story 1: OpenAI Drops GPT‑6.2 Astra and Sol, Gemini 4 Takes on Real‑World Tasks; story 2: HeyGen Unveils Avatar 6: Audio‑Driven, Context‑Aware Virtual Actors; story 3: Apple & OpenEvidence Launch a 200,000‑Person Health‑AI Study; story 4: Selling AI‑Generated Images: The Only Way That Actually Pays|2": [
+    {
+      "narration": "On Nov 17 OpenAI debuts GPT‑6.2 Astra and Sol, cutting Astra to $8/million tokens and opening 128K context. Gemini 4 boots in Japan, crushing niche real‑world tasks. Next, HeyGen’s Avatar 6 nails 84.4% realism with audio‑driven lip sync, unlimited clips, 4K output.",
+      "visual_query": "hands typing laptop closeup, trading screens rising",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Apple & OpenEvidence start a 200k‑user health study on iOS 26+, gathering data for AI medical chatbots. Meanwhile, creators cash in on AI art by licensing to agencies or bundling in design tools, charging per asset or subscription. Subscribe now for tomorrow’s digest and tell us: which AI model will unlock the most revenue for you?",
+      "visual_query": "engineers walking through lab, data center server lights flickering",
+      "mood": "bold",
+      "is_key_scene": false
+    }
+  ]
+}
