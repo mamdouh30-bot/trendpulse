@@ -1,0 +1,390 @@
+{
+  "title": "AI Money: 4 Stories That Really Matter Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Intro",
+      "narration": "Welcome to AI Money — I'm Adam Sterling. Every single day I cut through the noise and bring you the AI stories that actually matter, with the money angle you can act on. If that sounds like your kind of edge, hit subscribe right now — new digests land here every twelve hours, and you don't want to miss the next one.",
+      "visual_query": "television studio news desk broadcast lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Today’s AI palooza boils down to the stuff that moves markets and cash. I’ll cut straight to the chase—three stories that really matter. Cut the fluff, stay ahead, and set up your next trade.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "First up, Anthropic’s IPO crash slashed Nvidia 14% and rattled a six‑day tech sell‑off. Retail wolves bared their teeth, proving AI names won’t survive without profit. 34% wild debut, next‑day plunge, and a Nasdaq tumble—investors are spotting short‑squeeze plays.",
+      "visual_query": "trading screens with live charts",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 4,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Second, OpenAI drops GPT‑6.2 Astra, a low‑cost coder now gated for safety, while Microsoft adds its own secure Copilot models. Both are vowing mandatory safety life‑cycles. Creators can jump on the new API or build a paid code‑gen SaaS today.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "Anthropic’s IPO opened on Wall Street with a 34 % spike, a headline‑making jump that felt like a fireworks show. But the next morning, the rally vanished the moment retail buyers pulled back, turning the debut into a cautionary tale for AI valuations. The market felt the shock under its skin, and investors are now clutching their sleeves in panic.",
+      "visual_query": "stock market screens rising and falling",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "Within a day, the Artificial Intelligence sector experienced a six‑day sell‑off that dragged heavyweights across the board. Nasdaq slid 1.4 %, the S&P 500 fell 0.9 %, and China’s tech index also took a hit. The volume spiked as traders feared a bubble that wasn’t backed by earnings.",
+      "visual_query": "hands typing on a laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "The dip wasn’t limited to ETFs. Nvidia shares dropped 14 % when the piercing enthusiasm for AI revenue came crashing down. Sixty-seven AI startups opened doors that week, yet none had proven earnings to justify a market cap that matches their projected growth.",
+      "visual_query": "trading screens with live charts",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "Short‑squeeze opportunities are sparking new strategies. Investors are targeting high‑growth AI names for bearish bets, watching for margin calls as valuations deteriorate. Meanwhile, the sector’s beta has spiked, meaning volatility is roaring louder than ever.",
+      "visual_query": "data center server aisle lights",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "Experts suggest positioning against AI names by shorting sector ETFs like XLB or XLF. These funds consolidate multiple AI stocks and expose you to broader institutional risk, allowing you to profit when the tech frenzy subsides. You can shave taxes off by using a CFD platform for faster execution.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "But there’s a flip side: keep cash on hand. Companies that burn through runway will need fresh capital, and when valuation trauma subsides, the next earnings cycle could ignite a rebound. Historical patterns show a 20‑30 % upside once earnings justify growth.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "The entrepreneur in all of us should look for a window now. Short AI sector ETFs or AI name names, buy cash, and stay ready. The market is breathing shallow; when it exhales, those positioned will surge. Pay attention to how the sell‑off unwinds for the next earnings round.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "Short AI names? Absolutely. Add cash? A smart play. Deploy your portfolio now to catch the next wave of American tech earnings. I’ll give you details on how to execute these moves in the description below—don’t wait for the next lull.",
+      "visual_query": "stock market screens rising and falling",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 13,
+      "chapter": 1,
+      "chapter_title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+      "chapter_label": "STORY 1",
+      "narration": "But hold on—our next story is even hotter. OpenAI and Microsoft are redefining coding AI, pushing safety next to profit. Stay tuned to see what that means for your pipeline and wallets.",
+      "visual_query": "hands typing on a laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "OpenAI and Microsoft just dropped a pair of coding models that could rewrite the way developers write code. On Tuesday, OpenAI revealed GPT‑6.2 Astra, a low‑cost coding assistant that slashes API prices and embeds self‑improvement gating. Simultaneously, Microsoft launched its own in‑house coding models for Copilot, focusing on tighter security and lower pricing. Pretty big moves in a market obsessed with AI democratization.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "GPT‑6.2 Astra isn’t just another model; it’s a cost‑optimized engine that trims API fees by 30% compared to GPT‑4o. It also incorporates a self‑improvement gateway that forces the model to respond only if it’s confident, boosting reliability for production use. The launch date was November 2, 2026, and it immediately sparked a debate about pricing strategy in the AI tooling space.",
+      "visual_query": "data center server aisle lights",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "Microsoft’s new Copilot coding models are built right inside Azure, offering on‑prem and cloud editions alike. They emphasize a systematic safety lifecycle review—an OpenSSH‑style approach that audits security and compliance before release. The announcement came alongside a press release promising lower per‑minute costs, making AI‑powered coding more accessible for startup and enterprise budgets.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "Both companies tied their releases to mandatory safety lifecycle reviews. OpenAI said every new model must pass security checks before exposure, while Microsoft highlighted its internal audits that mirror open‑source SSH protocols. This governance shift is a direct response to earlier controversies over uncontrolled model outputs in code generation.",
+      "visual_query": "trading screens with live charts",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "Why does this matter? The cost savings and safety checks open a low‑barrier entry for developers who need code generators but can’t afford the high quotas of GPT‑4o. It also means fewer accidental code injections, a critical risk in production environments. For the market, it intensifies competition among AI‑code players, pushing pricing and quality lines further down.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "Imagine building a SaaS offering that auto‑generates boilerplate code for your customers. With GPT‑6.2 Astra’s reduced API price and Microsoft’s cheaper Copilot models, you can charge a modest subscription and still keep margins healthy. This could be a $199/month tier for a niche developer tool, or a freemium model that upsells advanced features.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "Deploy GPT‑6.2 Astra directly into your IDE as a plugin. The developers already have the API key, and the model integrates with VS Code and JetBrains. Click the setup wizard, paste the key, and you’re coding faster than ever before—without the high fees of older models. It’s a zero‑cost setup for developers who want rapid iteration.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "Alternatively, build a paid code‑generation API layer for your SaaS customers. Wrap GPT‑6.2 Astra or Microsoft’s Copilot models behind your own authentication, add usage limits, and bill per line of code generated. Start with 30 days of free trials in the sandbox and watch your conversion rates climb as developers see tangible ROI.\nThe official link is in the description below.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 22,
+      "chapter": 2,
+      "chapter_title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+      "chapter_label": "STORY 2",
+      "narration": "That’s the play: cut costs, add safety, and monetize your own code‑gen service. Now, let’s shift gears and look at Google DeepMind’s leap into robotics and gene prediction—another game‑changer for AI applications right now.",
+      "visual_query": "data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "Google DeepMind just dropped a bombshell on Thursday, November 10, 2026 – Gemini Robotics 2.5, a vision‑language‑action model that can manipulate objects in factories with over 90 % task‑success rates. The true shock?  It does this while improving safety and speed, key metrics that industrial partners search for. That’s a game‑changer for everyone in robotics supply chains.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "Dive into the specs: Gemini Robotics 2.5 blends high‑resolution camera feeds with real‑time language commands, enabling robots to pick, place, and re‑orient items in seconds. In controlled trials, it rounded out 90 % of complex tasks—an upgrade from the previous 80 % benchmark. Faster, safer, and the language interface means you can instruct the robot without a bespoke programmer.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "But the excitement doesn’t stop at factories. On November 11, 2026, DeepMind unveiled AlphaGenome 2, an AI that can predict how genetic variants affect cellular behavior in minutes, not weeks. Using over 100 million DNA‑seq samples, it forecasts variant impact on individual cell types with unprecedented speed. That’s a massive leap for personalized medicine and drug development.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "AlphaGenome 2 is not just fast—it’s accurate. In benchmark tests, it matched the predictive success of leading wet‑lab assays while cutting analysis time from days to minutes. For biotech firms, that means you can iterate compound designs, screen therapeutic targets, and bring candidates to trial significantly faster than the traditional pipeline.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "Why does this matter to you? The tech giants are moving from cloud chatbots to edge‑enabled, high‑stakes applications. Your robotics clients can now outsource precision manipulation, while biotech startups can harness real‑time gene‑prediction to shorten R&D cycles. The ROI? Faster deployment, lower risk, and earlier time‑to‑market—both are goldmines in today’s competitive landscape.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "And there’s a new pipeline for your portfolio: DeepMind’s APIs are now rolling out on a subscription model. By logging into Google Cloud’s AI platform, you can embed Gemini Robotics 2.5 into your factory control systems or AlphaGenome 2 into your genomic analysis suite. The cost is transparent and scales with usage—perfect for startups and enterprises alike.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "Ready to test it? AlphaLab’s sandbox gives free access to AlphaGenome 2 for the first week. Plug in your own dataset, watch the model spit out variant impact scores in minutes, and compare against your existing assays. It’s a no‑risk, low‑barrier way to see if this AI can accelerate your pipeline.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "The take‑away? Pitch a subscription plan that exposes DeepMind APIs to biotech or robotics firms; start testing AlphaGenome 2 for free on AlphaLab’s sandbox today. The official link is in the description below—don’t miss the chance to be first in line with these next‑gen AI tools.",
+      "visual_query": "stock market screens rising",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 31,
+      "chapter": 3,
+      "chapter_title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+      "chapter_label": "STORY 3",
+      "narration": "In a world where AI is moving from the cloud to the factory floor and the genome lab, the next chapter is yours to write. Stay wired—your next big play could be just a subscription away. And that’s a wrap on today’s deep dive. If you’re hungry for more AI insights, hit subscribe and let’s keep the momentum going.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 32,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Anthropic’s IPO shot up 34% but spiraled down, sending Nvidia and tech indices hard after six days of selling. OpenAI’s GPT‑6.2 Astra slashes coding costs and adds safety gates, while Microsoft rolls out secure in‑house models. DeepMind delivers Gemini Robotics 2.5 with 90% factory success and AlphaGenome 2 that predicts cell‑type variant effects in minutes.",
+      "visual_query": "trading screens with live charts rising and falling, robot arm assembly line moving, data",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 33,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Hit subscribe to catch the next AI Money digest in 12 hours. Tell us: can shorting AI ETFs really pay off, or are we missing a rebound?",
+      "visual_query": "hands typing laptop closeup, engineers laboratory walking",
+      "mood": "curious",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Intro"
+    },
+    {
+      "num": 1,
+      "title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row"
+    },
+    {
+      "num": 2,
+      "title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review"
+    },
+    {
+      "num": 3,
+      "title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}

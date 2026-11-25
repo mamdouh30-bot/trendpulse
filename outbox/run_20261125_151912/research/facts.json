@@ -1,0 +1,157 @@
+{
+  "topic": {
+    "title": "AI Money: 4 Stories That Really Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+        "hook": "A historic IPO collapse rattles the AI market and leaves investors scrambling.",
+        "angle": "Anthropic’s failure to lift valuations triggered a 6‑day sell‑off, sending the Nasdaq, S&P 500 and even China’s tech sector tumbling. The drop reflected fear that newer AI players can’t sustain high growth without blockbuster earnings, exposing a fragile market linked to model hype.",
+        "money_angle": "Watch liquidation rallies in AI shares and short the tech sector to lock in gains before the next earnings cycle.",
+        "visual_world": "Trading floor screens flashing falling indices, buzzing investor calls, a holographic model of Anthropic’s ticker, and AI‑powered market crash graphics.",
+        "search_queries": [
+          "Anthropic IPO market reaction news",
+          "nvidia anthropic shares slump 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+        "hook": "Two titans onboard new coding and security AIs, tightening tool tests before public release.",
+        "angle": "OpenAI introduced GPT‑6.2’s coding assistant and set mandatory safety lifecycle reviews, while Microsoft unveiled new models for code completion and cybersecurity. The combined rollout signals an industry shift toward built‑in governance, potentially giving developers heavier, safer AI helpers without leaving the cloud.",
+        "money_angle": "Adopt these models in your dev toolchain or surface them as an AI‑powered SaaS that charges for code‑generation API usage.",
+        "visual_world": "Code editors with glowing AI panels, AI safety dashboards, Microsoft’s AI‑powered breach‑detection UI, and a training timeline graphic.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 coding model news",
+          "Microsoft new AI coding security models 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+        "hook": "DeepMind’s newest AI lands two game‑changing labs: robots that learn motion and genes that predict disease.",
+        "angle": "The robotics model, designed for precise manipulation, opens doors to smart factories and assistive tech, while the gene‑prediction engine can forecast complex hereditary patterns in minutes. Both releases showcase DeepMind’s push from cloud‑based chat to edge‑enabled, high‑stakes applications that could reshape manufacturing and healthcare.",
+        "money_angle": "Consulting or licensing DeepMind’s APIs can generate revenue streams for biotech firms and robotics startups.",
+        "visual_world": "High‑definition lab footage of a robot arm solving puzzles, gene‑prediction visualizations, DeepMind’s stylized logo, and a white‑board diagram of neural architecture.",
+        "search_queries": [
+          "Google DeepMind new robotics model 2026",
+          "DeepMind next‑generation gene prediction model news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Funding Frenzy: Cognition AI & BlueMatrix Drive the New $75 B AI Boom",
+        "hook": "AI start‑ups are raising record capital, reshaping the landscape for investors and builders alike.",
+        "angle": "Cognition AI lands a $75 B valuation in funding talks, while BlueMatrix’s $+ acquisition of Aiera pushes governed research into mainstream finance. The surge highlights that high‑value AI enterprises are now sought after by hedge funds and corporates, blurring lines between product lab and investment portfolio.",
+        "money_angle": "Invest in these rounds or hotspot ETFs to capture upside in the booming AI startup sector.",
+        "visual_world": "Pitch decks, investor handshake photos, BlueMatrix logo merging with Aiera’s interface, charts showing valuation growth.",
+        "search_queries": [
+          "Cognition AI $75 billion funding news",
+          "BlueMatrix acquisition of Aiera 2026"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+        "summary": "Anthropic's IPO debut saw a 34% jump, but retailers pulled back the next day, triggering a 6‑day sell‑off that dragged the Nasdaq, S&P 500 and China’s tech index lower. The volatility highlighted concerns that new AI firms cannot sustain valuations without earnings. Investors are watching for short‑squeeze opportunities as the market drags on.",
+        "key_facts": [
+          "Anthropic IPO opened at 34% higher on debut",
+          "Shares plunged the following day, signaling a reversal",
+          "6‑day tech sell‑off affected Nasdaq, S&P 500, China tech stocks",
+          "Drop sparked fears that AI valuations need strong earnings",
+          "Nvidia shares fell 14% as Anthropic’s surge slowed"
+        ],
+        "money_angle": "Short AI sector ETFs like XLB or XLF now or bet against high‑growth AI names while adding cash to capture rebound funding the next earnings cycle.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/money/general/anthropic-ipo-stock-rallies-in-ai-giant-s-record-setting-debut-live-coverage/ar-AA2hMjrz?ocid=BingNewsVerp"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-plunges-wall-street-suffers-210718719.html"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-ca/news/other/nvidia-shares-rocket-30-sparking-global-rally-but-anthropic-misses-out/ar-AA2i30st?ocid=BingNewsVerp"
+          },
+          {
+            "host": "cryptobriefing.com",
+            "url": "https://cryptobriefing.com/nvidia-fourth-anthropic-spacex-top-10/"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+        "summary": "OpenAI released GPT‑6.2 Astra, a low‑cost coding assistant, and pledged mandatory safety lifecycle reviews. Microsoft launched home‑grown coding models with a focus on security and lower pricing. Both moves signal a trend toward built‑in governance in developer‑AI offerings.",
+        "key_facts": [
+          "OpenAI unveiled GPT‑6.2 Astra and GPT‑6.2 Sol this week",
+          "Astra lowers API price and includes self‑improvement gating",
+          "Microsoft announced new in‑house coding models for Copilot",
+          "Both companies require systematic safety lifecycle reviews",
+          "Tweets and press releases highlight security focus"
+        ],
+        "money_angle": "Deploy GPT‑6.2 Astra in your IDE or build a paid code‑generation API layer for SaaS customers today.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/artificial-intelligence/chatgpt-just-got-a-major-gpt-6-2-upgrade-5-things-to-try-right-now/ar-AA2iaJzs?ocid=BingNewsVerp"
+          },
+          {
+            "host": "techrepublic.com",
+            "url": "https://www.techrepublic.com/article/news-openai-gpt-6-2-astra-pricing-reliability/"
+          },
+          {
+            "host": "digitaltrends.com",
+            "url": "https://www.digitaltrends.com/computing/microsofts-new-ai-coder-is-gunning-for-claude-and-chatgpt-its-coming-with-a-price-advantage/"
+          },
+          {
+            "host": "venturebeat.com",
+            "url": "https://venturebeat.com/security/openais-pre-release-gpt-6-2-astra-was-easier-to-jailbreak-than-its-predecessor-uk-government-testers-found"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+        "summary": "DeepMind announced Gemini Robotics 2.5, a vision‑language‑action model that improves manipulation speed and safety for factory robots. The same week it released AlphaGenome 2, a gene‑prediction engine that forecasts variant effects per cell type in minutes. These tools move DeepMind from cloud chat to edge‑enabled, high‑stakes industrial applications.",
+        "key_facts": [
+          "Gemini Robotics 2.5 achieves >90 % task success in factory trials",
+          "AlphaGenome 2 predicts variant impact on individual cell types",
+          "Both models were launched on Nov 10–11, 2026",
+          "Gemini Robotics optimized for precision manipulation",
+          "AlphaGenome 2 uses >100M DNA‑seq training samples"
+        ],
+        "money_angle": "Pitch a subscription plan that exposes DeepMind APIs to biotech or robotics firms; start testing AlphaGenome 2 for free on AlphaLab’s sandbox today.",
+        "sources": [
+          {
+            "host": "note.com",
+            "url": "https://note.com/brainy_racoon894/n/n92effcd20eb4?hl=en"
+          },
+          {
+            "host": "siliconangle.com",
+            "url": "https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/science/general/alphabet-s-deepmind-unveils-new-alphagenome-2-model-aimed-at-reading-dna-cells/ar-AA2hfbxe?ocid=BingNewsVerp"
+          },
+          {
+            "host": "digitaltoday.co.kr",
+            "url": "https://www.digitaltoday.co.kr/en/view/124565/google-deepmind-launches-gemini-robotics-2-5"
+          }
+        ]
+      }
+    ],
+    "summary": "Anthropic's IPO debut saw a 34% jump, but retailers pulled back the next day, tr; OpenAI released GPT‑6.2 Astra, a low‑cost coding assistant, and pledged mandator; DeepMind announced Gemini Robotics 2.5, a vision‑language‑action model that impr"
+  }
+}

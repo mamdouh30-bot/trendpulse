@@ -1,0 +1,69 @@
+{
+  "topic": {
+    "title": "AI Money: 4 Stories That Really Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Anthropic IPO Fails, AI Stocks Dive 6 Days In‑Row",
+        "hook": "A historic IPO collapse rattles the AI market and leaves investors scrambling.",
+        "angle": "Anthropic’s failure to lift valuations triggered a 6‑day sell‑off, sending the Nasdaq, S&P 500 and even China’s tech sector tumbling. The drop reflected fear that newer AI players can’t sustain high growth without blockbuster earnings, exposing a fragile market linked to model hype.",
+        "money_angle": "Watch liquidation rallies in AI shares and short the tech sector to lock in gains before the next earnings cycle.",
+        "visual_world": "Trading floor screens flashing falling indices, buzzing investor calls, a holographic model of Anthropic’s ticker, and AI‑powered market crash graphics.",
+        "search_queries": [
+          "Anthropic IPO market reaction news",
+          "nvidia anthropic shares slump 2026"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "OpenAI & Microsoft Drop Coding Models, OpenSSH‑style AI Safety Review",
+        "hook": "Two titans onboard new coding and security AIs, tightening tool tests before public release.",
+        "angle": "OpenAI introduced GPT‑6.2’s coding assistant and set mandatory safety lifecycle reviews, while Microsoft unveiled new models for code completion and cybersecurity. The combined rollout signals an industry shift toward built‑in governance, potentially giving developers heavier, safer AI helpers without leaving the cloud.",
+        "money_angle": "Adopt these models in your dev toolchain or surface them as an AI‑powered SaaS that charges for code‑generation API usage.",
+        "visual_world": "Code editors with glowing AI panels, AI safety dashboards, Microsoft’s AI‑powered breach‑detection UI, and a training timeline graphic.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 coding model news",
+          "Microsoft new AI coding security models 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Google DeepMind Unveils Robotics & Gene‑Prediction Models",
+        "hook": "DeepMind’s newest AI lands two game‑changing labs: robots that learn motion and genes that predict disease.",
+        "angle": "The robotics model, designed for precise manipulation, opens doors to smart factories and assistive tech, while the gene‑prediction engine can forecast complex hereditary patterns in minutes. Both releases showcase DeepMind’s push from cloud‑based chat to edge‑enabled, high‑stakes applications that could reshape manufacturing and healthcare.",
+        "money_angle": "Consulting or licensing DeepMind’s APIs can generate revenue streams for biotech firms and robotics startups.",
+        "visual_world": "High‑definition lab footage of a robot arm solving puzzles, gene‑prediction visualizations, DeepMind’s stylized logo, and a white‑board diagram of neural architecture.",
+        "search_queries": [
+          "Google DeepMind new robotics model 2026",
+          "DeepMind next‑generation gene prediction model news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Funding Frenzy: Cognition AI & BlueMatrix Drive the New $75 B AI Boom",
+        "hook": "AI start‑ups are raising record capital, reshaping the landscape for investors and builders alike.",
+        "angle": "Cognition AI lands a $75 B valuation in funding talks, while BlueMatrix’s $+ acquisition of Aiera pushes governed research into mainstream finance. The surge highlights that high‑value AI enterprises are now sought after by hedge funds and corporates, blurring lines between product lab and investment portfolio.",
+        "money_angle": "Invest in these rounds or hotspot ETFs to capture upside in the booming AI startup sector.",
+        "visual_world": "Pitch decks, investor handshake photos, BlueMatrix logo merging with Aiera’s interface, charts showing valuation growth.",
+        "search_queries": [
+          "Cognition AI $75 billion funding news",
+          "BlueMatrix acquisition of Aiera 2026"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": false,
+    "reason": "duplicate-title guard — publish skipped (video kept in outbox)"
+  }
+}
