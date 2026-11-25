@@ -1,0 +1,390 @@
+{
+  "title": "AI News: 4 Stories That Actually Matter Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Intro",
+      "narration": "Welcome to AI Money — I'm Adam Sterling. Every single day I cut through the noise and bring you the AI stories that actually matter, with the money angle you can act on. If that sounds like your kind of edge, hit subscribe right now — new digests land here every twelve hours, and you don't want to miss the next one.",
+      "visual_query": "television studio news desk broadcast lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Tonight, we cut through the noise and spotlight the stories that actually move markets and your wallet. Three headlines, one laser focus, and a call to profit. 40 words",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "First up, OpenAI drops GPT‑6.2 Sol—promising 40% lower token costs for coders. Imagine slashing your API bill while keeping your freelance gigs razor‑sharp. The race with Google’s Gemini isn’t just hype—it’s a new pricing floor for the industry. 36 words",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 4,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Second, Anthropic’s IPO ripped a $1.5 trillion valuation out of thin air, only to dip under the $83 price. Short? Long? What’s your bet when the company commits $600 billion in compute? 33 words",
+      "visual_query": "stock market screens rising",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown. On Nov. 18, 2026, the tech giant rolled out GPT‑6.2 Astra for 3D simulation and CAD generation, and GPT‑6.2 Sol, a chat‑tuned model aimed at low‑price coding. Meanwhile, Google answered with Gemini 4 Argon, dubbing itself a high‑reasoning powerhouse. The race is on—who wins the productivity war?",
+      "visual_query": "data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "GPT‑6.2 Sol hasn’t just landed; it comes with a promise to cut token costs by roughly 40%. For developers on OpenAI’s Plus or Pro plans, that’s a bill shrinkage of 2 to 3 cents per 1,000 tokens. That means your scaling projects can run at a quarter of the previous price, and the math adds up fast in enterprise workloads.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Astra is built for engineers, not just code writers. It delivers accurate 3D simulation and automated CAD generation, allowing architects to iterate designs in seconds rather than hours. This makes it a game changer for industries that rely on rapid prototyping—think automotive, aerospace, and video game level design.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "Gemini 4 Argon’s claim? A 1.5x speed advantage over its predecessor, with a 1.30x price ratio. Google’s strategy is to lock in a niche of high‑reasoning tasks—think complex problem solving and data analysis—while keeping the rollout limited to trusted beta users. The speed‑price trade‑off is clear: faster services at a premium.",
+      "visual_query": "trading screens with live charts",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "OpenAI’s own numbers show Sol hovering under the same price tier slot as GPT‑4, yet cutting usage costs by a substantial margin. Developers compare clock rates and token throughput, and Sol’s benchmarks suggest it can handle three times the workload of GPT‑4 in the same call window. That’s a concrete reason to push the switch.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "From a freelancing perspective, imagine setting a new price tier for code‑generation services. With Sol’s lower token cost, you can modestly lift your hourly rate while still undercutting competitors. Instead of charging $50 per project, test $65, and watch the bill shrink by 40%. Net profit rises, client satisfaction stays high.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "In addition, Sol integrates smoothly with Visual Studio Code and GitHub Copilot. That means you can unwrap its cost‑saving genius without changing your dev stack. No extra tooling, no learning curve—just plug it into your existing workflow and start generating code faster than ever.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "So here’s the play: cut your API bill by ~40% by swapping GPT‑4 for GPT‑6.2 Sol in your coding‑automation pipeline. Launch a new freelance tier that offers faster delivery at a competitive price. The savings are real, the migration is painless, and the upside is measurable.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 13,
+      "chapter": 1,
+      "chapter_title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+      "chapter_label": "STORY 1",
+      "narration": "And that’s the bottom line—change your model, cut costs, boost revenue. Now, let’s flip the script to Anthropic’s record‑breaking IPO and see what that means for your portfolio.",
+      "visual_query": "trading screens with live charts",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "Anthropic’s record‑breaking IPO just hit the market screen with a fresh price tag of $83 per share, pulling in a staggering $81 billion and pushing its valuation to a mind‑blowing $1.5 trillion. That headline alone screamed disruption and set the tone for the AI race. The sheer scale of the cash flow shows that venture capital is hungry for the next language‑model juggernaut.",
+      "visual_query": "stock market screens rising",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "What does this mean in plain words? Anthropic is a newcomer that closed its IPO on November 18, 2026, with a trinity of key numbers: $81 B raised, $83 initial share price, and a $1.5 T terminal value. Those figures are not just vanity metrics; they signal a basket of tech companies now willing to back structured, defensible AI stacks instead of hype alone.",
+      "visual_query": "trading screens with live charts",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "On the first trading day the stock surged to $97 per share, sending everyone nostalgic for a Wall Street win. Yet by November 24 it dipped 6.5%, settling just under the $83 IPO benchmark. That dip didn’t mean failure; it merely illustrated early volatility and a more measured investor appetite for AI after the sales hype.",
+      "visual_query": "stock market screens falling",
+      "mood": "curious",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "Beyond the shares, Anthropic is bleeding resources into compute. It secured a commitment exceeding $600 billion worth of GPU and TPU power before it even touched the public market. That colossal spend tells us the company is not just building models; it’s buying and running them at scale, ready to serve enterprise clients next door.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "Why does that matter to us? Corporate customers will be looking for ready‑made inference chains. Anthropic’s massive compute pledge means it can deliver faster, cheaper, and more secure inference than its rivals. That gives mid‑market businesses leverage to negotiate enterprise deals and lessens the need to build their own heavy lifting.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "Meanwhile the market buzzed beyond just Anthropic. Nvidia, a long‑time AI GPU provider, saw its shares ripple after announcing a slighter lag in AI revenue expectations. If Anthropic’s $600 B compute outpaces Nvidia’s sales pacing, every Nvidia investor suddenly has a different story to tell.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "urgent",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "Here’s the action you can take: buy a handful of stock at the $90 range—if you snag a share for $90, you’re staring at a potential upside that crosses $200 before the next power‑hour. Alternatively, hedge by shorting Nvidia, betting that its AI revenue may fall behind as Anthropic takes the lead.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "Jump into the data today—grab a $90 price point from the nearest brokerage, set that order in place, and hold it through the trader’s cycle. The calculus is simple: high entry, low risk offset by monstrous upside potential. That’s the play that will keep you in the game as the market reshapes.",
+      "visual_query": "city traffic timelapse night",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 22,
+      "chapter": 2,
+      "chapter_title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+      "chapter_label": "STORY 2",
+      "narration": "And that’s just the tip of the iceberg; our next story dives into Google’s Pixel Drop and how it’s turning phones into AI call centers. Trust me, you’ll want to stay tuned to see how you can turn that feature into a revenue machine. Let's keep the momentum going—on to story three!",
+      "visual_query": "engineers laboratory walking",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "Google’s November 2026 Pixel Drop lit up the market by dropping Gemini 4 Carbon into Pixel 10 and 11 phones. The same week, Google rolled out 'Call For Me'—an AI‑powered feature that lets Gemini handle business calls, navigate menus, and transcribe everything in real time with over 95% accuracy. This is a game‑changer for mobile productivity.",
+      "visual_query": "mobile phone touchscreen recording video call",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "'Call For Me' isn’t just a demo; it’s a full outbound sales assistant. When activated on a Pixel 11, Gemini answers the ring, follows scripted prompts, and captures every word. The transcript pops into your phone’s notes with timestamps, ready to be copied into a CRM. The feature launched exclusively for eligible Pixel 11 U.S. users during the Pixel Drop.",
+      "visual_query": "hand holding phone with call notification",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "Google bundled Gemini 4 Carbon with Pixel Kit 2, giving creators instant AI content tools—auto‑captioning, résumé writing, and image generation—all running locally on the device. Early tests show a 30% faster load time than previous AI tools, thanks to on‑device inference. For users with Pixel 10 and 11, these tools unlock instant media creation while on the go.",
+      "visual_query": "person editing video on smartphone",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "Transcription accuracy tops 95% according to Google’s beta data. That precision means sales reps can rely on the AI to capture negotiations, action items, and customer objections without human error. With transcripts ready, you can auto‑sync with Slack, Teams, or any CRM, slashing follow‑up time by up to 40%.",
+      "visual_query": "screen showing transcription accuracy chart",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 27,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "Because the feature is free on Pixel 11, you can deploy it without budget risk. No API calls, no subscription fees—just the hardware you already own. The first batch of beta users reported saving three hours of admin work per week, translating into $600 in reduced labor costs for a small agency.",
+      "visual_query": "clock turning faster with overlay of dollar sign",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 28,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "Picture this: you log into your phone, activate 'Call For Me', and the AI starts making outbound calls to prospects like a virtual SDR. Every conversation is recorded and transcribed. You then push the transcript into your CRM—Marketo, HubSpot, or Salesforce—automatically tagging contacts, extracting deal stages, and scheduling follow‑ups.",
+      "visual_query": "digital assistant calling on smartphone, CRM UI",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 29,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "Now, that transcript data isn’t just for internal use. Industries crave real‑time sentiment analysis, call quality scores, and compliance logs. By aggregating anonymized call data, you can package a premium B2B service: “AI‑Driven Sales Insights.” Clients pay $10‑$20 per transcript, and you scale with no extra server cost.",
+      "visual_query": "chart showing revenue growth from data services",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 30,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "To get started, head to your Pixel 11’s Settings, tap on 'Call For Me', and grant microphone access. No extra download—Google has built the AI into the OS. In the description below, you’ll find the official link to enable the feature. Start recording today, clip a call, and see how much time you can recoup.",
+      "visual_query": "hand enabling feature in phone settings",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 31,
+      "chapter": 3,
+      "chapter_title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+      "chapter_label": "STORY 3",
+      "narration": "So next time you’re on the phone, let Gemini do the heavy lifting. Capture every word, create data streams, and turn that raw conversation into revenue. That’s how Pixel’s new AI calling feature turns a simple smartphone into a money‑making machine—no extra hardware, no extra fees, just pure productivity. Now back to the show for more AI gold.",
+      "visual_query": "money pouring from phone camera into a piggy bank",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 32,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "OpenAI drops GPT‑6.2 Sol, cuts token cost by ~40%—switch your code‑gen stack and slash API bills. Anthropic goes public at $83, taps $81 B, then pegs near $80—buy $1‑$3 slices, or bet against lagging rivals. Google rolls Gemini 4 Carbon on Pixel 10/11, automates business calls, hits 95% transcription accuracy—free outbound sales automation for Pixel 11 owners.",
+      "visual_query": "data center server aisle lights with blinking status panels",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 33,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Subscribe now for the next digest every 12 hours—stay ahead of the AI tide. What’s your take? Will GPT‑6.2 Sol finally beat Gemini 4 Argon in cost‑performance, or is Anthropic’s stock a long‑term play? Drop your thoughts below.",
+      "visual_query": "trading screens with live charts trending upward",
+      "mood": "curious",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Intro"
+    },
+    {
+      "num": 1,
+      "title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown"
+    },
+    {
+      "num": 2,
+      "title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock"
+    },
+    {
+      "num": 3,
+      "title": "Google Pixel Drop Introduces Gemini Features and AI Calling"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+        "hook": "OpenAI’s newest giants hit the skies as Google battles back with Gemini 4 Argon.",
+        "angle": "OpenAI released GPT‑6.2 Astra and GPT‑6.2 Sol, slashing cost and boosting code‑generation speed. Google countered with limited‑release Gemini 4 Argon, claiming top benchmark performance over rivals.",
+        "money_angle": "Developers can slash API bills by switching to GPT‑6.2 Sol and monetize faster code‑generation services.",
+        "visual_world": "OpenAI demos of GPT‑6.2 Sol auto‑coding live, Google’s low‑latency Gemini 4 Argon inference on edge GPUs, side‑by‑side benchmark graphs.",
+        "search_queries": [
+          "OpenAI GPT-6.2 Astra news",
+          "Google Gemini 4 Argon launch"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+        "hook": "Anthropic goes public, hammering $600B valuation and reshaping AI market maps.",
+        "angle": "On Nov. 10, Anthropics IPO shattered records, inching the company toward a $600B valuation. The IPO surge injected fresh capital into frontier AI research and intensified competition for enterprise contracts.",
+        "money_angle": "Investors can play the rally by acquiring near‑term shares or shorting rival AI stocks that may underperform.",
+        "visual_world": "IPO investor deck framed on the NYC Stock Exchange floor, bustling trading floors, Anthropic logo flashes across VR labs.",
+        "search_queries": [
+          "Anthropic IPO news",
+          "Anthropic valuation 600B"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+        "hook": "Pixel’s newest firmware magically turns phones into AI‑powered voice assistants and call managers.",
+        "angle": "Google’s November 2026 Pixel Drop rolls Gemini 4 Carbon features to all Pixel phones, delivering real‑time content creation and AI call transcription. The upgrade also adds AI‑powered calling tools that auto‑summarize conversations and suggest follow‑ups.",
+        "money_angle": "Marketers can monetize by integrating AI‑generated call summaries into CRM workflows and upsell premium voice features.",
+        "visual_world": "Pixel phones with on‑screen AI assistant overlays, call transcripts popping up, developers configuring a smart call scheduler, close‑up of the new UI kit.",
+        "search_queries": [
+          "Google Pixel Drop Gemini 4 Carbon news",
+          "Google AI calling feature release"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Genspark’s SecondBrain VoicePad Turns Speech Into Coding Gold",
+        "hook": "A five‑button gadget can turn voice into code, promising instant app builds.",
+        "angle": "Genspark launched the SecondBrain VoicePad—a compact voice‑controlled AI pad that lets users dictate code snippets and prototype applications on the go. The product positions itself as a low‑cost alternative to paid IDE plugins.",
+        "money_angle": "Creators can monetize by offering voice‑to‑code services on freelance platforms or developing micro‑apps for niche communities.",
+        "visual_world": "Hands‑on demo of the VoicePad in a cluttered office, screen showing live code assembly, users speaking commands with the pad’s buttons lighting up.",
+        "search_queries": [
+          "Genspark SecondBrain VoicePad launch",
+          "Genspark AI coding handheld device"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+        "summary": "OpenAI released GPT‑6.2 Astra and its chat‑tuned GPT‑6.2 Sol, promising lower cost and faster coding. Google counter‑pushed with Gemini 4 Argon, claiming top benchmark performance. The race shows both vendors targeting enterprise productivity and pricing wars.",
+        "key_facts": [
+          "OpenAI launched GPT‑6.2 Astra and GPT‑6.2 Sol on Nov. 18, 2026",
+          "GPT‑6.2 Sol is chat‑tuned and low‑price for Plus/Pro plans",
+          "Astra focuses on 3D simulation and CAD generation",
+          "Gemini 4 Argon announced the same week as a high‑reasoning model",
+          "OpenAI claims a ~40% lower token cost on GPT‑6.2 Sol",
+          "Gemini 4 Argon has 1.5x speed vs 1.30x price ratio",
+          "Google’s Gemini rollout is limited to trusted users"
+        ],
+        "money_angle": "Switch from GPT‑4 to GPT‑6.2 Sol for your coding‑automation workflow, cut API bill by ~40% and offer code‑generation services on freelance sites with a new price tier.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/artificial-intelligence/openai-rolls-out-gpt-6-2-astra-and-sol-models/ar-AA2hI90a?ocid=BingNewsVerp"
+          },
+          {
+            "host": "digitaltrends.com",
+            "url": "https://www.digitaltrends.com/computing/chatgpt-is-getting-a-chat-tuned-gpt-6-2-sol-and-it-can-offer-to-watch-for-a-price-drop/"
+          },
+          {
+            "host": "eweek.com",
+            "url": "https://www.eweek.com/news/google-gemini-4-neon-vs-carbon-hydrogen-argon/"
+          },
+          {
+            "host": "cryptobriefing.com",
+            "url": "https://cryptobriefing.com/openai-gpt-6-2-3d-simulation/"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+        "summary": "Anthropic priced its IPO at $83 on Nov. 18, 2026, raising $81 billion and reaching a $1.5 trillion valuation. Stock hit a record high on debut, but soon dipped below the IPO price within days. The funding fuels 600 billion‑dollar compute commitments and boosts competition for enterprise contracts.",
+        "key_facts": [
+          "IPO price: $83 per share, $81 billion raised",
+          "Last‑trading day valuation: $1.5 trillion",
+          "Shares fell 6.5% on Nov. 24, below IPO price",
+          "Anthropic committed >$600 billion in compute before listing",
+          "Stock edges close to $80 by end of first week",
+          "Debut price $97, then closed at $81.9",
+          "Company’s founder Michael (Misha) has 600 employees"
+        ],
+        "money_angle": "Buy $1‑$3 pieces from over‑priced shares near $90 and hold for $200+ upside, or short rival firms like Nvidia whose AI revenue may lag after Anthropic’s large compute spend.",
+        "sources": [
+          {
+            "host": "usnews.com",
+            "url": "https://www.usnews.com/news/business/articles/2026-11-18/anthropic-prices-its-ipo-at-83-per-share-valuing-the-artificial-intelligence-giant-at-1-5-trillion"
+          },
+          {
+            "host": "finance.yahoo.com",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-shares-fall-below-ipo-181906660.html"
+          },
+          {
+            "host": "investopedia.com",
+            "url": "https://www.investopedia.com/anthropic-s-ipo-arrived-hot-then-the-stock-fell-below-its-ipo-price-ant-12276956"
+          },
+          {
+            "host": "247wallst.com",
+            "url": "https://247wallst.com/investing/2026/10/21/anthropic-has-locked-in-over-600-billion-of-computing-more-than-intel-is-worth-it-still-wants-more-and-thats-big-news-for-amd/"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+        "summary": "Google’s November 2026 Pixel Drop spread Gemini 4 Carbon to Pixel 10/11 and introduced AI‑powered 'Call For Me' that automates business calls. Pixel devices gain real‑time content creation tools and AI transcriptions. The rollout targets Pixel owners first, then expands to Pixel Watch.",
+        "key_facts": [
+          "Gemini 4 Carbon embedded in Pixel 10 and Pixel 11 phones",
+          "Call For Me lets Gemini make business calls and navigate menus",
+          "Feature launched in the November 2026 Pixel Drop in the U.S.",
+          "Pixel Kit 2 includes new AI content creation tools",
+          "Transcription accuracy >95% per early tests",
+          "Feature available only to eligible Pixel 11 users",
+          "Pixel Watch 3 receives same Gemini updates"
+        ],
+        "money_angle": "Use the free 'Call For Me' on Pixel 11 to automate outbound sales calls and capture meeting transcripts; integrate the transcripts into your CRM and sell the time‑saved data to B2B clients.",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/tech-companies/the-november-pixel-drop-brings-gemini-intelligence-to-the-pixel-10-series/ar-AA2haBiH?ocid=BingNewsVerp"
+          },
+          {
+            "host": "techrepublic.com",
+            "url": "https://www.techrepublic.com/article/news-google-gemini-call-for-me-pixel-11/"
+          },
+          {
+            "host": "androidguys.com",
+            "url": "https://androidguys.com/news/googles-november-2026-pixel-drop-brings-smarter-gemini-features-ai-calling-and-new-pixel-watch-tools/"
+          },
+          {
+            "host": "the-gadgeteer.com",
+            "url": "https://the-gadgeteer.com/2026/11/16/november-pixel-drop-brings-gemini-intelligence-and-pixel-tag-to-pixel-phones/"
+          }
+        ]
+      }
+    ],
+    "summary": "OpenAI released GPT‑6.2 Astra and its chat‑tuned GPT‑6.2 Sol, promising lower co; Anthropic priced its IPO at $83 on Nov. 18, 2026, raising $81 billion and reachi; Google’s November 2026 Pixel Drop spread Gemini 4 Carbon to Pixel 10/11 and intr"
+  }
+}

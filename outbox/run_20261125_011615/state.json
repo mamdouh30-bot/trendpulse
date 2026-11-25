@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Unveils GPT‑6.2 Astra & Sol Amid Gemini 4 Argon Showdown",
+        "hook": "OpenAI’s newest giants hit the skies as Google battles back with Gemini 4 Argon.",
+        "angle": "OpenAI released GPT‑6.2 Astra and GPT‑6.2 Sol, slashing cost and boosting code‑generation speed. Google countered with limited‑release Gemini 4 Argon, claiming top benchmark performance over rivals.",
+        "money_angle": "Developers can slash API bills by switching to GPT‑6.2 Sol and monetize faster code‑generation services.",
+        "visual_world": "OpenAI demos of GPT‑6.2 Sol auto‑coding live, Google’s low‑latency Gemini 4 Argon inference on edge GPUs, side‑by‑side benchmark graphs.",
+        "search_queries": [
+          "OpenAI GPT-6.2 Astra news",
+          "Google Gemini 4 Argon launch"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Anthropic’s Record‑Breaking IPO and Surge in AI Stock",
+        "hook": "Anthropic goes public, hammering $600B valuation and reshaping AI market maps.",
+        "angle": "On Nov. 10, Anthropics IPO shattered records, inching the company toward a $600B valuation. The IPO surge injected fresh capital into frontier AI research and intensified competition for enterprise contracts.",
+        "money_angle": "Investors can play the rally by acquiring near‑term shares or shorting rival AI stocks that may underperform.",
+        "visual_world": "IPO investor deck framed on the NYC Stock Exchange floor, bustling trading floors, Anthropic logo flashes across VR labs.",
+        "search_queries": [
+          "Anthropic IPO news",
+          "Anthropic valuation 600B"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Google Pixel Drop Introduces Gemini Features and AI Calling",
+        "hook": "Pixel’s newest firmware magically turns phones into AI‑powered voice assistants and call managers.",
+        "angle": "Google’s November 2026 Pixel Drop rolls Gemini 4 Carbon features to all Pixel phones, delivering real‑time content creation and AI call transcription. The upgrade also adds AI‑powered calling tools that auto‑summarize conversations and suggest follow‑ups.",
+        "money_angle": "Marketers can monetize by integrating AI‑generated call summaries into CRM workflows and upsell premium voice features.",
+        "visual_world": "Pixel phones with on‑screen AI assistant overlays, call transcripts popping up, developers configuring a smart call scheduler, close‑up of the new UI kit.",
+        "search_queries": [
+          "Google Pixel Drop Gemini 4 Carbon news",
+          "Google AI calling feature release"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Genspark’s SecondBrain VoicePad Turns Speech Into Coding Gold",
+        "hook": "A five‑button gadget can turn voice into code, promising instant app builds.",
+        "angle": "Genspark launched the SecondBrain VoicePad—a compact voice‑controlled AI pad that lets users dictate code snippets and prototype applications on the go. The product positions itself as a low‑cost alternative to paid IDE plugins.",
+        "money_angle": "Creators can monetize by offering voice‑to‑code services on freelance platforms or developing micro‑apps for niche communities.",
+        "visual_world": "Hands‑on demo of the VoicePad in a cluttered office, screen showing live code assembly, users speaking commands with the pad’s buttons lighting up.",
+        "search_queries": [
+          "Genspark SecondBrain VoicePad launch",
+          "Genspark AI coding handheld device"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "cvYIzxvVNX8",
+    "url": "https://youtube.com/watch?v=cvYIzxvVNX8",
+    "privacy": "public"
+  }
+}
