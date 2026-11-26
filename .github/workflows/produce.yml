@@ -105,6 +105,7 @@ jobs:
             exit 1
           fi
           if [ -f state/publish_alert.json ]; then
-            echo "::error::episode produced but YouTube upload FAILED (OAuth token expired/revoked). The episode is safe on the 'pending-episodes' GitHub release and will publish automatically after YT_REFRESH_TOKEN is renewed. Reason: $(cat state/publish_alert.json)"
+            REASON=$(python3 -c "import json;print(json.load(open('state/publish_alert.json')).get('reason','unknown')[:220])")
+            echo "::error::episode produced but YouTube upload FAILED. The episode is safe on the 'pending-episodes' GitHub release and will publish automatically once uploads work again. Reason: $REASON"
             exit 1
           fi

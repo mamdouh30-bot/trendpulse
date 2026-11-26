@@ -48,18 +48,27 @@ def select_topic(cfg, run, logger):
 
     hist_path = run["project_root"] / cfg["trend_discovery"]["history_file"]
     history = load_state(hist_path, default=[])
-    done_titles = [h.get("topic", "").lower() for h in history][-60:]
+    # keep the anti-repeat list small: it lives inside the curator prompt,
+    # and free LLM providers reject prompts over ~16k chars (HTTP 413)
+    done_titles = [(h.get("topic") or "").lower()[:60]
+                   for h in history][-24:]
 
     n_stories = int(cfg["content"].get("chapters", 4))
     shortlist = [
-        {"title": i["title"], "snippet": i["snippet"], "source": i["source"]}
-        for i in items[:44]
+        {"title": str(i["title"])[:90],
+         "snippet": str(i["snippet"])[:220],
+         "source": str(i["source"])[:30]}
+        for i in items[:24]
     ]
+    # hard safety net: cap the ITEMS BLOCK (never the task/JSON spec tail)
+    items_block = json_items(shortlist)
+    if len(items_block) > 9500:
+        items_block = items_block[:9500] + "\n... (older items truncated)"
     prompt = f"""Today is {dt.date.today().isoformat()}.
 
 Below are {len(shortlist)} raw AI-related items scraped from news and trend sources:
 
-{json_items(shortlist)}
+{items_block}
 
 TASK: Build THE single best digest batch for today's AI Money video.
 Cluster the items into exactly {n_stories} DISTINCT stories that fit one coherent

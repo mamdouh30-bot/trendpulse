@@ -253,13 +253,16 @@ def run_pipeline(args):
         # ---------------- publish ----------------
         upload_result = None
         if not args.mini and cfg["upload"]["enabled"]:
-            # duplicate-publish guard: never upload a title that went live
-            # already (local history within 36h OR live on the channel).
-            # Covers the resume race that once published one episode twice.
-            _dupe = False
-            _t_norm = re.sub(r"[^a-z0-9]+", " ",
-                             str((meta or {}).get("title") or "").lower()).strip()
-            if _t_norm:
+            def _norm_t(t):
+                return re.sub(r"[^a-z0-9]+", " ",
+                              str(t or "").lower()).strip()
+
+            def _is_dupe(t):
+                """True if this exact title went live in the last 36h
+                (local history) or is live on the channel right now."""
+                _tn = _norm_t(t)
+                if not _tn:
+                    return True
                 _now = dt.datetime.now(dt.timezone.utc)
                 for h in load_state(PROJECT_ROOT / "state" / "history.json",
                                     default=[]):
@@ -272,53 +275,68 @@ def run_pipeline(args):
                             continue
                     except Exception:  # noqa: BLE001
                         continue
-                    h_norm = re.sub(r"[^a-z0-9]+", " ",
-                                    str(h.get("title") or "").lower()).strip()
-                    if h_norm and h_norm == _t_norm:
-                        _dupe = True
-                        logger.warning("DUPLICATE title in local history "
-                                       f"({h.get('date')}) — upload blocked")
-                        break
-                if not _dupe:
-                    _dupe = youtube.find_recent_duplicate(
-                        (meta or {}).get("title", ""), logger)
-                    if _dupe:
-                        logger.warning("DUPLICATE title live on channel — "
-                                       "upload blocked")
+                    if _norm_t(h.get("title")) == _tn:
+                        return True
+                return bool(youtube.find_recent_duplicate(t, logger))
+
+            base_title = str((meta or {}).get("title") or "")
+            _dupe = _is_dupe(base_title)
+            _chosen = None
             if _dupe:
+                # a fully rendered episode is too expensive to throw away:
+                # try honest title variants until one is clean on both the
+                # local history and the live channel, then publish it
+                for _suf in (" - Evening Briefing", " - What Changed Today",
+                             " - New Developments", " - Late Edition"):
+                    cand = f"{base_title} {_suf}".strip()
+                    if len(cand) <= 100 and not _is_dupe(cand):
+                        _chosen = cand
+                        break
+            if _chosen:
+                logger.warning("duplicate title — publishing re-titled: "
+                               f"{_chosen}")
+                meta["title"] = _chosen
+                try:
+                    (run_dir / "thumbnail.jpg").unlink(missing_ok=True)
+                    thumbnail.make_thumbnail(cfg, run, meta, logger)
+                except Exception as e:  # noqa: BLE001
+                    logger.warning(f"thumbnail regen skipped: {str(e)[:120]}")
+                upload_result = youtube.upload(
+                    final_path, run_dir / "thumbnail.jpg", meta, cfg, logger)
+            elif _dupe:
                 upload_result = {"uploaded": False,
                                  "reason": "duplicate-title guard — publish "
                                            "skipped (video kept in outbox)"}
             else:
                 upload_result = youtube.upload(
                     final_path, run_dir / "thumbnail.jpg", meta, cfg, logger)
-                if not upload_result.get("uploaded"):
-                    logger.warning("video kept in outbox for manual upload")
-                    # NEVER lose an episode with the ephemeral runner: store
-                    # it on the pending-episodes GitHub release; the next
-                    # cycle publishes it once the token works again
-                    try:
-                        from lib import backlog
-                        saved = backlog.save_pending(
-                            final_path, run_dir / "thumbnail.jpg", meta,
-                            run_dir.name, logger)
-                        if saved:
-                            upload_result["backlog_saved"] = True
-                            upload_result["reason"] = (
-                                str(upload_result.get("reason"))[:160]
-                                + " — episode saved to GitHub Releases "
-                                  "backlog, will publish on token renewal")
-                    except Exception as e:  # noqa: BLE001
-                        logger.warning(f"backlog save failed: {str(e)[:140]}")
-                    # visible alarm: the workflow turns the job red and the
-                    # monitoring cron reports it, until the token is renewed
-                    save_state(PROJECT_ROOT / "state" / "publish_alert.json", {
-                        "failed_at": dt.datetime.now(dt.timezone.utc)
-                            .isoformat(timespec="seconds"),
-                        "run": run_dir.name,
-                        "title": (meta or {}).get("title", ""),
-                        "reason": str(upload_result.get("reason"))[:300],
-                    })
+            if not upload_result.get("uploaded"):
+                logger.warning("video kept in outbox for manual upload")
+                # NEVER lose an episode with the ephemeral runner: store
+                # it on the pending-episodes GitHub release; the next
+                # cycle publishes it once the token works again
+                try:
+                    from lib import backlog
+                    saved = backlog.save_pending(
+                        final_path, run_dir / "thumbnail.jpg", meta,
+                        run_dir.name, logger)
+                    if saved:
+                        upload_result["backlog_saved"] = True
+                        upload_result["reason"] = (
+                            str(upload_result.get("reason"))[:160]
+                            + " — episode saved to GitHub Releases "
+                              "backlog, will publish on token renewal")
+                except Exception as e:  # noqa: BLE001
+                    logger.warning(f"backlog save failed: {str(e)[:140]}")
+                # visible alarm: the workflow turns the job red and the
+                # monitoring cron reports it, until the token is renewed
+                save_state(PROJECT_ROOT / "state" / "publish_alert.json", {
+                    "failed_at": dt.datetime.now(dt.timezone.utc)
+                        .isoformat(timespec="seconds"),
+                    "run": run_dir.name,
+                    "title": (meta or {}).get("title", ""),
+                    "reason": str(upload_result.get("reason"))[:300],
+                })
             if upload_result.get("uploaded"):
                 (PROJECT_ROOT / "state" / "publish_alert.json").unlink(
                     missing_ok=True)

@@ -115,23 +115,42 @@ def _pollinations_chat(prompt, system, timeout):
 
 
 def chat(prompt: str, system: str = None, timeout: int = 420, logger=None) -> str:
-    """One chat completion. Tries keyed provider first, then free fallback."""
+    """One chat completion. Tries keyed provider first, then free fallback.
+
+    Free providers have hard input limits (Pollinations classic: 16,000
+    chars). On 413 PAYLOAD_TOO_LARGE — or the model exhausting its OUTPUT
+    token budget before finishing, which oversized prompts usually cause —
+    the prompt is truncated in place and retried immediately instead of
+    burning every attempt on a permanently-too-large request."""
     env = _env()
     attempts = []
     if env.get("LLM_API_KEY") or env.get("GEMINI_API_KEY"):
-        attempts.append(("keyed", lambda: _openai_chat(prompt, system, env, timeout),
-                         3))
-    attempts.append(("pollinations",
-                     lambda: _pollinations_chat(prompt, system, timeout), 5))
+        attempts.append(("keyed", "openai", 3))
+    attempts.append(("pollinations", "free", 5))
 
     last_err = None
-    for name, fn, max_tries in attempts:
+    p = prompt
+    for name, kind, max_tries in attempts:
         for attempt in range(1, max_tries + 1):
             try:
-                return fn()
+                if kind == "openai":
+                    return _openai_chat(p, system, env, timeout)
+                return _pollinations_chat(p, system, timeout)
             except Exception as e:  # noqa: BLE001
                 last_err = e
                 msg = str(e)
+                # oversized prompt / oversized answer: shrink and retry NOW
+                if ("413" in msg or "Prompt too long" in msg
+                        or "exhausted its output token limit" in msg):
+                    newp = p[:12000] if len(p) > 12000 else p[:8000]
+                    if len(newp) < len(p):
+                        if logger:
+                            logger.warning(
+                                f"chat[{name}] prompt too large "
+                                f"({len(p)} chars) — truncated to "
+                                f"{len(newp)} and retrying immediately")
+                        p = newp
+                        continue
                 if name == "pollinations":
                     m = re.search(r"[Rr]etry after (\d+)", msg)
                     if m:
