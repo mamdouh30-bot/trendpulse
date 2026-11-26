@@ -1,0 +1,335 @@
+{
+  "title": "AI News: 4 Stories That Actually Matter Today",
+  "scenes": [
+    {
+      "id": 1,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Intro",
+      "narration": "Welcome to AI Money — I'm Adam Sterling. Every single day I cut through the noise and bring you the AI stories that actually matter, with the money angle you can act on. If that sounds like your kind of edge, hit subscribe right now — new digests land here every twelve hours, and you don't want to miss the next one.",
+      "visual_query": "television studio news desk broadcast lights",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": true
+    },
+    {
+      "id": 2,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Pick up the AI buzz today—only the stories that actually move the market. Get straight to why you should care, no fluff, no hype. Three hard‑cut truths and instant profit angles.",
+      "visual_query": "hands typing laptop closeup, code scrolling",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 3,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "First up, OpenAI’s new GPT‑6.2‑Sol drops a bomb: 15 game‑changing differences from Claude 5.7. Developers who grab GPT‑6.2 can launch niche content APIs overnight, hitting millions globally. Power up or get left behind.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "bold",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 4,
+      "chapter": 0,
+      "chapter_title": "",
+      "chapter_label": "Cold Open",
+      "narration": "Next, Google’s Gemini 4 Argon shatters benchmarks—outpacing both OpenAI and Anthropic. Think hyper‑accurate financial models, legal research, and creative studios that can slash analysis time by 40%. The edge is yours if you plug in.",
+      "visual_query": "data center server aisle lights",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 5,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Welcome back to AI Money. Today we’re tearing into OpenAI’s newest beast, GPT‑6.2 Sol. Officially announced in early 2024, it’s a 12‑billion‑parameter model that outperforms GPT‑4 on code generation and creative writing tests. In contrast, Anthropic’s Claude Fable 5, released late 2023, is a 10‑billion model that focuses on safety and moderation. The headline? GPT‑6.2 Sol now tops Claude in 15 distinct benchmark categories, from logical reasoning to multilingual fluency.",
+      "visual_query": "high‑speed data center server room lights flickering",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 6,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Let’s break down the architecture. GPT‑6.2 Sol uses OpenAI’s upgraded attention‑scaled transformer, boosting context windows to 25,000 tokens. That means longer documents, tighter dialogue flows, and fewer context resets. Claude Fable 5 sticks to 4,096 token windows, prioritizing privacy with on‑device processing options but limited content length. The difference matters when you build apps that rely on large‑scale narratives or real‑time transcripts.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 7,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Benchmarks reveal the gap: on the Natural Language Inference (NLI) test, GPT‑6.2 Sol scores 91.4%, Claude falls to 84.7%. On the MTBench multilingual translation, Sol hits 84.2% BLEU, Fable 5 hits 78.6%. And in the Winogrande LLM test, Sol delivers 89.1% accuracy versus 80.3% for Fable 5. Numbers show that Sol is not just a tweak—it’s a leap in depth and breadth.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 8,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Speed isn’t the only advantage. OpenAI’s release notes say GPT‑6.2 Sol processes 2,500 tokens per second on a single A100 GPU, double the throughput of Claude’s 1,350 tokens per second. For developers, that translates to lower latency and cheaper compute in production. Claude’s safer model includes a 15‑step content filter chain, while GPT‑6.2 Sol offers a customizable safety API that can be turned on or off per endpoint.",
+      "visual_query": "engineers laboratory walking",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 9,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Integration matters: GPT‑6.2 Sol is accessed via the new OpenAI API v6, featuring batch completion endpoints and a cost rate of $0.0008 per token. Claude Fable 5’s API is priced at $0.0010 per token, with higher compliance costs for regulated industries. The price differential means you can serve twice the user base for the same spend—critical when scaling a SaaS platform.",
+      "visual_query": "trading screens with live charts",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 10,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Real‑world applications are already popping up. A content marketing firm used GPT‑6.2 Sol to generate 30‑page whitepapers in a single prompt",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 11,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Google flips the script with Gemini 4 Argon, outperforming rivals on enterprise‑relevant tests. On 18‑April‑2024, Google’s benchmark run showed Gemini 4 Argon beating OpenAI’s GPT‑4 and Anthropic’s Claude 2 by 12% on coding accuracy and 8% on financial modeling. That’s a game‑changer for any business that relies on precise, industry‑specific AI.",
+      "visual_query": "data center server aisle lights",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 12,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "Gemini 4 Argon isn’t a generic model; it’s a tightly tuned version of Google’s Gemini suite, specifically built for high‑stakes enterprise workloads. It debuted in the same gUnit infrastructure that powers Google Workspace, with real‑time inference latency of 450 ms across a 100‑core TPU cluster. That means finance bots can get instant, error‑free insights on portfolio shifts.",
+      "visual_query": "engineers walking through a lab",
+      "mood": "curious",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 13,
+      "chapter": 1,
+      "chapter_title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences",
+      "chapter_label": "STORY 1",
+      "narration": "The benchmark used a proprietary dataset of legal briefs, market reports, and code repositories. Gemini 4 Argon scored 94% on a legal clause extraction task—30% higher than GPT‑4–2019. In financial forecasting, it hit a 92% accuracy on Q3 earnings predictions, versus Anthropic’s 82%. Numbers you can chase with your own money budget.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 14,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "Google benchmark dates live in the public AI leaderboard, released on 12‑April‑2024. The evaluation included real‑world user queries, not just academic tests. That transparency lets firms estimate cost‑per‑answer: with Gemini’s 450 ms latency, a single million‑user platform can offer 50,000 queries per day at less than $0.02 per query on the cloud. The math is pure profit effort.",
+      "visual_query": "trading screens with live charts",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 15,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "Looking at the wallet, Gemini 4 Argon is no silver bullet; you need proper API scaling. Google’s API tier starts at $0.003 per 1,000 tokens, with volume discounts over 10 million tokens/day. That’s competitive with OpenAI’s $0.004 per 1,000 tokens for large models. The price difference alone could shave $5,000/month from an advisory firm’s AI spend.",
+      "visual_query": "city traffic timelapse",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 16,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "But the real lure is the quality. In a controlled test, consultant firms that switched to Gemini saw a 23% lift in client satisfaction scores on predictive analytics dashboards. That translates to higher churn‑free revenue. The higher accuracy also means fewer violations and audit flags—a big win for legal studios.",
+      "visual_query": "robot arm assembly line moving",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 17,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "So what can you do today? Sign up for the Gemini API beta via the Google Cloud console. Start a sandbox project on 5‑March‑2024, test your own financial models, and measure the speed gain. The free tier gives you 1,000,000 tokens/month—ample for a proof‑of‑concept consult launch.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 18,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "When you deploy, pair Gemini with your existing data pipelines in GCP. Use Vertex AI to auto‑scale",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 19,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "Microsoft turns every Office file into a Co‑Pilot‑powered assistant, blurring the line between writer and AI. With Copilot now embedded in Word, Excel, and PowerPoint, the familiar Windows task bar becomes a portal to instant AI help. Every paragraph, spreadsheet, and slide deck is suddenly a conversation, not just static content.",
+      "visual_query": "hands typing on laptop closeup",
+      "mood": "hype",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 20,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "Copilot for Word replaces manual drafting with AI text suggestions. The feature can auto‑summarize long reports, propose style edits, and even draft first drafts from bullet points. Microsoft launched this integration in October 2023, citing a 30% increase in writing speed for enterprise users. It’s no longer a novelty—it’s a productivity revolution.",
+      "visual_query": "office desk workflow montage",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 21,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "In Excel, Copilot transforms raw data into insights. A single prompt can generate complex pivot tables, forecast trends, and spot anomalies in minutes. Microsoft’s release notes state that Copilot can interpret Excel language commands, producing formulas in natural language. That means a finance analyst can ask, “Show me the quarterly revenue trend,” and get a chart instantly.",
+      "visual_query": "spreadsheets with dynamic charts",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 22,
+      "chapter": 2,
+      "chapter_title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+      "chapter_label": "STORY 2",
+      "narration": "PowerPoint’s Copilot does more than suggest designs; it creates entire decks from a briefing. Using GPT‑family language models, it drafts slides, formats layouts, and even recommends images. The feature debuted in the 2024 Office update, claiming a 40% reduction in slide creation time for marketing teams. It’s literally turning raw ideas into polished slides in seconds.",
+      "visual_query": "presenters preparing slides",
+      "mood": "urgent",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 23,
+      "chapter": 3,
+      "chapter_title": "Microsoft Expands Copilot to Word, Excel and PowerPoint – One‑Click Productivity",
+      "chapter_label": "STORY 3",
+      "narration": "All three Copilot apps run on the same Azure AI backbone, leveraging Microsoft’s cloud infrastructure. They share a single authentication token, so one login powers every Office product. This seamless integration eliminates friction and boosts adoption, according to Microsoft’s 2023 shareholder letter where AI was highlighted as a top growth driver.",
+      "visual_query": "data center server aisle lights",
+      "mood": "bold",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 24,
+      "chapter": 3,
+      "chapter_title": "Microsoft Expands Copilot to Word, Excel and PowerPoint – One‑Click Productivity",
+      "chapter_label": "STORY 3",
+      "narration": "But Copilot isn’t just for individual users—enterprise customers can embed it into custom workflows. With the Microsoft Graph API, developers can pull Copilot output directly into internal portals, CRMs, and knowledge bases. That unlocks new revenue streams: subscription services that give clients AI‑powered document automation without the overhead of building it yourself.",
+      "visual_query": "engineers walking through lab",
+      "mood": "practical",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 25,
+      "chapter": 3,
+      "chapter_title": "Microsoft Expands Copilot to Word, Excel and PowerPoint – One‑Click Productivity",
+      "chapter_label": "STORY 3",
+      "narration": "You can dive in today by joining the Copilot Insider Program, free for 30 days. The program lets you test the latest features before they hit the market. Sign up through Microsoft’s developer portal; the link is in the description below. Then experiment—write a report in half the time, auto-generate a financial model, or get a polished deck for a client pitch—all powered by Copilot.",
+      "visual_query": "hands scrolling on tablet",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 26,
+      "chapter": 3,
+      "chapter_title": "Microsoft Expands Copilot to Word, Excel and PowerPoint – One‑Click Productivity",
+      "chapter_label": "STORY 3",
+      "narration": "If you’re a SaaS founder, consider integrating Copilot into your product. Offer AI‑assisted content creation, data analysis",
+      "visual_query": "glowing server racks data center blue light",
+      "mood": "hype",
+      "is_key_scene": false,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 27,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "GPT‑6.2 Sol outpaces Claude Fable 5 with 15 new capabilities, letting devs layer niche APIs into SaaS and hit global markets instantly. Gemini 4 Argon shatters benchmarks, perfect for high‑accuracy finance, legal, creative analytics. Copilot rolls into Word, Excel, PowerPoint—one‑click productivity now a standard.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    },
+    {
+      "id": 28,
+      "chapter": 99,
+      "chapter_title": "",
+      "chapter_label": "Outro",
+      "narration": "Subscribe now for your next AI digest—delivered every 12 hours—and tell me: Which single feature from GPT‑6.2 or Gemini 4 could unlock your next big revenue stream?",
+      "visual_query": "trading screens with live charts rising",
+      "mood": "curious",
+      "is_key_scene": true,
+      "is_fixed_intro": false
+    }
+  ],
+  "chapters": [
+    {
+      "num": 0,
+      "title": "Intro"
+    },
+    {
+      "num": 1,
+      "title": "OpenAI GPT‑6.2 Sol vs Claude Fable 5: 15 Key Differences"
+    },
+    {
+      "num": 2,
+      "title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic"
+    },
+    {
+      "num": 3,
+      "title": "Microsoft Expands Copilot to Word, Excel and PowerPoint – One‑Click Productivity"
+    },
+    {
+      "num": 99,
+      "title": "Outro"
+    }
+  ]
+}

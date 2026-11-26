@@ -1,1 +1,54 @@
-{}
+{
+  "topic": {
+    "title": "AI News: 4 Stories That Actually Matter Today",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI Unleashes GPT‑6.2 Astra and Sol – The Next Frontier in Generative AI",
+        "hook": "OpenAI double‑drops two flagship models, promising a new era of generation power and cost efficiency.",
+        "angle": "On November 17, OpenAI launched GPT‑6.2 Astra for high‑volume text generation and GPT‑6.2 Sol for multimodal tasks. The releases come amid a spiraling cost battle in the sector, offering more affordable compute and new capabilities for developers.",
+        "money_angle": "Developers can monetize GPT‑6.2‑based APIs by creating niche content services or embedding them into SaaS products, instantly reaching a global market.",
+        "visual_world": "Bright animation of the GPT‑6.2 logos, code snippets flying out, and a split‑screen demo showing text and image generation side‑by‑side on a cloud dashboard.",
+        "search_queries": [
+          "OpenAI GPT‑6.2 Astra news",
+          "OpenAI GPT‑6.2 Sol launch details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Google’s Gemini 4 Argon Takes the Benchmarks Lead Over OpenAI and Anthropic",
+        "hook": "Google flips the script with Gemini 4 Argon, outperforming rivals on enterprise‑relevant tests.",
+        "angle": "Google announced Gemini 4 Argon, a new frontier model that topped OpenAI’s GPT‑6.2 and Anthropic’s Claude on GPT‑4‑style benchmarks. The release signals a tightening of the competitive race and introduces advanced multi‑modal capabilities.",
+        "money_angle": "Channel Gemini 4 Argon's performance into AI‑enabled consulting, offering higher‑accuracy analytics for finance, legal, and creative studios.",
+        "visual_world": "A 3‑D model of the Google research lab, a leaderboard graphic, and a side‑by‑side demo of Gemini generating code versus GPT‑6.2.",
+        "search_queries": [
+          "Google Gemini 4 Argon benchmark results",
+          "Gemini 4 Argon launch details"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Microsoft Expands Copilot to Word, Excel and PowerPoint – One‑Click Productivity",
+        "hook": "Microsoft turns every Office file into a Co‑Pilot‑powered assistant, blurring the line between writer and AI.",
+        "angle": "Microsoft rolled out new Copilot features that let users create, edit, and format Word documents, Excel spreadsheets, and PowerPoint decks entirely through natural language. This integration promises to slash routine work while opening a new revenue stream for Microsoft 365 subscriptions.",
+        "money_angle": ""
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "zrE3lbsETAQ",
+    "url": "https://youtube.com/watch?v=zrE3lbsETAQ",
+    "privacy": "public"
+  }
+}
