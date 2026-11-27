@@ -1,0 +1,122 @@
+{
+  "topic": {
+    "title": "AI Frenzy: 4 Must‑Know Shifts in Models, Tools & Money",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Claude 2.5 Becomes the First AI That Pawns Approval on Your Code",
+        "hook": "Imagine your code hand‑checked by an AI that refuses to ship without a green light.",
+        "angle": "OpenAI’s latest Claude ship in beta now reviews and approves code it generates, marking a shift toward self‑auditing AI. This move positions Claude as a first‑line quality gate—critical for companies building autonomous systems.",
+        "money_angle": "Developers can embed Claude’s approval API in CI/CD pipelines to slash bug‑fix time and lower support costs, directly boosting product throughput and revenue.",
+        "visual_world": "Inside a sleek Visual Studio Code plug‑in, code blocks pulse amber as Claude flags issues, then flip green when approved. Footage of a small startup’s ROC curve climbing after implementation.",
+        "search_queries": [
+          "Claude 2.5 code approval beta news",
+          "OpenAI Claude ship code review release"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Unleashes New Coding & Cybersecurity Models—And a Tool to Stop Rogue Agents",
+        "hook": "Microsoft isn’t just watching AI; it’s sprinting to outrun it by crafting safer models.",
+        "angle": "Microsoft released a suite of coding‑focused LLMs and cybersecurity agents, followed by a public platform to monitor and shut down rogue AI behaviours. The two rollouts signal a strategic pivot to defensive AI, meeting regulators’ demands while closing product gaps.",
+        "money_angle": "Tech companies can license Microsoft’s agent platform to secure their own internal tooling, turning protection into a subscription revenue stream.",
+        "visual_world": "Screenshots of the model’s architecture, a dashboard labeling rogue agent activity, and a live demo of a cyber‑threat auto‑detector in action.",
+        "search_queries": [
+          "Microsoft new coding LLM release 2026",
+          "Microsoft rogue AI monitoring tool announcement"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "OpenAI, Google, Anthropic & Microsoft Form Self‑Regulatory AI Safety Group—Ice‑Burning Lawsuit Looms",
+        "hook": "The industry’s biggest firms are drafting a shield—while an NGO sues them to halt ‘dangerous’ research.",
+        "angle": "OpenAI, Google, Anthropic, Microsoft, and others announced a joint safety standards body to self‑regulate frontier AI before government oversight kicks in. Two weeks later, a consortium of nonprofits filed a lawsuit demanding a halt to the companies’ most aggressive AI models.",
+        "money_angle": "Investors eye stake movements in the involved companies; analysts advise guarding their portfolios if the lawsuit triggers stricter policy regimes."
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "Claude 2.5 Becomes the First AI That Pawns Approval on Your Code",
+        "summary": "Anthropic released Claude Ship, a beta feature that reviews, fixes, and can automatically approve code changes. The tool is integrated into GitHub pull requests and can cut manual review time. It is available to users for free during the beta period.",
+        "key_facts": [
+          "Claude Ship beta launched November 23, 2026",
+          "AI can review, fix, and approve pull‑request changes",
+          "Supports 8 approval pathways without human review",
+          "Integrated with GitHub as a pull‑request steward",
+          "Offers “Claude approval API” for CI/CD use",
+          "Free access during public beta",
+          "Designed to reduce development cycle time"
+        ],
+        "money_angle": "Embed the Claude approval API into your CI pipeline today to auto‑approve safe PRs and cut bug‑fix time by up to 50 %; the beta is free.",
+        "sources": [
+          {
+            "host": "note.com",
+            "url": "https://note.com/yaman19/n/naee32f8b9c23?hl=en"
+          },
+          {
+            "host": "note.com",
+            "url": "https://note.com/hakariya_kei/n/n16c960156c9c?hl=en"
+          },
+          {
+            "host": "note.com",
+            "url": "https://note.com/merry_cobra8999/n/n6a130fed9469?hl=en"
+          },
+          {
+            "host": "tech.yahoo.com",
+            "url": "https://tech.yahoo.com/ai/claude/articles/anthropic-claude-ship-lets-ai-214602372.html"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Unleashes New Coding & Cybersecurity Models—And a Tool to Stop Rogue Agents",
+        "summary": "Microsoft deployed a suite of new coding‑focused LLMs and a frontier cyber‑defense model to lower AI development costs. Concurrently it announced Project Perception and Agent 365 to monitor and neutralize rogue AI agents inside companies. The tools are part of the Microsoft 365 E7 security suite, available to enterprise customers.",
+        "key_facts": [
+          "New coding LLMs and cyber‑defense model released by Microsoft"
+        ],
+        "money_angle": "Tech companies can license Microsoft’s agent platform to secure their own internal tooling, turning protection into a subscription revenue stream.",
+        "sources": [
+          {
+            "host": "coincentral.com",
+            "url": "https://coincentral.com/microsoft-msft-stock-ignite-unveils-four-new-ai-models-in-one-day/"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-in/technology/cybersecurity/microsoft-unveils-mai-code-2-ai-models-with-focus-on-coding-cybersecurity-and-lower-costs/ar-AA2hG9HD?ocid=BingNewsVerp"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "OpenAI, Google, Anthropic & Microsoft Form Self‑Regulatory AI Safety Group—Ice‑Burning Lawsuit Looms",
+        "hook": "The industry’s biggest firms are drafting a shield—while an NGO sues them to halt ‘dangerous’ research.",
+        "angle": "OpenAI, Google, Anthropic, Microsoft, and others announced a joint safety standards body to self‑regulate frontier AI before government oversight kicks in. Two weeks later, a consortium of nonprofits filed a lawsuit demanding a halt to the companies’ most aggressive AI models.",
+        "money_angle": "Investors eye stake movements in the involved companies; analysts advise guarding their portfolios if the lawsuit triggers stricter policy regimes.",
+        "key_facts": [],
+        "summary": "",
+        "sources": [
+          {
+            "host": "seekingalpha.com",
+            "url": "https://seekingalpha.com/news/4650047-openai-s-altman-draws-regulatory-divide-with-anthropic-over-ai-risks-politico"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/major-ai-developers-cant-control-their-own-tech-lawsuit-alleges/ar-AA2hjEsN?ocid=BingNewsVerp"
+          },
+          {
+            "host": "cnbc.com",
+            "url": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html"
+          }
+        ]
+      }
+    ],
+    "summary": "Anthropic released Claude Ship, a beta feature that reviews, fixes, and can auto; Microsoft deployed a suite of new coding‑focused LLMs and a frontier cyber‑defen; "
+  }
+}
