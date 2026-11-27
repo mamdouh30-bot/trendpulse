@@ -1,0 +1,71 @@
+{
+  "topic": {
+    "title": "AI News: OpenAI’s New Models, Rogue-Agent Controls, and AI Hardware",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI’s GPT-6.2 Astra and Sol Arrive",
+        "hook": "OpenAI just split its newest model release into two names: Astra and Sol.",
+        "angle": "OpenAI announced GPT-6.2 Astra and GPT-6.2 Sol on November 17, according to the supplied reports, with coverage pointing to changes beyond basic response performance. The launch sits inside a busy model race that also includes new Anthropic products, while one report says Google leads a prediction-market measure of who will have the best model by month’s end.",
+        "money_angle": "Builders can test the new models on real coding and work tasks, then package whichever model performs best into paid services or faster client workflows.",
+        "visual_world": "OpenAI model announcement graphics, side-by-side model interfaces, coding screens, and a model-leaderboard comparison.",
+        "search_queries": [
+          "OpenAI GPT-6.2 Astra Sol November 17 2026 news",
+          "GPT-6.2 Astra Sol capabilities pricing details news"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Adds Controls for Rogue AI Agents",
+        "hook": "As AI agents gain autonomy, Microsoft is building tools to keep them in check.",
+        "angle": "Microsoft unveiled tools to monitor and corral rogue AI agents, while CEO Satya Nadella argued that companies should use external controls rather than simply trusting the models. That makes agent oversight a practical enterprise issue: organizations need ways to observe and constrain what automated systems do.",
+        "money_angle": "IT consultants and software builders can use the demand for agent monitoring to offer governance audits, deployment safeguards, and managed oversight.",
+        "visual_world": "An agent-control dashboard, permission settings, activity logs, and a simulated agent being stopped from taking an unauthorized action.",
+        "search_queries": [
+          "Microsoft tools monitor corral rogue AI agents news",
+          "Microsoft AI agent controls Nadella external controls details"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Genspark’s VoicePad Puts AI Controls on a Five-Button Gadget",
+        "hook": "Genspark wants you to talk to AI without opening another browser tab.",
+        "angle": "Genspark launched SecondBrain VoicePad, a five-button AI gadget designed for hands-free use, according to the supplied coverage. It points to a product bet on making AI interaction more immediate than switching between apps and typing prompts.",
+        "money_angle": "Creators can test whether hands-free capture speeds up interviews, notes, or content production, and share practical workflows through tutorials or affiliate content if the product offers a suitable program.",
+        "visual_world": "Close-ups of the VoicePad, button demonstrations, voice capture, and a desk workflow showing spoken input becoming useful computer output.",
+        "search_queries": [
+          "Genspark SecondBrain VoicePad launch news",
+          "Genspark VoicePad five buttons features pricing details"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Can AI Make Holiday Gift Guides a Faster Content Business?",
+        "hook": "A new gift-guide tool promises to turn a product collection into publishable content.",
+        "angle": "MerchantFloor launched an AI gift-guide tool that lets users pick an audience and add a collection, with its Blog Writer producing a finished guide, according to the supplied item. For publishers and merchants, the pitch is faster seasonal content that can connect product discovery with shopping.",
+        "money_angle": "Retailers and affiliate publishers can test the tool to produce timely gift guides, then earn through product sales or affiliate links where their arrangements allow.",
+        "visual_world": "A gift-guide builder selecting an audience and product collection, a generated article preview, and a shopping page with product links.",
+        "search_queries": [
+          "MerchantFloor AI Gift Guide Tool launch news",
+          "MerchantFloor Blog Writer gift guide tool details"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true,
+  "voice_done": true,
+  "visuals_done": true,
+  "motion_done": true,
+  "render_done": true,
+  "meta_done": true,
+  "published": {
+    "uploaded": true,
+    "video_id": "cdCZX7T7ehU",
+    "url": "https://youtube.com/watch?v=cdCZX7T7ehU",
+    "privacy": "public"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "topic": {
+    "title": "AI News: OpenAI’s New Models, Rogue-Agent Controls, and AI Hardware",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI’s GPT-6.2 Astra and Sol Arrive",
+        "hook": "OpenAI just split its newest model release into two names: Astra and Sol.",
+        "angle": "OpenAI announced GPT-6.2 Astra and GPT-6.2 Sol on November 17, according to the supplied reports, with coverage pointing to changes beyond basic response performance. The launch sits inside a busy model race that also includes new Anthropic products, while one report says Google leads a prediction-market measure of who will have the best model by month’s end.",
+        "money_angle": "Builders can test the new models on real coding and work tasks, then package whichever model performs best into paid services or faster client workflows.",
+        "visual_world": "OpenAI model announcement graphics, side-by-side model interfaces, coding screens, and a model-leaderboard comparison.",
+        "search_queries": [
+          "OpenAI GPT-6.2 Astra Sol November 17 2026 news",
+          "GPT-6.2 Astra Sol capabilities pricing details news"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Adds Controls for Rogue AI Agents",
+        "hook": "As AI agents gain autonomy, Microsoft is building tools to keep them in check.",
+        "angle": "Microsoft unveiled tools to monitor and corral rogue AI agents, while CEO Satya Nadella argued that companies should use external controls rather than simply trusting the models. That makes agent oversight a practical enterprise issue: organizations need ways to observe and constrain what automated systems do.",
+        "money_angle": "IT consultants and software builders can use the demand for agent monitoring to offer governance audits, deployment safeguards, and managed oversight.",
+        "visual_world": "An agent-control dashboard, permission settings, activity logs, and a simulated agent being stopped from taking an unauthorized action.",
+        "search_queries": [
+          "Microsoft tools monitor corral rogue AI agents news",
+          "Microsoft AI agent controls Nadella external controls details"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Genspark’s VoicePad Puts AI Controls on a Five-Button Gadget",
+        "hook": "Genspark wants you to talk to AI without opening another browser tab.",
+        "angle": "Genspark launched SecondBrain VoicePad, a five-button AI gadget designed for hands-free use, according to the supplied coverage. It points to a product bet on making AI interaction more immediate than switching between apps and typing prompts.",
+        "money_angle": "Creators can test whether hands-free capture speeds up interviews, notes, or content production, and share practical workflows through tutorials or affiliate content if the product offers a suitable program.",
+        "visual_world": "Close-ups of the VoicePad, button demonstrations, voice capture, and a desk workflow showing spoken input becoming useful computer output.",
+        "search_queries": [
+          "Genspark SecondBrain VoicePad launch news",
+          "Genspark VoicePad five buttons features pricing details"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Can AI Make Holiday Gift Guides a Faster Content Business?",
+        "hook": "A new gift-guide tool promises to turn a product collection into publishable content.",
+        "angle": "MerchantFloor launched an AI gift-guide tool that lets users pick an audience and add a collection, with its Blog Writer producing a finished guide, according to the supplied item. For publishers and merchants, the pitch is faster seasonal content that can connect product discovery with shopping.",
+        "money_angle": "Retailers and affiliate publishers can test the tool to produce timely gift guides, then earn through product sales or affiliate links where their arrangements allow.",
+        "visual_world": "A gift-guide builder selecting an audience and product collection, a generated article preview, and a shopping page with product links.",
+        "search_queries": [
+          "MerchantFloor AI Gift Guide Tool launch news",
+          "MerchantFloor Blog Writer gift guide tool details"
+        ]
+      }
+    ]
+  },
+  "facts": {
+    "digest_label": "AI NEWS",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI’s GPT-6.2 Astra and Sol Arrive",
+        "angle": "OpenAI announced GPT-6.2 Astra and GPT-6.2 Sol on November 17, according to the supplied reports. Coverage describes Astra as the model for demanding tasks and Sol as an everyday option, with reports also pointing to lower costs and changes in response style. Those claims make hands-on testing more useful than relying on launch hype: compare both models on the coding and work tasks you actually need done.",
+        "money_angle": "Builders can test Astra and Sol on real client or coding workflows, compare cost and output quality, then use the best fit to deliver work faster or create paid AI-powered services.",
+        "why_it_matters": "A capable model that costs less per task could make AI-assisted services more practical—but the value depends on how well it performs on your own workload.",
+        "key_facts": [],
+        "summary": "",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/technology/artificial-intelligence/openai-rolls-out-gpt-6-2-astra-and-sol-models/ar-AA2hI90a?ocid=BingNewsVerp"
+          },
+          {
+            "host": "macrumors.com",
+            "url": "https://www.macrumors.com/2026/11/23/openai-gpt-6-2-sol-chatgpt/"
+          },
+          {
+            "host": "thenextweb.com",
+            "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Microsoft Adds Controls for Rogue AI Agents",
+        "angle": "Microsoft introduced tools to monitor AI agents, limit what they can access, and tighten restrictions when their behavior becomes risky. The move reflects a growing enterprise concern: agents can take actions across company systems, so organizations need ways to observe and constrain them rather than simply trust them.",
+        "money_angle": "IT consultants and software builders can offer agent-governance audits, access-control setup, and ongoing monitoring for companies deploying AI agents.",
+        "why_it_matters": "As businesses give agents more ability to act, oversight and access management become practical needs—and potential service opportunities.",
+        "key_facts": [],
+        "summary": "",
+        "sources": [
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-ca/technology/artificial-intelligence/microsoft-expands-project-perception-to-control-rogue-ai-agents-inside-companies/ar-AA2fKrQ0?ocid=BingNewsVerp"
+          },
+          {
+            "host": "tech.yahoo.com",
+            "url": "https://tech.yahoo.com/ai/articles/nvidia-launches-ai-safety-program-142000188.html"
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Genspark’s VoicePad Puts AI Controls on a Five-Button Gadget",
+        "angle": "Genspark launched SecondBrain VoicePad, a five-button gadget designed for hands-free AI use, according to the supplied coverage. It’s a bet that quick physical controls can make capturing notes and interacting with AI easier than switching apps and typing prompts.",
+        "money_angle": "Creators can test whether hands-free capture improves interviews, note-taking, or production workflows, then share useful demonstrations or tutorials. Consider affiliate content only if a suitable program is available.",
+        "why_it_matters": "The product tests whether dedicated hardware can make AI more convenient in everyday work—not just add another app to the stack.",
+        "key_facts": [],
+        "summary": "",
+        "sources": [
+          {
+            "host": "digitaltrends.com",
+            "url": "https://www.digitaltrends.com/computing/genspark-secondbrain-voicepad-ai-dictation/"
+          },
+          {
+            "host": "gadgetreview.com",
+            "url": "https://www.gadgetreview.com/gensparks-secondbrain-voicepad-wants-to-be-your-ai-desk-remote"
+          },
+          {
+            "host": "msn.com",
+            "url": "https://www.msn.com/en-us/news/other/genspark-launches-secondbrain-voicepad-desktop-gadget-on-kickstarter/ar-AA2i87rm?ocid=BingNewsVerp"
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Can AI Make Holiday Gift Guides a Faster Content Business?",
+        "angle": "MerchantFloor launched an AI gift-guide tool that lets users choose an audience and add a collection, while its Blog Writer generates a finished guide, according to the supplied item. The pitch is faster seasonal publishing that connects product discovery with shopping.",
+        "money_angle": "Retailers and affiliate publishers can test the tool to produce timely gift guides, then earn through product sales or affiliate links where their arrangements allow.",
+        "why_it_matters": "For publishers and merchants, the opportunity is turning product collections into seasonal content more quickly—while still checking that recommendations and claims are accurate.",
+        "key_facts": [],
+        "summary": "",
+        "sources": [
+          {
+            "host": "forbes.com",
+            "url": "https://www.forbes.com/sites/danielle-ryan/2026/11/06/5-holiday-content-ideas-small-businesses-can-pull-off-in-november/"
+          }
+        ]
+      }
+    ],
+    "summary": "; ; ; "
+  }
+}

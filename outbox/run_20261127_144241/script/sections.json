@@ -1,0 +1,260 @@
+{
+  "COLD OPEN HOOK (3 scenes) — frame today's digest and tease the biggest story|3": [
+    {
+      "narration": "Four AI stories are fighting for your attention today. I’m cutting through the noise to find the ones that could change how you build, work, and make money.",
+      "visual_query": "data center server aisle lights blinking",
+      "mood": "hype",
+      "is_key_scene": false
+    },
+    {
+      "narration": "First, OpenAI is bringing out two new models, GPT-6.2 Astra and Sol. One could be a better fit for your real client work; the other could help you ship code faster.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "narration": "The practical question is which model gives you stronger results for the cost. Pick the right one, and you could deliver faster—or build a paid AI service. I’ll break down why this launch deserves your attention.",
+      "visual_query": "engineers walking through technology lab",
+      "mood": "bold",
+      "is_key_scene": true
+    }
+  ],
+  "STORY 1: OpenAI’s GPT-6.2 Astra and Sol Arrive\nStory hook to open with: OpenAI’s GPT-6.2 Astra and Sol Arrive\nMoney angle to land at the end: Builders can test Astra and Sol on real client or coding workflows, compare cost and output quality, then use the best fit to deliver work faster or create paid AI-powered services.|9": [
+    {
+      "narration": "OpenAI’s GPT-6.2 Astra and Sol arrive—and the immediate question for anyone building with AI is simple: which one actually earns its place in your workflow? The research here doesn’t include release details or benchmark numbers, so let’s skip the hype and focus on a test you can run yourself.",
+      "visual_query": "engineers walking through modern laboratory",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Astra and Sol are OpenAI models, but we don’t have verified specifics here on what sets them apart, what they cost, or where they’re available. That means there’s no honest basis to declare a winner yet. For builders, the useful move is a direct comparison on work you already need done.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Start with one real task—not a cherry-picked demo. Give each model the same client brief, coding request, or repeatable business job, and judge the finished result against the standard you’d actually deliver. Keep the prompt and the requirements consistent, or your comparison won’t tell you much.",
+      "visual_query": "wide office team working laptops",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Then check the two things that drive the business case: output quality and cost. We don’t have verified pricing or performance figures for Astra or Sol in this research, so don’t assume either is cheaper or better. Record what each task costs and how much editing the result needs.",
+      "visual_query": "closeup hands reviewing laptop screen",
+      "mood": "curious",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Include speed and reliability in your scorecard, too. A model that produces a strong first draft but regularly needs repairs may not save you time; a less impressive answer that fits your workflow could be the better tool. Repeat the test on several jobs before changing your process.",
+      "visual_query": "busy developer typing at workstation",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "This is also how you avoid turning a model launch into an expensive tool switch. Keep your current approach as the baseline, test Astra and Sol against it, and make the call only when the results are repeatable. The research gives us no launch date or access details to pass along.",
+      "visual_query": "wide modern office workers collaborating",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Here’s the practical play: take a task you already do for a client or in your coding work, run it through both models, and track quality, cost, and time spent correcting the output. That gives you evidence for your own workload—not a general claim that one model wins everywhere.",
+      "visual_query": "consultant working laptop in office",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "If one model clearly fits better, use that advantage to deliver existing work faster or package a useful AI-powered service. Builders can test Astra and Sol on real workflows, compare the numbers, then choose the best fit. Don’t sell a promise; sell a result you’ve actually measured.",
+      "visual_query": "small business owner working laptop",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So the takeaway is not to switch on the name alone: test both against real work and let cost and output quality decide. That’s the move for builders looking to make AI pay. Next, we’re looking at the controls companies need when their agents start acting on their own.",
+      "visual_query": "data center server aisle lights",
+      "mood": "urgent",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 2: Microsoft Adds Controls for Rogue AI Agents\nStory hook to open with: Microsoft Adds Controls for Rogue AI Agents\nMoney angle to land at the end: IT consultants and software builders can offer agent-governance audits, access-control setup, and ongoing monitoring for companies deploying AI agents.|9": [
+    {
+      "narration": "Microsoft Adds Controls for Rogue AI Agents. As companies hand AI agents more ability to act, the risk isn’t just a bad answer—it’s an agent doing something it shouldn’t. Microsoft is adding controls aimed at managing that risk. That makes agent oversight a practical business issue, not a distant hypothetical.",
+      "visual_query": "engineers monitoring computers in office",
+      "mood": "urgent",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Here’s what matters: these controls are meant to help organizations govern AI agents. An agent is software that can take actions on a user’s behalf, rather than only respond to a prompt. Give it access to company systems, and permissions and monitoring become essential parts of deployment.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The research available for this story doesn’t specify the product name, launch date, or exact control features, so I’m not going to guess. The useful takeaway is broader: businesses need to know which agents can reach which systems, what they’re allowed to do, and how their actions are reviewed.",
+      "visual_query": "IT staff reviewing computer screens",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s the difference between trying an agent in a demo and putting one into a real workflow. A company should map the agent’s access, define limits before rollout, and decide who checks its activity. If those questions have no clear answers, the deployment isn’t ready for sensitive work.",
+      "visual_query": "closeup hands configuring access settings",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "For builders, this creates a concrete opportunity: treat agent governance like a service, not an afterthought. Start by auditing a client’s current agent use, documenting what systems each agent can access, and identifying where permissions are broader than the task requires.",
+      "visual_query": "consultant pointing at laptop with client",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Then offer the setup work: help the company establish access controls, agree on approval steps, and create a routine for reviewing agent activity. Keep the scope tied to the tools the client actually uses; the verified details here don’t support promising a specific Microsoft feature or configuration.",
+      "visual_query": "team configuring computers in office",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The recurring revenue is in ongoing monitoring. Offer periodic reviews of permissions and agent behavior, and help clients update their governance as deployments change. You can start today by making a simple audit checklist and taking it to businesses already experimenting with AI agents.",
+      "visual_query": "IT professional monitoring dashboards",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "The practical play: IT consultants and software builders can sell agent-governance audits, access-control setup, and ongoing monitoring. Don’t pitch fear; pitch a clear inventory of what agents can do, sensible limits, and a review process the client can maintain.",
+      "visual_query": "business meeting reviewing laptop screens",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That’s how you turn a new control problem into useful client work. And next, we’re moving from software agents to a very different AI interface: a five-button gadget designed to put voice controls within reach.",
+      "visual_query": "person using small handheld electronic device",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 3: Genspark’s VoicePad Puts AI Controls on a Five-Button Gadget\nStory hook to open with: Genspark’s VoicePad Puts AI Controls on a Five-Button Gadget\nMoney angle to land at the end: Creators can test whether hands-free capture improves interviews, note-taking, or production workflows, then share useful demonstrations or tutorials. Consider affiliate content only if a suitable program is available.|9": [
+    {
+      "narration": "Genspark’s VoicePad puts AI controls on a five-button gadget. That’s the entire pitch: bring AI actions within reach of a physical device, instead of relying only on your screen. For creators, the question is simple: does this make capturing ideas faster when your hands are busy?",
+      "visual_query": "hands pressing buttons on small gadget",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "narration": "VoicePad is a compact, five-button device from Genspark, built around controlling AI with physical inputs. The research available here doesn’t specify its exact features, price, or release date, so don’t buy based on assumptions. Treat it as a workflow experiment, not a proven productivity upgrade.",
+      "visual_query": "closeup hands operating compact device",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "The practical use case is hands-free capture. Imagine recording an interview, making a quick note, or moving through a production task without stopping to hunt through menus. Whether VoicePad can do those jobs well depends on its actual capabilities, so check the official product details before you commit.",
+      "visual_query": "journalist recording interview handheld microphone",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That distinction matters if you make content for a living. A gadget only earns its place when it removes friction from a repeatable task. Test VoicePad against the way you already capture ideas, and track whether it saves time or simply adds another device to charge and manage.",
+      "visual_query": "creator filming video in home studio",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Start with one workflow, not your whole setup. Try it during a short interview, a note-taking session, or one production task, then compare the result with your usual method. Look for fewer interruptions, useful captured material, and a process you’d actually repeat.",
+      "visual_query": "person taking notes during conversation",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "There’s also a content opportunity here. If the device genuinely improves a task, show the before-and-after: what you did, what felt faster, and where it still gets in the way. A grounded demo is more useful to viewers than repeating a product pitch.",
+      "visual_query": "creator editing video at laptop",
+      "mood": "bold",
+      "is_key_scene": false
+    },
+    {
+      "narration": "You can turn that test into a tutorial for creators who face the same bottleneck. Be specific about the job you tried, and say plainly whether the hands-free control helped. If you’re considering affiliate content, first confirm a suitable program is actually available.",
+      "visual_query": "creator explaining gadget to camera",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So the play today is simple: check Genspark’s official VoicePad information, test one real capture or production workflow, and share a useful demonstration only if it delivers. The official link is in the description below. Don’t promise a productivity win before you’ve measured one.",
+      "visual_query": "hands testing device beside laptop",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "VoicePad is a reminder that AI isn’t only arriving as software; sometimes it comes with buttons you can press. And if you’re looking for a bigger content play, next we’re asking whether AI can turn holiday gift guides into a faster business.",
+      "visual_query": "holiday shopping bags moving through store",
+      "mood": "hype",
+      "is_key_scene": false
+    }
+  ],
+  "STORY 4: Can AI Make Holiday Gift Guides a Faster Content Business?\nStory hook to open with: Can AI Make Holiday Gift Guides a Faster Content Business?\nMoney angle to land at the end: Retailers and affiliate publishers can test the tool to produce timely gift guides, then earn through product sales or affiliate links where their arrangements allow.|9": [
+    {
+      "narration": "Can AI make holiday gift guides a faster content business? That’s the opportunity: use an AI tool to help create timely guides when shoppers are looking for gift ideas. But speed alone won’t earn you a sale. The recommendations still need to be useful, accurate, and worth trusting.",
+      "visual_query": "holiday shoppers walking through store",
+      "mood": "curious",
+      "is_key_scene": true
+    },
+    {
+      "narration": "A gift guide is more than a list of products. It’s a piece of shopping content organized to help someone choose what to buy. AI may help retailers and publishers produce those guides faster, giving them more time to refine the picks and get useful content in front of shoppers.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Here’s the practical test: pick a real audience and a clear gift-giving need, then try the tool on one guide. Review every product recommendation yourself. If the result misses the audience, gets details wrong, or sounds generic, it isn’t ready to publish.",
+      "visual_query": "person reviewing products laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "That human review matters because a fast draft is not the same as a good buying decision. Check that each suggestion fits the guide, make the descriptions genuinely helpful, and remove anything you can’t stand behind. Trust is what gives a useful guide a chance to drive sales.",
+      "visual_query": "hands comparing products on table",
+      "mood": "urgent",
+      "is_key_scene": false
+    },
+    {
+      "narration": "For retailers, the play is to test whether AI can help prepare timely gift guides without lowering the quality of the recommendations. For affiliate publishers, it’s a way to explore more useful shopping content. Either way, start with one guide and judge the finished work, not just the draft speed.",
+      "visual_query": "small business owner packing orders",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Then measure the outcome that matters to your business: whether the guide helps shoppers find products and leads to sales. Retailers can benefit from product purchases; affiliate publishers can earn through links when their arrangements allow. Don’t assume a faster publishing workflow automatically means more revenue.",
+      "visual_query": "online seller checking orders laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "Your move today: test the tool on a single timely gift guide, edit every recommendation, and see whether the final piece is good enough to share. Retailers and publishers can use AI to speed up production, then earn through product sales or affiliate links where their arrangements allow.",
+      "visual_query": "creator editing shopping guide laptop",
+      "mood": "bold",
+      "is_key_scene": true
+    },
+    {
+      "narration": "That’s the business case: AI can help you move faster, but the value comes from publishing a guide people actually find useful. Keep the recommendations relevant, verify the details, and make sure any affiliate arrangement fits your business. Treat one guide as a test before scaling the workflow.",
+      "visual_query": "person writing notes beside laptop",
+      "mood": "practical",
+      "is_key_scene": false
+    },
+    {
+      "narration": "So test the tool, keep a human in charge of the recommendations, and follow the results before you build a bigger content operation around it. That’s our AI news for today. In the wrap-up, let’s bring the practical takeaways together and focus on where you can act now.",
+      "visual_query": "host speaking camera studio lights",
+      "mood": "bold",
+      "is_key_scene": false
+    }
+  ],
+  "OUTRO (2 scenes) — rapid recap of all stories: story 1: OpenAI’s GPT-6.2 Astra and Sol Arrive; story 2: Microsoft Adds Controls for Rogue AI Agents; story 3: Genspark’s VoicePad Puts AI Controls on a Five-Button Gadget; story 4: Can AI Make Holiday Gift Guides a Faster Content Business?|2": [
+    {
+      "narration": "OpenAI’s GPT-6.2 Astra and Sol give builders new models to test against real coding and client work. Microsoft is adding controls to help companies manage rogue AI agents. Genspark’s five-button VoicePad puts AI controls within reach for hands-free capture. And AI-generated holiday gift guides could help retailers and publishers produce timely content that earns through sales or affiliate links.",
+      "visual_query": "hands typing laptop closeup",
+      "mood": "practical",
+      "is_key_scene": true
+    },
+    {
+      "narration": "Subscribe for the next AI news digest, every 12 hours. Which story would you test first: new models, agent controls, VoicePad, or AI-powered gift guides? Tell me in the comments—and what workflow would you use it for?",
+      "visual_query": "technology presenter speaking studio wide",
+      "mood": "curious",
+      "is_key_scene": false
+    }
+  ]
+}
