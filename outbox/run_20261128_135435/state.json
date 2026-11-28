@@ -1,0 +1,60 @@
+{
+  "topic": {
+    "title": "AI News: GPT-6.2, Gemini 4, and the Tools Changing How We Work",
+    "digest_label": "AI NEWS",
+    "angle": "daily AI digest with a money angle on every story",
+    "visual_world": "futuristic AI interfaces, data centers, robots, product demos",
+    "stories": [
+      {
+        "num": 1,
+        "title": "OpenAI reportedly launches GPT-6.2 Astra and Sol",
+        "hook": "Two new OpenAI models arrive at once—but what can each one actually do?",
+        "angle": "A scraped item says OpenAI announced GPT-6.2 Astra and Sol on November 17, but provides no model specifications or performance evidence. The claimed release could matter to developers and creators choosing models, so verify the announcement and compare the models before treating the names or capabilities as confirmed.",
+        "money_angle": "If the release is verified, test both models on a real paid workflow and compare quality, speed, and cost before switching tools.",
+        "visual_world": "OpenAI announcement pages, model-selection screens, and side-by-side demos of the same coding or writing task.",
+        "search_queries": [
+          "OpenAI GPT-6.2 Astra Sol news November 17 2026",
+          "GPT-6.2 Astra Sol OpenAI release details"
+        ]
+      },
+      {
+        "num": 2,
+        "title": "Google's Gemini 4 Neon and Genie 4 claims need verification",
+        "hook": "Two Google AI names are trending—but the available reports leave key details unanswered.",
+        "angle": "The provided items describe a Gemini 4 Neon explainer covering performance, pricing, and use, and separately identify Genie 4 as a Google DeepMind AI. They do not establish official launch details, capabilities, or availability, making verification essential before builders plan around either name.",
+        "money_angle": "If either tool is officially available, try it on a small client task first and assess whether its output can reduce delivery time or costs.",
+        "visual_world": "Google product pages, model interfaces, benchmark comparisons, and a clearly labeled distinction between reported claims and verified launch information.",
+        "search_queries": [
+          "Google Gemini 4 Neon news pricing performance November 2026",
+          "Google DeepMind Genie 4 news details November 2026"
+        ]
+      },
+      {
+        "num": 3,
+        "title": "Genspark's VoicePad puts hands-free AI on your desk",
+        "hook": "A five-button gadget aims to bring AI into your workflow without another browser tab.",
+        "angle": "Digital Trends reports that Genspark launched SecondBrain VoicePad, a hands-free AI gadget with five buttons. The item gives little information about its exact functions, price, or availability, so those details need checking before judging whether it is a useful productivity device.",
+        "money_angle": "Creators and freelancers can evaluate whether hands-free capture saves enough time during calls or brainstorming to justify the device's cost.",
+        "visual_world": "Close-ups of the VoicePad, button presses, a desk setup, and a demo showing spoken input moving into a computer workflow.",
+        "search_queries": [
+          "Genspark SecondBrain VoicePad news launch details",
+          "Genspark VoicePad five-button AI gadget price features news"
+        ]
+      },
+      {
+        "num": 4,
+        "title": "Four ways to use paid AI models for free",
+        "hook": "You may be able to try premium AI without paying a subscription—if you know where to look.",
+        "angle": "MakeUseOf's item says there are four legitimate ways to access paid AI models for free, but the provided snippet does not identify the services or conditions. Verify the article's specific routes and limits before relying on them; free access can be useful for testing, but availability may change.",
+        "money_angle": "Use verified free tiers or trials to prototype client workflows and validate demand before paying for a subscription.",
+        "visual_world": "A comparison of AI chat interfaces, free-access pages, usage limits, and a sample workflow tested across multiple models.",
+        "search_queries": [
+          "MakeUseOf four legit ways use paid AI models for free news details",
+          "free access paid AI models 2026 legitimate methods details"
+        ]
+      }
+    ]
+  },
+  "trends_done": true,
+  "script_done": true
+}
